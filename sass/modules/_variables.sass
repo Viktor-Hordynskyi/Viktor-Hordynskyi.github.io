@@ -1,0 +1,151 @@
+//* ///========== VARIABLES ==========/// *//
+
+
+//HighLevel Colors
+$hl-blue:                     #188bf6
+$hl-green:                    #37ca37
+$hl-red:                      #e93d3d
+$hl-yellow:                   #ffbc00
+$hl-orange:                   #ff7402
+$hl-pink:                     #ff3e7f
+$hl-purple:                   #876cff
+$hl-navy:                     #1976d2
+$hl-teal:                     #17cfbc
+$hl-grey:                     #e6edf2
+$hl-bg:                       #f2f7fa
+$hl-bg-blue:                  rgba($hl-blue, 0.1)
+$hl-text:                     #607179
+$hl-text-drk:                 #2a3135
+$hl-text-lt:                  #afb8bc
+
+//Bootstrap Vars
+$white:                       #fff
+$black:                       #000
+$red:                         $hl-red
+$orange:                      $hl-orange
+$yellow:                      $hl-yellow
+$green:                       $hl-green
+$blue:                        $hl-blue
+$teal:                        $hl-teal
+$pink:                        $hl-pink
+$purple:                      $hl-purple
+$gray-dark:                   $hl-text-drk
+$gray:                        $hl-text
+$gray-light:                  $hl-text-lt
+
+//Custom Vars
+$font-size:                   1rem
+$text:                        $gray
+$text-drk:                    $gray-dark
+$text-lt:                     $gray-light
+$link-color:                  $blue
+$link-hover-color:            darken($link-color, 10%)
+$border-radius:               0.3125rem
+$border:                      $hl-bg
+$border-focus:                darken($hl-bg, 15%)
+
+
+//Bootstrap Reset
+$body-bg:                     $hl-bg
+$body-color:                  $text!important
+$font-size-base:              $font-size
+
+$theme-colors: (primary: $blue, secondary: $orange, success: $green, info: $teal, warning: $yellow, danger: $red, light: $gray-light, dark: $gray-dark)
+
+//Web Fonts
+$roboto:  Roboto, system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif
+$montserrat:  'Montserrat', system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif
+$main-font: $roboto
+
+//Media Query
+$sm-min:                      576px
+$md-min:                      768px
+$lg-min:                      992px
+$lg-min:                      992px
+$xl-min:                      1200px
+$xxl:                         1400px
+$xs-max:                      $sm-min - 1px
+$sm-max:                      $md-min - 1px
+$md-max:                      $lg-min - 1px
+$lg-max:                      $xl-min - 1px
+$xl-max:                      $xxl - 1px
+
+$container-max:              $xl-min
+
+//transitions
+$hover:                       all 0.2s ease-in-out 0s
+$slide:                       all 0.3s cubic-bezier(.17,.67,.83,.67) 0s
+$slow-slide:                  all 0.3s cubic-bezier(.91,.32,.26,.98) 0s
+$slide-delay:                 all 0.5s cubic-bezier(.55,0,.1,1) 0s
+$delay-slide:                 all 0.5s cubic-bezier(.19,1,.22,1) 0s
+$slide-slow:                  all 0.5s cubic-bezier(.55,0,.1,1) 0s
+$zoom:                        all 0.7s cubic-bezier(.55,0,.1,1) 0s
+$zoom-slow:                   all 2.4s cubic-bezier(.55,0,.1,1) 0s
+$basic:                       all 0.4s cubic-bezier(.72,.16,.345,.875) 0s
+$basic2:                      all 0.4s cubic-bezier(.555,.205,.295,.975) 0s
+$basic3:                      all 0.8s cubic-bezier(.555,.205,.295,.975) 0s
+$basic4:                      all 0.3s cubic-bezier(.555,.205,.295,.975) 0s
+$apple:                       all 1s cubic-bezier(.38, .32, .36, .98) 0s
+
+//VW
+$max-breakpoint: 1200
+@function get-vw($target)
+  $vw-context: $max-breakpoint * 0.01 * 1px
+  @return $target / $vw-context * 1vw
+
+$vw10:     get-vw(10px)
+$vw20:     get-vw(20px)
+$vw30:     get-vw(30px)
+$vw40:     get-vw(40px)
+$vw50:     get-vw(50px)
+$vw100:    get-vw(100px)
+$vw150:    get-vw(150px)
+$vw200:    get-vw(200px)
+$vw250:    get-vw(250px)
+$vw300:    get-vw(300px)
+$vw350:    get-vw(350px)
+$vw400:    get-vw(400px)
+$vw450:    get-vw(450px)
+$v500:     get-vw(500px)
+
+//REMs
+$f8:       0.5rem
+$f9:       0.5625rem
+$f10:      0.625rem
+$f11:      0.6875rem
+$f12:      0.75rem
+$f13:      0.8125rem
+$f14:      0.875rem
+$f15:      0.9375rem
+$f16:      1rem
+$f18:      1.125rem
+$f20:      1.25rem
+$f22:      1.375rem
+$f24:      1.5rem
+$f25:      1.563rem
+$f26:      1.625rem
+$f28:      1.75rem
+$f30:      1.875rem
+$f32:      2rem
+$f34:      2.125rem
+$f35:      2.188rem
+$f36:      2.25rem
+$f38:      2.375rem
+$f40:      2.5rem
+$f45:      2.813rem
+$f50:      3.125rem
+$f55:      3.438rem
+$f60:      3.75rem
+$f65:      4.063rem
+$f70:      4.375rem
+$f80:      5rem
+$f90:      5.625rem
+$f100:     6.25rem
+$f150:     9.375rem
+$f200:     12.5rem
+$f250:     15.63rem
+$f300:     18.75rem
+$f350:     21.88rem
+$f400:     25rem
+$f450:     28.13rem
+$f500:     31.25rem

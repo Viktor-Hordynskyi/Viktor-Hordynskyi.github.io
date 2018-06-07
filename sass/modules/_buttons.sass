@@ -1,0 +1,128 @@
+/* ////========== BUTTONS STYLES =========//// */
+
+.btn
+  font-family: $main-font
+  font-size: $f14
+  font-weight: 500
+  color: #fff
+  padding: 11px 20px
+  transition: $hover
+  min-width: 85px
+  border-radius: $border-radius
+  border: none
+  &:hover,
+  &:focus,
+  &:active
+    color: #fff
+    outline: none
+    box-shadow: none
+  &:active
+    &:focus
+      outline: none
+      box-shadow: none!important
+  &:active
+    transform: translateY(2px)
+  //Size
+  &.btn-sm
+    padding: 9.5px 15px
+    height: 40px
+    font-size: $f14
+    font-weight: normal
+    min-width: 0
+  //Types
+  &-circle
+    width: 45px
+    height: 45px
+    line-height: 47px
+    padding: 0
+    text-align: center
+    border-radius: 50px
+    min-width: auto
+    font-size: $f16
+  //Colors
+  &.btn-link
+    color: $blue
+    padding-left: 0
+    padding-right: 0
+    &:hover,
+    &:focus,
+    &:active
+      text-decoration: none
+  &.btn-link2
+    color: $text
+    padding-left: 0
+    padding-right: 0
+    &:hover,
+    &:focus,
+    &:active
+      color: $blue
+      text-decoration: none
+  &.btn-yellow
+    background-color: rgba($yellow, 0.1)
+    border-color: rgba($yellow, 0.1)
+    color: $yellow
+    &:hover,
+    &:focus,
+    &:active
+      color: $yellow
+      background-color: rgba($yellow, 0.2)
+      border-color: rgba($yellow, 0.2)
+  &.btn-primary
+    background-color: rgba($blue, 0.1)
+    border-color: rgba($blue, 0.1)
+    color: $blue
+    &:hover,
+    &:focus,
+    &:active
+      color: $blue!important
+      background-color: rgba($blue, 0.2)!important
+      border-color: rgba($blue, 0.2)!important
+  &.btn-blue
+    background-color: $blue
+    border-color: $blue
+    color: #fff
+    &:hover,
+    &:focus,
+    &:active
+      color: #fff
+      background-color: $blue
+      border-color: $blue
+  &.btn-light
+    background: #fff
+    border-color: $border
+    color: $text
+    &:hover,
+    &:focus,
+    &:active
+      background: rgba($hl-blue, 0.1)
+      color: $blue
+  &.btn-light2
+    background: #f7fafc
+    border-color: #f7fafc
+    color: $text
+    &:hover,
+    &:focus,
+    &:active
+      background: darken(#f7fafc, 5%)
+      color: $text
+  &.btn-green-lt
+    background-color: rgba($green, 0.1)
+    border-color: rgba($green, 0.1)
+    color: $green
+    &:hover,
+    &:focus,
+    &:active
+      color: $green
+      background-color: rgba($green, 0.2)
+      border-color: rgba($green, 0.2)
+  &.btn-orange
+    background: $orange
+    border-color: $orange
+    color: $white
+    &:hover,
+    &:focus,
+    &:active
+      background: darken($orange, 10%)
+      color: $white
+  
+

@@ -1,0 +1,99 @@
+/* ////========== AGENCY STYLES =========//// */
+
+.hl_agency
+  .hl_controls
+    margin-top: 10px
+    margin-bottom: 30px
+    h3
+      font-size: $f24
+
+.hl_agency-dashboard--cards
+  align-items: stretch
+  width: 100%
+  > .card
+    border-radius: 4px!important
+    &:nth-child(1)
+      background-image: linear-gradient(to right, lighten($blue, 10%), $blue)
+    &:nth-child(2)
+      background-image: linear-gradient(to right, lighten($yellow, 10%), $yellow)
+    &:nth-child(3)
+      background-image: linear-gradient(to right, lighten($green, 10%), $green)      
+  .card
+    height: 100%
+    width: 100%
+    color: $white
+    position: relative
+    overflow: hidden
+    &-body
+      display: flex
+      flex-direction: column
+      justify-content: flex-end
+    .icon
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 36px
+      height: 36px
+      border-radius: 50%
+      background-color: $white
+      margin-bottom: 15px
+    h4
+      color: $white
+      margin-bottom: 5px
+      font-size: $f14
+    p
+      font-size: $f36
+      line-height: 1
+    .card-bg
+      position: absolute
+      right: -10px
+      bottom: -20px
+
+
+.hl_agency-dashboard--table
+  .table
+    tbody
+      tr
+        td
+          &:nth-child(2)
+            @media (min-width: $lg-min)
+              width: 250px
+          &:last-child
+            @media (min-width: $lg-min)
+              width: 80px
+    .table_a-progress
+      display: flex
+      align-items: center
+      p
+        color: $text-drk
+        margin-right: 15px
+        text-align: right
+      .progress
+        flex: 1 0 0
+        width: 200px
+        max-width: 200px
+        @media (min-width: $xl-min)
+          width: 250px
+          max-width: 250px
+    .table_a-product
+      display: flex
+      align-items: center
+      .icon
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 36px
+        height: 36px
+        border-radius: 50%
+        margin-right: 15px
+        background-color: $text
+        &.--green
+          background-color: $green
+        &.--yellow
+          background-color: $yellow
+        &.--blue
+          background-color: $blue
+        &.--pink
+          background-color: $pink
+      p
+        line-height: 1

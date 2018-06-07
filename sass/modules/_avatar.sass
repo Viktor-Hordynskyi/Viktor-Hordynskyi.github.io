@@ -1,0 +1,113 @@
+/* ////========== AVATAR STYLES =========//// */
+
+.avatar
+  display: inline-flex
+  align-items: center
+  height: 44px
+  border-radius: 50%
+  //text
+  &_text
+    > h4
+      font-size: 14px
+      font-weight: normal
+      white-space: nowrap
+      margin-bottom: 5px
+      line-height: 1
+      span
+        color: $text
+    p
+      color: $text
+      line-height: 1
+  &_img
+    min-width: 44px
+    width: 44px
+    height: 44px
+    line-height: 44px
+    border-radius: 50%
+    color: #fff
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
+    &:first-child
+      position: relative
+      z-index: 2
+    > img
+      max-width: 44px
+      max-height: 44px
+      border-radius: 50%
+    + .avatar_img
+      margin-left: -20px
+    + h4
+      margin-left: 10px
+    + .avatar_text
+      margin-left: 10px
+    //Colors
+    &.--blue
+      background-color: $hl-blue
+    &.--navy
+      background-color: $hl-navy
+    &.--red
+      background-color: $hl-red
+    &.--yellow
+      background-color: $hl-yellow
+    &.--green
+      background-color: $hl-green
+    &.--purple
+      background-color: $hl-purple
+    &.--teal
+      background-color: $hl-teal
+    &.--pink
+      background-color: $hl-pink
+    &.--orange
+      background-color: $hl-orange
+    &.--lime
+      background-color: #7be43b
+    &.--gray
+      background-color: $hl-text-lt
+    //Shadow
+    &.--shadow
+      box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+  > p 
+    + .avatar_img
+      margin-left: 10px
+  > h4
+    font-size: 14px
+    font-weight: normal
+    white-space: nowrap
+    margin-bottom: 0
+    line-height: 1
+    span
+      color: $text
+  &:last-child
+    margin-right: 0
+  //Small
+  &.--sm
+    height: 35px
+    .avatar_img
+      min-width: 35px
+      width: 35px
+      height: 35px
+      line-height: 35px
+      font-size: $f12
+      > img
+        max-width: 35px
+        max-height: 35px
+  //Large
+  &.--lg
+    display: flex
+    width: 150px
+    height: 150px
+    .avatar_img
+      min-width: 3150x
+      width: 150px
+      height: 150px
+      line-height: 150px
+      font-size: $f24
+      font-weight: 500
+      box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+      border: solid 6px $white
+      > img
+        max-width: 150px
+        max-height: 150px

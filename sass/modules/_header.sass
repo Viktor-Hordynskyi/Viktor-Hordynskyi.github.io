@@ -1,0 +1,249 @@
+/* ////========== HEADER STYLES =========//// */
+
+.modal-open
+  .hl_header
+    .container-fluid
+      @media(min-width: $md-min)
+        padding-right: 45px
+
+.hl_header
+  background: #fff
+  transition: $basic
+  @media(min-width: $md-min)
+    box-shadow: inset 2px 0 0 0 $hl-bg, 0 10px 10px 0 rgba(0, 0, 0, 0.01)
+    position: fixed
+    top: 0
+    left: 70px
+    right: 0
+    z-index: 9
+  @media(min-width: $xl-min)
+    top: 0
+    left: 250px
+    right: 0
+  &.--no-shadow
+    box-shadow: inset 2px 0 0 0 $hl-bg
+  .container-fluid
+    max-width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 82px
+    padding: 10px 30px
+    @media(max-width: $sm-max)
+      padding: 5px 15px
+      height: 54px
+  //picker
+  &--picker
+    position: static
+    > .btn.dropdown-toggle
+      background: #fff!important
+      padding: 0!important
+      border-radius: 0
+      height: 30px
+      display: flex
+      align-items: center
+      &:before
+        display: none
+      &:after
+        right: -20px!important
+        color: $blue
+      .filter-option
+        color: $text-drk!important
+        font-weight: 400
+        img
+          display: none
+    > .dropdown-menu
+      width: 100%!important
+      top: 15px!important
+      left: 7px!important
+      right: 2px!important
+      .popover-title
+        padding: 20px
+        font-size: $f20
+        color: $text-drk
+        a
+          font-size: $f14
+          margin-left: 10px
+        .close
+          font-weight: 300
+          font-size: $f30
+          color: $hl-text-lt
+      .inner
+        .dropdown-menu
+          li
+            a
+              padding-top: 20px
+              padding-bottom: 20px
+              color: $text-drk!important
+              .text
+                img
+                  border-radius: 50%
+                  box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+                  margin-right: 20px
+            &.selected
+              a
+                background: $border!important
+  //Controls
+  &--controls
+    display: flex
+    align-items: center
+    > * + *
+      margin-left: 10px
+  //Recent Activities
+  &--recent-activities
+    position: relative
+    &.-notification
+      &:before
+        content: ""
+        display: block
+        width: 8px
+        height: 8px
+        border-radius: 50%
+        background: $yellow
+        position: absolute
+        top: 2px
+        right: 2px
+  //Buttons
+  .btn
+    @media(max-width: $sm-max)
+      width: 38px
+      height: 38px
+      line-height: 40px
+      font-size: $f14
+  //avatar
+  &--avatar
+    display: block
+    max-width: 44px
+    height: 44px
+    @media(max-width: $sm-max)
+      max-width: 38px
+      height: 38px
+      .avatar
+        height: 38px
+        .avatar_img
+          min-width: 38px
+          width: 38px
+          height: 38px
+          > img
+            max-width: 38px
+            max-height: 38px
+
+
+//Recent Activities
+.hl_recent-activities
+  background-color: $white
+  @media(max-width: $sm-max)
+    border-top: 1px solid $hl-bg
+    height: 0
+    opacity: 0
+    visibility: hidden
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.01)
+  @media(min-width: $md-min)
+    transition: $basic
+    width: 350px
+    height: 100vh
+    position: fixed
+    top: 82px
+    right: 0
+    z-index: 8
+    border-top: none
+    transform: translateX(350px)
+  &.--settings
+    @media(min-width: $md-min)
+      top: 83px!important
+  &--inner
+    padding: 0 30px
+    margin-top: 20px
+    margin-bottom: 30px
+    overflow-y: auto
+    height: auto
+    @media(min-width: $md-min)
+      height: calc(100vh - 60px)
+      margin: 0
+      padding: 30px
+  //Open
+  &.--open
+    @media(max-width: $sm-max)
+      height: auto
+      opacity: 1
+      visibility: visible
+      position: relative
+      &:before
+        content: ""
+        display: block
+        height: 20px
+        background: $white
+        position: absolute
+        margin: auto
+        top: 0
+        left: 0
+        right: 0
+      &:after
+        content: ""
+        display: block
+        height: 25px
+        background: $white
+        position: absolute
+        margin: auto
+        bottom: 0
+        left: 0
+        right: 0
+    @media(min-width: $md-min)
+      box-shadow: -10px 0 60px 0 rgba(0, 0, 0, 0.1)
+      transform: translateX(0)
+  //Item
+  &--item
+    position: relative
+    padding-left: 55px
+    margin-bottom: 0
+    + .hl_recent-activities--item
+      margin-top: 25px
+    .avatar
+      position: absolute
+      top: 0
+      left: 0
+      box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+      &.--notification
+        &:before
+          content: ""
+          display: block
+          width: 8px
+          height: 8px
+          border-radius: 50%
+          background: $yellow
+          position: absolute
+          top: 1px
+          right: 1px
+          z-index: 3
+    .recent-activities--icon
+      width: 35px
+      height: 35px
+      line-height: 36px
+      font-size: $f14
+      text-align: center
+      border-radius: 50%
+      position: absolute
+      top: 0
+      left: 0
+      box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+      &.--rating
+        color: $green
+        background-color: rgba($green, 0.2)
+      &.--reviews
+        color: $blue
+        background-color: rgba($blue, 0.2)
+        .icon
+          width: 14px
+          height: 12px
+    p
+      font-size: $f14
+      line-height: 1.43
+      strong
+        font-weight: 400
+        color: $text-drk
+      .time-date
+        display: block
+        font-size: $f12
+        font-weight: 500
+        line-height: 2
+        color: $hl-text-lt

@@ -1,0 +1,107 @@
+/* ////========== MODAL STYLES =========//// */
+
+.modal
+  .modal-dialog
+    max-width: 680px
+    margin-left: .5rem
+    margin-right: .5rem
+    @media(min-width: 720px)
+      margin-left: auto
+      margin-right: auto
+    &.--small
+      max-width: 540px
+      .modal-body
+        &--inner
+          max-width: 480px
+          +center-align()
+    &.--large
+      max-width: 1260px
+      .modal-body
+        &--inner
+          max-width: 1200px
+          +center-align()
+      .modal-footer
+        &--inner
+          max-width: 1200px
+          +center-align()
+  .modal-content
+    box-shadow: 5px 8.7px 20px 0 rgba(0, 0, 0, 0.1)
+    border-radius: 6px
+    border: none
+  .close
+    position: absolute
+    top: 15px
+    right: 20px
+    font-size: $f30
+    font-weight: normal
+    z-index: 2
+    font-weight: 400
+    color: $hl-text-lt
+    text-shadow: none
+    opacity: 1
+    &:hover,
+    &:focus,
+    &:active
+      color: $hl-text
+  .modal-header
+    border-bottom: 2px solid $border
+    padding: 25px 15px
+    display: block
+    &.--no-border
+      border-bottom: none
+    &--inner
+      max-width: 600px
+      +center-align()
+  .modal-title
+    font-size: $f16
+    .icon
+      margin-right: 5px
+  .modal-body
+    padding: 30px 15px
+    &--inner
+      max-width: 600px
+      +center-align()
+  .modal-buttons
+    padding-top: 15px
+    padding-bottom: 15px
+  .modal-footer
+    border-top: 2px solid $border
+    padding: 25px 15px
+    display: block
+    &--inner
+      max-width: 600px
+      +center-align()
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      > :not(:first-child)
+        margin-left: .25rem
+      > :not(:last-child)
+        margin-right: .25rem
+  //Copy Review Link
+  &.review-link--modal
+    .modal-dialog
+      max-width: 550px
+    .modal-content
+      background-color: $blue
+      color: $white
+      text-align: center
+    .close
+      color: $white
+    .modal-body
+      padding: 30px
+    img
+      max-width: 150px
+      height: auto
+      margin-bottom: 30px
+    h4
+      color: #fff
+      font-size: $f14
+      font-weight: 500
+      margin-bottom: 10px
+
+
+.modal-backdrop
+  background-color: rgba(#2A3135, 0.8)
+  &.show
+    opacity: 1

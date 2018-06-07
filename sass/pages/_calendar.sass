@@ -1,0 +1,85 @@
+/* ////========== CALENDAR STYLES =========//// */
+
+// .hl_calendar
+//   .card
+//     .card-body
+//       @media (max-width: 950px)
+//         position: relative
+//         &:before
+//           content: ""
+//           display: block
+//           background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 70%)
+//           width: 40px
+//           position: absolute
+//           margin: auto
+//           top: 0
+//           right: 20px
+//           bottom: 0
+//           z-index: 2
+
+//Calendar Wrap
+.hl_calendar--wrap
+  overflow-y: auto
+
+//Calendar Selection
+.hl_calendar--selection
+  min-width: 800px
+  margin-left: 0
+  margin-right: 0
+  @media (max-width: 950px)
+    padding-right: 20px
+  > .hl_calendar--set
+    padding-left: 10px
+    padding-right: 10px
+    @media (max-width: 950px)
+      padding-left: 5px
+      padding-right: 5px
+
+//Calendar Set
+.hl_calendar--set
+  text-align: center
+  h3
+    font-size: $f12
+    font-weight: 500
+    text-transform: uppercase
+    margin-bottom: 15px
+
+//Calendar Hours
+.hl_calendar--hours
+  list-style: none
+  padding: 0
+  margin: 0
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 38px
+    line-height: 1
+    border-radius: 0.3125rem
+    border: solid 1px darken($hl-grey, 10%)
+    margin-bottom: 10px
+    transition: $hover
+    font-size: $f13
+    color: $hl-text-drk
+    padding: 5px
+    cursor: pointer
+    transtion: all .2s ease-in-out
+    &:hover
+      background-color: $green
+      border-color: $green
+      color: $white
+    @media (max-width: 950px)
+      font-size: $f12
+    &.booked
+      background-color: $green
+      border-color: $green
+      color: $white
+    &.unavailable
+      background-color: $red
+      border-color: $red
+      color: $white
+    &.closed
+      background-color: $hl-grey
+      color: rgba($text-drk, 0.4)
+      border-color: $hl-grey
+      cursor: no-drop

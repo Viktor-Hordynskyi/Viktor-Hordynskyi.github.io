@@ -1,1 +1,0 @@
-# Viktor-Hordynskyi.github.io

@@ -1,0 +1,92 @@
+/* ////========== CONTROLS STYLES =========//// */
+
+.hl_controls
+  margin-bottom: 10px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  > *
+    &:not(:last-child)
+      margin-right: 20px
+  .hl_controls--left
+    h3
+      font-size: $f20
+      margin: 0
+      span
+        font-size: $f14
+        color: $text-lt
+        display: inline-block
+        margin-left: 10px
+    .bootstrap-select
+      margin-right: 20px
+      > .btn.dropdown-toggle
+        height: 40px
+        padding-left: 0
+        padding-right: 25px
+        background: none!important
+        &:after
+          right: 0
+          color: $blue
+        .filter-option
+          font-size: $f20
+          font-weight: 400
+          color: $text-drk
+          margin-top: -10px
+    .total
+      display: inline-block
+      color: $hl-text-lt
+  .hl_controls--right
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    > *
+      margin-bottom: 10px
+      &:not(:last-child)
+        margin-right: 10px
+    .bootstrap-select
+      > .btn.dropdown-toggle
+        background-color: #fff
+        padding: 9.5px 50px 9.5px 20px
+        height: 40px!important
+        &:after
+          color: $blue
+        .filter-option
+          font-weight: normal
+          color: $text-drk
+    .search-form
+      position: relative
+      @media(min-width:$lg-min)
+        min-width: 300px
+      .icon
+        position: absolute
+        top: 50%
+        left: 20px
+        transform: translateY(-50%)
+        color: rgba($hl-text, 0.5)
+      input
+        padding: 10px 20px 10px 50px
+        height: 40px
+    .hl_reviews--filter-btn
+      &:focus
+        background: #fff
+        color: $text
+      &.--open
+        color: $blue
+        background: rgba($hl-blue, 0.1)
+    .btn:not(.btn-sm)
+      font-weight: bold
+      padding: 9.5px 20px
+      .icon
+        margin-right: 10px
+    .btn-sm
+      display: inline-flex
+      align-items: center
+      > span
+        + .icon
+          margin-left: 10px
+      .icon
+        display: block
+        width: 16px
+        color: $blue
+        font-size: $f16

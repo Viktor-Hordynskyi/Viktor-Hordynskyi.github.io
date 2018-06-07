@@ -1,0 +1,583 @@
+<!-- @import 'partials/head.kit' -->
+
+    <!-- @import 'partials/nav.kit' -->
+
+    <!-- @import 'partials/header.kit' -->
+
+    <section class="hl_wrapper">
+
+      <section class="hl_wrapper--inner hl_dashboard" id="dashboard">
+        <div class="container-fluid">
+          <div class="card-group">
+            <div class="card hl_dashboard--reviews">
+              <div class="card-header">
+                <h2>Reviews <span>This Month</span></h2>
+                <select class="selectpicker more-select">
+                  <option>Today</option>
+                  <option>This Week</option>
+                  <option>Last Week</option>
+                  <option>This Month</option>
+                  <option>Last 6 Months</option>
+                  <option>This Year</option>
+                </select>
+              </div>
+              <div class="card-body">
+                <h3>822</h3>
+                <div class="hl_dashboard--reviews-stats row">
+                  <div class="col-sm-6">
+                    <h4><i class="icon icon-arrow-up-2"></i> +23.8%</h4>
+                    <p>growth in reviews from   the last week</p>
+                  </div>
+                  <div class="col-sm-6">
+                    <h4><i class="icon-positive"></i>+52</h4>
+                    <p>positive reviews more than the last week</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="hl_dashboard--reviews-sources">
+                  <h4>Sources</h4>
+                  <ul class="sources_list list-inline">
+                    <li class="list-inline-item">
+                      <a href="#" class="google">Google+</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="facebook">Facebook</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="twitter">Twitter</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="#" class="add">Add</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card hl_dashboard--avg-rating">
+              <div class="card-header">
+                <h2>Avg. Rating <span>All Time</span></h2>
+                <select class="selectpicker more-select">
+                  <option>Today</option>
+                  <option>This Week</option>
+                  <option>Last Week</option>
+                  <option>This Month</option>
+                  <option>Last 6 Months</option>
+                  <option>This Year</option>
+                </select>
+              </div>
+              <div class="card-body">
+                <h3>3.5 <div class="rating"><i class="icon icon-star-filled"></i><i class="icon icon-star-filled"></i><i class="icon icon-star-filled"></i><i class="icon icon-star-half"></i><i class="icon icon-star"></i></div></h3>
+                <div class="rating_percentage">
+                  <!-- <h4><i class="icon icon-arrow-up-2 --green"></i> 5.10%</h4> -->
+                  <h4><i class="icon icon-minus"></i> 0.0%</h4>
+                  <!-- <h4><i class="icon icon-arrow-down-2 --red"></i> 0.0%</h4> -->
+                  <p>No movenet regarding your rating.</p>
+                </div>
+                <div class="rating_stats">
+                  <div class="rating_stats-item --star5">
+                    <h4><i class="icon icon-star-filled"></i> 5</h4>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                      <span>492</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating_stats">
+                  <div class="rating_stats-item --star4">
+                    <h4><i class="icon icon-star-filled"></i> 4</h4>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+                      <span>278</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating_stats">
+                  <div class="rating_stats-item --star3">
+                    <h4><i class="icon icon-star-filled"></i> 3</h4>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+                      <span>65</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating_stats">
+                  <div class="rating_stats-item --star2">
+                    <h4><i class="icon icon-star-filled"></i> 2</h4>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 15%"></div>
+                      <span>14</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rating_stats">
+                  <div class="rating_stats-item --star1">
+                    <h4><i class="icon icon-star-filled"></i> 1</h4>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 5%"></div>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-group --wide-gutter">
+            <div class="card hl_dashboard--sentiment">
+              <div class="card-header">
+                <h2>Sentiment <span>This Month</span></h2>
+                <select class="selectpicker more-select">
+                  <option>Today</option>
+                  <option>This Week</option>
+                  <option>Last Week</option>
+                  <option>This Month</option>
+                  <option>Last 6 Months</option>
+                  <option>This Year</option>
+                </select>
+              </div>
+              <div class="card-body">
+                <div class="sentiment_review --positive">
+                  <div class="sentiment_review-inner">
+                    <h3>652</h3>
+                    <div class="sentiment_review-graph" id="sentiment_positive-review">
+                      <span class="percentage" data-percentage="71"></span>
+                    </div>
+                    <h4>71%</h4>
+                  </div>
+                  <p>Positive Reviews</p>
+                </div>
+                <hr>
+                <div class="sentiment_review --negative">
+                  <div class="sentiment_review-inner">
+                    <h3>113</h3>
+                    <div class="sentiment_review-graph" id="sentiment_negative-review">
+                      <span class="percentage" data-percentage="19"></span>
+                    </div>
+                    <h4>19%</h4>
+                  </div>
+                  <p>Negative Reviews</p>
+                </div>
+              </div>
+            </div>
+            <div class="card hl_dashboard--invites-goal">
+              <div class="card-header">
+                <h2>Invites Goal</h2>
+                <select class="selectpicker more-select">
+                  <option>Today</option>
+                  <option>This Week</option>
+                  <option>Last Week</option>
+                  <option>This Month</option>
+                  <option>Last 6 Months</option>
+                  <option>This Year</option>
+                </select>
+              </div>
+              <div class="card-body">
+                <div class="invites-goal_progress">
+                  <div class="semi-progress" data-progress="45">
+                    <div class="bar-wrap">
+                      <div class="bar"></div>
+                    </div>
+                  </div>
+                  <h3>391</h3>
+                  <hr>
+                  <h4>You are on Track!</h4>
+                  <p>You are close to your 190 invites goal</p>
+                </div>
+              </div>
+            </div>
+            <div class="card hl_dashboard--leaderboard-invites">
+              <div class="card-header">
+                <h2>Leaderboard for Invites <span>All Time</span></h2>
+                <select class="selectpicker more-select">
+                  <option>Today</option>
+                  <option>This Week</option>
+                  <option>Last Week</option>
+                  <option>This Month</option>
+                  <option>Last 6 Months</option>
+                  <option>This Year</option>
+                </select>
+              </div>
+              <div class="card-body">
+                <div class="leaderboard_item">
+                  <div class="avatar">
+                    <div class="avatar_img --pink">
+                      MS
+                    </div>
+                    <h4>Michelle Shean</h4>
+                  </div>
+                  <p><strong>918</strong> / 1020</p>
+                </div>
+                <div class="leaderboard_item">
+                  <div class="avatar">
+                    <div class="avatar_img">
+                      <img src="./img/img-avatar-sample2.png" alt="Avatar Name">
+                    </div>
+                    <h4>Amanda Nunes</h4>
+                  </div>
+                  <p><strong>882</strong> / 1020</p>
+                </div>
+                <div class="leaderboard_item">
+                  <div class="avatar">
+                    <div class="avatar_img">
+                      <img src="./img/img-avatar-sample3.png" alt="Avatar Name">
+                    </div>
+                    <h4>Norman E. Parque</h4>
+                  </div>
+                  <p><strong>789</strong> / 1020</p>
+                </div>
+                <div class="leaderboard_item">
+                  <div class="avatar">
+                    <div class="avatar_img --navy">
+                      MR
+                    </div>
+                    <h4>Micha Robinson</h4>
+                  </div>
+                  <p><strong>652</strong> / 1020</p>
+                </div>
+                <div class="leaderboard_item">
+                  <div class="avatar">
+                    <div class="avatar_img --green">
+                      QJ
+                    </div>
+                    <h4>Quinton Jackson</h4>
+                  </div>
+                  <p><strong>0</strong> / 1020</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card hl_dashboard--latest-review-requests">
+            <div class="card-header">
+              <h2>Latest Review Requests</h2>
+              <a href="#" class="card-header-link">View Reviews</a>
+              <select class="selectpicker more-select">
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+              </select>
+            </div>
+            <div class="card-body --no-padding">
+              <div class="table-wrap">
+                <table class="table table-sort">
+                  <thead>
+                    <tr>
+                      <th data-sort="string">Invite Sent to <i class="icon icon-arrow-down-1"></i></th>
+                      <th data-sort="string">Email Sent to <i class="icon icon-arrow-down-1"></i></th>
+                      <th data-sort="string">Sent by <i class="icon icon-arrow-down-1"></i></th>
+                      <th>Date Sent</th>
+                      <th data-sort="string">Status <i class="icon icon-arrow-down-1"></i></th>
+                      <th><!--Actions--></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img">
+                            <img src="./img/img-avatar-sample2.png" alt="Avatar Name">
+                          </div>
+                          <h4>Amanda Nunes</h4>
+                        </div>
+                      </td>
+                      <td>leoa@myteam.com</td>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --orange">
+                            AN
+                          </div>
+                          <h4>Bruce Mann</h4>
+                        </div>
+                      </td>
+                      <td>12 Jun 2017</td>
+                      <td>
+                        <span class="table_status --sent">Sent</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">View</button>
+                        <select class="selectpicker more-select">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --navy">
+                            GT
+                          </div>
+                          <h4>Gerald Terry</h4>
+                        </div>
+                      </td>
+                      <td>keanu.kub@hoeger.us</td>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --teal">
+                            RF
+                          </div>
+                          <h4>Ricardo Foster</h4>
+                        </div>
+                      </td>
+                      <td>10 Jun 2017</td>
+                      <td>
+                        <span class="table_status --sent">Sent</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">View</button>
+                        <select class="selectpicker more-select">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --red">
+                            LP
+                          </div>
+                          <h4>Leon Palmer</h4>
+                        </div>
+                      </td>
+                      <td>leoa@myteam.com</td>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --yellow">
+                            SI
+                          </div>
+                          <h4>Samantha Irving</h4>
+                        </div>
+                      </td>
+                      <td>09 Jun 2017</td>
+                      <td>
+                        <span class="table_status --opened">Opened</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">View</button>
+                        <select class="selectpicker more-select">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --lime">
+                            CA
+                          </div>
+                          <h4>Cecelia Atkins</h4>
+                        </div>
+                      </td>
+                      <td>keanu.kub@hoeger.us</td>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --pink">
+                            BM
+                          </div>
+                          <h4>Bruce Mann</h4>
+                        </div>
+                      </td>
+                      <td>09 Jun 2017</td>
+                      <td>
+                        <span class="table_status --clicked">Clicked</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">View</button>
+                        <select class="selectpicker more-select">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --purple">
+                            LW
+                          </div>
+                          <h4>Leila White</h4>
+                        </div>
+                      </td>
+                      <td>leoa@myteam.com</td>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --blue">
+                            NP
+                          </div>
+                          <h4>Norman E. Parque</h4>
+                        </div>
+                      </td>
+                      <td>08 Jun 2017</td>
+                      <td>
+                        <span class="table_status --opened">Opened</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">View</button>
+                        <select class="selectpicker more-select">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --gray">
+                            GT
+                          </div>
+                          <h4>Gerald Terry</h4>
+                        </div>
+                      </td>
+                      <td>keanu.kub@hoeger.us</td>
+                      <td>
+                        <div class="avatar">
+                          <div class="avatar_img --green">
+                            RF
+                          </div>
+                          <h4>Ricardo Foster</h4>
+                        </div>
+                      </td>
+                      <td>08 Jun 2017</td>
+                      <td>
+                        <span class="table_status --clicked">Clicked</span>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-primary">View</button>
+                        <select class="selectpicker more-select">
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card hl_dashboard--emails-sent">
+            <div class="card-header">
+              <h2>Emails Sent <span>This Week</span></h2>
+              <select class="selectpicker more-select">
+                <option>Today</option>
+                <option>This Week</option>
+                <option>Last Week</option>
+                <option>This Month</option>
+                <option>Last 6 Months</option>
+                <option>This Year</option>
+              </select>
+            </div>
+            <div class="card-body">
+              <ul class="dashboard_emails-sent-chart-stats list-inline">
+                <li class="list-inline-item">
+                  <h4>2,312</h4>
+                  <p>Emails Sent</p>
+                </li>
+                <li class="list-inline-item">
+                  <h4>6,212</h4>
+                  <p>Goal</p>
+                </li>
+                <li class="list-inline-item">
+                  <h4>912</h4>
+                  <p>Open Rate</p>
+                </li>
+                <li class="list-inline-item">
+                  <h4>541</h4>
+                  <p>Click Rate</p>
+                </li>
+                <li class="list-inline-item">
+                  <h4>102</h4>
+                  <p>Bounce</p>
+                </li>
+              </ul>
+              <div class="dashboard_emails-sent-chart" id="dashboard_emails-sent-chart"></div>
+              <!-- Email Sent Chart Script Sample -->
+              <script type="text/javascript">
+                Highcharts.chart('dashboard_emails-sent-chart', {
+                  chart: {
+                    type: 'column',
+                    style: {
+                      fontFamily: 'Roboto'
+                    }
+                  },
+                  plotOptions: {
+                    column: {
+                      groupPadding: 0.35,
+                      borderWidth: 0
+                    },
+                    series: {
+                      pointWidth: 6,
+                      borderRadius: 5
+                    }
+                  },
+                  legend: {
+                    enabled: false
+                  },
+                  title: {
+                    text: ''
+                  },
+                  xAxis: {
+                    lineColor: "#dfe3e4",
+                    tickColor: "#fff",
+                    categories: [
+                      'Mon',
+                      'Tue',
+                      'Wed',
+                      'Thu',
+                      'Fri',
+                      'Sat',
+                      'Jul',
+                      'Sun'
+                    ],
+                    labels: {
+                      style: {
+                        color: "#607179",
+                        fontSize: "14px"
+                      }
+                    }
+                  },
+                  yAxis: {
+                    gridLineColor: '#dfe3e4',
+                    title: {
+                      text: ''
+                    },
+                    labels: {
+                      style: {
+                        color: "#607179",
+                        fontSize: "14px"
+                      }
+                    }
+                  },
+                  series: [{
+                    name: 'Goal',
+                    type: 'spline',
+                    data: [89.9, 71.5, 106.4, 129.2, 104.0, 126.0, 105.6, 148.5],
+                    color: '#ffbc00'
+                  }, {
+                    name: 'Open Rate',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5],
+                    color: '#37ca37'
+                  }, {
+                    name: 'Click Rate',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3],
+                    color: '#188bf6'
+                  }, {
+                    name: 'Bounce',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6],
+                    color: '#e93d3d'
+                  }]
+                });
+              </script>
+            </div>
+          </div>
+        </div>
+      </section><!-- END of .hl_dashboard -->
+
+    </section><!-- END of .hl_wrapper -->
+
+<!-- @import 'partials/foot.kit' -->

@@ -1,0 +1,73 @@
+// *////====== MIXINS =====//// *//
+
+=clearfix() 
+  &:before,
+  &:after
+    content: ""
+    display: table
+  &:after 
+    clear: both
+  
+=absolute-center()
+  margin: auto
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+=cover()
+  width: 100%
+  height: 100%
+  margin: auto
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+=center()
+  margin: auto
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+=center-align()
+  margin-left: auto
+  margin-right: auto
+
+=v-top()
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+=v-center()
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+=v-center-parent()
+  -webkit-transform-style: preserve-3d
+  -moz-transform-style: preserve-3d
+  transform-style: preserve-3d
+
+=img-center()
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+//REM
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return #{$remSize}rem
+
+=font-size($size)
+  //font-size: $size //Fallback in px
+  font-size: calculateRem($size)
+
+=rem($property, $size)
+  #{$property}: calculateRem($size)

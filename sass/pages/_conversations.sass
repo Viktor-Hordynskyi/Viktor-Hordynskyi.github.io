@@ -1,0 +1,350 @@
+/* ////========== CONVERSATIONS STYLES =========//// */
+
+.hl_conversations
+  padding: 0
+  overflow: hidden
+  overflow-x: scroll
+
+.hl_conversations--wrap
+  min-width: 950px
+  display: flex
+  min-height: 100vh //calc(100vh - 110px)
+  @media(min-width: $md-min)
+    min-height: calc(100vh - 82px)
+  > *
+    flex: 1 0 0
+
+.hl_conversations--messages-list
+  background-color: #f9fafc
+  max-width: 280px
+  padding: 20px
+  @media(min-width: 1400px)
+    max-width: 320px
+  h3
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 30px
+//messages list
+.messages-list
+  margin-left: -20px
+  margin-right: -20px
+  &--item
+    position: relative
+    display: block
+    color: $text
+    padding: 20px 15px 20px 75px
+    transition: $hover
+    cursor: pointer
+    &:hover
+      background-color: #eff1f7
+    &.active
+      p,
+      .time-date
+        font-weight: 500
+        color: $text-drk
+  &--avatar
+    position: absolute
+    top: 15px
+    left: 20px
+  &--text
+    h4
+      margin-bottom: 0
+      font-size: $f14
+      font-weight: 500
+    p
+      font-size: $f14
+    .time-date
+      font-size: $f11
+      color: $text-lt
+      position: absolute
+      top: 20px
+      right: 20px
+
+.hl_conversations--message
+  background-color: #fff
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 15px 30px
+    border-bottom: 1px solid #ebeef2
+    h2
+      font-size: $f18
+      font-weight: 500
+      margin-bottom: 0
+      line-height: 1
+    .message-header-btns
+      > *
+        display: inline-block
+        width: 36px
+        height: 36px
+        text-align: center
+        border-radius: 50%
+        border: solid 2px $blue
+        font-size: $f16
+        color: $blue
+        position: relative
+        &.call
+          border: solid 2px #00CF76
+          color: $green
+          margin-left: 10px
+        .icon-video
+          display: block
+          width: 16px
+          height: 12px
+          background: url('../img/icon-video.svg')no-repeat center
+          background-size: 16px 12px
+          +center()
+        .icon-call
+          display: block
+          width: 16px
+          height: 16px
+          background: url('../img/icon-call.svg')no-repeat center
+          background-size: 16px
+          +center()
+  &-body
+    display: flex
+    height: 100%
+    > *
+      flex: 1 0 0
+      height: 100%
+    .message-body--conversation
+      padding: 30px
+      padding-bottom: 170px
+      position: relative
+    .message-box
+      position: absolute
+      margin: auto
+      left: 0
+      right: 0
+      padding: 20px
+      bottom: 100px
+      box-shadow: 0 -10px 40px 0 rgba(0,0,0,0.02)
+      background: #fff
+      z-index: 2
+      .btn
+        width: 48px
+        height: 48px
+        min-width: auto
+        padding: 5px
+        border-radius: 50%
+        position: absolute
+        top: -24px
+        right: 0
+        .icon-send
+          display: block
+          width: 16px
+          height: 16px
+          background: url('../img/icon-send-white.svg')no-repeat center
+          background-size: 16px
+          +center()
+    .message-body--aside
+      max-width: 280px
+      padding: 50px 30px
+      padding-bottom: 150px
+      background-color: $white
+      box-shadow: -1px 0 0 0 #ebeef2
+      position: relative
+      @media (min-width: 1400px)
+        max-width: 300px
+      .btn-sched
+        display: block
+        width: calc(100% - 60px)
+        position: absolute
+        margin: auto
+        left: 30px
+        right: 30px
+        bottom: 100px
+
+//Aside
+.aside-texts
+  text-align: center
+  .avatar
+    height: 72px
+    &_img
+      min-width: 72px
+      width: 72px
+      height: 72px
+      line-height: 72px
+      font-size: $f20
+      > img
+        max-width: 72px
+        max-height: 72px
+    +center-align()
+    margin-bottom: 15px
+  &-name
+    margin-bottom: 40px
+    h3
+      font-size: $f18
+      font-weight: 500
+      margin-bottom: 0
+    p
+      font-size: $f14
+  &-appointment
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    .appointment-item
+      flex: 1 0 0
+      width: 50%
+      &:last-child
+        border-left: 1px solid $border
+    h4
+      font-size: $f12
+      font-weight: normal
+      color: $text
+      margin-bottom: 0
+    p
+      font-size: $f14
+      color: $text-drk
+    a
+      font-size: $f14
+  &-infos
+    text-align: left
+    margin-bottom: 40px
+    p
+      font-size: $f14
+      color: $text-drk
+      i
+        margin-right: 10px
+        position: relative
+        top: 4px
+      + p
+        margin-top: 10px
+    .icon-gender
+      display: inline-block
+      width: 16px
+      height: 16px
+      background: url('../img/icon-gender.svg')no-repeat center
+      background-size: 16px
+    .icon-phone
+      display: inline-block
+      width: 16px
+      height: 16px
+      background: url('../img/icon-phone.svg')no-repeat center
+      background-size: 16px
+    .icon-email
+      display: inline-block
+      width: 16px
+      height: 16px
+      background: url('../img/icon-email.svg')no-repeat center
+      background-size: 16px
+  &-files
+    text-align: left
+    .files-heading
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 15px
+      h4
+        margin-bottom: 0
+        font-size: $f14
+        font-weight: 500
+      a
+        font-size: $f12
+    .files-group
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+      margin-left: -5px
+      margin-right: -5px
+      .file-item
+        width: 52px
+        height: 52px
+        border-radius: 8px
+        background-color: $text-lt
+        margin-left: 5px
+        margin-right: 5px
+        margin-bottom: 10px
+        color: $white
+        font-size: $f16
+        display: flex
+        align-items: center
+        justify-content: center
+        &.--doc
+          background-color: $blue
+        &.--photo
+          background-color: $yellow
+        &.--video
+          background-color: #00cf76
+    
+
+
+//the messages
+.messages-group
+  display: flex
+  flex-direction: column
+  //min-height: 605px
+  max-height: calc(100vh - 335px)
+  overflow-y: auto
+  margin: -30px
+  padding: 30px
+.messages-single
+  position: relative
+  padding-left: 47px
+  margin-bottom: 25px
+  @media (min-width: 1600px)
+    max-width: 90%
+  .avatar
+    width: 32px
+    height: 32px
+    position: absolute
+    top: 0
+    left: 0
+    .avatar_img
+      min-width: 32px
+      width: 32px
+      height: 32px
+      line-height: 32px
+      font-size: $f10
+      font-weight: 500
+      > img
+        max-width: 32px
+        max-height: 32px
+  .message-bubble
+    border-radius: 0 16px 16px 16px
+    background-color: $blue
+    color: $white
+    padding: 20px 25px
+    margin-bottom: 5px
+    position: relative
+    &:before
+      content: ""
+      display: block
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 20px 30px 0
+      border-color: transparent $blue transparent transparent
+      position: absolute
+      top: 0
+      left: -10px
+  .time-date
+    color: $text-lt
+  //own
+  &.--own-message
+    padding-left: 0
+    padding-right: 47px
+    align-self: flex-end
+    .avatar
+      left: auto
+      right: 0
+    .message-bubble
+      background-color: #eff2f9
+      border-radius: 16px 0 16px 16px
+      color: $text
+      &:before
+        border-width: 30px 20px 0 0
+        border-color: #eff2f9 transparent transparent transparent
+        left: auto
+        right: -10px
+
+
+
+.schedule-appointment-modal
+  .hl_calendar--selection
+    min-width: 790px
+  .hl_calendar--hours
+    li
+      font-size: $f12
+      height: 35px

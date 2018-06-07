@@ -1,0 +1,161 @@
+/* ////========== ONLINE ANALYSIS STYLES =========//// */
+
+//Online Analysis Cards
+.hl_online-analysis
+  .card-group
+    margin-bottom: 40px
+  .card
+    .card-header
+      padding: 40px 30px 0px 30px
+      border-color: $white
+      @media (min-width: $sm-min)
+        padding: 40px 40px 0px 40px
+      h2
+        color: $text
+    .card-body
+      @media (min-width: $sm-min)
+        padding: 25px 50px 40px 50px
+    .card-heading
+      margin-bottom: 10px
+      display: flex
+      align-items: center
+      h3
+        font-size: 54px
+        font-weight: 300
+        line-height: 1
+        margin-bottom: 0
+        margin-right: 25px
+        span
+          display: inline-block
+          vertical-align: top
+          color: $text
+          font-size: 30px
+          position: relative
+          top: 4px
+    .card-content
+      height: 150px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+  //Badge
+  &--badge
+    display: inline-block
+    width: 32px
+    height: 32px
+    line-height: 32px
+    border-radius: 50%
+    background: #eee
+    text-align: center
+    &.--good
+      background-color: rgba($green, 0.1)
+      color: $green
+    &.--warning
+      background-color: rgba($red, 0.1)
+      color: $red  
+    &.--star
+      background-color: rgba($yellow, 0.1)
+      color: $yellow  
+
+
+
+
+
+//Online Presence Errors
+.hl_online-analysis--online-presence-errors
+  //Network Errors
+  .hl_online-analysis--network
+    h4
+      font-weight: 400
+      font-size: $f14
+      color: $hl-text
+      margin-bottom: 15px
+    .network_list
+      margin-bottom: 0
+      li
+        a
+          display: block
+          width: 35px
+          height: 35px
+          border-radius: 50%
+          background-color: #eee
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 35px
+          text-indent: -999999px
+          &.google
+            background-image: url('../img/icon-g+.svg')
+          &.facebook
+            background-image: url('../img/icon-facebook.svg')
+          &.twitter
+            background-image: url('../img/icon-twitter.svg')
+
+
+
+
+
+//Page Speed Score
+.hl_online-analysis--page-speed-score
+  .link
+    &:before
+      content: "\e950"
+      font-family: 'Magicons' !important;
+      speak: none
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      display: inline-block
+      margin-right: 10px
+      color: rgba($hl-text, 0.5)
+      font-size: $f16
+      position: relative
+      top: 2px
+  .progress
+    position: relative
+    top: -10px
+
+
+
+
+//Competition Leaderboard
+.hl_online-analysis--competition-leaderboard
+  .search
+    &:before
+      content: "\e953"
+      font-family: 'Magicons' !important;
+      speak: none
+      font-style: normal
+      font-weight: normal
+      font-variant: normal
+      text-transform: none
+      line-height: 1
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      display: inline-block
+      margin-right: 10px
+      color: rgba($hl-text, 0.5)
+      font-size: $f16
+      position: relative
+      top: 2px
+
+
+
+
+
+//Online Analysis Table
+.hl_online-analysis--table
+  .table
+    tbody
+      tr
+        td
+          &:last-child
+            @media (min-width: $lg-min)
+              width: 150px
+            .btn-blue
+              margin-right: 10px
+              padding: 10px 15px
+              min-width: 70px

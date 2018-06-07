@@ -1,0 +1,764 @@
+/* ////========== REPORT STYLES =========//// */
+
+//HighLevel Colors
+$hl-blue:                     #2a6cff
+$hl-green:                    #14e075
+$hl-red:                      #ff4646
+$hl-yellow:                   #ffa604
+$hl-orange:                   #ff7402
+$hl-pink:                     #ff3e7f
+$hl-purple:                   #876cff
+$hl-navy:                     #1976d2
+$hl-teal:                     #17cfbc
+$hl-grey:                     #e6edf2
+$hl-bg:                       #f2f7fa
+$hl-bg-blue:                  rgba($hl-blue, 0.1)
+$hl-text:                     #607179
+$hl-text-drk:                 #2a3135
+$hl-text-lt:                  #afb8bc
+
+
+//Bootstrap Vars
+$white:                       #fff
+$black:                       #000
+$red:                         $hl-red
+$orange:                      $hl-orange
+$yellow:                      $hl-yellow
+$green:                       $hl-green
+$blue:                        $hl-blue
+$teal:                        $hl-teal
+$pink:                        $hl-pink
+$purple:                      $hl-purple
+$gray-dark:                   $hl-text-drk
+$gray:                        $hl-text
+$gray-light:                  $hl-text-lt
+
+//Custom Vars
+$text:                        $gray
+$text-drk:                    $gray-dark
+$text-lt:                     $gray-light
+$link-color:                  $blue
+$link-hover-color:            darken($link-color, 10%)
+$border-radius:               0.3125rem
+$border:                      $hl-bg
+$border-focus:                darken($hl-bg, 15%)
+
+$theme-colors: (primary: $blue, secondary: $orange, success: $green, info: $teal, warning: $yellow, danger: $red, light: $gray-light, dark: $gray-dark)
+
+
+//Mixin
+@import "modules/mixins"
+
+//Web Fonts
+$roboto:  Roboto, system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+
+//REMs
+$f8:       0.5rem
+$f9:       0.5625rem
+$f10:      0.625rem
+$f11:      0.6875rem
+$f12:      0.75rem
+$f13:      0.8125rem
+$f14:      0.875rem
+$f15:      0.9375rem
+$f16:      1rem
+$f18:      1.125rem
+$f20:      1.25rem
+$f22:      1.375rem
+$f24:      1.5rem
+$f25:      1.563rem
+$f26:      1.625rem
+$f28:      1.75rem
+$f30:      1.875rem
+$f32:      2rem
+$f34:      2.125rem
+$f35:      2.188rem
+$f36:      2.25rem
+$f38:      2.375rem
+$f40:      2.5rem
+$f45:      2.813rem
+$f50:      3.125rem
+$f55:      3.438rem
+$f60:      3.75rem
+$f65:      4.063rem
+$f70:      4.375rem
+$f80:      5rem
+$f90:      5.625rem
+$f100:     6.25rem
+$f150:     9.375rem
+$f200:     12.5rem
+$f250:     15.63rem
+$f300:     18.75rem
+$f350:     21.88rem
+$f400:     25rem
+$f450:     28.13rem
+$f500:     31.25rem
+
+//Bootstrap
+@import "bootstrap/bootstrap-reboot"
+@import "bootstrap/bootstrap-grid"
+@import "bootstrap/progress"
+@import "bootstrap/tables"
+
+//Body
+body
+  font-family: $roboto
+  color: $hl-text
+  font-size: $f13
+  background: #eee
+  font-weight: 400
+  line-height: 1.8
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+a,
+button
+  transition: all .2s ease-in-out
+  cursor: pointer
+  &:hover,
+  &:active, 
+  &:focus
+    text-decoration: none
+    outline: none
+  &:active
+    &:focus
+      outline: none
+
+a[x-apple-data-detectors]
+  color: inherit!important
+  text-decoration: none!important
+  font-size: inherit!important
+  font-family: inherit!important
+  font-weight: inherit!important
+  line-height: inherit!important
+  
+p 
+  margin-bottom: 0
+  + p 
+    margin-top: $f15
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  color: $text-drk
+  font-weight: bold
+  margin-top: 0
+  line-height: 1.2
+  margin-bottom: $f10
+
+.img-responsive
+  max-width: 100%
+  height: auto
+
+.list-inline
+  list-style: none
+  margin: 0
+  padding: 0
+  @media (min-width: 800px)
+    display: flex
+    align-items: center
+  li
+    &:not(:last-child)
+      margin-right: 15px
+
+//wrap
+.hl_report--wrap
+  max-width: 800px
+  background: #fff
+  +center-align()
+
+//header
+.hl_report--header
+  padding: 15px 30px
+  @media (min-width: 800px)
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .logo-wrap
+    display: flex
+    align-items: center
+    @media (max-width: 799px)
+      margin-bottom: 20px
+    .logo
+      margin-right: 20px
+    h1
+      font-size: 24px
+      font-weight: 300
+      color: $text
+      margin-bottom: 0
+  .user
+    display: flex
+    .avatar
+      max-width: 64px
+      max-height: 64px
+      height: auto
+      border-radius: 50%
+      margin-right: 20px
+    h2
+      margin-bottom: 5px
+      font-size: $f14
+    p
+      font-size: 12px
+      color: $text-drk
+      + p
+        margin-top: 0
+      img
+        margin-right: 5px
+        position: relative
+        top: -2px
+
+//hero
+.hl_report--hero
+  color: #fff
+  background-image: linear-gradient(to right, #09cdff, #685cff)
+  padding: 40px 30px
+  @media (min-width: 800px)
+    display: flex
+    justify-content: space-between
+    align-items: center
+  img
+    @media (min-width: 800px)
+      margin-right: 40px
+  h2
+    color: #fff
+    font-size: $f24
+  .btns
+    display: flex
+    align-items: center
+    margin-top: 20px
+    .btn
+      margin-right: 15px
+.btn
+  display: inline-block
+  border-radius: 4px
+  padding: 9px 25px
+  color: $hl-blue
+  font-weight: bold
+  &.btn-white
+    background: #fff
+    &:hover,
+    &:focus,
+    &:active
+      background: #f2f7fa
+      color: $hl-blue
+
+
+//section
+.hl_report--section
+  padding: 30px
+  &.--grey
+    background-color: #f3f6f9
+    color: $text-drk
+  &.--border
+    border-bottom: 1px solid #e6e8ed
+  .sec-heading
+    margin-bottom: 20px
+    @media (min-width: 800px)
+      display: flex
+      align-items: center
+      > img
+        margin-bottom: 0
+    > img
+      margin-right: 20px
+      margin-bottom: 10px
+    .progress-bar-circle-sm
+      margin-right: 20px
+    h3
+      font-size: $f24
+      margin-bottom: 0
+      display: flex
+      align-items: center
+      .letter
+        margin-left: 10px
+    ul
+      margin-top: 10px
+      li
+        font-size: $f12
+        img
+          margin-right: 5px
+          position: relative
+          top: -2px
+    .sec-heading-text
+      p
+        color: $text
+  .sec-heading2
+    margin-bottom: 20px
+    @media (min-width: 800px)
+      display: flex
+      align-items: center
+      justify-content: space-between
+      > img
+        margin-bottom: 0
+    > img
+      margin-right: 20px
+      margin-bottom: 10px
+    h4
+      font-size: $f18
+      margin-bottom: 0
+      display: flex
+      align-items: center
+      .letter
+        margin-left: 10px
+    .sec-heading-text
+      p
+        color: $text
+  //sec1
+  &.sec1
+    color: $text-drk
+    padding-bottom: 10px
+    .row
+      > div
+        margin-bottom: 20px
+        img
+          display: block
+          margin: 0 auto
+
+
+.listing-heading
+  h3
+    .icon
+      margin-right: 5px
+      position: relative
+      top: -2px
+
+//letters
+.letters
+  flex: 1 0 0
+  display: flex
+  align-items: center
+  &-item
+    flex: 1 0 0
+    text-align: center
+    h3
+      font-size: $f12
+    .letter
+      margin: 0 auto
+      width: 64px
+      height: 64px
+      font-size: $f24
+      position: relative
+      &:before
+        content: ""
+        display: block
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        +center()
+        border: 2px solid #fff
+.letter
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: $f14
+  font-weight: bold
+  width: 24px
+  height: 24px
+  border-radius: 50%
+  color: #fff
+  background-color: #000
+  &.--a
+    background-color: $hl-green
+  &.--b
+    background-color: $hl-red
+  &.--c
+    background-color: $hl-yellow
+  &.--d
+    background-color: $hl-red
+
+.sec-cols20
+  > div
+    margin-bottom: 20px
+.sec-cols30
+  > div
+    margin-bottom: 30px
+.sec-cols40
+  > div
+    margin-bottom: 40px
+.sec-cards
+  padding-bottom: 0
+
+.progress-wrap
+  display: flex
+  align-items: center
+  p
+    font-size: $f14
+    margin-right: 10px
+    color: $text-drk
+  .progress
+    flex: 1 0 0
+.progress
+  background-color: #e7e8ea
+  height: 4px
+  &.--green
+    .progress-bar
+      background-color: $green
+  &.--red
+    .progress-bar
+      background-color: $red
+  &.--yellow
+    .progress-bar
+      background-color: $yellow
+
+
+.card
+  border-radius: 4px
+  background-color: $white
+  border: solid 2px #e9eaed
+  padding: 25px
+  height: 100%
+  &-heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 20px
+    h3
+      margin-bottom: 0
+      > img
+        margin-right: 5px
+        max-width: 28px
+        height: auto
+    p
+      strong
+        font-size: $f18
+        color: $text-drk
+    .listed
+      color: $text-drk
+      .icon
+        margin-right: 5px
+        position: relative
+        top: -2px
+  &.--card-sm
+    padding: 10px 15px
+    .card-heading
+      margin-bottom: 0
+      h3
+        font-size: $f14
+      p
+        font-size: $f12
+        strong
+          font-size: $f14
+
+.review-heading
+  .letter
+    margin-bottom: 5px
+  h3
+    font-size: $f36
+    line-height: 1
+    span
+      font-size: $f18
+      vertical-align: top
+      position: relative
+      top: 2px
+
+.circle-stats
+  margin-bottom: 40px
+  > div
+    text-align: center
+  h4
+    font-size: $f14
+  
+.mockups
+  display: flex
+  align-items: center
+  justify-content: space-around
+  margin-bottom: 60px
+.mockup-desktop
+  width: 438px
+  height: 292px
+  background-size: 438px 292px
+  background-position: center
+  background-repeat: no-repeat
+  position: relative
+  .screen
+    width: 333px
+    height: 214px
+    background-color: #000
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    position: absolute
+    top: 11.5px
+    left: 60px
+.mockup-phone
+  width: 163px
+  height: 300px
+  background-size: 163px 300px
+  background-position: center
+  background-repeat: no-repeat
+  position: relative
+  .screen
+    width: 126px
+    height: 272px
+    background-color: #000
+    position: absolute
+    top: 14px
+    left: 18px
+    border-radius: 12px
+
+.stat-group
+  > h4
+    font-size: $f14
+    font-weight: normal
+    text-transform: uppercase
+    .icon
+      margin-right: 5px
+      position: relative
+      top: -2px
+  + .stat-group
+    margin-top: 40px
+  + .sec-heading2
+    margin-top: 40px
+
+.stat-progress-item
+  border-bottom: 1px solid #e6e8ed
+  padding-top: 15px
+  padding-bottom: 15px
+  &:last-child
+    border-bottom: none
+  h4
+    margin-bottom: 5px
+    font-size: $f14
+  > p
+    font-size: $f12
+    margin-bottom: 5px
+  .progress-wrap
+    p
+      font-size: $f14
+    .progress
+      background: #fff
+      .progress-bar
+        border-radius: 50px
+  .stat
+    display: flex
+  .stat-item
+    margin-right: 20px
+    font-size: $f14
+    color: $text-drk
+    span
+      color: $green
+
+.audit-group
+  > h4
+    font-size: $f14
+    font-weight: bold
+  + .sec-heading2
+    margin-top: 40px
+
+.audit-item
+  margin-bottom: 20px
+  position: relative
+  padding-left: 25px
+  .icon
+    display: block
+    width: 12px
+    height: 12px
+    background-color: #ff4646
+    background-size: 12px
+    background-position: center
+    background-repeat: no-repeat
+    border-radius: 50%
+    color: #fff
+    line-height: 12px
+    font-size: 10px
+    text-align: center
+    position: absolute
+    font-weight: bold
+    top: 2px
+    left: 0
+  &:last-child
+    margin-bottom: 0
+  h5
+    font-size: $f14
+    font-weight: normal
+    margin-bottom: 5px
+  p
+    font-size: $f12
+    line-height: 1.3
+    + p
+      margin-top: 5px
+      font-size: $f12
+    &.red
+      color: #f43232
+
+.rating
+  margin-right: 20px
+  display: flex
+  align-items: center
+  h4
+    margin-bottom: 0
+    margin-right: 10px
+    font-size: $f18
+.overall-rating
+  p
+    font-size: $f12
+    margin-bottom: 5px
+    line-height: 1
+.rating-wrap
+  display: flex
+  align-items: center
+  p
+    &.red
+      color: $red
+    &.green
+      color: $green
+
+.reviews-list
+  font-size: $f12
+  h4
+    color: $text
+    font-size: $f12
+    font-weight: normal
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+    li
+      strong
+        color: $text-drk
+      img
+        margin-right: 5px
+        position: relative
+        top: -2px
+
+
+.table
+  thead
+    tr
+      th
+        font-size: $f11
+        padding: 5px 0
+        border-top: 0
+        border-bottom: 1px solid #eaeef5
+        font-weight: normal
+  tbody
+    tr
+      &:first-child
+        td
+          padding-top: 15px
+      td
+        padding: 5px 0
+        border: none
+        font-size: $f14
+        font-weight: bold
+        color: $text-drk
+        vertical-align: middle
+        .red
+          color: $red
+        .green
+          color: $green
+        &:first-child
+          font-size: $f12
+          font-weight: normal
+          line-height: 1.4
+          padding-right: 5px
+          color: $text
+        .rating
+          h4
+            font-size: $f14
+          img
+            max-width: 10px
+            height: auto
+
+.overall-score
+  margin: 0 50px
+
+//Circle Progress
+$circle-size: 130px
+$background-color: $blue
+$progress-color: #e7e8ea
+$percent: 75
+$duration: .3s
+.progress-bar-circle
+  position: relative
+  height: $circle-size
+  width: $circle-size
+  div
+    position: absolute
+    height: $circle-size
+    width: $circle-size
+    border-radius: 50%
+    span
+      position: absolute
+      font-size: $circle-size / 4
+      line-height: $circle-size / 4 * 3
+      height: $circle-size / 4 * 3
+      width: $circle-size / 4 * 3
+      left: $circle-size / 8
+      top: $circle-size / 8
+      text-align: center
+      border-radius: 50%
+      background-color: white
+      color: $text-drk
+      font-weight: bold
+  .background
+    background-color: $background-color
+  .rotate
+    clip: rect(0 ($circle-size / 2) $circle-size 0)
+    background-color: $progress-color
+  .left
+    clip: rect(0 ($circle-size / 2) $circle-size 0)
+    opacity: 1
+    background-color: $background-color
+  .right
+    clip: rect(0 ($circle-size / 2) $circle-size 0)
+    transform: rotate(180deg)
+    opacity: 0
+    background-color: $progress-color
+
+
+
+//Circle Progress
+$circle-size-sm: 70px
+$background-color-sm: $blue
+$progress-color-sm: #e7e8ea
+$percent-sm: 75
+$duration-sm: .3s
+.progress-bar-circle-sm
+  position: relative
+  height: $circle-size-sm
+  width: $circle-size-sm
+  div
+    position: absolute
+    height: $circle-size-sm
+    width: $circle-size-sm
+    border-radius: 50%
+    span
+      position: absolute
+      font-size: $circle-size-sm / 4
+      line-height: $circle-size-sm / 4 * 3
+      height: $circle-size-sm / 4 * 3
+      width: $circle-size-sm / 4 * 3
+      left: $circle-size-sm / 8
+      top: $circle-size-sm / 8
+      text-align: center
+      border-radius: 50%
+      background-color: white
+      color: $text-drk
+      font-weight: bold
+  .background
+    background-color: $background-color-sm
+  .rotate
+    clip: rect(0 ($circle-size-sm / 2) $circle-size-sm 0)
+    background-color: $progress-color-sm
+  .left
+    clip: rect(0 ($circle-size-sm / 2) $circle-size-sm 0)
+    opacity: 1
+    background-color: $background-color-sm
+  .right
+    clip: rect(0 ($circle-size-sm / 2) $circle-size-sm 0)
+    transform: rotate(180deg)
+    opacity: 0
+    background-color: $progress-color-sm
+
+
+@keyframes toggle
+  0%
+    opacity: 0
+  100%
+    opacity: 1
