@@ -1,866 +1,344 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>HighLevel</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <meta name="format-detection" content="telephone=no">
-  <!--Main Styles (compiled & minified by GulpJS)-->
-  <link rel="stylesheet" type="text/css" href="./css/styles.min.css">
-  <!-- Dependency Scripts (jQuery v3.1.1 & Bootstrap v4 beta 3) -->
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
-  <!-- Plugins & Custom Scripts (concatenated and minified by GulpJS) -->
-  <script src="./js/scripts.min.js"></script>
-  <!-- HighChart Scripts -->
-  <script src="https://code.highcharts.com/highcharts.js"></script>
-  <script src="https://code.highcharts.com/highcharts-more.js"></script>
-  <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-  <!--Favicons-->
-  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
-  <link rel="manifest" href="./favicons/site.webmanifest">
-  <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#777777">
-  <link rel="shortcut icon" href="./favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-config" content="./favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+	<meta charset="UTF-8">
+	<title>Cuda</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+	<header class="header container-fluid">
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark">
+			<div class="container">
+				<a href="index.html"><img src="image/logo.png" alt="logo"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+					<ul class="navbar-nav align-items-center">
+						<li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">About</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Work</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- /.header container-fluid -->
 
-  <nav class="hl_navbar" id="navbar">
-    <div class="hl_navbar--inner">
-      <a href="./" class="hl_navbar--logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26">
-          <image width="28" height="26" xlink:href="data:img/png;base64,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"
-          />
-        </svg>
-      </a>
-      <button class="hl_navbar--toggler" type="button" id="navbar-toggler">
-        <span class="navbar-toggler-bar"></span>
-        <span class="navbar-toggler-bar"></span>
-        <span class="navbar-toggler-bar"></span>
-      </button>
-      <div class="hl_navbar--collapse" id="navbar-collapse">
-        <button class="hl_navbar--button btn btn-success btn-block" data-toggle="modal" data-target="#client-checkin--modal">Check In Client</button>
-        <ul class="hl_navbar--links list-unstyled" id="nav-links">
-          <li id="nav-dashboard">
-            <a href="./">
-              <i class="icon-duplicate"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li id="nav-widgets">
-            <a href="./widgets.html">
-              <i class="icon-tiles-filled"></i>
-              <span>Widgets</span>
-            </a>
-          </li>
-          <li id="nav-reviews">
-            <a href="./reviews.html">
-              <i class="icon-bubble-filled"></i>
-              <span>Reviews</span>
-            </a>
-          </li>
-          <li id="nav-customers">
-            <a href="./customers.html">
-              <i class="icon-user"></i>
-              <span>Customers</span>
-            </a>
-          </li>
-          <li id="nav-team">
-            <a href="./team.html">
-              <i class="icon-heart"></i>
-              <span>Team</span>
-            </a>
-          </li>
-          <li id="nav-online-analysis">
-            <a href="./online-analysis.html">
-              <i class="icon-pulse"></i>
-              <span>Online Analysis</span>
-            </a>
-          </li>
-          <li id="nav-calendar">
-            <a href="./conversations.html">
-              <i class="icon-bubble"></i>
-              <span>Conversations</span>
-            </a>
-          </li>
-          <li id="nav-conversations">
-            <a href="./calendar.html">
-              <i class="icon-calendar"></i>
-              <span>Calendar</span>
-            </a>
-          </li>
-          <li id="nav-settings">
-            <a href="./settings-profile.html">
-              <i class="icon-settings-1"></i>
-              <span>Settings</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- END of .hl_navbar -->
+	<section class="main container-fluid">
+		<div class="container">
+			<div class="main_title">
+				<h1 class="wow fadeInDown" data-wow-delay=".1s">Hi there! We are the new kids on the block<br>and we build awesome websites and mobile apps.</h1>
+				<div class="main_button wow fadeInDown" data-wow-delay=".3s">
+					<button type="button" class="cuda_button">Work with us!</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.main container-fluid -->
 
-  <!-- Client Check In Modal -->
-  <div class="modal fade" id="client-checkin--modal" tabindex="-1" role="dialog" aria-labelledby="client-checkin--modalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-header--inner">
-            <h5 class="modal-title" id="client-checkin--modalLabel"><i class="icon icon-user --green"></i> Client Check In</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-        </div>
-        <div class="modal-body">
-          <div class="modal-body--inner">
-            <div class="form-group">
-              <label>Customer Phone or Email:</label>
-              <input type="text" class="form-control" placeholder="Customer Phone or Email">
-            </div>
-            <div class="form-group">
-              <label>Customer Name:</label>
-              <input type="text" class="form-control" placeholder="Customer Name">
-            </div>
-            <div class="modal-buttons d-flex align-items-center justify-content-between">
-              <button type="button" class="btn btn-link">Send to Multiple Clients</button>
-              <button type="button" class="btn btn-success">Send a Review Invite</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <header class="hl_header">
-    <div class="container-fluid">
-      <select class="selectpicker hl_header--picker" data-width="fit" data-header="Switch Location <a href='#'>View Locations</a>">
-        <option data-content="<img src='./img/img-converse.png'> Converse Store #32">Converse Store #32</option>
-        <option data-content="<img src='./img/img-nike1.png'> Nike Store, 49 Garnet Stream, Baja, CA">Nike Store, 49 Garnet Stream, Baja, CA</option>
-        <option data-content="<img src='./img/img-nike2.png'> Nike Store, Andersen Center 83b, West 82nd Street, San Francisco, CA">Nike Store, Andersen Center 83b, West 82nd Street, San Francisco, CA</option>
-      </select>
-      <div class="hl_header--controls">
-        <a href="#" class="btn btn-circle btn-yellow hl_header--recent-activities -notification" id="recent_activities-toggle">
-          <i class="icon-list"></i>
-          <span class="sr-only">View Recent Activities</span>
-        </a>
-        <a href="#" class="btn btn-circle btn-primary hl_header--copy-link" data-toggle="modal" data-target="#review-link--modal">
-          <i class="icon-link"></i>
-          <span class="sr-only">Copy Review Link</span>
-        </a>
-        <a href="./settings-profile.html" class="hl_header--avatar">
-          <div class="avatar">
-            <div class="avatar_img">
-              <img src="./img/img-avatar-sample1.png" alt="Avatar Name">
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </header>
-  <!-- END of .hl_header -->
+	<section class="services container-fluid">
+		<div class="container">
+			<div class="services_header">
+				<h1 class="wow fadeInDown" data-wow-delay=".1s">Services we provide</h1>
+				<hr class="cuda_hr">
+				<p class="wow fadeInDown" data-wow-delay=".3s">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+			</div>
+			<div class="services_info row">
+				<div class="services_info__item col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".1s">
+					<img src="image/branding.png" alt="branding">
+					<h2>Branding</h2>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+				</div>
+				<div class="services_info__item col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".2s">
+					<img src="image/design.png" alt="design">
+					<h2>Design</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+				</div>
+				<div class="services_info__item col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".3s">
+					<img src="image/development.png" alt="development">
+					<h2>Development</h2>
+					<p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+				</div>
+				<div class="services_info__item col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".4s">
+					<img src="image/rocketScience.png" alt="rocketScience">
+					<h2>Rocket science</h2>
+					<p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.service container-fluid -->
 
-  <div class="hl_recent-activities">
-    <div class="hl_recent-activities--inner">
-      <ul class="hl_recent-activities--list list-unstyled">
-        <li class="hl_recent-activities--item">
-          <div class="avatar --sm --notification">
-            <div class="avatar_img --blue">
-              BM
-            </div>
-          </div>
-          <p><strong>Bruce Mann</strong> sent a Review Request to  Amanda Nunes.  <span class="time-date">10 min ago</span>
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <div class="avatar --sm --notification">
-            <div class="avatar_img">
-              <img src="./img/img-avatar-sample4.png" alt="Avatar Name">
-            </div>
-          </div>
-          <p><strong>Henry J.</strong> sent a Review Request to  Amanda Nunes. <span class="time-date">10 min ago</span> 
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <span class="recent-activities--icon --rating">
-          <i class="icon icon-star-filled"></i>
-        </span>
-          <p>Our Average Rating went up!  <span class="time-date">10 min ago</span>
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <span class="recent-activities--icon --reviews">
-          <i class="icon icon-send"></i>
-        </span>
-          <p>Milestone of 5,000 team Review Requestes hit!  <span class="time-date">10 min ago</span>
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <div class="avatar --sm">
-            <div class="avatar_img --orange">
-              GT
-            </div>
-          </div>
-          <p><strong>Gerald Terry</strong> sent a Review Request to  Amanda Nunes.  <span class="time-date">10 min ago</span>
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <div class="avatar --sm">
-            <div class="avatar_img --green">
-              RF
-            </div>
-          </div>
-          <p><strong>Ricardo Foster</strong> sent a Review Request to  Amanda Nunes. <span class="time-date">10 min ago</span> 
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <div class="avatar --sm">
-            <div class="avatar_img">
-              <img src="./img/img-avatar-sample2.png" alt="Avatar Name">
-            </div>
-          </div>
-          <p><strong>Samantha Irving</strong> sent a Review Request to  Amanda Nunes. <span class="time-date">10 min ago</span> 
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <div class="avatar --sm">
-            <div class="avatar_img">
-              <img src="./img/img-avatar-sample3.png" alt="Avatar Name">
-            </div>
-          </div>
-          <p><strong>Cecelia Atkins</strong> sent a Review Request to  Amanda Nunes. <span class="time-date">10 min ago</span> 
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <div class="avatar --sm">
-            <div class="avatar_img --purple">
-              NP
-            </div>
-          </div>
-          <p><strong>Norman E. Parque</strong> sent a Review Request to  Amanda Nunes. <span class="time-date">10 min ago</span> 
-          </p>
-        </li>
-        <li class="hl_recent-activities--item">
-          <a href="#">Load More</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- END of .recent_activities -->
+	<section class="team container-fluid">
+		<div class="container">
+			<div class="team_header">
+				<h1 class="wow fadeInDown" data-wow-delay=".1s">meet our beautiful team</h1>
+				<hr class="cuda_hr">
+				<p class="wow fadeInDown" data-wow-delay=".3s">We are a small team of designers and developers, who help brands with big ideas.</p>
+			</div>
+			<div class="team_info row">
+				<div class="team_info__members col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".1s">
+					<img src="image/team_photo1.jpg" alt="team_photo1" class="rounded-circle">
+					<h2>Anne Hathaway</h2>
+					<p class="team_info__members_post">CEO / Marketing Guru</p>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+					<div class="team_info__members_soc">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fas fa-envelope"></i></a>
+					</div>
+				</div>
+				<div class="team_info__members col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".2s">
+					<img src="image/team_photo2.jpg" alt="team_photo1" class="rounded-circle">
+					<h2>Kate Upton</h2>
+					<p class="team_info__members_post">Creative Director</p>
+					<p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+					<div class="team_info__members_soc">
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fas fa-envelope"></i></a>
+					</div>
+				</div>
+				<div class="team_info__members col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".3s">
+					<img src="image/team_photo1.jpg" alt="team_photo1" class="rounded-circle">
+					<h2>Olivia Wilde</h2>
+					<p class="team_info__members_post">Lead Designer</p>
+					<p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+					<div class="team_info__members_soc">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fab fa-linkedin-in"></i></a>
+						<a href="#"><i class="fas fa-envelope"></i></a>
+					</div>
+				</div>
+				<div class="team_info__members col-sm-6 col-md-6 col-lg-3 wow fadeInDown" data-wow-delay=".4s">
+					<img src="image/team_photo2.jpg" alt="team_photo1" class="rounded-circle">
+					<h2>Ashley Greene</h2>
+					<p class="team_info__members_post">SEO / Developer</p>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+					<div class="team_info__members_soc">
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+						<a href="#"><i class="fab fa-twitter"></i></a>
+						<a href="#"><i class="fas fa-envelope"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.team container-fluid -->
 
-  <div class="modal review-link--modal" tabindex="-1" role="dialog" id="review-link--modal">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="modal-body">
-          <img src="./img/img-link-review-copied.png">
-          <h4>Link copied to clipboard!</h4>
-          <p>www.somekindoflink.com/mycompanyname/213213</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section class="hl_wrapper">
+	<section class="skills container-fluid">
+		<div class="container">
+			<div class="skills_header">
+				<h1 class="wow fadeInDown" data-wow-delay=".1s">We got skills!</h1>
+				<hr class="cuda_hr">
+				<p class="wow fadeInDown" data-wow-delay=".3s">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="skills_info row">
+				<div class="skills_info__item col-sm-6 col-md-6 col-lg-3 text-center">
+					<div class="skills_info__item_diagram1">
+						<span class="animate_numbers" data-to="90">0</span><span>%</span>
+					</div>
+					<h2>web design</h2>
+				</div>
+				<div class="skills_info__item col-sm-6 col-md-6 col-lg-3">
+					<div class="skills_info__item_diagram2">
+						<span class="animate_numbers" data-to="75">0</span><span>%</span>
+					</div>
+					<h2>html / css</h2>
+				</div>
+				<div class="skills_info__item col-sm-6 col-md-6 col-lg-3">
+					<div class="skills_info__item_diagram3">
+						<span class="animate_numbers" data-to="70">0</span><span>%</span>
+					</div>
+					<h2>graphic design</h2>
+				</div>
+				<div class="skills_info__item col-sm-6 col-md-6 col-lg-3">
+					<div class="skills_info__item_diagram4">
+						<span class="animate_numbers" data-to="85">0</span><span>%</span>
+					</div>
+					<h2>ui / ux</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.skills container-fluid -->
 
-    <section class="hl_wrapper--inner hl_dashboard" id="dashboard">
-      <div class="container-fluid">
-        <div class="card-group">
-          <div class="card hl_dashboard--reviews">
-            <div class="card-header">
-              <h2>Reviews <span>This Month</span></h2>
-              <select class="selectpicker more-select">
-                <option>Today</option>
-                <option>This Week</option>
-                <option>Last Week</option>
-                <option>This Month</option>
-                <option>Last 6 Months</option>
-                <option>This Year</option>
-              </select>
-            </div>
-            <div class="card-body">
-              <h3>822</h3>
-              <div class="hl_dashboard--reviews-stats row">
-                <div class="col-sm-6">
-                  <h4><i class="icon icon-arrow-up-2"></i> +23.8%</h4>
-                  <p>growth in reviews from  the last week</p>
-                </div>
-                <div class="col-sm-6">
-                  <h4><i class="icon-positive"></i>+52</h4>
-                  <p>positive reviews more than the last week</p>
-                </div>
-              </div>
-              <hr>
-              <div class="hl_dashboard--reviews-sources">
-                <h4>Sources</h4>
-                <ul class="sources_list list-inline">
-                  <li class="list-inline-item">
-                    <a href="#" class="google">Google+</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="facebook">Facebook</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="twitter">Twitter</a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a href="#" class="add">Add</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card hl_dashboard--avg-rating">
-            <div class="card-header">
-              <h2>Avg. Rating <span>All Time</span></h2>
-              <select class="selectpicker more-select">
-                <option>Today</option>
-                <option>This Week</option>
-                <option>Last Week</option>
-                <option>This Month</option>
-                <option>Last 6 Months</option>
-                <option>This Year</option>
-              </select>
-            </div>
-            <div class="card-body">
-              <h3>3.5 <div class="rating"><i class="icon icon-star-filled"></i><i class="icon icon-star-filled"></i><i class="icon icon-star-filled"></i><i class="icon icon-star-half"></i><i class="icon icon-star"></i></div></h3>
-              <div class="rating_percentage">
-                <!-- <h4><i class="icon icon-arrow-up-2 --green"></i> 5.10%</h4> -->
-                <h4><i class="icon icon-minus"></i> 0.0%</h4>
-                <!-- <h4><i class="icon icon-arrow-down-2 --red"></i> 0.0%</h4> -->
-                <p>No movenet regarding your rating.</p>
-              </div>
-              <div class="rating_stats">
-                <div class="rating_stats-item --star5">
-                  <h4><i class="icon icon-star-filled"></i> 5</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%"></div>
-                    <span>492</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rating_stats">
-                <div class="rating_stats-item --star4">
-                  <h4><i class="icon icon-star-filled"></i> 4</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%"></div>
-                    <span>278</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rating_stats">
-                <div class="rating_stats-item --star3">
-                  <h4><i class="icon icon-star-filled"></i> 3</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 25%"></div>
-                    <span>65</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rating_stats">
-                <div class="rating_stats-item --star2">
-                  <h4><i class="icon icon-star-filled"></i> 2</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 15%"></div>
-                    <span>14</span>
-                  </div>
-                </div>
-              </div>
-              <div class="rating_stats">
-                <div class="rating_stats-item --star1">
-                  <h4><i class="icon icon-star-filled"></i> 1</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 5%"></div>
-                    <span>4</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card-group --wide-gutter">
-          <div class="card hl_dashboard--sentiment">
-            <div class="card-header">
-              <h2>Sentiment <span>This Month</span></h2>
-              <select class="selectpicker more-select">
-                <option>Today</option>
-                <option>This Week</option>
-                <option>Last Week</option>
-                <option>This Month</option>
-                <option>Last 6 Months</option>
-                <option>This Year</option>
-              </select>
-            </div>
-            <div class="card-body">
-              <div class="sentiment_review --positive">
-                <div class="sentiment_review-inner">
-                  <h3>652</h3>
-                  <div class="sentiment_review-graph" id="sentiment_positive-review">
-                    <span class="percentage" data-percentage="71"></span>
-                  </div>
-                  <h4>71%</h4>
-                </div>
-                <p>Positive Reviews</p>
-              </div>
-              <hr>
-              <div class="sentiment_review --negative">
-                <div class="sentiment_review-inner">
-                  <h3>113</h3>
-                  <div class="sentiment_review-graph" id="sentiment_negative-review">
-                    <span class="percentage" data-percentage="19"></span>
-                  </div>
-                  <h4>19%</h4>
-                </div>
-                <p>Negative Reviews</p>
-              </div>
-            </div>
-          </div>
-          <div class="card hl_dashboard--invites-goal">
-            <div class="card-header">
-              <h2>Invites Goal</h2>
-              <select class="selectpicker more-select">
-                <option>Today</option>
-                <option>This Week</option>
-                <option>Last Week</option>
-                <option>This Month</option>
-                <option>Last 6 Months</option>
-                <option>This Year</option>
-              </select>
-            </div>
-            <div class="card-body">
-              <div class="invites-goal_progress">
-                <div class="semi-progress" data-progress="45">
-                  <div class="bar-wrap">
-                    <div class="bar"></div>
-                  </div>
-                </div>
-                <h3>391</h3>
-                <hr>
-                <h4>You are on Track!</h4>
-                <p>You are close to your 190 invites goal</p>
-              </div>
-            </div>
-          </div>
-          <div class="card hl_dashboard--leaderboard-invites">
-            <div class="card-header">
-              <h2>Leaderboard for Invites <span>All Time</span></h2>
-              <select class="selectpicker more-select">
-                <option>Today</option>
-                <option>This Week</option>
-                <option>Last Week</option>
-                <option>This Month</option>
-                <option>Last 6 Months</option>
-                <option>This Year</option>
-              </select>
-            </div>
-            <div class="card-body">
-              <div class="leaderboard_item">
-                <div class="avatar">
-                  <div class="avatar_img --pink">
-                    MS
-                  </div>
-                  <h4>Michelle Shean</h4>
-                </div>
-                <p><strong>918</strong> / 1020</p>
-              </div>
-              <div class="leaderboard_item">
-                <div class="avatar">
-                  <div class="avatar_img">
-                    <img src="./img/img-avatar-sample2.png" alt="Avatar Name">
-                  </div>
-                  <h4>Amanda Nunes</h4>
-                </div>
-                <p><strong>882</strong> / 1020</p>
-              </div>
-              <div class="leaderboard_item">
-                <div class="avatar">
-                  <div class="avatar_img">
-                    <img src="./img/img-avatar-sample3.png" alt="Avatar Name">
-                  </div>
-                  <h4>Norman E. Parque</h4>
-                </div>
-                <p><strong>789</strong> / 1020</p>
-              </div>
-              <div class="leaderboard_item">
-                <div class="avatar">
-                  <div class="avatar_img --navy">
-                    MR
-                  </div>
-                  <h4>Micha Robinson</h4>
-                </div>
-                <p><strong>652</strong> / 1020</p>
-              </div>
-              <div class="leaderboard_item">
-                <div class="avatar">
-                  <div class="avatar_img --green">
-                    QJ
-                  </div>
-                  <h4>Quinton Jackson</h4>
-                </div>
-                <p><strong>0</strong> / 1020</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card hl_dashboard--latest-review-requests">
-          <div class="card-header">
-            <h2>Latest Review Requests</h2>
-            <a href="#" class="card-header-link">View Reviews</a>
-            <select class="selectpicker more-select">
-              <option>Option 1</option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-          </div>
-          <div class="card-body --no-padding">
-            <div class="table-wrap">
-              <table class="table table-sort">
-                <thead>
-                  <tr>
-                    <th data-sort="string">Invite Sent to <i class="icon icon-arrow-down-1"></i>
-                    </th>
-                    <th data-sort="string">Email Sent to <i class="icon icon-arrow-down-1"></i>
-                    </th>
-                    <th data-sort="string">Sent by <i class="icon icon-arrow-down-1"></i>
-                    </th>
-                    <th>Date Sent</th>
-                    <th data-sort="string">Status <i class="icon icon-arrow-down-1"></i>
-                    </th>
-                    <th>
-                      <!--Actions-->
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img">
-                          <img src="./img/img-avatar-sample2.png" alt="Avatar Name">
-                        </div>
-                        <h4>Amanda Nunes</h4>
-                      </div>
-                    </td>
-                    <td>leoa@myteam.com</td>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --orange">
-                          AN
-                        </div>
-                        <h4>Bruce Mann</h4>
-                      </div>
-                    </td>
-                    <td>12 Jun 2017</td>
-                    <td>
-                      <span class="table_status --sent">Sent</span>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-primary">View</button>
-                      <select class="selectpicker more-select">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --navy">
-                          GT
-                        </div>
-                        <h4>Gerald Terry</h4>
-                      </div>
-                    </td>
-                    <td>keanu.kub@hoeger.us</td>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --teal">
-                          RF
-                        </div>
-                        <h4>Ricardo Foster</h4>
-                      </div>
-                    </td>
-                    <td>10 Jun 2017</td>
-                    <td>
-                      <span class="table_status --sent">Sent</span>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-primary">View</button>
-                      <select class="selectpicker more-select">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --red">
-                          LP
-                        </div>
-                        <h4>Leon Palmer</h4>
-                      </div>
-                    </td>
-                    <td>leoa@myteam.com</td>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --yellow">
-                          SI
-                        </div>
-                        <h4>Samantha Irving</h4>
-                      </div>
-                    </td>
-                    <td>09 Jun 2017</td>
-                    <td>
-                      <span class="table_status --opened">Opened</span>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-primary">View</button>
-                      <select class="selectpicker more-select">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --lime">
-                          CA
-                        </div>
-                        <h4>Cecelia Atkins</h4>
-                      </div>
-                    </td>
-                    <td>keanu.kub@hoeger.us</td>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --pink">
-                          BM
-                        </div>
-                        <h4>Bruce Mann</h4>
-                      </div>
-                    </td>
-                    <td>09 Jun 2017</td>
-                    <td>
-                      <span class="table_status --clicked">Clicked</span>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-primary">View</button>
-                      <select class="selectpicker more-select">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --purple">
-                          LW
-                        </div>
-                        <h4>Leila White</h4>
-                      </div>
-                    </td>
-                    <td>leoa@myteam.com</td>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --blue">
-                          NP
-                        </div>
-                        <h4>Norman E. Parque</h4>
-                      </div>
-                    </td>
-                    <td>08 Jun 2017</td>
-                    <td>
-                      <span class="table_status --opened">Opened</span>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-primary">View</button>
-                      <select class="selectpicker more-select">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --gray">
-                          GT
-                        </div>
-                        <h4>Gerald Terry</h4>
-                      </div>
-                    </td>
-                    <td>keanu.kub@hoeger.us</td>
-                    <td>
-                      <div class="avatar">
-                        <div class="avatar_img --green">
-                          RF
-                        </div>
-                        <h4>Ricardo Foster</h4>
-                      </div>
-                    </td>
-                    <td>08 Jun 2017</td>
-                    <td>
-                      <span class="table_status --clicked">Clicked</span>
-                    </td>
-                    <td>
-                      <button type="button" class="btn btn-primary">View</button>
-                      <select class="selectpicker more-select">
-                        <option>Option 1</option>
-                        <option>Option 2</option>
-                        <option>Option 3</option>
-                      </select>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="card hl_dashboard--emails-sent">
-          <div class="card-header">
-            <h2>Emails Sent <span>This Week</span></h2>
-            <select class="selectpicker more-select">
-              <option>Today</option>
-              <option>This Week</option>
-              <option>Last Week</option>
-              <option>This Month</option>
-              <option>Last 6 Months</option>
-              <option>This Year</option>
-            </select>
-          </div>
-          <div class="card-body">
-            <ul class="dashboard_emails-sent-chart-stats list-inline">
-              <li class="list-inline-item">
-                <h4>2,312</h4>
-                <p>Emails Sent</p>
-              </li>
-              <li class="list-inline-item">
-                <h4>6,212</h4>
-                <p>Goal</p>
-              </li>
-              <li class="list-inline-item">
-                <h4>912</h4>
-                <p>Open Rate</p>
-              </li>
-              <li class="list-inline-item">
-                <h4>541</h4>
-                <p>Click Rate</p>
-              </li>
-              <li class="list-inline-item">
-                <h4>102</h4>
-                <p>Bounce</p>
-              </li>
-            </ul>
-            <div class="dashboard_emails-sent-chart" id="dashboard_emails-sent-chart"></div>
-            <!-- Email Sent Chart Script Sample -->
-            <script type="text/javascript">
-              Highcharts.chart('dashboard_emails-sent-chart', {
-                  chart: {
-                    type: 'column',
-                    style: {
-                      fontFamily: 'Roboto'
-                    }
-                  },
-                  plotOptions: {
-                    column: {
-                      groupPadding: 0.35,
-                      borderWidth: 0
-                    },
-                    series: {
-                      pointWidth: 6,
-                      borderRadius: 5
-                    }
-                  },
-                  legend: {
-                    enabled: false
-                  },
-                  title: {
-                    text: ''
-                  },
-                  xAxis: {
-                    lineColor: "#dfe3e4",
-                    tickColor: "#fff",
-                    categories: [
-                      'Mon',
-                      'Tue',
-                      'Wed',
-                      'Thu',
-                      'Fri',
-                      'Sat',
-                      'Jul',
-                      'Sun'
-                    ],
-                    labels: {
-                      style: {
-                        color: "#607179",
-                        fontSize: "14px"
-                      }
-                    }
-                  },
-                  yAxis: {
-                    gridLineColor: '#dfe3e4',
-                    title: {
-                      text: ''
-                    },
-                    labels: {
-                      style: {
-                        color: "#607179",
-                        fontSize: "14px"
-                      }
-                    }
-                  },
-                  series: [{
-                    name: 'Goal',
-                    type: 'spline',
-                    data: [89.9, 71.5, 106.4, 129.2, 104.0, 126.0, 105.6, 148.5],
-                    color: '#ffbc00'
-                  }, {
-                    name: 'Open Rate',
-                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5],
-                    color: '#37ca37'
-                  }, {
-                    name: 'Click Rate',
-                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3],
-                    color: '#188bf6'
-                  }, {
-                    name: 'Bounce',
-                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6],
-                    color: '#e93d3d'
-                  }]
-                });
-            </script>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END of .hl_dashboard -->
+	<section class="portfolio container-fluid">
+		<div class="container">
+			<div class="portfolio_header">
+				<h1 class="wow fadeInDown" data-wow-delay=".1s">Our portfolio</h1>
+				<hr class="cuda_hr">
+				<p class="wow fadeInDown" data-wow-delay=".3s">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam</p>
+			</div>
+			<div class="portfolio_choice">
+				<button class="wow fadeInDown" data-wow-delay=".1s">All</button>
+				<button class="wow fadeInDown" data-wow-delay=".2s">Web</button>
+				<button class="wow fadeInDown" data-wow-delay=".3s">Apps</button>
+				<button class="wow fadeInDown" data-wow-delay=".4s">Icons</button>
+			</div>
+			<div class="portfolio_work row">
+				<div class="portfolio_work__item col-md-6 wow fadeInDown" data-wow-delay=".1s">
+					<img src="image/work_1.png" alt="work_1" class="img-fluid">
+					<h3>Isometric prespective mock-up</h3>
+				</div>
+				<div class="portfolio_work__item col-md-6 wow fadeInDown" data-wow-delay=".2s"">
+					<img src="image/work_2.png" alt="work_1" class="img-fluid">
+					<h3>Time zone app ui</h3>
+				</div>
+				<div class="portfolio_work__item col-md-6 wow fadeInDown" data-wow-delay=".3s"">
+					<img src="image/work_3.png" alt="work_1" class="img-fluid">
+					<h3>Viro media players ui</h3>
+				</div>
+				<div class="portfolio_work__item col-md-6 wow fadeInDown" data-wow-delay=".4s"">
+					<img src="image/work_4.png" alt="work_1" class="img-fluid">
+					<h3>Blog / magazine flat ui kit</h3>
+				</div>
+			</div>
+			<div class="portfolio_button wow fadeInDown" data-wow-delay=".1s"">
+				<button class="cuda_button">load more projects</button>
+			</div>
+		</div>
+	</section>
+	<!-- /.porfolio container-fluid -->
 
-  </section>
-  <!-- END of .hl_wrapper -->
+	<section class="about container-fluid">
+		<div class="container">
+			<div class="about_header">
+				<h1 class="wow fadeInDown" data-wow-delay=".1s">What people say about us</h1>
+				<hr class="cuda_hr">
+				<p class="wow fadeInDown" data-wow-delay=".3s">Our clients love us!</p>
+			</div>
+			<div class="about_testimonials">
+				<div class="row">
+					<div class="about_testimonials__item col-lg-6 wow fadeInDown" data-wow-delay=".1s">
+						<div class="row">
+							<div class="about_testimonials__item_image col-md-3">
+								<img src="image/user_1.png" alt="user_1">
+							</div>
+							<div class="about_testimonials__item_info col-md-8">
+								<p>“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque. Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”</p>
+								<h2>Chanel Iman</h2>
+								<p class="about_testimonials__item_post">CEO of Pinterest</p>
+							</div>
+						</div>
+					</div>
+					<div class="about_testimonials__item col-lg-6 wow fadeInDown" data-wow-delay=".2s">
+						<div class="row">
+							<div class="about_testimonials__item_image col-md-3 offset-lg-1">
+								<img src="image/user_1.png" alt="user_1">
+							</div>
+							<div class="about_testimonials__item_info col-md-8">
+								<p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+								<h2>Adriana Lima</h2>
+								<p class="about_testimonials__item_post">Founder of Instagram</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="about_testimonials__item col-lg-6 wow fadeInDown" data-wow-delay=".3s">
+						<div class="row">
+							<div class="about_testimonials__item_image col-md-3">
+								<img src="image/user_1.png" alt="user_1">
+							</div>
+							<div class="about_testimonials__item_info col-md-8">
+								<p>“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”</p>
+								<h2>Anne Hathaway</h2>
+								<p class="about_testimonials__item_post">Lead Designer at Behance</p>
+							</div>
+						</div>
+					</div>
+					<div class="about_testimonials__item col-lg-6 wow fadeInDown" data-wow-delay=".4s">
+						<div class="row">
+							<div class="about_testimonials__item_image col-md-3 offset-lg-1">
+								<img src="image/user_1.png" alt="user_1">
+							</div>
+							<div class="about_testimonials__item_info col-md-8">
+								<p>“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus neque.”</p>
+								<h2>Emma Stone</h2>
+								<p class="about_testimonials__item_post">Co-Founder of Shazam</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /.about container-fluid -->
 
-  <!-- ======================= Outdated Browser (Supports IE10 & Above) ======================= -->
-  <div id="outdated" aria-hidden="true">
-    <h5>:(</h5>
-    <h6>Your browser is out-of-date!</h6>
-    <p>This website is built using latest technologies. Unfortunately your browser doesn't support those. Please update your browser to view this website correctly. Thank you.<a id="btnUpdateBrowser" href="http://outdatedbrowser.com/" target="_blank">Update my browser now </a>
-    </p>
-  </div>
-  <!-- ================================= END: Outdated Browser ================================ -->
+	<section class="connect container-fluid">
+		<div class="container">
+			<div class="connect_header">
+				<h1 class="wow fadeInDown" data-wow-delay=".1s">Get in touch</h1>
+				<hr class="cuda_hr">
+				<p class="wow fadeInDown" data-wow-delay=".3s">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
+			</div>
+			<div class="connect_form">
+				<form action="#">
+					<div class="row">
+						<div class="col-md-6 wow fadeInDown" data-wow-delay=".1s">
+							<input type="text" required placeholder="Your Name*">
+						</div>
+						<div class="col-md-6 wow fadeInDown" data-wow-delay=".3s">
+							<input type="email" required placeholder="Your Email*">
+						</div>
+					</div>
+					<textarea required placeholder="Your Message*" class="wow fadeInDown" data-wow-delay=".5s"></textarea>
+					<button type="submit" class="cuda_button wow fadeInDown" data-wow-delay=".5s">Send message</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- /.connect container-fluid -->
+
+	<footer class="footer container-fluid">
+		<div class="container">
+			<div class="footer_findUs justify-content-between m-auto">
+				<div class="footer_findUs__link wow fadeInDown" data-wow-delay=".1s"><a href="#">Facebook</a></div>
+				<div class="footer_findUs__link wow fadeInDown" data-wow-delay=".2s"><a href="#">Twitter</a></div>
+				<div class="footer_findUs__link wow fadeInDown" data-wow-delay=".3s"><a href="#">Google+</a></div>
+				<div class="footer_findUs__link wow fadeInDown" data-wow-delay=".4s"><a href="#">LinkedIn</a></div>
+				<div class="footer_findUs__link wow fadeInDown" data-wow-delay=".3s"><a href="#">Behance</a></div>
+				<div class="footer_findUs__link wow fadeInDown" data-wow-delay=".2s"><a href="#">Dribbble</a></div>
+				<div class="footer_findUs__link wow fadeInDown" data-wow-delay=".1s"><a href="#">GitHub</a></div>
+			</div>
+		</div>
+	</footer>
+	<!-- /.footer container-fluid -->
+
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- WOW JS -->
+	<script src="js/wow.min.js"></script>
+
+	<!-- JQuery spincrement JS -->
+	<!-- Plugin for animation numbers -->
+	<script src="js/jquery.spincrement.min.js"></script>
+
+	<!-- My JS -->
+	<script src="js/main.js"></script>
 </body>
-
 </html>
