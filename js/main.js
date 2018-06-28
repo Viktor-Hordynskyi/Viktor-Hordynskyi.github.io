@@ -83,17 +83,23 @@ $(document).ready(function() {
 
 	// Ajax request for feedback form
 	$('#feedback-form').submit(function(e) {
-		e.preventDefault();
+		// e.preventDefault();
 		$.ajax({
 			type: "POST",
 			url: "feedback.php",
 			data: $(this).serialize()
+			// success: function(response) { //Данные отправлены успешно
+   //      	result = $.parseJSON(response);
+   //      	$('#result_form').html('Name: '+result.name+'<br>Email: '+result.email);
+   //  	},
+   //  	error: function(response) { // Данные не отправлены
+   //          $('#result_form').html('Ошибка. Данные не отправлены.');
+   //  	}
 		}).done(function() {
-			$(this).find("input").val("");
-			$("html, body").animate({
-				scrollTop: $(document).height()
-			}, "slow");
-			$("#feedback-form").trigger("reset");
+			// console.log($(this));
+			// $(this).find("input").val("");
+			
+			// $("#feedback-form").trigger("reset");
 		});
 		return false;
 	});
