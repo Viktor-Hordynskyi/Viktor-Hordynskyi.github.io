@@ -209,15 +209,16 @@
 				<p class="wow fadeInLeftBig" data-wow-delay=".6s">Have a question or want to work together?</p>
 			</div>
 			<div class="contact_form">
-				<form action="#" id="feedback-form">
+				<form method="post" action="" id="feedback-form">
 					<input type="text" name="name" placeholder="Name" id="name-input" class="wow zoomIn" data-wow-delay=".2s">
+					<!-- <p>String is cannot be empty</p> -->
 					<input type="email" name="email" placeholder="Email" id="email-input" class="wow zoomIn" data-wow-delay=".3s">
+					<!-- <p>The string cannot be empty or the email address has an incorrect format, must be email@email.com.</p> -->
 					<textarea name="message" id="message-input" rows="5" placeholder="Your Message" class="wow zoomIn" data-wow-delay=".4s"></textarea>
 					<div class="contact_form__button">
-						<input type="submit" class="button wow flipInY" data-wow-delay=".5s" value="submit">
+						<input type="submit" class="button wow flipInY" data-wow-delay=".5s" value="submit" disabled>
 					</div>
 				</form>
-				
 			</div>
 		</div>
 	</section>
@@ -247,5 +248,8 @@
 
 	<!-- My JS -->
 	<script src="js/main.js"></script>
+
+	<!-- Need to delete when the progect end -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
