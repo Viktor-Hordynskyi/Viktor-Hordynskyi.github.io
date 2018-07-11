@@ -1,5 +1,7 @@
 *, *:before, *:after {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -72,12 +74,21 @@ a {
 .header {
 	background: url(../images/bg-header.png) left center no-repeat;
 	background-size: contain;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	height: 9.5em;
 }
 .header_element {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin: 0 1.5em;
 	position: relative;
 	left: -3em;
@@ -95,10 +106,21 @@ a {
 	border: 1px solid #4f2d7f;
 	border-radius: 50%;
 	color: #4f2d7f;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	flex-shrink: 0;
-	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-flex-shrink: 0;
+	    -ms-flex-negative: 0;
+	        flex-shrink: 0;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-size: 1.5em;
 	font-weight: bold;
 	height: 2em;
@@ -111,15 +133,30 @@ a {
 
 /* development style */
 .development {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .development_element {
 	background-color: #4f2d7f;
 	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	position: relative;
 	text-align: center;
 	margin: 1.5em 1.5em 0;
@@ -132,9 +169,18 @@ a {
 	margin-right: 0;
 }
 .development_element a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 1em 0;
 	height: 100%;
 	width: 100%;
@@ -145,14 +191,29 @@ a {
 
 /* stepping style */
 .stepping {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	position: relative;
 }
 .stepping_container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: flex-end;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 	margin: 1.5em;
 	position: relative;
 	left: calc(1.5em + .15em);
@@ -160,15 +221,33 @@ a {
 }
 .stepping_element {
 	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	height: 100%;
 }
 .stepping_element a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 1em;
 	height: 100%;
 	width: 100%;
@@ -206,22 +285,43 @@ a {
 /* people style */
 .people {
 	background-color: #ffffff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin: .5em 0 2em;
 }
 .people_element {
 	border: .3em solid #6d5194;
 	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	position: relative;
 	width: 71.5em;
 }
 .people_element a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 1em;
 	height: 100%;
 	width: 100%;
@@ -234,23 +334,52 @@ a {
 /* additional style */
 .additional {
 	background-color: #ffffff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .additional_element {
 	border: .3em solid #6d5194;
 	cursor: pointer;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 	width: 80.5em;
 }
 .additional_element a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 1em;
 	height: 100%;
 	width: 100%;
@@ -270,8 +399,14 @@ a {
 .footer {
 	background: url(../images/bg-header.png) left center no-repeat;
 	background-size: contain;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 	height: 9.5em;
 	z-index: -3;
@@ -297,6 +432,9 @@ a {
 
 /* line style */
 .line {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
 	padding: 4.5em 4em 7em;
 	position: absolute;
@@ -352,38 +490,40 @@ a {
 	bottom: 100%;
 }
 .tooltiptext.active {
-	clip-path: polygon(0 10%, 45% 10%, 50% 0%, 55% 10%, 100% 10%, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 10%, 45% 10%, 50% 0%, 55% 10%, 100% 10%, 100% 100%, 0% 100%);
+	        clip-path: polygon(0 10%, 45% 10%, 50% 0%, 55% 10%, 100% 10%, 100% 100%, 0% 100%);
 	visibility: visible;
 }
 .development_element:first-of-type .tooltiptext.active {
-	clip-path: polygon(5% 100%, 5% 65%, 0% 50%, 5% 35%, 5% 0%, 100% 0%, 100% 100%);
+	-webkit-clip-path: polygon(5% 100%, 5% 65%, 0% 50%, 5% 35%, 5% 0%, 100% 0%, 100% 100%);
+	        clip-path: polygon(5% 100%, 5% 65%, 0% 50%, 5% 35%, 5% 0%, 100% 0%, 100% 100%);
 }
 .development_element:last-of-type .tooltiptext.active {
-	clip-path: polygon(95% 0%, 95% 35%, 100% 50%, 95% 65%, 95% 100%, 0% 100%, 0% 0%);
+	-webkit-clip-path: polygon(95% 0%, 95% 35%, 100% 50%, 95% 65%, 95% 100%, 0% 100%, 0% 0%);
+	        clip-path: polygon(95% 0%, 95% 35%, 100% 50%, 95% 65%, 95% 100%, 0% 100%, 0% 0%);
 }
 .additional_element .tooltiptext.active {
-	clip-path: polygon(0% 90%, 45% 90%, 50% 100%, 55% 90%, 100% 90%, 100% 0%, 0% 0%);
+	-webkit-clip-path: polygon(0% 90%, 45% 90%, 50% 100%, 55% 90%, 100% 90%, 100% 0%, 0% 0%);
+	        clip-path: polygon(0% 90%, 45% 90%, 50% 100%, 55% 90%, 100% 90%, 100% 0%, 0% 0%);
 }
 
 /* tooltip-mobile style*/
 .tooltip-mobile {
-	background: #333;
-	border: 1px solid #333;
-	border-radius: 50%;
-	cursor: pointer;
 	display: none;
 	position: absolute;
 	bottom: -1em;
 	right: -1em;
+	z-index: 9;
+}
+.tooltip-mobile img {
+	background: #333;
+	border: 1px solid #333;
+	border-radius: 50%;
+	color: #ffffff;
+	cursor: pointer;
 	padding: .5em;
 	height: 2.5em;
 	width: 2.5em;
-	z-index: 1;
-}
-.tooltip-mobile img {
-	color: #ffffff;
-	width: 100%;
-	height: 100%;
 }
 
 /* Large desktops and laptops */
@@ -427,6 +567,11 @@ a {
 		width: 78.5em;
 	}
 
+	/* line style */
+	.line {
+		padding: 4.5em 2em 7em;
+	}
+
 	/* tooltip-mobile style*/
 	.tooltip-mobile {
 		display: block;
@@ -450,6 +595,11 @@ a {
 	/* stepping style */
 	.stepping_element h3 br {
 		display: none;
+	}
+
+	/* line style */
+	.line {
+		padding: 4.5em 2em 7em;
 	}
 
 	/* tooltip-mobile style*/
@@ -477,6 +627,11 @@ a {
 		display: none;
 	}
 
+	/* line style */
+	.line {
+		padding: 4.5em 2em 7em;
+	}
+
 	/* tooltip-mobile style*/
 	.tooltip-mobile {
 		display: block;
@@ -495,6 +650,11 @@ a {
 	/* stepping style */
 	.stepping_element h3 br {
 		display: none;
+	}
+
+	/* line style */
+	.line {
+		padding: 4.5em 2em 7em;
 	}
 
 	/* tooltip-mobile style*/
