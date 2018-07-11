@@ -445,6 +445,11 @@ a {
 	.stepping_element h3 br {
 		display: none;
 	}
+
+	/* tooltip-mobile style*/
+	.tooltip-mobile {
+		display: block;
+	}
 }
 
 /* Landscape phones and portrait tablets */
@@ -462,6 +467,11 @@ a {
 	.stepping_element h3 br {
 		display: none;
 	}
+
+	/* tooltip-mobile style*/
+	.tooltip-mobile {
+		display: block;
+	}
 }
 
 /* Landscape phones and smaller */
@@ -473,5 +483,10 @@ a {
 	/* stepping style */
 	.stepping_element h3 br {
 		display: none;
+	}
+
+	/* tooltip-mobile style*/
+	.tooltip-mobile {
+		display: block;
 	}
 }
