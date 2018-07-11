@@ -55,12 +55,14 @@ h3 {
 p {
 	font-size: 1.6em;
 }
+a {
+	text-decoration: none;
+}
 
 /* gt style */
 #gt {
 	margin: 0 auto;
 	max-width: 1250px;
-	overflow: hidden;
 	padding: 0 4em;
 	position: relative;
 	height: 100%;
@@ -109,19 +111,18 @@ p {
 
 /* development style */
 .development {
-	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
-	position: relative;
 }
 .development_element {
+	background-color: #4f2d7f;
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #4f2d7f;
+	position: relative;
 	text-align: center;
 	margin: 1.5em 1.5em 0;
-	padding: 1em;
 	width: calc(100% / 6);
 }
 .development_element:first-child {
@@ -130,13 +131,20 @@ p {
 .development_element:last-child {
 	margin-right: 0;
 }
+.development_element a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em 0;
+	height: 100%;
+	width: 100%;
+}
 .development_element h3 {
 	color: #ffffff;
 }
 
 /* stepping style */
 .stepping {
-	cursor: pointer;
 	display: flex;
 	justify-content: flex-end;
 	position: relative;
@@ -147,34 +155,44 @@ p {
 	justify-content: flex-end;
 	margin: 1.5em;
 	position: relative;
-	left: 1.5em;
+	left: calc(1.5em + .15em);
 	width: calc(100% / 6);
 }
 .stepping_element {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.stepping_element a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 1em;
 	height: 100%;
+	width: 100%;
 }
 .stepping_element h3 {
 	text-align: center;
 }
 .stepping_container:first-child {
+	cursor: default;
 	margin-left: 0;
 }
 .stepping_container:last-child {
+	cursor: default;
 	margin-right: 0;
 }
 .stepping_container:nth-child(2) .stepping_element,
 .stepping_container:nth-child(3) .stepping_element {
 	background-color: #ffffff;
-	border: 3px solid #ff7d1e;
+	border: .3em solid #ff7d1e;
 }
 .stepping_container:nth-child(4) .stepping_element,
 .stepping_container:nth-child(5) .stepping_element {
 	background-color: #ff7d1e;
-	border: 3px solid #ff7d1e;
+	border: .3em solid #ff7d1e;
 }
 .stepping_container:nth-child(2) .stepping_element h3,
 .stepping_container:nth-child(3) .stepping_element h3 {
@@ -188,18 +206,25 @@ p {
 /* people style */
 .people {
 	background-color: #ffffff;
-	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	margin: .5em 0 2em;
 	position: relative;
 }
 .people_element {
-	border: 3px solid #6d5194;
+	border: .3em solid #6d5194;
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
-	padding: 1em;
 	width: 71.5em;
+}
+.people_element a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+	height: 100%;
+	width: 100%;
 }
 .people_element h3 {
 	color: #000000;
@@ -209,18 +234,26 @@ p {
 /* additional style */
 .additional {
 	background-color: #ffffff;
-	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	position: relative;
 }
 .additional_element {
-	border: 3px solid #6d5194;
+	border: .3em solid #6d5194;
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 1em 2em;
 	width: 80.5em;
+}
+.additional_element a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1em;
+	height: 100%;
+	width: 100%;
 }
 .additional_element h3 {
 	color: #000000;
@@ -239,7 +272,9 @@ p {
 	background-size: contain;
 	display: flex;
 	align-items: center;
+	position: relative;
 	height: 9.5em;
+	z-index: -3;
 }
 .footer_element {
 	margin: 1.5em;
@@ -263,9 +298,9 @@ p {
 /* line style */
 .line {
 	display: flex;
-	padding: 4.5em 4em;
+	padding: 4.5em 4em 7em;
 	position: absolute;
-	left: calc(-1.5em - 1.5px);
+	left: calc(-1.5em - .125em);
 	top: 0;
 	height: 100%;
 	width: 100%;
@@ -283,7 +318,7 @@ p {
 	margin-right: 0;
 }
 .line_element div {
-	border-left: 3px dashed #e2e2e2;
+	border-left: .25em dashed #e2e2e2;
 	height: 100%;
 }
 
@@ -294,8 +329,50 @@ p {
 	font-size: 1.2em;
 	padding: 2.2em 1em 1em;
 	position: absolute;
-	/*left: 0;*/
 	top: 100%;
+	text-align: justify;
+	height: auto;
+	width: 30em;
+	visibility: hidden;
+	z-index: 10;
+}
+.development_element:first-of-type .tooltiptext {
+	background-color: #333;
+	color: #ffffff;
+	font-size: 1.2em;
+	padding: 1em 1em 1em 2.2em;
+	position: absolute;
+	top: auto;
+	left: 100%;
+	text-align: justify;
+	height: auto;
+	width: 30em;
+	visibility: hidden;
+	z-index: 10;
+}
+.development_element:last-of-type .tooltiptext {
+	background-color: #333;
+	color: #ffffff;
+	font-size: 1.2em;
+	padding: 1em 2.2em 1em 1em;
+	position: absolute;
+	top: auto;
+	right: 100%;
+	text-align: justify;
+	height: auto;
+	width: 30em;
+	visibility: hidden;
+	z-index: 10;
+}
+.additional_element .tooltiptext {
+	background-color: #333;
+	color: #ffffff;
+	font-size: 1.2em;
+	padding: 1em 1em 2.2em 1em;
+	position: absolute;
+	top: auto;
+	bottom: 100%;
+	text-align: justify;
 	height: auto;
 	width: 30em;
 	visibility: hidden;
@@ -303,6 +380,18 @@ p {
 }
 .tooltiptext.active {
 	clip-path: polygon(0 10%, 45% 10%, 50% 0%, 55% 10%, 100% 10%, 100% 100%, 0% 100%);
+	visibility: visible;
+}
+.development_element:first-of-type .tooltiptext.active {
+	clip-path: polygon(5% 100%, 5% 65%, 0% 50%, 5% 35%, 5% 0%, 100% 0%, 100% 100%);
+	visibility: visible;
+}
+.development_element:last-of-type .tooltiptext.active {
+	clip-path: polygon(95% 0%, 95% 35%, 100% 50%, 95% 65%, 95% 100%, 0% 100%, 0% 0%);
+	visibility: visible;
+}
+.additional_element .tooltiptext.active {
+	clip-path: polygon(0% 90%, 45% 90%, 50% 100%, 55% 90%, 100% 90%, 100% 0%, 0% 0%);
 	visibility: visible;
 }
 
@@ -316,12 +405,32 @@ p {
 	html, body {
 		font-size: 11px;
 	}
+
+	/* header style */
+	.header_element h3 {
+		font-size: 1.5em;
+	}
+
+	/* people style */
+	.people_element {
+		width: 76.5em;
+	}
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 	html, body {
 		font-size: 10px;
+	}
+
+	/* header style */
+	.header_element h3 {
+		font-size: 1.4em;
+	}
+
+	/* people style */
+	.people_element {
+		width: 78.5em;
 	}
 }
 
@@ -330,6 +439,16 @@ p {
 	html, body {
 		font-size: 9px;
 	}
+
+	/* header style */
+	.header_element h3 {
+		font-size: 1.3em;
+	}
+
+	/* stepping style */
+	.stepping_element h3 br {
+		display: none;
+	}
 }
 
 /* Landscape phones and portrait tablets */
@@ -337,11 +456,26 @@ p {
 	html, body {
 		font-size: 8px;
 	}
+	
+	/* header style */
+	.header_element h3 {
+		font-size: 1.2em;
+	}
+
+	/* stepping style */
+	.stepping_element h3 br {
+		display: none;
+	}
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
 	html, body {
 		font-size: 7px;
+	}
+
+	/* stepping style */
+	.stepping_element h3 br {
+		display: none;
 	}
 }
