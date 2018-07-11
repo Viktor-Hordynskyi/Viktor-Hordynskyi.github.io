@@ -326,7 +326,7 @@ a {
 .tooltiptext {
 	background-color: #333;
 	color: #ffffff;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	padding: 2.2em 1em 1em;
 	position: absolute;
 	top: 100%;
@@ -337,46 +337,19 @@ a {
 	z-index: 10;
 }
 .development_element:first-of-type .tooltiptext {
-	background-color: #333;
-	color: #ffffff;
-	font-size: 1.2em;
 	padding: 1em 1em 1em 2.2em;
-	position: absolute;
 	top: auto;
 	left: 100%;
-	text-align: justify;
-	height: auto;
-	width: 30em;
-	visibility: hidden;
-	z-index: 10;
 }
 .development_element:last-of-type .tooltiptext {
-	background-color: #333;
-	color: #ffffff;
-	font-size: 1.2em;
 	padding: 1em 2.2em 1em 1em;
-	position: absolute;
 	top: auto;
 	right: 100%;
-	text-align: justify;
-	height: auto;
-	width: 30em;
-	visibility: hidden;
-	z-index: 10;
 }
 .additional_element .tooltiptext {
-	background-color: #333;
-	color: #ffffff;
-	font-size: 1.2em;
 	padding: 1em 1em 2.2em 1em;
-	position: absolute;
 	top: auto;
 	bottom: 100%;
-	text-align: justify;
-	height: auto;
-	width: 30em;
-	visibility: hidden;
-	z-index: 10;
 }
 .tooltiptext.active {
 	clip-path: polygon(0 10%, 45% 10%, 50% 0%, 55% 10%, 100% 10%, 100% 100%, 0% 100%);
@@ -384,15 +357,12 @@ a {
 }
 .development_element:first-of-type .tooltiptext.active {
 	clip-path: polygon(5% 100%, 5% 65%, 0% 50%, 5% 35%, 5% 0%, 100% 0%, 100% 100%);
-	visibility: visible;
 }
 .development_element:last-of-type .tooltiptext.active {
 	clip-path: polygon(95% 0%, 95% 35%, 100% 50%, 95% 65%, 95% 100%, 0% 100%, 0% 0%);
-	visibility: visible;
 }
 .additional_element .tooltiptext.active {
 	clip-path: polygon(0% 90%, 45% 90%, 50% 100%, 55% 90%, 100% 90%, 100% 0%, 0% 0%);
-	visibility: visible;
 }
 
 /* Large desktops and laptops */
@@ -456,7 +426,7 @@ a {
 	html, body {
 		font-size: 8px;
 	}
-	
+
 	/* header style */
 	.header_element h3 {
 		font-size: 1.2em;
