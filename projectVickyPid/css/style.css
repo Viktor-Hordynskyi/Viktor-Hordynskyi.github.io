@@ -54,14 +54,14 @@ a {
 	text-decoration: none;
 }
 
-.header__container, .intro__container, .marketing__container,
+.header__container, .intro__container, .first__container, .marketing__container,
 .tactics__container, .why-where__container,
 .what__container, .you-get__container, .footer__container {
 	margin: 0 auto;
 	padding: 5rem;
 	width: 1200px;
 }
-.tactics, .what {
+.intro, .tactics, .what {
 	background-color: #fafafa;
 }
 
@@ -99,47 +99,71 @@ a {
 
 /* intro style */
 .intro__container {
-	text-align: justify;
+	position: relative;
+	height: 80rem;
 }
 .intro__header {
+	position: relative;
+	left: 1rem;
+	top: 18rem;
+	z-index: 2;
+}
+.intro__header h1 {
+	font-size: 4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	width: 65%;
+	word-spacing: 1rem;
+}
+
+.intro__header h1 span {
+	background-color: #f36223;
+	font-style: italic;
+	padding: 0 .6rem 0 0;
+	vertical-align: baseline;
+}
+.intro__image {
+	position: absolute;
+	left: 20rem;
+	top: 2rem;
+}
+.intro__image img {
+	height: auto;
+	width: 90rem;
+}
+
+/* first style */
+.first__container {
+	text-align: justify;
+}
+.first__header {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	padding-bottom: 4rem;
 	text-align: center;
 }
-.intro__header-title {
-	width: 70%;
+.first__header-title {
+	
 }
-.intro__header-title h1 {
+.first__header-title h1 {
 	font-size: 3rem;
 	font-weight: 700;
 	margin: 0 auto;
 	text-transform: uppercase;
 }
-.intro__header-image {
-	width: 30%;
+.first__header-image {
+	
 }
-.intro__header-image img {
-	width: 100%;
+.first__header-image img {
+	
 }
-.intro__description p {
+.first__description p {
 	padding-bottom: 1.5rem;
 }
-.intro__description p:last-child {
+.first__description p:last-child {
 	padding-bottom: 0;
-}
-
-/* marketing style */
-.marketing__container {
-	padding: 0 5rem 5rem;
-}
-.marketing__container h2 {
-	background-color: #222;
-	color: #ffffff;
-	padding: 2rem;
-	text-align: center;
-	text-transform: uppercase;
 }
 
 /* tactics style */
