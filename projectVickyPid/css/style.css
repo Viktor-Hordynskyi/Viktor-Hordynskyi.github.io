@@ -144,7 +144,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	width: 80%;
+	width: 1110px;
 }
 .tactics__word {
 	border-right: .1rem solid #666666;
