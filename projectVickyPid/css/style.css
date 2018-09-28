@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-/*@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,700');*/
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -47,6 +47,7 @@ h2 {
 }
 p {
 	color: #666666;
+	font-family: 'Merriweather', serif;
 	font-size: 1.5rem;
 }
 a {
@@ -322,9 +323,9 @@ a {
 		font-size: 10px;
 	}
 
-	.header__container, .intro__container, .tactics__container,
-	.why__container, .where__container, .what__container,
-	.you-get__container, .footer__container {
+	.header__container, .intro__container, .marketing__container,
+.tactics__container, .why-where__container,
+.what__container, .you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
@@ -336,9 +337,9 @@ a {
 		font-size: 9px;
 	}
 
-	.header__container, .intro__container, .tactics__container,
-	.why__container, .where__container, .what__container,
-	.you-get__container, .footer__container {
+	.header__container, .intro__container, .marketing__container,
+.tactics__container, .why-where__container,
+.what__container, .you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
@@ -350,9 +351,9 @@ a {
 		font-size: 8px;
 	}
 
-	.header__container, .intro__container, .tactics__container,
-	.why__container, .where__container, .what__container,
-	.you-get__container, .footer__container {
+	.header__container, .intro__container, .marketing__container,
+.tactics__container, .why-where__container,
+.what__container, .you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
@@ -364,9 +365,9 @@ a {
 		font-size: 7px;
 	}
 
-	.header__container, .intro__container, .tactics__container,
-	.why__container, .where__container, .what__container,
-	.you-get__container, .footer__container {
+	.header__container, .intro__container, .marketing__container,
+.tactics__container, .why-where__container,
+.what__container, .you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
