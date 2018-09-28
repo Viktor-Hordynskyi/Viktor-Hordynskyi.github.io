@@ -36,16 +36,16 @@ html, body {
 	line-height: 1.1;
 }
 h1 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: 600;
 }
 h2 {
-	font-size: 2.3rem;
+	font-size: 2.1rem;
 	font-weight: 600;
 }
 p {
 	color: #666666;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 a {
 	text-decoration: none;
@@ -109,7 +109,7 @@ a {
 	width: 70%;
 }
 .intro__header-title h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 700;
 	margin: 0 auto;
 	text-transform: uppercase;
@@ -131,7 +131,7 @@ a {
 .marketing__container {
 	padding: 0 5rem 5rem;
 }
-.marketing__container h1 {
+.marketing__container h2 {
 	background-color: #222;
 	color: #ffffff;
 	padding: 2rem;
@@ -144,7 +144,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	width: 80%;
+	width: 1100px;
 }
 .tactics__word {
 	border-right: .1rem solid #666666;
@@ -204,7 +204,7 @@ a {
 	padding-bottom: 2rem;
 }
 .tactics__description h2 {
-	font-size: 2.2rem;
+	font-size: 2.1rem;
 	font-weight: 500;
 }
 .tactics__description hr {
@@ -250,12 +250,12 @@ a {
 .what__container ul li {
 	display: flex;
 	align-items: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 1rem 0;
-	padding: 1rem;
+	padding: .5rem;
 }
 .what__number {
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 700;
 	padding-right: 1.5rem;
 }
@@ -273,7 +273,7 @@ a {
 	color: #ffffff;
 	display: flex;
 	align-items: center;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin: 1rem 0;
 	padding: 1rem;
 	width: -webkit-fit-content;
