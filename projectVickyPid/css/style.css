@@ -38,8 +38,8 @@ html, body {
 	line-height: 1.5;
 }
 h1 {
-	font-size: 2.5rem;
-	font-weight: 600;
+	font-size: 3rem;
+	font-weight: 700;
 }
 h2 {
 	font-size: 2.1rem;
@@ -47,21 +47,23 @@ h2 {
 }
 p {
 	color: #666666;
-	font-family: 'Merriweather', serif;
 	font-size: 1.5rem;
+}
+p, .what__container ul li, .you-get__container ul li {
+	font-family: 'Merriweather', serif;
 }
 a {
 	text-decoration: none;
 }
 
 .header__container, .intro__container, .first__container, .marketing__container,
-.tactics__container, .why-where__container,
-.what__container, .you-get__container, .footer__container {
+.tactics__container, .contact-us__container,
+.you-get__container, .footer__container {
 	margin: 0 auto;
 	padding: 5rem;
 	width: 1200px;
 }
-.intro, .tactics, .what {
+.intro, .tactics, .you-get {
 	background-color: #fafafa;
 }
 
@@ -104,7 +106,7 @@ a {
 }
 .intro__header {
 	position: relative;
-	left: 1rem;
+	left: -6rem;
 	top: 18rem;
 	z-index: 2;
 }
@@ -144,23 +146,11 @@ a {
 	padding-bottom: 4rem;
 	text-align: center;
 }
-.first__header-title {
-	
-}
 .first__header-title h1 {
 	font-size: 3rem;
 	font-weight: 700;
 	margin: 0 auto;
 	text-transform: uppercase;
-}
-.first__header-image {
-	
-}
-.first__header-image img {
-	
-}
-.first__description p {
-	padding-bottom: 1.5rem;
 }
 .first__description p:last-child {
 	padding-bottom: 0;
@@ -229,7 +219,7 @@ a {
 	padding-left: 5rem;
 }
 .tactics__description h1 {
-	padding-bottom: 2rem;
+	text-transform: uppercase;
 }
 .tactics__description h2 {
 	font-size: 2.1rem;
@@ -245,53 +235,68 @@ a {
 	height: .1rem;
 }
 
-/* why-where style */
-.why-where__container {
+/* questions-block style */
+.questions-block__container {
 	display: flex;
 	flex-direction: row;
-}
-.why, .where {
 	margin: 0 auto;
-	width: 45%;
+	padding: 5rem;
+	width: 1200px;
 }
-.why h1, .where h1 {
-	background-color: #111111;
-	color: #ffffff;
-	display: block;
-	padding: 2rem 1rem;
-	text-align: center;
+.what {
+	width: 50%;
 }
-.why p, .where p {
-	border: solid .5rem #666666;
-	line-height: 1.5;
-	padding: 3rem;
-	min-height: 15rem;
-}
-
-/* what style */
-.what__container {
-	/*padding: 5rem 0;*/
-}
-.what__container h1 {
-	text-align: center;
+.what h1, .why h1, .where h1 {
+	line-height: 1;
 	padding-bottom: 1rem;
+	text-transform: uppercase;
 }
-.what__container ul li {
+.what ul {
+	width: 80%;
+}
+.what ul li {
 	display: flex;
 	align-items: center;
 	font-size: 1.5rem;
-	margin: .5rem 0;
 }
 .what__number {
-	font-size: 3rem;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 5rem;
 	font-weight: 700;
 	padding-right: 1.5rem;
+}
+.why-where {
+	width: 50%;
+}
+.why, .where {
+	border: 1rem solid #666666;
+}
+.why h1, .where h1,
+.why p, .where p {
+	padding: 1rem;
+}
+.why h1, .where h1 {
+	text-align: center;
+	letter-spacing: .4rem;
+}
+.why {
+	margin-bottom: 3rem;
+}
+.why h1 {
+	background-color: #781268;
+	color: #ffffff;
+}
+.where h1 {
+	background-color: #f36223;
+	color: #ffffff;
 }
 
 /* you-get style */
 .you-get__container h1 {
+	font-size: 4rem;
 	text-align: center;
 	padding-bottom: 1rem;
+	text-transform: uppercase;
 }
 .you-get__container ul li {
 	background-color: #42c8a2;
@@ -309,6 +314,19 @@ a {
 	font-size: 2.5rem;
 	font-weight: 700;
 	padding-right: .5rem;
+}
+
+/* contact-us style */
+.contact-us__container {
+	padding: 3rem;
+}
+.contact-us h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.contact-us h1 a {
+	color: #781268;
+	vertical-align: baseline;
 }
 
 /* footer style */
