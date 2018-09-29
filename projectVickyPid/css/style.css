@@ -156,6 +156,9 @@ a {
 	margin: 0 auto;
 	text-transform: uppercase;
 }
+.first__description p:first-child {
+	padding-bottom: 2rem;
+}
 .first__description p:last-child {
 	padding-bottom: 0;
 }
@@ -375,6 +378,7 @@ a {
 .footer__copyright {
 	font-size: 1.3rem;
 	font-weight: 600;
+	text-align: center;
 }
 
 /* Large desktops and laptops */
