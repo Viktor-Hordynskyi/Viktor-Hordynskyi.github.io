@@ -57,7 +57,7 @@ a {
 }
 
 .header__container, .intro__container, .first__container, .marketing__container,
-.tactics__container, .contact-us__container,
+.tactics__container, .questions-block__container, .contact-us__container,
 .you-get__container, .footer__container {
 	margin: 0 auto;
 	padding: 5rem;
@@ -101,6 +101,7 @@ a {
 
 /* intro style */
 .intro__container {
+	overflow: hidden;
 	position: relative;
 	height: 80rem;
 }
@@ -132,7 +133,7 @@ a {
 }
 .intro__image img {
 	height: auto;
-	width: 90rem;
+	max-width: 90rem;
 }
 
 /* first style */
@@ -365,9 +366,9 @@ a {
 		font-size: 10px;
 	}
 
-	.header__container, .intro__container, .marketing__container,
-.tactics__container, .why-where__container,
-.what__container, .you-get__container, .footer__container {
+	.header__container, .intro__container, .first__container, .marketing__container,
+.tactics__container, .questions-block__container, .contact-us__container,
+.you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
@@ -379,9 +380,9 @@ a {
 		font-size: 9px;
 	}
 
-	.header__container, .intro__container, .marketing__container,
-.tactics__container, .why-where__container,
-.what__container, .you-get__container, .footer__container {
+	.header__container, .intro__container, .first__container, .marketing__container,
+.tactics__container, .questions-block__container, .contact-us__container,
+.you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
@@ -393,9 +394,9 @@ a {
 		font-size: 8px;
 	}
 
-	.header__container, .intro__container, .marketing__container,
-.tactics__container, .why-where__container,
-.what__container, .you-get__container, .footer__container {
+	.header__container, .intro__container, .first__container, .marketing__container,
+.tactics__container, .questions-block__container, .contact-us__container,
+.you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
@@ -407,9 +408,9 @@ a {
 		font-size: 7px;
 	}
 
-	.header__container, .intro__container, .marketing__container,
-.tactics__container, .why-where__container,
-.what__container, .you-get__container, .footer__container {
+	.header__container, .intro__container, .first__container, .marketing__container,
+.tactics__container, .questions-block__container, .contact-us__container,
+.you-get__container, .footer__container {
 		padding: 1rem;
 		width: 100%;
 	}
