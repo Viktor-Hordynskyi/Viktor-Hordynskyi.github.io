@@ -329,7 +329,7 @@ a {
 	position: relative;
 }
 .roadmap-element__quarter ul li span {
-	color: #0c0;
+	color: #333;
 	position: absolute;
 	left: 0;
 }
