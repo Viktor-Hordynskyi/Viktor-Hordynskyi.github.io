@@ -330,6 +330,21 @@ a {
 }
 .footer-container {
 	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-social {
+	display: flex;
+	flex-direction: row;
+}
+.footer-social a {
+	display: block;
+	padding: 1rem;
+}
+.footer-social img {
+	height: 1.7rem;
+	width: 1.7rem;
 }
 
 /* Large desktops and laptops */
