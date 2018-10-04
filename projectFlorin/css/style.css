@@ -74,7 +74,7 @@ a {
 .header-container {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: space-between;
 	padding: 1rem 3rem;
 }
@@ -82,6 +82,7 @@ a {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	width: 20%;
 }
 .header__logo img {
 	width: 7rem;
@@ -94,8 +95,13 @@ a {
 }
 .header__links,
 .header__download {
+	padding-bottom: 1.5rem;
 	font-weight: 600;
 	text-transform: uppercase;
+}
+.header__links {
+	text-align: right;
+	width: 65%
 }
 .header__links a {
 	padding: 0 1rem;
@@ -108,6 +114,10 @@ a {
 .header__links a:focus {
 	color: #f5c24c;
 	transition: all .2s linear;
+}
+.header__download {
+	text-align: right;
+	width: 15%;
 }
 .header__download a:hover,
 .header__download a:focus {
