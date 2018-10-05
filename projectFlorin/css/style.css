@@ -143,6 +143,7 @@ a {
 }
 .header-mobile a {
 	font-size: 2rem;
+	line-height: 1.4;
 }
 .header-mobile__links,
 .header-mobile__download {
