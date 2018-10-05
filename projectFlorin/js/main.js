@@ -8,4 +8,14 @@ $(document).ready(function() {
 		}, 1500, 'linear')
 		event.preventDefault();
 	})
+
+	$('.icon').on('click', function(){
+		if($('.header-mobile-menu').hasClass('hide')) {
+			$('.header-mobile-menu').removeClass('hide');
+			$('.header-mobile-menu').addClass('show');
+		} else {
+			$('.header-mobile-menu').removeClass('show');
+			$('.header-mobile-menu').addClass('hide');
+		}
+	})
 })
