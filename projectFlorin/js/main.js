@@ -9,6 +9,7 @@ $(document).ready(function() {
 		event.preventDefault();
 	})
 
+	// show or hide mobile menu (adding a class show/hide)
 	$('.icon').on('click', function(){
 		if($('.header-mobile-menu').hasClass('hide')) {
 			$('.header-mobile-menu').removeClass('hide');
