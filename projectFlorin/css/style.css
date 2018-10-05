@@ -396,10 +396,12 @@ a {
 	padding-left: 1.5rem;
 	position: relative;
 }
-.roadmap-element__quarter ul li span {
+.roadmap-element__quarter ul li img {
 	color: #333;
 	position: absolute;
 	left: 0;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 .roadmap-element-center {
 	border: .1rem solid #ccc;
