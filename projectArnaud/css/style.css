@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	font-size: 16px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.main {
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: 1024px;
+}
+.blocks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.block {
+	padding: 1rem .5rem;
+	width: calc(100% / 4);
+}
+a.block-title {
+	color: #999;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	height: 2.5rem;
+}
+.block-title span {
+	padding-right: 1rem;
+}
+.block-title span i {
+	font-size: 2rem;
+}
+.block-title h1 {
+	color: #3b3b3b;
+	font-size: 1.1rem;
+}
+p.block-description {
+	color: #999;
+	font-size: .9rem;
+	padding-top: 1rem;
+	text-align: justify;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.block {
+		width: calc(100% / 2);
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.block {
+		width: calc(100% / 2);
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+	html, body {
+		font-size: calc(14px + 4 * ((100vw - 320px) / 960));
+	}
+	.block {
+		width: 100%;
+	}
+	
+}
