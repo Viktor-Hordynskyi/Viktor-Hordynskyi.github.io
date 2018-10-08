@@ -765,3 +765,11 @@ section:not(:last-child):after {
 .card-body-text.hide {
 	display: none;
 }
+.modal-close {
+	color: #111111;
+	cursor: pointer;
+	font-size: 2rem;
+	position: absolute;
+	top: .65rem;
+	right: .65rem;
+}
