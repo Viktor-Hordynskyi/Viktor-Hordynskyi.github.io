@@ -1,0 +1,17 @@
+$primary_color_1: #870d2f;
+$secondary_color_1: rgb(51, 92, 136);
+$secondary_color_2: rgb(127, 180, 57);
+$secondary_color_3: rgb(174, 28, 63);
+$secondary_color_4: rgb(226, 150, 24);
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import 'mixins/media';
+@import "frameworks/bootstrap.min.css";
+@import "plugins/aos.css";
+@import "plugins/flexSlider.min.css";
+
+$breakpoints: (
+  phone: 320px,
+  tablet: 768px,
+  desktop: 1024px
+);
