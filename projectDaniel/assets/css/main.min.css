@@ -765,6 +765,9 @@ section:not(:last-child):after {
 .card-body-text.hide {
 	display: none;
 }
+.card-body {
+	flex: 0 1 auto;
+}
 .modal-close {
 	color: #111111;
 	cursor: pointer;
