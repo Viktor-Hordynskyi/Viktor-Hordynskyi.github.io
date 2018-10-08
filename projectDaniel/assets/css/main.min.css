@@ -768,6 +768,9 @@ section:not(:last-child):after {
 .card-body {
 	flex: 0 1 auto;
 }
+.card-threeImage img {
+	width: calc(100% / 3);
+}
 .modal-close {
 	color: #111111;
 	cursor: pointer;
