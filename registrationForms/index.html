@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<header class="header container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="header-logo col-md-6 d-flex align-items-center">
+					<h1>Company Name</h1>
+				</div>
+				<div class="header-links col-md-6 d-flex flex-column justify-content-between">
+					<div class="header-links__top d-flex align-items-center justify-content-end">
+						<div class="header-links__top-plan">
+							<p>Your Plan: <span>XXXXXXX</span></p>
+						</div>
+						<div class="header-links__top-button">
+							<a href="#">Upgrade</a>
+						</div>
+						<div class="header-links__top-menu">
+							<span>|</span>
+							<a href="#">My account</a>
+							<a href="#">Help</a>
+							<a href="#">Logout</a>
+						</div>
+					</div>
+
+					<div class="header-links__bottom d-flex flex-row align-items-center justify-content-end">
+						<p>Already a member?</p>
+						<a href="#">Login</a>
+						<a href="#">Help</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- /.header -->
+
+	<div class="header-menu container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarMenu">
+				<ul class="navbar-nav w-100 justify-content-around">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Credit alerts</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Credit Centre
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Resolution centre</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Identity protection
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Knowledge area
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<!-- /.header-menu -->
+
+	<div class="form-header container-fluid">
+		<div class="container">
+			<h1>Get started with Your Credit & Identity</h1>
+			<div class="form-header-steps d-flex flex-row">
+				<div class="form-header-steps__circle active">
+					1
+					<span>Signup</span>
+				</div>
+				<div class="form-header-steps__arrow">
+					<img src="img/arrow.png" alt="arrow">
+				</div>
+				<div class="form-header-steps__circle">
+					2
+					<span>Your Details</span>
+				</div>
+				<div class="form-header-steps__arrow">
+					<img src="img/arrow.png" alt="arrow">
+				</div>
+				<div class="form-header-steps__circle">
+					3
+					<span>Summary</span>
+				</div>
+				<div class="form-header-steps__arrow">
+					<img src="img/arrow.png" alt="arrow">
+				</div>
+				<div class="form-header-check">&#10004;</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.form-header -->
+
+	<div class="form container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="form-registration col-md-7">
+					<form>
+						<div class="form-group">
+							<label for="username">Username<sup>*</sup></label>
+							<small id="usernameHelp" class="form-text">
+								User name should not be an email addres
+							</small>
+							<input type="email" class="form-control" id="username" placeholder="Enter your name">
+						</div>
+						<div class="form-group">
+							<label for="password">Password<sup>*</sup></label>
+							<input type="password" class="form-control" id="password" placeholder="Password">
+						</div>
+						<div class="form-group">
+							<label for="confirmPassword">Confirm Password<sup>*</sup></label>
+							<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm password">
+						</div>
+						<div class="form-group form-registration-terms">
+							<span>Terms and Conditions<sup>*</sup></span>
+							<small id="termsHelp" class="form-text">
+								Please click and read Terms & Conditions to enable the checkbox
+							</small>
+						</div>
+						<div class="form-group form-check d-flex flex-row align-items-center">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">
+								I accept following <a href="#">Terms and Conditions</a> & <a href="#">Privacy Policy</a>
+							</label>
+						</div>
+						<div class="form-group form-check d-flex flex-row align-items-center">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">I'm not a robot</label>
+						</div>
+						<button type="submit" class="btn btn-primary">Next</button>
+					</form>
+					<!-- /.form-registration -->
+				</div>
+
+				<div class="side-menus col-md-4 offset-md-1">
+					<div class="side-menus-selected">
+						<h1>You have selected</h1>
+						<p>Product Price (inc. GST)</p>
+						<p>Product Name</p>
+						<ul>
+							<li>* Feature 1</li>
+							<li>* Feature 2</li>
+							<li>* Feature 3</li>
+						</ul>
+					</div>
+
+					<div class="side-menus-transaction">
+						<h1>Secure Transaction</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi optio porro explicabo eum, quis necessitatibus consectetur provident aliquid aspernatur laboriosam.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.forms -->
+
+	<footer class="footer container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<h1>Company Name</h1>
+				</div>
+				<div class="col-md-2 d-flex flex-column">
+					<h2>About Us</h2>
+					<a href="#">Terms and Conditions</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">About</a>
+					<a href="#">Contact Us</a>
+				</div>
+				<div class="col-md-7 d-flex align-items-center">
+					<p>Information Services and Solutions</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-2 offset-md-3">
+					<p>Copuright ©2018</p>
+				</div>
+				<div class="col-md-7">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, dicta?</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- /.footer -->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- Need to be deleted when the project is end. -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
