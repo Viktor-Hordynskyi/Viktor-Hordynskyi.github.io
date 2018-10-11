@@ -130,6 +130,97 @@ html, body {
 	background-color: #ffffff;
 }
 
+/* header-table-mobile style */
+.header-table-mobile {
+	display: none;
+	padding: .5rem 2rem;
+}
+.header-table-mobile-item {
+	background-color: #ffffff;
+	border: .2rem solid #c9c9c9;
+	margin-bottom: 1rem;
+}
+.header-table-mobile-item__title {
+	display: flex;
+	flex-direction: row;
+	height: 10rem;
+}
+.header-table-mobile-item__title-left,
+.header-table-mobile-item__title-right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% / 2);
+}
+.header-table-mobile-item__description-left,
+.header-table-mobile-item__description-right {
+	display: flex;
+	justify-content: center;
+	padding-left: 1rem;
+	width: calc(100% / 2);
+}
+.header-table-mobile-item__title-left {
+	background-color: #f9f9fa;
+	font-size: 2rem;
+	font-weight: 700;
+}
+.header-table-mobile-item:nth-child(1)
+.header-table-mobile-item__title-right {
+	background-color: #ee464c;
+}
+.header-table-mobile-item:nth-child(2)
+.header-table-mobile-item__title-right {
+	background-color: #f4faf0;
+}
+.header-table-mobile-item:nth-child(3)
+.header-table-mobile-item__title-right {
+	background-color: #006599;
+}
+.header-table-mobile-item__title-right {
+	background-color: #f9f9fa;
+}
+.header-table-mobile-item__description {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	font-size: 2rem;
+	line-height: 3.5rem;
+	padding-top: 3rem;
+}
+.header-table-mobile-item__description-left {
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+}
+.header-table-mobile-item__description-right {
+	display: flex;
+	flex-direction: column;
+}
+.header-table-mobile-item__action {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header-table-mobile-item__action a {
+	background-color: #28bf74;
+	border-radius: 1rem;
+	color: #fff;
+	display: inline-block;
+	font-size: 2.2rem;
+	font-weight: 700;
+	margin-top: 5rem;
+	padding: 2.5rem 7rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.header-table-mobile-item__action img {
+	margin-top: 1.5rem;
+	margin-bottom: 3rem;
+	height: 2.5rem;
+	width: 100%;
+}
+
 /* brokers style */
 .brokers {
 	padding: 5.5rem 0 20rem;
@@ -194,6 +285,9 @@ html, body {
 	padding: 2.5rem 5rem;
 	text-align: center;
 }
+.footer-description span {
+	font-weight: 700;
+}
 .footer-copyright {
 	padding: 3.5rem 0 3rem;
 	text-align: center;
@@ -201,25 +295,117 @@ html, body {
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1439px) {
+	html, body {
+		font-size: 11px;
+	}
 
+	/* brokers style */
+	.brokers {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+	html, body {
+		font-size: 10px;
+	}
 
+	/* brokers style */
+	.brokers {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
+	html, body {
+		font-size: 9px;
+	}
 
+	/* brokers style */
+	.brokers {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+	html, body {
+		font-size: 8px;
+	}
 
+	/* header style */
+	.header-title h1 {
+		font-size: 5rem;
+	}
+	.header-bg {
+		height: 40%;
+	}
+	.header-table {
+		display: none;
+	}
+	.header-table-mobile {
+		display: block;
+	}
+
+	/* brokers style */
+	.brokers {
+		padding-bottom: 3rem;
+	}
+	.brokers-data {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.brokers-content {
+		width: 100%;
+	}
+	.brokers-content-item {
+		padding-bottom: 4rem;
+		position: relative;
+		text-align: center;
+	}
+	.brokers-content-item img {
+		padding-bottom: 2rem;
+		position: relative;
+		top: 0;
+		height: 4.5rem;
+		width: 4.5rem;
+	}
+	.brokers-content-item h2 {
+		padding: 0 3.5rem;
+	}
+	.brokers-content-item p {
+		padding: 0 3.5rem;
+	}
+	.brokers-banner {
+		margin: 0 auto;
+		position: relative;
+		height: 600px;
+		width: 300px;
+	}
+
+	/* footer style */
+	.footer-logo img {
+		height: 3rem;
+	}
+	.footer-description {
+		font-size: 1.7rem;
+		line-height: 2rem;
+		margin: 0 2rem;
+		padding: 2.5rem 3rem;
+	}
+	.footer-copyright {
+		font-size: 1.5rem;
+	}
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-
+	html, body {
+		font-size: 7px;
+	}
 }
