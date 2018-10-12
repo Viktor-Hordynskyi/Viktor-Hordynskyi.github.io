@@ -71,6 +71,7 @@ html, body {
 	text-align: center;
 }
 .header-table {
+	border: 1px solid rgba(112, 112, 112, .5);
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -80,6 +81,7 @@ html, body {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
+	overflow: hidden;
 }
 .header-table-row {
 	display: -webkit-box;
@@ -92,11 +94,16 @@ html, body {
 	-ms-flex-direction: row;
 	flex-direction: row;
 }
+.header-table-row.shadow {
+	-webkit-box-shadow: 0 0 10px rgba(153, 153, 153, .5);
+	        box-shadow: 0 0 10px rgba(153, 153, 153, .5);
+	position: relative;
+}
 .header-table-row-title,
 .header-table-row-hycm,
 .header-table-row-fxtm,
 .header-table-row-fxcm {
-	border: 1px solid rgba(112, 112, 112, .5);
+	border-right: 1px solid rgba(112, 112, 112, .5);
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -118,6 +125,12 @@ html, body {
 	padding: 23px 0;
 	text-align: center;
 	width: calc(100% / 7);
+}
+.header-table-row-title:last-child,
+.header-table-row-hycm:last-child,
+.header-table-row-fxtm:last-child,
+.header-table-row-fxcm:last-child {
+	border-right: 0;
 }
 .header-table-row-hycm:last-child a,
 .header-table-row-fxtm:last-child a,
@@ -724,8 +737,8 @@ html, body {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 	}
 	.brokers-content {
 		width: 100%;
