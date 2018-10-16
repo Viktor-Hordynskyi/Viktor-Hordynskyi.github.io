@@ -605,7 +605,8 @@ p {
 		padding-left: 13rem !important;
 		padding-right: 13rem !important;
 	}
-
+	
+	/* content bottom style */
 	.content-bottom-item.planet-3 {
 		left: 23%;
 	}
@@ -626,7 +627,8 @@ p {
 		padding-left: 8rem !important;
 		padding-right: 8rem !important;
 	}
-
+	
+	/* content bottom style */
 	.content-bottom-item.planet-2 {
 		top: 5%;
 		left: -5%;
@@ -649,6 +651,12 @@ p {
 		padding-right: 4rem !important;
 	}
 
+	/* header style */
+	.header .navbar-brand {
+		padding-right: 10rem;
+	}
+
+	/* content bottom style */
 	.content-bottom-item.planet-2 {
 		top: 5%;
 		left: -1%;
@@ -669,8 +677,8 @@ p {
 		font-size: calc(6px + 1 * ((100vw - 640px) / 960));
 	}
 	.header, .content-top, .content-bottom, .footer {
-		padding-left: 5rem !important;
-		padding-right: 5rem !important;
+		padding-left: 4.5rem !important;
+		padding-right: 4.5rem !important;
 	}
 
 	/* header style */
@@ -681,6 +689,7 @@ p {
 		display: none;
 	}
 
+	/* content bottom style */
 	.content-bottom-item.planet-1 {
 		right: 5%;
 	}
