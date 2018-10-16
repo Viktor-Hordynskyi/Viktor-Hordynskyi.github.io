@@ -216,7 +216,7 @@ p {
 	height: .5rem;
 	width: 9rem;
 } 
-.content-top-title {
+.content-top h1 {
 	color: #4d4d4d;
 	font-size: 5.8rem;
 	font-weight: 700;
@@ -811,7 +811,7 @@ p {
 		height: .7rem;
 		width: 13rem;
 	} 
-	.content-top-title {
+	.content-top h1 {
 		font-size: 4.5rem;
 		line-height: 1.5;
 	}
@@ -1030,7 +1030,7 @@ p {
 		height: .7rem;
 		width: 13rem;
 	} 
-	.content-top-title {
+	.content-top h1 {
 		font-size: 4.5rem;
 		line-height: 1.5;
 	}
