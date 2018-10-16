@@ -1,20 +1,8 @@
 @font-face {
-	font-family: "almoni-neue-aaa-300";  
-	src: url("../fonts/almoni-neue-aaa-300.ttf") format("truetype"); 
-	font-style: normal; 
-	font-weight: 300;
-}
-@font-face {
 	font-family: "almoni-neue-aaa-400";  
 	src: url("../fonts/almoni-neue-aaa-400.ttf") format("truetype"); 
 	font-style: normal; 
 	font-weight: 400;
-}
-@font-face {
-	font-family: "almoni-neue-aaa-700";  
-	src: url("../fonts/almoni-neue-aaa-700.ttf") format("truetype"); 
-	font-style: normal; 
-	font-weight: 700;
 }
 html, body {
 	font-family: "almoni-neue-aaa-400";
@@ -422,7 +410,6 @@ p {
 }
 
 /* content bottom mobile style */
-
 .content-bottom-mobile {
 	color: #fff;
 	display: none;
