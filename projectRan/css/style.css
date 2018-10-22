@@ -829,7 +829,7 @@ p {
 		padding: 5rem 2rem;
 	}	
 	.content-top__blocks-item img {
-		width: 30rem;
+		width: 150px;
 	}
 	.content-top__blocks-item h2 {
 		font-size: 5rem;
@@ -1048,7 +1048,7 @@ p {
 		padding: 5rem 2rem;
 	}	
 	.content-top__blocks-item img {
-		width: 30rem;
+		width: 110px;
 	}
 	.content-top__blocks-item h2 {
 		font-size: 5rem;
@@ -1138,7 +1138,7 @@ p {
 	}
 }
 
-@media all and (-webkit-min-device-pixel-ratio:0) {
+/*@media all and (-webkit-min-device-pixel-ratio:0) {
 	.navbar {
 		display: -webkit-box;
 		-webkit-box-align: center;
@@ -1160,7 +1160,6 @@ p {
 		-webkit-flex-wrap: wrap;
 	}
 
-	/*Extra large devices (large desktops, 1200px and up)*/
 	@media (min-width: 1536px) and (max-width: 1799.98px) {
 		html, body {
 			font-size: 10px;
@@ -1177,14 +1176,12 @@ p {
 		}
 	}
 
-	/*Large devices (desktops, 992px and up)*/
 	@media (min-width: 992px) and (max-width: 1199.98px) {
 		html, body {
 			font-size: 7px;
 		}
 	}
 
-	/*Medium devices (tablets, 768px and up)*/
 	@media (min-width: 768px) and (max-width: 991.98px) {
 		html, body {
 			font-size: 6px;
@@ -1195,7 +1192,6 @@ p {
 		}
 	}
 
-	/*Small devices (landscape phones, 576px and up)*/
 	@media (min-width: 576px) and (max-width: 767.98px) {
 		html, body {
 			font-size: 5px;
@@ -1206,7 +1202,6 @@ p {
 		}
 	}
 
-	/*Extra small devices (portrait phones, less than 576px)*/
 	@media (max-width: 575.98px) {
 		html, body {
 			font-size: 4px;
@@ -1217,4 +1212,4 @@ p {
 		}
 	}
 
-}
+}*/
