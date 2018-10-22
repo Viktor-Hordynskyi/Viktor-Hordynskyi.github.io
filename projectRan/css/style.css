@@ -692,8 +692,7 @@ p {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 	html, body {
-		/*font-size: calc(5px + 1 * ((100vw - 640px) / 960));*/
-		font-size: 5px;
+		font-size: calc(5px + 1 * ((100vw - 640px) / 960));
 	}
 	.header, .content-top, .content-bottom, .footer {
 		padding-left: 5rem !important;
@@ -923,8 +922,7 @@ p {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	html, body {
-		/*font-size: calc(4px + 1 * ((100vw - 640px) / 960));*/
-		font-size: 4px;
+		font-size: calc(4px + 1 * ((100vw - 640px) / 960));
 	}
 	.header, .content-top, .content-bottom, .footer {
 		padding-left: 2rem !important;
@@ -1086,6 +1084,9 @@ p {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		align-items: center;
+	}
+	.content-bottom-mobile:after {
+		height: 1650px;
 	}
 
 	/* footer style */
