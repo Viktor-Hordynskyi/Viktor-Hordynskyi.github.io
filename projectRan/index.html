@@ -535,12 +535,12 @@
 
     }
 
-    if (isFacebookApp()) {
-      if (!window.location.href.match('redirect_fb')) {
-        window.location.href = "https://viktor-hordynskyi.github.io/projectRan/";
-      }
+    if (!isFacebookApp()) {
+      $("head").append($("<link rel='stylesheet' href='css/facebook_style.css' type='text/css' media='screen' />"));
     }
 
     </script>
+
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
