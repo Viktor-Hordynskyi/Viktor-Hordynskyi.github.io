@@ -980,7 +980,7 @@ p {
 		padding-left: 4rem!important;
 	}
 	.header-create-button a {
-		padding: 2rem 8rem 2rem 3rem;
+		padding: 8px 32px 8px 12px;
 	}
 	.header-create-button.d-show {
 		display: none;
@@ -1048,13 +1048,16 @@ p {
 		padding: 5rem 2rem;
 	}	
 	.content-top__blocks-item img {
-		width: 30rem;
+		width: 120px;
 	}
 	.content-top__blocks-item h2 {
 		font-size: 5rem;
 	}
 
 	/* content middle style */
+	.content-middle {
+		padding: 5rem 0;
+	}
 	.content-middle:before {
 		height: 60rem;
 	}
