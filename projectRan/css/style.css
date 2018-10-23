@@ -922,7 +922,7 @@ p {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	html, body {
-		font-size: calc(4px + 1 * ((100vw - 640px) / 960));
+		font-size: 4px;
 	}
 	.header, .content-top, .content-bottom, .footer {
 		padding-left: 2rem !important;
@@ -980,7 +980,7 @@ p {
 		padding-left: 4rem!important;
 	}
 	.header-create-button a {
-		padding: 8px 32px 8px 12px;
+		padding: 2rem 8rem 2rem 3rem;
 	}
 	.header-create-button.d-show {
 		display: none;
@@ -1021,7 +1021,7 @@ p {
 
 	/* content top style */
 	.content-top::before {
-		height: 1000px;
+		height: 280rem;
 	}
 	.content-top span {
 		font-size: 7rem;
@@ -1048,18 +1048,15 @@ p {
 		padding: 5rem 2rem;
 	}	
 	.content-top__blocks-item img {
-		width: 120px;
+		width: 30rem;
 	}
 	.content-top__blocks-item h2 {
 		font-size: 5rem;
 	}
 
 	/* content middle style */
-	.content-middle {
-		padding: 5rem 0;
-	}
 	.content-middle:before {
-		height: 240px;
+		height: 60rem;
 	}
 	.content-middle h2 {
 		color: #000;
@@ -1087,16 +1084,9 @@ p {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		align-items: center;
-		height: 1850px;
-	}
-	.content-bottom-mobile:before {
-		height: 2150px;
 	}
 	.content-bottom-mobile:after {
 		height: 1650px;
-	}
-	.content-bottom-mobile-item {
-		width: 231px;
 	}
 
 	/* footer style */
