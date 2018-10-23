@@ -531,7 +531,7 @@
 		function isFacebookApp() {
 			return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
 		}
-		if (!isFacebookApp()) {
+		if (isFacebookApp()) {
 			$("head").append($("<link rel='stylesheet' href='css/facebook_style.css' type='text/css' media='screen' />"));
 		}
 	</script>
