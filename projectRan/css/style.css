@@ -1021,7 +1021,7 @@ p {
 
 	/* content top style */
 	.content-top::before {
-		height: 280rem;
+		height: 1000px;
 	}
 	.content-top span {
 		font-size: 7rem;
@@ -1088,8 +1088,14 @@ p {
 		-ms-flex-align: center;
 		align-items: center;
 	}
+	.content-bottom-mobile:before {
+		height: 2320px;
+	}
 	.content-bottom-mobile:after {
 		height: 1650px;
+	}
+	.content-bottom-mobile-item {
+		width: 231px;
 	}
 
 	/* footer style */
