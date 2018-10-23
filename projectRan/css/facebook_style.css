@@ -158,15 +158,17 @@
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		align-items: center;
+		padding-top: 92.5px;
 		height: 1850px;
 	}
-	.content-bottom:before {
-		height: 1665px;
+	.content-bottom-mobile:before {
+		height: 2146px;
 	}
 	.content-bottom-mobile:after {
 		height: 1665px;
 	}
 	.content-bottom-mobile-item {
+		right: 18.5px;
 		width: 233px;
 	}
 
