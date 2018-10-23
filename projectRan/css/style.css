@@ -1059,7 +1059,7 @@ p {
 		padding: 5rem 0;
 	}
 	.content-middle:before {
-		height: 60rem;
+		height: 240px;
 	}
 	.content-middle h2 {
 		color: #000;
@@ -1087,9 +1087,10 @@ p {
 		-webkit-align-items: center;
 		-ms-flex-align: center;
 		align-items: center;
+		height: 1850px;
 	}
 	.content-bottom-mobile:before {
-		height: 2320px;
+		height: 2150px;
 	}
 	.content-bottom-mobile:after {
 		height: 1650px;
