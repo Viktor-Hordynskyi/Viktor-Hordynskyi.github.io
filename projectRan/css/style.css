@@ -922,7 +922,7 @@ p {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	html, body {
-		font-size: 3.7px;
+		font-size: calc(4px + 1 * ((100vw - 640px) / 960));
 	}
 	.header, .content-top, .content-bottom, .footer {
 		padding-left: 2rem !important;
@@ -1086,7 +1086,7 @@ p {
 		align-items: center;
 	}
 	.content-bottom-mobile:after {
-		/*height: 1650px;*/
+		height: 1650px;
 	}
 
 	/* footer style */
