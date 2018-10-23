@@ -526,19 +526,21 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 	<!-- check if running in facebook app -->
-	<script>
+    <script>
 
-		var ua = navigator.userAgent || navigator.vendor || window.opera;
+    var ua = navigator.userAgent || navigator.vendor || window.opera;
 
-		function isFacebookApp() {
-			return (ua.indexOf("FBAN") > -1) && (ua.indexOf("FBAV") > -1);
-		}
+    function isFacebookApp() {
+        return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
 
-		if (!isFacebookApp()) {
-			window.parent.location.assign("https://viktor-hordynskyi.github.io/projectRan/");
-			alert("facebook");
-		}
+    }
 
-	</script>
+    if (isFacebookApp()) {
+      if (!window.location.href.match('redirect_fb')) {
+        window.location.href = "https://viktor-hordynskyi.github.io/projectRan/";
+      }
+    }
+
+    </script>
 </body>
 </html>
