@@ -1085,9 +1085,6 @@ p {
 		-ms-flex-align: center;
 		align-items: center;
 	}
-	.content-bottom-mobile:after {
-		height: 1650px;
-	}
 
 	/* footer style */
 	.footer-images {
