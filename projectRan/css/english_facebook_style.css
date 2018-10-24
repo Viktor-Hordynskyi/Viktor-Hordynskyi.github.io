@@ -20,7 +20,7 @@
 	}
 	.header .navbar-brand {
 		padding-right: 0px;
-		width: 50%
+		width: 40%
 	}
 	.header .navbar-collapse {
 		padding-top: 7.4px;
@@ -54,8 +54,8 @@
 	}
 	.header-language img {
 		margin-right: 7.4px;
-		height: 18.5px;
-		width: 18.5px;
+		height: 26px;
+		width: 26px;
 	}
 	.header-create-button {
 		background-color: #fff;

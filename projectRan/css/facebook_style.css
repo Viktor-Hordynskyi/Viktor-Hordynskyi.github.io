@@ -50,6 +50,14 @@
 	.header .navbar-nav .nav-item:first-child {
 		padding-left: 14.5px!important;
 	}
+	.header-language {
+		flex-direction: row;
+	}
+	.header-language img {
+		margin-right: 7.4px;
+		height: 26px;
+		width: 26px;
+	}
 	.header-create-button a {
 		padding: 7.4px 29.5px 7.4px 11px;
 	}
