@@ -222,16 +222,23 @@
 	.footer-mobile-logo img {
 		max-width: 74px;
 	}
-	.footer-create-button {
+	.footer-mobile-create-button {
+		background-color: #fff;
 		border-radius: 11.1px/11.1px;
 		margin-top: 18.5px;
+		margin-left: auto;
+		margin-bottom: 11.1px;
+		width: 92.5px;
 	}
-	.footer-create-button a {
-		font-size: 7.4px;
-		padding: 3.7px 5.55px;
+	.footer-mobile-create-button a {
+		color: #666;
+		display: inline-block;
+		font-size: 9.25px;
+		font-weight: 700;
+		padding: 5.55px 9.25px;
 	}
-	.footer-create-button img {
-		margin-left: 1.85px;
+	.footer-mobile-create-button img {
+		margin-left: 3.7px;
 		height: 7.4px;
 		width: 7.4px;
 	}
