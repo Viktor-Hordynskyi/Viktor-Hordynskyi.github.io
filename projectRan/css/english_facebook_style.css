@@ -44,10 +44,10 @@
 		width: 60%;
 	}
 	.header .navbar-nav .nav-item {
-		padding-right: 14.5px!important;
+		padding-right: 0px!important;
 	}
 	.header .navbar-nav .nav-item:first-child {
-		padding-left: 14.5px!important;
+		padding-left: 0px!important;
 	}
 	.header-language {
 		flex-direction: row;
