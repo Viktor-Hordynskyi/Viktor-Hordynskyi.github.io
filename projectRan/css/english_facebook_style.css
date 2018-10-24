@@ -67,11 +67,8 @@
 	}
 	.header-create-button img {
 		margin-left: 3.7px;
-		height: 7.4px;
-		width: 7.4px;
-	}
-	.header-create-button a {
-		padding: 7.4px 29.5px 7.4px 11px;
+		height: 11.1px;
+		width: 11.1px;
 	}
 	.header-create-button.d-show {
 		display: none;
