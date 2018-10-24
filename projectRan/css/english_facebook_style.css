@@ -187,8 +187,8 @@
 		height: 1665px;
 	}
 	.content-bottom-mobile-item {
-		right: 18.5px;
-		width: 233px;
+		left: -18.5px;
+		width: 259px;
 	}
 	.content-bottom-mobile-button {
 		border-radius: 18.5px/18.5px;
