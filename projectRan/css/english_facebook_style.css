@@ -1,0 +1,234 @@
+@media (max-width: 575.98px) {
+	html, body {
+		font-size: 3.7px;
+	}
+	.header, .content-top, .content-bottom, .footer {
+		padding-left: 7.4px !important;
+		padding-right: 7.4px !important;
+	}
+	.row {
+		margin: 0;
+	}
+	/* header style */
+	.header {
+		background: url(../img/header-mobile-bg.png) center no-repeat;
+		background-size: 100% 100%;
+		padding: 7.4px 64px 37px;
+		text-align: right;
+	}
+	.header a {
+		font-size: 18.5px;
+	}
+	.header .navbar-brand {
+		padding-right: 0px;
+		width: 50%
+	}
+	.header .navbar-collapse {
+		padding-top: 7.4px;
+	}
+	.header-search-input {
+		border-top-left-radius: 18.5px;
+		border-bottom-left-radius: 18.5px;
+		color: #ccc;
+		font-size: 18.5px;
+		padding: 0 3.7px;
+		height: 33px;
+		width: 90%;
+	}
+	.header-search-button {
+		border-top-right-radius: 18.5px;
+		border-bottom-right-radius: 18.5px;
+		height: 33px;
+		width: 10%;
+	}
+	.header-search-button img {
+		width: 60%;
+	}
+	.header .navbar-nav .nav-item {
+		padding-right: 14.5px!important;
+	}
+	.header .navbar-nav .nav-item:first-child {
+		padding-left: 14.5px!important;
+	}
+	.header-create-button a {
+		padding: 7.4px 29.5px 7.4px 11px;
+	}
+	.header-create-button.d-show {
+		display: none;
+	}
+	.header-create-button.m-show {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	/* header intro */
+	.header-intro {
+		background: none;
+	}
+	.header-intro h1 {
+		font-size: 26px;
+	}
+	.header-intro h1 span {
+		display: none;
+	}
+	.header-intro p {
+		color: #ccc;
+		font-size: 18.5px;
+		line-height: 1.5;
+	}
+	.header-intro-button {
+		text-align: right;
+	}
+	.header-intro-button a {
+		font-size: 15px;
+		margin-top: 37px;
+		padding: 3.7px 7.4px;
+	}
+	.header-intro-button a img {
+		width: 25%;
+	}
+
+	/* content top style */
+	.content-top::before {
+		height: 1036px;
+	}
+	.content-top span {
+		font-size: 26px;
+	}
+	.content-top hr {
+		height: 2.6px;
+		width: 48px;
+	} 
+	.content-top-title {
+		font-size: 16.6px;
+		line-height: 1.5;
+	}
+	.content-top__blocks {
+		padding: 0 18.5px;
+	}
+	.content-top__blocks-item {
+		direction: rtl;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		margin-bottom: 18.5px;
+		padding: 18.5px 7.4px;
+	}	
+	.content-top__blocks-item img {
+		width: 111px;
+	}
+	.content-top__blocks-item h2 {
+		font-size: 18.5px;
+	}
+
+	/* content middle style */
+	.content-middle {
+		padding: 18.5px 0px;
+	}
+	.content-middle:before {
+		top: -63px;
+		height: 230px;
+	}
+	.content-middle h2 {
+		color: #000;
+		font-size: 26px;
+	}
+	.content-middle h3 {
+		font-size: 26px;
+	}
+
+	/* content bottom style */
+	.content-bottom {
+		display: none;
+	}
+	.content-bottom-mobile {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		padding-top: 92.5px;
+		height: 1850px;
+	}
+	.content-bottom-mobile:before {
+		height: 2146px;
+	}
+	.content-bottom-mobile:after {
+		height: 1665px;
+	}
+	.content-bottom-mobile-item {
+		right: 18.5px;
+		width: 233px;
+	}
+	.content-bottom-mobile-button {
+		border-radius: 18.5px/18.5px;
+		font-size: 14.8px;
+		letter-spacing: 1.9px;
+		margin-top: 37px;
+		padding: 5.6px 14.8px;
+		top: 481px;
+	}
+
+	/* footer style */
+	.footer-images {
+		display: none;
+	}
+	.footer hr {
+		display: none;
+	}
+	.footer-container {
+		display: none;
+	}
+	.footer-container-mobile {
+		display: block;
+		padding: 0 37px;
+	}
+	.footer-mobile-logo {
+		text-align: left;
+	}
+	.footer-mobile-logo img {
+		max-width: 74px;
+	}
+	.footer-mobile-create-button a {
+		background: url(../img/header-create.png) center no-repeat;
+		background-size: 100% 100%;
+		color: #666;
+		display: inline-block;
+		font-size: 11px;
+		font-weight: 700;
+		letter-spacing: 1.9px;
+		margin-bottom: 11px;
+		padding: 7.4px 26px 7.4px 11px;
+		text-align: center;
+	}
+	.footer-mobile-menu a {
+		color: #fff;
+		font-size: 11px;
+		font-weight: 700;
+		padding-bottom: 7.4px;
+	}
+	.footer-mobile-contacts h2 {
+		color: #fff;
+		font-size: 11px;
+		font-weight: 700;
+		padding-bottom: 11px;
+	}
+	.footer-mobile-contacts p {
+		color: #777;
+		font-size: 11px;
+		font-weight: 300;
+		padding-bottom: 11px;
+	}
+}
