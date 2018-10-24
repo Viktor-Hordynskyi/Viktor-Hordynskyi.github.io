@@ -111,11 +111,22 @@ p {
 	height: auto;
 	width: 100%;
 }
+.header .navbar-nav {
+	align-items: center;
+}
 .header .navbar-nav .nav-item {
 	padding-right: 4rem!important;
 }
 .header .navbar-nav .nav-item:first-child {
 	padding-left: 4rem!important;
+}
+.header-language {
+	display: flex;
+	flex-direction: column;
+}
+.header-language img {
+	height: 2rem;
+	width: 2rem;
 }
 .header-create-button {
 	background: url(../img/header-create.png) center no-repeat;
@@ -749,11 +760,22 @@ p {
 	.header .navbar-collapse {
 		padding-top: 2rem;
 	}
+	.header .navbar-nav {
+		align-items: flex-end;
+	}
 	.header .navbar-nav .nav-item {
 		padding-right: 4rem!important;
 	}
 	.header .navbar-nav .nav-item:first-child {
 		padding-left: 4rem!important;
+	}
+	.header-language {
+		flex-direction: row;
+	}
+	.header-language img {
+		margin-left: 2rem;
+		height: 5rem;
+		width: 5rem;
 	}
 	.header-create-button {
 		background: url(../img/header-create.png) center no-repeat;
@@ -973,11 +995,22 @@ p {
 	.header-search-button img {
 		width: 60%;
 	}
+	.header .navbar-nav {
+		align-items: flex-end;
+	}
 	.header .navbar-nav .nav-item {
 		padding-right: 4rem!important;
 	}
 	.header .navbar-nav .nav-item:first-child {
 		padding-left: 4rem!important;
+	}
+	.header-language {
+		flex-direction: row;
+	}
+	.header-language img {
+		margin-left: 2rem;
+		height: 5rem;
+		width: 5rem;
 	}
 	.header-create-button a {
 		padding: 2rem 8rem 2rem 3rem;
