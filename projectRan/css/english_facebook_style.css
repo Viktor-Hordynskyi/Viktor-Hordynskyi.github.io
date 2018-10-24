@@ -14,7 +14,6 @@
 		background: url(../img/header-mobile-bg.png) center no-repeat;
 		background-size: 100% 100%;
 		padding: 7.4px 64px 37px;
-		text-align: right;
 	}
 	.header a {
 		font-size: 18.5px;
@@ -49,6 +48,14 @@
 	}
 	.header .navbar-nav .nav-item:first-child {
 		padding-left: 14.5px!important;
+	}
+	.header-language {
+		flex-direction: row;
+	}
+	.header-language img {
+		margin-right: 7.4px;
+		height: 18.5px;
+		width: 18.5px;
 	}
 	.header-create-button a {
 		padding: 7.4px 29.5px 7.4px 11px;
@@ -92,6 +99,7 @@
 
 	/* content top style */
 	.content-top::before {
+		top: -351.5px;
 		height: 1036px;
 	}
 	.content-top span {
@@ -109,7 +117,6 @@
 		padding: 0 18.5px;
 	}
 	.content-top__blocks-item {
-		direction: rtl;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: row;
@@ -178,7 +185,8 @@
 		letter-spacing: 1.9px;
 		margin-top: 37px;
 		padding: 5.6px 14.8px;
-		top: 481px;
+		top: 407px;
+		width: 185px;
 	}
 
 	/* footer style */
