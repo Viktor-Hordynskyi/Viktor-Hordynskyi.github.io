@@ -160,9 +160,8 @@ p {
 	background: url(../img/header-cosmonaut.png) right top no-repeat;
 	background-size: 35% auto;
 	color: #fff;
-	margin-top: 10rem;
-	padding-top: 20rem;
-	padding-bottom: 25rem;
+	margin: 10rem 0;
+	padding: 10rem 0;
 }
 .header-intro h1 {
 	font-size: 5.8rem;
