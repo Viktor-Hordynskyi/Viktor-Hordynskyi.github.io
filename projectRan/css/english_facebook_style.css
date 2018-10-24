@@ -57,6 +57,19 @@
 		height: 18.5px;
 		width: 18.5px;
 	}
+	.header-create-button {
+		background-color: #fff;
+		border-radius: 11px/11px;
+	}
+	.header-create-button a {
+		color: #666;
+		padding: 3.7px 7.4px;
+	}
+	.header-create-button img {
+		margin-left: 3.7px;
+		height: 7.4px;
+		width: 7.4px;
+	}
 	.header-create-button a {
 		padding: 7.4px 29.5px 7.4px 11px;
 	}
@@ -209,17 +222,18 @@
 	.footer-mobile-logo img {
 		max-width: 74px;
 	}
-	.footer-mobile-create-button a {
-		background: url(../img/header-create.png) center no-repeat;
-		background-size: 100% 100%;
-		color: #666;
-		display: inline-block;
-		font-size: 11px;
-		font-weight: 700;
-		letter-spacing: 1.9px;
-		margin-bottom: 11px;
-		padding: 7.4px 26px 7.4px 11px;
-		text-align: center;
+	.footer-create-button {
+		border-radius: 11.1px/11.1px;
+		margin-top: 18.5px;
+	}
+	.footer-create-button a {
+		font-size: 7.4px;
+		padding: 3.7px 5.55px;
+	}
+	.footer-create-button img {
+		margin-left: 1.85px;
+		height: 7.4px;
+		width: 7.4px;
 	}
 	.footer-mobile-menu a {
 		color: #fff;

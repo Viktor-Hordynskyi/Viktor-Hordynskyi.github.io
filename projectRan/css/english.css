@@ -127,13 +127,13 @@ p {
 .header-create-button {
 	background-color: #fff;
 	border-radius: 3rem/3rem;
-	padding: 1rem 2rem;
 }
 .header-create-button a {
 	color: #666;
-	padding-right: 1rem;
+	padding: 1rem 2rem;
 }
 .header-create-button img {
+	margin-left: 1rem;
 	height: 2rem;
 	width: 2rem;
 }
@@ -521,17 +521,22 @@ p {
 .footer-logo img {
 	max-width: 20rem;
 }
+.footer-create-button {
+	background-color: #fff;
+	border-radius: 3rem/3rem;
+	margin-top: 5rem;
+}
 .footer-create-button a {
-	background: url(../img/header-create.png) center no-repeat;
-	background-size: 100% 100%;
 	color: #666;
 	display: inline-block;
 	font-size: 2rem;
 	font-weight: 700;
-	margin-top: 5rem;
-	padding: 2rem 3rem 2rem 0;
-	text-align: center;
-	width: 20rem;
+	padding: 1rem 1.5rem;
+}
+.footer-create-button img {
+	margin-left: .5rem;
+	height: 2rem;
+	width: 2rem;
 }
 .footer-menu a {
 	color: #fff;
@@ -830,10 +835,8 @@ p {
 		border-radius: 3rem/3rem;
 		padding: 1rem 2rem;
 	}
-	.header-create-button a {
-		padding-right: 1rem;
-	}
 	.header-create-button img {
+		margin-left: 1rem;
 		height: 3rem;
 		width: 3rem;
 	}
@@ -1069,10 +1072,8 @@ p {
 	.header-create-button {
 		padding: 1rem 2rem;
 	}
-	.header-create-button a {
-		padding-right: 1rem;
-	}
 	.header-create-button img {
+		margin-left: 1rem;
 		height: 3rem;
 		width: 3rem;
 	}
