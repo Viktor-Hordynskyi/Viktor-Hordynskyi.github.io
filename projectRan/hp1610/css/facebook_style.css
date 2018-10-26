@@ -14,13 +14,14 @@
 		background: url(../img/header-mobile-bg.png) center no-repeat;
 		background-size: 100% 100%;
 		padding: 7.4px 64px 37px;
+		text-align: right;
 	}
 	.header a {
 		font-size: 18.5px;
 	}
 	.header .navbar-brand {
 		padding-right: 0px;
-		width: 40%
+		width: 50%
 	}
 	.header .navbar-collapse {
 		padding-top: 7.4px;
@@ -44,10 +45,10 @@
 		width: 60%;
 	}
 	.header .navbar-nav .nav-item {
-		padding-right: 0px!important;
+		padding-right: 14.5px!important;
 	}
 	.header .navbar-nav .nav-item:first-child {
-		padding-left: 0px!important;
+		padding-left: 14.5px!important;
 	}
 	.header-language {
 		flex-direction: row;
@@ -57,19 +58,8 @@
 		height: 26px;
 		width: 26px;
 	}
-	.header-create-button {
-		background-color: #fff;
-		border-radius: 11px/11px;
-	}
 	.header-create-button a {
-		color: #666;
-		font-size: 14.8px;
-		padding: 3.7px 7.4px;
-	}
-	.header-create-button img {
-		margin-left: 3.7px;
-		height: 11.1px;
-		width: 11.1px;
+		padding: 7.4px 29.5px 7.4px 11px;
 	}
 	.header-create-button.d-show {
 		display: none;
@@ -110,7 +100,6 @@
 
 	/* content top style */
 	.content-top::before {
-		top: -351.5px;
 		height: 1036px;
 	}
 	.content-top span {
@@ -128,6 +117,7 @@
 		padding: 0 18.5px;
 	}
 	.content-top__blocks-item {
+		direction: rtl;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: row;
@@ -187,8 +177,8 @@
 		height: 1665px;
 	}
 	.content-bottom-mobile-item {
-		left: -18.5px;
-		width: 259px;
+		right: 18.5px;
+		width: 233px;
 	}
 	.content-bottom-mobile-button {
 		border-radius: 18.5px/18.5px;
@@ -196,8 +186,7 @@
 		letter-spacing: 1.9px;
 		margin-top: 37px;
 		padding: 5.6px 14.8px;
-		top: 407px;
-		width: 185px;
+		top: 481px;
 	}
 
 	/* footer style */
@@ -223,14 +212,14 @@
 	.footer-mobile-create-button {
 		background-color: #fff;
 		border-radius: 11.1px/11.1px;
+		display: inline-block;
 		margin-top: 18.5px;
 		margin-left: auto;
 		margin-bottom: 11.1px;
-		width: 92.5px;
 	}
 	.footer-mobile-create-button a {
 		color: #666;
-		display: inline-block;
+		display: block;
 		font-size: 9.25px;
 		font-weight: 700;
 		padding: 5.55px 9.25px;
