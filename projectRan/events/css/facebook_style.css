@@ -1,0 +1,84 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	html, body {
+		font-size: 3px;
+	}
+	.header, .content, .footer {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	/* header style */
+	.header a {
+		font-size: 9px;
+	}
+	.header-search-input {
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		font-size: 15px;
+		padding: 0 3px;
+		height: 27px;
+	}
+	.header-search-button {
+		border-top-right-radius: 15px;
+		border-bottom-right-radius: 15px;
+		height: 27px;
+	}
+	.header .navbar-nav {
+		padding-right: 27px;
+	}
+	.header .navbar-nav .nav-item {
+		padding-right: 21px!important;
+	}
+	.header .navbar-nav .nav-item:first-child {
+		padding-left: 21px!important;
+	}
+	.header-language img {
+		margin-left: 6px;
+		height: 21px;
+		width: 21px;
+	}
+
+	/* header intro */
+	.header-intro {
+		padding: 96px 0 15px;
+	}
+	.header-intro h2 {
+		font-size: 36px;
+		padding-top: 30px;
+		padding-left: 45px;
+	}
+
+	/* content style */
+	.content {
+		padding-top: 15px;
+	}
+	h2.content-element__title {
+		font-size: 36px;
+		text-shadow: 6px 0px 3px rgba(255, 255, 255, .5);
+	}
+	.content-element__description {
+		padding: 3px 0px 9px;
+		height: 25rem;
+	}
+	.content-element__description-title {
+		top: 3px;
+	}
+	.content-element__description-title h3 {
+		font-size: 15px;
+	}
+	.content-element__description-link a {
+		font-size: 9px;
+	}
+	.content-element__description-link img {
+		height: 15px;
+		width: 15px;
+	}
+	.content-element__description-date p {
+		font-size: 9px;
+	}
+	.content-element__description-date img {
+		height: 12px;
+		width: 12px;
+	}
+}

@@ -112,7 +112,10 @@ p {
 	width: 100%;
 }
 .header .navbar-nav {
-	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 .header .navbar-nav .nav-item {
 	padding-right: 4rem!important;
@@ -121,8 +124,15 @@ p {
 	padding-left: 4rem!important;
 }
 .header-language {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .header-language img {
 	height: 2rem;
@@ -771,7 +781,10 @@ p {
 		padding-top: 2rem;
 	}
 	.header .navbar-nav {
-		align-items: flex-end;
+		-webkit-box-align: end;
+		-webkit-align-items: flex-end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
 	}
 	.header .navbar-nav .nav-item {
 		padding-right: 4rem!important;
@@ -780,20 +793,26 @@ p {
 		padding-left: 4rem!important;
 	}
 	.header-language {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 	.header-language img {
 		margin-left: 2rem;
-		height: 5rem;
-		width: 5rem;
+		height: 7rem;
+		width: 7rem;
 	}
 	.header-create-button {
-		background: url(../img/header-create.png) center no-repeat;
-		background-size: 100% 100%;
-		border-radius: 3rem/3rem;
+		background-color: #fff;
+		border-radius: 5rem/5rem;
+		padding: 1rem 2rem;
 	}
-	.header-create-button a {
-		padding: 2rem 8rem 2rem 3rem;
+	.header-create-button img {
+		margin-left: 1rem;
+		height: 3rem;
+		width: 3rem;
 	}
 	.header-create-button.d-show {
 		display: none;
@@ -1014,7 +1033,10 @@ p {
 		width: 60%;
 	}
 	.header .navbar-nav {
-		align-items: flex-end;
+		-webkit-box-align: end;
+		-webkit-align-items: flex-end;
+		    -ms-flex-align: end;
+		        align-items: flex-end;
 	}
 	.header .navbar-nav .nav-item {
 		padding-right: 4rem!important;
@@ -1023,15 +1045,21 @@ p {
 		padding-left: 4rem!important;
 	}
 	.header-language {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 	.header-language img {
 		margin-left: 2rem;
-		height: 5rem;
-		width: 5rem;
+		height: 7rem;
+		width: 7rem;
 	}
-	.header-create-button a {
-		padding: 2rem 8rem 2rem 3rem;
+	.header-create-button img {
+		margin-left: 1rem;
+		height: 3rem;
+		width: 3rem;
 	}
 	.header-create-button.d-show {
 		display: none;
