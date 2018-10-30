@@ -193,7 +193,7 @@ p {
 	z-index: -1;
 }
 .content-element {
-	padding-bottom: 10rem;
+	margin-bottom: 10rem;
 }
 .content-element__image {
 	position: relative;
@@ -234,6 +234,7 @@ h2.content-element__title {
 	height: 100%;
 }
 .content-element__description-title {
+	color: #333;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -513,7 +514,10 @@ h2.content-element__title {
 
 	/* content style */
 	.content {
-		padding-top: 5rem;
+		padding: 5rem 10rem 0 !important;
+	}
+	.content-element {
+		box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .2);
 	}
 	h2.content-element__title {
 		font-size: 12rem;
@@ -684,7 +688,10 @@ h2.content-element__title {
 
 	/* content style */
 	.content {
-		padding-top: 5rem;
+		padding: 5rem 10rem 0 !important;
+	}
+	.content-element {
+		box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .2);
 	}
 	h2.content-element__title {
 		font-size: 12rem;
