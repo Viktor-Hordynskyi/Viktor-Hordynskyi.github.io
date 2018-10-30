@@ -449,7 +449,8 @@ h2.content-element__title {
 
 	/* header intro */
 	.header-intro {
-		background-size: 40% 50%;
+		background-position: 10% 30%;
+		background-size: 50rem 30rem;
 		padding: 32rem 0 5rem;
 	}
 	.header-intro h2 {
@@ -565,7 +566,8 @@ h2.content-element__title {
 
 	/* header intro */
 	.header-intro {
-		background-size: 45% 50%;
+		background-position: 10% 30%;
+		background-size: 50rem 30rem;
 		padding: 32rem 0 5rem;
 	}
 	.header-intro h2 {

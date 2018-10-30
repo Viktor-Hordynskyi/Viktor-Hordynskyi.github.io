@@ -46,6 +46,7 @@
 
 	/* header intro */
 	.header-intro {
+		background-size: 150px 90px;
 		padding: 96px 0 15px;
 	}
 	.header-intro h2 {
