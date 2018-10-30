@@ -105,4 +105,38 @@
 		height: 12px;
 		width: 12px;
 	}
+
+	/* footer style */
+	.footer-container-mobile {
+		padding: 0 30px 15px;
+	}
+	.footer-mobile-logo img {
+		max-width: 60px;
+	}
+	.footer-mobile-create-button {
+		border-radius: 9px/9px;
+		margin-top: 15px;
+		margin-bottom: 9px;
+	}
+	.footer-mobile-create-button a {
+		font-size: 7.5px;
+		padding: 4.5px 7.5px;
+	}
+	.footer-mobile-create-button img {
+		margin-left: 3px;
+		height: 6px;
+		width: 6px;
+	}
+	.footer-mobile-menu a {
+		font-size: 9px;
+		padding-bottom: 6px;
+	}
+	.footer-mobile-contacts h2 {
+		font-size: 9px;
+		padding-bottom: 9px;
+	}
+	.footer-mobile-contacts p {
+		font-size: 9px;
+		padding-bottom: 9px;
+	}
 }
