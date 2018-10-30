@@ -14,7 +14,7 @@ a:hover {
 p {
 	margin: 0;
 }
-.header, .content {
+.header, .content, .footer {
 	padding-left: 14.4rem !important;
 	padding-right: 14.4rem !important;
 }
