@@ -580,6 +580,7 @@ h2.content-element__title {
 		font-size: 3rem;
 		font-weight: 700;
 		padding-bottom: 2rem;
+		padding-right: 0;
 	}
 	.footer-mobile-contacts h2 {
 		color: #fff;
@@ -742,6 +743,7 @@ h2.content-element__title {
 		font-size: 3rem;
 		font-weight: 700;
 		padding-bottom: 2rem;
+		padding-right: 0;
 	}
 	.footer-mobile-contacts h2 {
 		color: #fff;
