@@ -24,7 +24,7 @@ p {
 
 /* header style */
 .header {
-	background: url(../img/header-bg.png) center no-repeat;
+	background: url(../img/header-bg-new.png) center no-repeat;
 	background-size: 100% 100%;
 	padding: 2rem 0 10rem;
 	text-align: right;
@@ -259,7 +259,6 @@ h2.content-element__title {
 	color: #fff;
 	display: inline-block;
 	font-size: 4rem;
-	margin-bottom: .5rem;
 	padding: 2rem 4rem;
 }
 .content-element__description-link img {
@@ -274,7 +273,7 @@ h2.content-element__title {
 }
 .content-element__description-date p {
 	font-size: 3.6rem;
-	padding: .5rem 0;
+	padding-top: 1rem;
 }
 .content-element__description-date img {
 	height: 3rem;
@@ -504,7 +503,7 @@ h2.content-element__title {
 
 	/* header style */
 	.header a {
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 	.header-search-input {
 		border-top-left-radius: 5rem;
@@ -582,7 +581,7 @@ h2.content-element__title {
 		font-size: 5rem;
 	}
 	.content-element__description-link a {
-		font-size: 3rem;
+		font-size: 4rem;
 	}
 	.content-element__description-link img {
 		height: 5rem;

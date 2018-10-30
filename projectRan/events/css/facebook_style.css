@@ -10,7 +10,7 @@
 
 	/* header style */
 	.header a {
-		font-size: 9px;
+		font-size: 12px;
 	}
 	.header-search-input {
 		border-top-left-radius: 15px;
@@ -58,6 +58,10 @@
 	.content {
 		padding-top: 15px;
 	}
+	.content::before {
+		top: -285px;
+		height: calc(100% + 285px);
+	}
 	img.content-element__share {
 		top: 15px;
 		max-width: 45px;
@@ -77,8 +81,7 @@
 		font-size: 15px;
 	}
 	.content-element__description-link a {
-		font-size: 9px;
-		margin-bottom: 1.5px;
+		font-size: 12px;
 		padding: 6px 12px;
 	}
 	.content-element__description-link img {
@@ -87,6 +90,7 @@
 	}
 	.content-element__description-date p {
 		font-size: 9px;
+		padding-top: 3px;
 	}
 	.content-element__description-date img {
 		height: 12px;
