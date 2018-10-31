@@ -176,7 +176,7 @@ p {
 	color: #fff;
 	font-size: 17.3rem;
 	font-weight: 400;
-	padding-left: 42rem;
+	padding-left: 40rem;
 }
 
 /* content style */
@@ -341,8 +341,13 @@ h2.content-element__title {
 		font-size: calc(9px + 1 * ((100vw - 640px) / 960));
 	}
 	.header, .content, .footer {
-		padding-left: 12rem !important;
-		padding-right: 12rem !important;
+		padding-left: 9rem !important;
+		padding-right: 9rem !important;
+	}
+
+	/* header intro */
+	.header-intro h2 {
+		padding-left: 35rem;
 	}
 
 	/* content style */
@@ -368,6 +373,14 @@ h2.content-element__title {
 	.header, .content, .footer {
 		padding-left: 8rem !important;
 		padding-right: 8rem !important;
+	}
+
+	/* header style */
+	.header .navbar-nav .nav-item {
+		padding-right: 6rem!important;
+	}
+	.header .navbar-nav .nav-item:first-child {
+		padding-left: 6rem!important;
 	}
 }
 
