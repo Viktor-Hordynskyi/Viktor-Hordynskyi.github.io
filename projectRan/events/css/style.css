@@ -34,6 +34,9 @@ p {
 	font-size: 2.1rem;
 	font-weight: 700;
 }
+.nav-link.active {
+	color: #00ff00 !important;
+}
 .navbar-dark .navbar-toggler {
 	border: 0;
 	color: #fff;
@@ -196,6 +199,7 @@ p {
 	z-index: -1;
 }
 .content-element {
+	box-shadow: .7rem .7rem .5rem rgba(0, 0, 0, .15);
 	margin-bottom: 10rem;
 }
 .content-element__image {
@@ -226,8 +230,8 @@ h2.content-element__title {
 	width: 100%;
 }
 .content-element__description {
-	background-color: #cac8cc;
-	padding: 2rem 8rem;
+	background-color: #ededed;
+	padding: 2rem 8rem 3rem;
 	position: relative;
 	height: 25rem;
 }
@@ -257,14 +261,15 @@ h2.content-element__title {
 .content-element__description-link a {
 	background: linear-gradient(to right, #6ad9ea, #6afe77);
 	border-radius: 10rem/10rem;
+	box-shadow: .7rem .7rem .5rem rgba(0, 0, 0, .15);
 	color: #fff;
-	display: inline-block;
+	display: inline-table;
 	font-size: 4rem;
-	padding: 2rem 4rem;
+	padding: 1rem 3rem;
 }
 .content-element__description-link img {
-	height: 7rem;
-	width: 7rem;
+	height: 4rem;
+	width: 4rem;
 }
 .content-element__description-date {
 	display: flex;
@@ -534,15 +539,12 @@ h2.content-element__title {
 	.content {
 		padding: 5rem 10rem 0 !important;
 	}
-	.content-element {
-		box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .2);
-	}
 	h2.content-element__title {
 		font-size: 12rem;
 		text-shadow: 2rem 0rem 1rem rgba(255, 255, 255, .5);
 	}
 	.content-element__description {
-		padding: 1rem 2rem;
+		padding: 1rem 2rem 3rem;
 		height: 25rem;
 	}
 	.content-element__description-title {
@@ -699,9 +701,6 @@ h2.content-element__title {
 	/* content style */
 	.content {
 		padding: 5rem 10rem 0 !important;
-	}
-	.content-element {
-		box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .2);
 	}
 	h2.content-element__title {
 		font-size: 12rem;
