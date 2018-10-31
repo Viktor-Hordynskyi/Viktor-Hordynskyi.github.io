@@ -343,6 +343,11 @@ h2.content-element__title {
 		padding-right: 12rem !important;
 	}
 
+	/* header intro */
+	.header-intro h2 {
+		padding-left: 35rem;
+	}
+
 	/* content style */
 	h2.content-element__title {
 		font-size: 20rem;

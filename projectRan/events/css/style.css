@@ -345,6 +345,14 @@ h2.content-element__title {
 		padding-right: 9rem !important;
 	}
 
+	/* header style */
+	.header .navbar-nav .nav-item {
+		padding-right: 6rem!important;
+	}
+	.header .navbar-nav .nav-item:first-child {
+		padding-left: 6rem!important;
+	}
+
 	/* header intro */
 	.header-intro h2 {
 		padding-left: 35rem;
