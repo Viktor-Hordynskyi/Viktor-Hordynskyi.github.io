@@ -64,7 +64,8 @@
 		height: calc(100% + 285px);
 	}
 	.content-element {
-		box-shadow: 2.1px 2.1px 1.5px rgba(0, 0, 0, .15);
+		-webkit-box-shadow: 2.1px 2.1px 1.5px rgba(0, 0, 0, .15);
+		        box-shadow: 2.1px 2.1px 1.5px rgba(0, 0, 0, .15);
 	}
 	img.content-element__share {
 		top: 15px;
@@ -85,7 +86,8 @@
 		font-size: 15px;
 	}
 	.content-element__description-link a {
-		box-shadow: 2.1px 2.1px 1.5px rgba(0, 0, 0, .15);
+		-webkit-box-shadow: 2.1px 2.1px 1.5px rgba(0, 0, 0, .15);
+		        box-shadow: 2.1px 2.1px 1.5px rgba(0, 0, 0, .15);
 		font-size: 12px;
 		padding: 6px 12px;
 	}
