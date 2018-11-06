@@ -17,7 +17,10 @@
 		text-align: right;
 	}
 	.header a {
-		font-size: 16.5px;
+		font-size: 18.5px;
+	}
+	.header-create-button a {
+		font-size: 14.8px;
 	}
 	.header .navbar-brand {
 		padding-right: 0px;
