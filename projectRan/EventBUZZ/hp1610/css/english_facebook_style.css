@@ -61,15 +61,6 @@
 		height: 26px;
 		width: 26px;
 	}
-	.header-create-button {
-		background-color: #fff;
-		border-radius: 11px/11px;
-	}
-	.header-create-button a {
-		color: #666;
-		font-size: 14.8px;
-		padding: 3.7px 7.4px;
-	}
 	.header-create-button img {
 		margin-left: 3.7px;
 		height: 11.1px;
