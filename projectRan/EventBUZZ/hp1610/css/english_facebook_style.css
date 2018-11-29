@@ -56,8 +56,8 @@
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: row;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
 	}
 	.header-language img {
 		margin-right: 7.4px;
@@ -199,8 +199,8 @@
 	}
 
 	/* footer style */
-	.footer-images {
-		display: none;
+	.footer h3 {
+		font-size: 18px;
 	}
 	.footer hr {
 		display: none;
@@ -255,5 +255,11 @@
 		font-size: 11px;
 		font-weight: 300;
 		padding-bottom: 11px;
+	}
+	@media (max-width: 425px) {
+		/* content style */
+		.content-bottom-mobile:before {
+			height: 2386px;
+		}
 	}
 }
