@@ -601,7 +601,11 @@ p {
 }
 
 
-
+@media (min-width: 1800px) {
+	.content-bottom:before {
+		height: 460rem;
+	}
+}
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1536px) and (max-width: 1799.98px) {
 	html, body {
@@ -632,6 +636,9 @@ p {
 	.content-bottom-item.planet-9 {
 		top: 34%;
 		left: 29%;
+	}
+	.content-bottom:before {
+		height: 470rem;
 	}
 }
 @media (min-width: 1440px) and (max-width: 1535.98px) {
