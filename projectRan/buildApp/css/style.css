@@ -202,7 +202,7 @@ html, body {
 .cpanel__extended div {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-end;
 	padding: 2.7rem 0 2.3rem;
 }
 .cpanel__title div:first-child,
@@ -210,6 +210,7 @@ html, body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	justify-content: flex-start;
 	width: 1rem;
 }
 .cpanel__title .column,
@@ -435,7 +436,7 @@ html, body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 0 2.3rem;
+		padding: 0 1.5rem;
 	}
 	.cpanel__title div,
 	.cpanel__extended div {
@@ -444,7 +445,7 @@ html, body {
 	.cpanel__title div:first-child,
 	.cpanel__extended div:first-child {
 		font-size: 3.4rem;
-		width: 10%;
+		width: 20%;
 	}
 	.cpanel__extended div:first-child span {
 		display: block;
@@ -452,7 +453,7 @@ html, body {
 	}
 	.cpanel__title .column,
 	.cpanel__extended .column {
-		width: calc(90% / 4);
+		width: calc(80% / 4);
 	}
 	.cpanel__title .column {
 		font-size: 3.4rem;
@@ -473,6 +474,11 @@ html, body {
 		font-size: 6px;
 	}
 
+	/* cpanel style */
+	.cpanel__extended .column {
+		font-size: 3.3rem;
+	}
+
 	/* modal style */
 	.modal-content {
 		padding: 10rem 4rem 2rem 7rem;
@@ -482,6 +488,11 @@ html, body {
 @media (max-width: 479.98px) {
 	html, body {
 		font-size: 4px;
+	}
+
+	/* cpanel style */
+	.cpanel__extended .column {
+		font-size: 3rem;
 	}
 
 	/* modal style */
