@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700&subset=hebrew');
+
+html, body {
+	direction: rtl;
+	font-family: 'Assistant', sans-serif;
+	font-size: 12px;
+	line-height: 1;
+}
+
+/*--- Login page Style ---*/
+.login {
+	background: url(../img/main-bg.jpg) center no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+
+.logo img {
+	margin: 3.2rem 0 0 3.2rem;
+	max-height: 5.5rem;
+	max-width: 17.5rem;
+}
+.logo_mobile {
+	display: none;
+	position: absolute;
+	top: 1rem;
+	left: 0;
+	right: 0;
+}
+.logo_mobile img {
+	max-height: 20.7rem;
+	max-width: 50rem;
+	width: 100%;
+}
+
+.login-field {
+	box-shadow: 1px 6px 25px 4px rgba(8, 8, 8, 0.28);
+	border-radius: .5rem;
+	position: absolute;
+	top: 35%;
+	right: 10%;
+	width: 32rem;
+	z-index: 999;
+}
+.login-field__title {
+	background-color: #000;
+	border-radius: .5rem .5rem 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 9.6rem;
+}
+.login-field__title h2 {
+	color: #fff;
+	font-size: 2.4rem;
+	line-height: 2.7rem;
+}
+.login-field__description {
+	background-color: #fff;
+	border-radius: 0 0 .5rem .5rem;
+	opacity: .97;
+	padding: 1.4rem 5rem; 
+}
+.login-field__form {
+	width: 100%;
+}
+.login-field__input {
+	margin-bottom: 1.2rem;
+	position: relative;
+}
+.login-field__input input {
+	border: none;
+	border-bottom: .1rem solid rgba(160, 159, 159, .5);
+	font-size: 1.4rem;
+	padding: 1.2rem 0 1.2rem 2.7rem;
+	width: 100%;
+}
+.login-field input::placeholder {
+	color: #4d4d4d;
+}
+.login-field__input img {
+	position: absolute;
+	top: 1.2rem;
+	left: .3rem;
+	height: 2.4rem;
+	width: 2.4rem;
+}
+
+.login-field__error {
+	color: #f00;
+	font-size: 1.5rem;
+	line-height: 1.6rem;
+	text-align: center;
+}
+
+.login-field__button {
+	text-align: center;
+}
+.login-field__button button {
+	background-color: #00aeef;
+	border: none;
+	border-radius: 1.8rem;
+	color: #fff;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.8rem;
+	line-height: 1;
+	padding: 1.2rem;
+	position: relative;
+	width: 16.3rem;
+}
+.login-field__button button img {
+	position: absolute;
+	left: 1.2rem;
+}
+
+/*--- CPanel index page Style ---*/
+/* navbar style */
+.navbar {
+	background-color: #000;
+}
+.navbar-brand img {
+	max-height: 5.5rem;
+	max-width: 17.5rem;
+}
+.navbar-dark .navbar-toggler {
+	border: none;
+}
+.navbar-toggler-icon {
+	height: 4.4em;
+	width: 3.1em
+}
+.nav-item {
+	font-size: 2.5rem;
+	text-align: right;
+}
+
+/* cpanel style */
+.cpanel {
+	color: #4d4d4d;
+	padding: 0 .7rem 0 1.5rem;
+}
+.cpanel__info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.cpanel__user {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.cpanel__user span {
+	font-size: 1.6rem;
+}
+.cpanel__user img {
+	margin-left: 1.1rem;
+	height: 2.4rem;
+	width: 2.4rem;
+}
+.cpanel__short {
+	display: flex;
+	flex-direction: row;
+	padding: 3.9rem 4.1rem 3.1rem 1.9rem
+}
+.cpanel__short-element {
+	padding-right: 7rem;
+	text-align: center;
+}
+.cpanel__short-element p {
+	font-size: 1.3rem;
+}
+.cpanel__short-element span {
+	font-size: 2.9rem;
+	font-weight: 700;
+}
+
+.cpanel__description {
+	direction: ltr;
+}
+.cpanel__title {
+	background-color: #f6f8ff;
+	border-bottom: .1rem solid #aeb1b5;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.cpanel__extended {
+	border-bottom: .1rem solid #aeb1b5;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.cpanel__extended div:first-child span {
+	display: none;
+}
+.cpanel__title div,
+.cpanel__extended div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2.7rem 0 2.3rem;
+}
+.cpanel__title div:first-child,
+.cpanel__extended div:first-child {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 1rem;
+}
+.cpanel__title .column,
+.cpanel__extended .column {
+	font-size: 1.4rem;
+	line-height: 2.7rem;
+	text-align: right;
+	width: 10%;
+}
+
+.modal-dialog {
+	margin: 0% 4.3rem 0;
+	max-width: 100%;
+}
+.modal-content {
+	border: .4rem solid #000;
+	border-radius: 1.4rem;
+	box-shadow: 1px 1px 7px 1px rgba(44, 44, 44, 0.78);
+	padding: 13rem 7rem 5rem 10rem;
+}
+.modal__line {
+	display: flex;
+	justify-content: space-between;
+	margin: .5rem 0;
+}
+.modal__line span {
+	font-size: 5rem;
+	text-align: right;
+}
+.modal__line:nth-child(1),
+.modal__line:nth-child(9),
+.modal__line:nth-child(10) {
+	justify-content: flex-end;
+}
+.modal__line:nth-child(2) span:nth-child(2),
+.modal__line:nth-child(3) span:nth-child(1),
+.modal__line:last-child span:last-child {
+	color: #4d4d4d;
+}
+.modal__line:last-child span {
+	margin-top: 4rem;
+}
+.modal__line span:last-child {
+	color: #000000;
+}
+.modal-body hr {
+	background-color: #aeb1b5;
+	border: none;
+	margin: 1rem 0 1rem auto;
+	height: .2rem;
+	width: 80%;
+}
+.close {
+	position: absolute;
+	top: 5.3rem;
+	left: 4.7rem;
+}
+.close span {
+	font-size: 8rem;
+	font-weight: 400;
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1440px) and (max-width: 1919.98px) {
+	html, body {
+		font-size: 11px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+	html, body {
+		font-size: 10px;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	html, body {
+		font-size: 9px;
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	html, body {
+		font-size: 8px;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767.98px) {
+	html, body {
+		font-size: 7px;
+	}
+	
+	/*--- Login page Style ---*/
+	.login {
+		background-size: cover;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.logo {
+		display: none;
+	}
+	.logo_mobile {
+		display: block;
+		position: absolute;
+		top: -11rem;
+		left: 0;
+		right: 0;
+		text-align: center;
+		z-index: 999;
+	}
+	
+	.login-field {
+		box-shadow: 0 5px 10px 1px rgba(5, 5, 5, 0.33);
+		border-radius: 1.5rem;
+		margin: 0 7.1rem;
+		position: relative;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 999;
+	}
+	.login-field__title {
+		display: none;
+	}
+	.login-field__description {
+		border-radius: 1.4rem;
+		opacity: 1;
+		padding: 20.8rem 12rem 6rem;
+	}
+	.login-field__input input {
+		font-size: 4.8rem;
+		padding: 6rem 0 6rem 2.7rem;
+	}
+	.login-field__input img {
+		top: 6rem;
+		height: 7.7rem;
+		width: 7.7rem;
+	}
+
+	.login-field__error {
+		font-size: 3.7rem;
+		padding-top: 5.4rem;
+	}
+
+	.login-field__button {
+		position: absolute;
+		bottom: -16.5rem;
+		right: 0;
+		left: 0;
+	}
+	.login-field__button button {
+		border-radius: 5rem;
+		font-size: 4.7rem;
+		padding: 3.5rem;
+		width: 47rem;
+	}
+	.login-field__button button img {
+		left: 3.5rem;
+	}
+
+	/*--- CPanel index page Style ---*/
+	/* cpanel style */
+	.cpanel {
+		padding: 0;
+	}
+	.cpanel__info {
+		flex-direction: column;
+		padding: 4.7rem 0 10.1rem;
+	}
+	.cpanel__user span {
+		font-size: 2.9rem;
+	}
+	.cpanel__user img {
+		margin-left: 1.9rem;
+		height: 4.3rem;
+		width: 4.3rem;
+	}
+	.cpanel__short {
+		justify-content: space-around;
+		padding: 10rem 0 0 0;
+		width: 100%;
+	}
+	.cpanel__short-element {
+		padding-right: 0rem;
+	}
+	.cpanel__short-element p {
+		font-size: 3.4rem;
+	}
+	.cpanel__short-element span {
+		font-size: 7.7rem;
+	}
+
+	.hide {
+		display: none!important;
+	}
+	.cpanel__title {
+		background-color: #f6f8ff;
+		border-bottom: .1rem solid #aeb1b5;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 2.3rem;
+	}
+	.cpanel__extended {
+		border-bottom: .1rem solid #aeb1b5;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 2.3rem;
+	}
+	.cpanel__title div,
+	.cpanel__extended div {
+		padding: 2.6rem .5rem 2.7rem;
+	}
+	.cpanel__title div:first-child,
+	.cpanel__extended div:first-child {
+		font-size: 3.4rem;
+		width: 10%;
+	}
+	.cpanel__extended div:first-child span {
+		display: block;
+		padding-left: 1rem;
+	}
+	.cpanel__title .column,
+	.cpanel__extended .column {
+		width: calc(90% / 4);
+	}
+	.cpanel__title .column {
+		font-size: 3.4rem;
+	}
+	.cpanel__extended .column {
+		font-size: 3.8rem;
+	}
+
+	/* modal style */
+	.modal-dialog {
+		margin: 15% 4.3rem 0;
+	}
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	html, body {
+		font-size: 6px;
+	}
+
+	/* modal style */
+	.modal-content {
+		padding: 10rem 4rem 2rem 7rem;
+	}
+}
+
+@media (max-width: 479.98px) {
+	html, body {
+		font-size: 4px;
+	}
+
+	/* modal style */
+	.modal-content {
+		padding: 9rem 3rem 1rem 6rem;
+	}
+}

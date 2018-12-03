@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Start .navbar -->
+	<nav class="navbar navbar-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="#">
+			<img src="img/logo.png">
+		</a>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link one</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link two</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- End /.navbar -->
+
+	<!-- Start .cpanel -->
+	<div class="cpanel">
+		<div class="cpanel__info">
+			<div class="cpanel__user">
+				<img src="img/user.png" alt="user">
+				<span>ת”ז - 211445545</span>
+			</div>
+
+			<div class="cpanel__short">
+				<div class="cpanel__short-element">
+					<p> ימי עבודה </p>
+					<span>15</span>
+				</div>				
+
+				<div class="cpanel__short-element">
+					<p>סה”כ שעות </p>
+					<span>75.3</span>
+				</div>
+
+				<div class="cpanel__short-element">
+					<p>לתשלום </p>
+					<span>1,548</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="cpanel__description">
+			<div class="cpanel__title">
+				<div></div>
+				<div class="column hide">
+					הערות
+				</div>
+				<div class="column">
+					סה"כ לתשלום 
+				</div>
+				<div class="column hide">
+					סה"כ  החזרים 
+				</div>
+				<div class="column hide">
+					סה"כ נסיעות
+				</div>
+				<div class="column hide">
+					סה"כ לתשלום שעות
+				</div>
+				<div class="column">
+					מספר שעות
+				</div>
+				<div class="column hide">
+					שעת סיום
+				</div>
+				<div class="column hide">
+					שעות התחלה
+				</div>
+				<div class="column">
+					פרויקט
+				</div>
+				<div class="column">
+					תאריך
+				</div>
+			</div>
+
+			<div class="cpanel__extended" data-toggle="modal" data-target="#exampleModal">
+				<div>
+					<img src="img/arrow-cpanel.png" alt="arrow cpanel">
+					<span>פרטים</span>
+				</div>
+				<div class="column hide">
+					מחר להגיע למקום 
+				</div>
+				<div class="column">
+					₪380
+				</div>
+				<div class="column hide">
+					₪35
+				</div>
+				<div class="column hide">
+					₪165
+				</div>
+				<div class="column hide">
+					₪150
+				</div>
+				<div class="column">
+					16.22
+				</div>
+				<div class="column hide">
+					20:22
+				</div>
+				<div class="column hide">
+					06:00
+				</div>
+				<div class="column">
+					מגדלי עזריאלי 
+				</div>
+				<div class="column">
+					21/11/2018
+				</div>
+			</div>
+			<!-- modal window -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="modal-body">
+							<div class="modal__line">
+								<span>
+									מגדלי עזריאלי 
+								</span>
+							</div>
+
+							<div class="modal__line">
+								<span>
+									20:22 06:00
+								</span>
+								<span>
+									21/11/2018
+								</span>
+							</div>
+
+							<div class="modal__line">
+								<span>
+									16.22
+								</span>
+							</div>
+
+							<div class="modal__line">
+								<span>
+									₪35
+								</span>
+								<span>
+									סה"כ לתשלום שעות
+								</span>
+							</div>
+
+							<div class="modal__line">
+								<span>
+									₪150
+								</span>
+								<span>
+									סה"כ לתשלום נסיעות
+								</span>
+							</div>
+
+							<div class="modal__line">
+								<span>
+									₪165
+								</span>
+								<span>
+									סה"כ לתשלום החזרים 
+								</span>
+							</div>
+
+							<div class="modal__line">
+								<span>
+									<strong>₪380</strong>
+								</span>
+								<span>
+									סה"כ לתשלום כולל הכול
+								</span>
+							</div>
+
+							<hr>
+
+							<div class="modal__line">
+								<span>
+									הערות
+								</span>
+							</div>
+
+							<div class="modal__line">
+								<span>
+									מחר להגיע למקום מוקדם ב5:00
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cpanel__extended" data-toggle="modal" data-target="#exampleModal">
+				<div>
+					<img src="img/arrow-cpanel.png" alt="arrow cpanel">
+					<span>פרטים</span>
+				</div>
+				<div class="column hide">
+					מחר להגיע למקום 
+				</div>
+				<div class="column">
+					₪380
+				</div>
+				<div class="column hide">
+					₪35
+				</div>
+				<div class="column hide">
+					₪165
+				</div>
+				<div class="column hide">
+					₪150
+				</div>
+				<div class="column">
+					16.22
+				</div>
+				<div class="column hide">
+					20:22
+				</div>
+				<div class="column hide">
+					06:00
+				</div>
+				<div class="column">
+					מגדלי עזריאלי 
+				</div>
+				<div class="column">
+					21/11/2018
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End /.cpanel -->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- My JS -->
+	<!-- <script src="js/main.js"></script> -->
+
+	<!-- Need to be deleted when the project is end. -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
