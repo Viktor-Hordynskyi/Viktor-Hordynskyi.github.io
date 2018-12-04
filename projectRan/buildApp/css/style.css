@@ -266,9 +266,10 @@ html, body {
 	width: 80%;
 }
 .close {
+	padding: 1rem 3rem!important;
 	position: absolute;
-	top: 5.3rem;
-	left: 4.7rem;
+	top: 4.3rem;
+	left: 1.7rem;
 }
 .close span {
 	font-size: 8rem;
