@@ -379,6 +379,7 @@ html, body {
 	position: absolute;
 	top: 4.3rem;
 	left: 1.7rem;
+	z-index: 999;
 }
 .close span {
 	font-size: 8rem;
