@@ -76,6 +76,17 @@
 	crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+	<script>
+		$(window).on('load resize', function() {
+			var login = $('.login-field').height();
+			var wHeight = $(window).height();
+			if(login >= wHeight) {
+				$('.login').css("height", "100%");
+			} else {
+				$('.login').css("height", "100vh");
+			}
+		})
+	</script>
 	<!-- Need to be deleted when the project is end. -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
