@@ -23,10 +23,6 @@ html, body {
 }
 .logo_mobile {
 	display: none;
-	position: absolute;
-	top: 1rem;
-	left: 0;
-	right: 0;
 }
 .logo_mobile img {
 	max-height: 20.7rem;
@@ -94,10 +90,12 @@ html, body {
 	text-align: center;
 }
 
-.login-field__button {
+.login-field__button,
+.login-field__button_mobile {
 	text-align: center;
 }
-.login-field__button button {
+.login-field__button button,
+.login-field__button_mobile button {
 	background-color: #00aeef;
 	border: none;
 	border-radius: 1.8rem;
@@ -111,9 +109,13 @@ html, body {
 	position: relative;
 	width: 16.3rem;
 }
-.login-field__button button img {
+.login-field__button button img,
+.login-field__button_mobile button img {
 	position: absolute;
 	left: 1.2rem;
+}
+.login-field__button_mobile {
+	display: none;
 }
 
 /*--- CPanel index page Style ---*/
@@ -334,16 +336,13 @@ html, body {
 	}
 	.logo_mobile {
 		display: block;
-		position: absolute;
-		top: -11rem;
-		left: 0;
-		right: 0;
+		position: relative;
+		top: 6rem;
 		text-align: center;
-		z-index: 999;
 	}
 	
 	.login-field {
-		box-shadow: 0 5px 10px 1px rgba(5, 5, 5, 0.33);
+		box-shadow: none;
 		border-radius: 1.5rem;
 		margin: 0 7.1rem;
 		position: relative;
@@ -358,9 +357,10 @@ html, body {
 		display: none;
 	}
 	.login-field__description {
+		box-shadow: 0 5px 10px 1px rgba(5, 5, 5, 0.33);
 		border-radius: 1.4rem;
 		opacity: 1;
-		padding: 20.8rem 12rem 6rem;
+		padding: 15.8rem 12rem 6rem;
 	}
 	.login-field__input input {
 		font-size: 4.8rem;
@@ -378,18 +378,19 @@ html, body {
 	}
 
 	.login-field__button {
-		position: absolute;
-		bottom: -16.5rem;
-		right: 0;
-		left: 0;
+		display: none;
 	}
-	.login-field__button button {
+	.login-field__button_mobile {
+		display: block;
+		margin-top: 6rem;
+	}
+	.login-field__button_mobile button {
 		border-radius: 5rem;
 		font-size: 4.7rem;
 		padding: 3.5rem;
 		width: 47rem;
 	}
-	.login-field__button button img {
+	.login-field__button_mobile button img {
 		left: 3.5rem;
 	}
 
