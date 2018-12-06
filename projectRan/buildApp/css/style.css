@@ -12,9 +12,23 @@ html, body {
 }
 @media (max-width: 767.98px) {
 	.datepicker {
-		font-size: 5rem!important;
+		font-size: 3rem!important;
+		width: 350px;
 	}
 }
+@media (max-width: 575.98px) {
+	.datepicker {
+		font-size: 3.5rem!important;
+		width: 300px;
+	}
+}
+@media (max-width: 479.98px) {
+	.datepicker {
+		font-size: 5rem!important;
+		width: 250px;
+	}
+}
+
 
 /*--- Login page Style ---*/
 .login {
