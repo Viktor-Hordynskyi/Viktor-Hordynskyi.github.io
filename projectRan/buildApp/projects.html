@@ -9,6 +9,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+	<!-- Bootstrap datepiker -->
+	<link rel="stylesheet" href="css/datepicker.min.css">
 
 	<!-- My CSS -->
 	<link rel="stylesheet" href="css/style.css">
@@ -59,15 +61,15 @@
 		<div class="cpanel__description">
 			<div class="cpanel__description-top projects">
 				<div class="column"></div>
-				<div class="column">
+				<div class="column hide">
 					הערות
 				</div>
 
-				<div class="column">
+				<div class="column hide">
 					תאריך סיום משוער
 				</div>
 
-				<div class="column">
+				<div class="column hide">
 					תאריך התחלה
 				</div>
 
@@ -83,15 +85,18 @@
 			<div class="cpanel__description-middle projects" data-toggle="modal" data-target="#exampleModal">
 				<div class="column">
 					<img src="img/arrow-cpanel.png" alt="arrow cpanel">
-					<span>עריכת פרטים</span>
+					<span>
+						עריכת 
+						<span class="hide">פרטים</span>
+					</span>
 				</div>
-				<div class="column">
+				<div class="column hide">
 					קבלן מטעם מועצת המרכז, יש לבדוק עם העירי
 				</div>
-				<div class="column">
+				<div class="column hide">
 					-
 				</div>
-				<div class="column">
+				<div class="column hide">
 					25/02/18
 				</div>
 				<div class="column">
@@ -125,7 +130,7 @@
 
 							<div class="modal__line">
 								<label for="">תאריך התחלה</label>
-								<input type="date">
+								<input type="text" class="datepicker-here">
 							</div>
 
 							<div class="modal__line">
@@ -139,14 +144,13 @@
 							</div>
 						</div>
 
-						<div class="modal-footer">
-							<a href="#">בטל שינויים</a>
+						<div class="modal-footer">							
 							<a href="#">עדכן פרטים</a>
+							<a href="#">בטל שינויים</a>
 						</div>
 					</div>
 				</div>
 			</div>
-
 			
 		</div>
 	</div>
@@ -158,6 +162,27 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="js/datepicker.min.js"></script>
+	<script>
+		$.fn.datepicker.language['he'] = {
+			days: [ "ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת" ],
+			daysShort: [ "א'","ב'","ג'","ד'","ה'","ו'","שבת" ],
+			daysMin: [ "א'","ב'","ג'","ד'","ה'","ו'","שבת" ],
+			months: [ "ינואר","פברואר","מרץ","אפריל","מאי","יוני",
+	"יולי","אוגוסט","ספטמבר","אוקטובר","נובמבר","דצמבר" ],
+			monthsShort: [ "ינו","פבר","מרץ","אפר","מאי","יוני",
+	"יולי","אוג","ספט","אוק","נוב","דצמ" ],
+			today: 'Today',
+			clear: 'Clear',
+			dateFormat: 'dd.mm.yyyy',
+			timeFormat: 'hh:ii',
+			firstDay: 0
+		}
+
+		$('.datepicker-here').datepicker({
+			language: 'he'
+		})
+	</script>
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

@@ -6,6 +6,9 @@ html, body {
 	font-size: 12px;
 	line-height: 1;
 }
+.datepicker {
+	z-index: 9999;
+}
 
 /*--- Login page Style ---*/
 .login {
@@ -150,6 +153,7 @@ html, body {
 /* navbar style */
 .navbar {
 	background-color: #000;
+	height: 7.4rem;
 }
 .navbar-brand img {
 	max-height: 5.5rem;
@@ -451,14 +455,14 @@ html, body {
 	font-weight: 700;
 }
 .modal.edit .close span {
-	font-size: 4rem;
+	font-size: 6rem;
 }
 .modal.edit .modal-header .close {
 	margin: 0rem;
-	padding: 0 2rem;
+	padding: 1rem 2rem;
 	position: relative;
 	left: -2rem;
-	top: 0rem;
+	top: -1rem;
 }
 .modal.edit .modal__line {
 	display: flex;
@@ -640,8 +644,8 @@ html, body {
 	/*--- CPanel index page Style ---*/
 	/* navbar style */
 	.navbar-brand img {
-		max-height: 9.4rem;
-		max-width: 29.8rem;
+		max-height: 7.4rem;
+		max-width: 27.8rem;
 	}
 	.navbar-toggler-icon {
 		height: 4.4em;
@@ -754,6 +758,58 @@ html, body {
 	}
 	.modal__line span {
 		font-size: 4.5rem;
+	}
+
+	/* projects style */
+	.cpanel__projects-info {
+		padding: 0 2rem 3.1rem;
+	}
+	.cpanel__projects-number {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.cpanel__projects-number p {
+		font-size: 2rem;
+		margin-bottom: 0;
+		margin-left: 2.3rem;
+	}
+	.cpanel__projects-number span,
+	.cpanel__projects-title p {
+		font-size: 2.9rem;
+	}
+	.cpanel__description-middle.projects .column:first-child img {
+		padding-right: 2rem;
+	}
+
+	/* projects-edit style */
+
+	/* personnel style */
+
+	/* personnel-edit style */
+
+	/* style for edit modal window */
+	.modal.edit .modal-dialog {
+		margin: 8.4rem auto .7rem;
+		max-width: 100%;
+	}
+	.modal.edit .modal__line label {
+		font-size: 2.57rem;
+		width: 35%;
+	}
+	.modal.edit .modal__line input,
+	.modal.edit .modal__line textarea {
+		font-size: 2.57rem;
+		width: 65%;
+	}
+	.modal.edit .modal-footer a {
+		font-size: 3.4rem;
+	}
+	.modal.edit .modal-footer a:first-child {
+		background-color: #08b1ef;
+		color: #fff;
+		height: 7rem;
+		width: 21rem;
 	}
 }
 
