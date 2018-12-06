@@ -32,7 +32,7 @@ html, body {
 
 .login-field {
 	-webkit-box-shadow: 1px 6px 25px 4px rgba(8, 8, 8, 0.28);
-	        box-shadow: 1px 6px 25px 4px rgba(8, 8, 8, 0.28);
+	box-shadow: 1px 6px 25px 4px rgba(8, 8, 8, 0.28);
 	border-radius: .5rem;
 	position: absolute;
 	top: 35%;
@@ -49,12 +49,12 @@ html, body {
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	height: 9.6rem;
 }
 .login-field__title h2 {
@@ -125,12 +125,12 @@ html, body {
 	display: inline-flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	font-size: 1.8rem;
 	line-height: 1;
 	padding: 1.2rem;
@@ -170,7 +170,7 @@ html, body {
 /* cpanel style */
 .cpanel {
 	color: #4d4d4d;
-	padding: 0 .7rem 0 1.5rem;
+	padding: 0 2.4rem;
 }
 .cpanel__info {
 	display: -webkit-box;
@@ -180,16 +180,17 @@ html, body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 4.6rem 0 3rem;
 }
 .cpanel__user {
 	display: -webkit-box;
@@ -198,12 +199,12 @@ html, body {
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 .cpanel__user span {
 	font-size: 1.6rem;
@@ -221,8 +222,8 @@ html, body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	padding: 3.9rem 4.1rem 3.1rem 1.9rem
 }
 .cpanel__short-element {
@@ -240,7 +241,7 @@ html, body {
 .cpanel__description {
 	direction: ltr;
 }
-.cpanel__title {
+.cpanel__description-top {
 	background-color: #f6f8ff;
 	border-bottom: .1rem solid #aeb1b5;
 	display: -webkit-box;
@@ -250,14 +251,14 @@ html, body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
-.cpanel__extended {
+.cpanel__description-middle {
 	border-bottom: .1rem solid #aeb1b5;
 	cursor: pointer;
 	display: -webkit-box;
@@ -267,34 +268,34 @@ html, body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
-.cpanel__extended div:first-child span {
+.cpanel__description-middle.home div:first-child span {
 	display: none;
 }
-.cpanel__title div,
-.cpanel__extended div {
+.cpanel__description-top div,
+.cpanel__description-middle div {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: end;
 	-webkit-justify-content: flex-end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
 	padding: 2.7rem 0 2.3rem;
 }
-.cpanel__title div:first-child,
-.cpanel__extended div:first-child {
+.cpanel__description-top div:first-child,
+.cpanel__description-middle div:first-child {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -302,88 +303,208 @@ html, body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: start;
 	-webkit-justify-content: flex-start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
 	width: 1rem;
 }
-.cpanel__title .column,
-.cpanel__extended .column {
+.cpanel__description-top .column,
+.cpanel__description-middle .column {
 	font-size: 1.4rem;
 	line-height: 2.7rem;
 	text-align: right;
-	width: 10%;
+}
+.cpanel__description-top.home .column,
+.cpanel__description-middle.home .column {
+	width: calc(100% / 10 - 1rem);
 }
 
-.modal-dialog {
+.modal.home .modal-dialog {
 	margin: 5% auto;
 	max-width: 50%;
 }
-.modal-content {
+.modal.home .modal-content {
 	border: .4rem solid #000;
 	border-radius: 1.4rem;
 	-webkit-box-shadow: 1px 1px 7px 1px rgba(44, 44, 44, 0.78);
-	        box-shadow: 1px 1px 7px 1px rgba(44, 44, 44, 0.78);
+	box-shadow: 1px 1px 7px 1px rgba(44, 44, 44, 0.78);
 	padding: 13rem 7rem 5rem 10rem;
 }
-.modal__line {
+.modal.home .modal__line {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	margin: .5rem 0;
 }
-.modal__line span {
+.modal.home .modal__line span {
 	font-size: 3rem;
 	text-align: right;
 }
-.modal__line:nth-child(1),
-.modal__line:nth-child(9),
-.modal__line:nth-child(10) {
+.modal.home .modal__line:nth-child(1),
+.modal.home .modal__line:nth-child(9),
+.modal.home .modal__line:nth-child(10) {
 	-webkit-box-pack: end;
 	-webkit-justify-content: flex-end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
 }
-.modal__line:nth-child(2) span:nth-child(2),
-.modal__line:nth-child(3) span:nth-child(1),
-.modal__line:last-child span:last-child {
+.modal.home .modal__line:nth-child(2) span:nth-child(2),
+.modal.home .modal__line:nth-child(3) span:nth-child(1),
+.modal.home .modal__line:last-child span:last-child {
 	color: #4d4d4d;
 }
-.modal__line:last-child span {
+.modal.home .modal__line:last-child span {
 	margin-top: 4rem;
 }
-.modal__line span:last-child {
+.modal.home .modal__line span:last-child {
 	color: #000000;
 }
-.modal-body hr {
+.modal.home .modal-body hr {
 	background-color: #aeb1b5;
 	border: none;
 	margin: 1rem 0 1rem auto;
 	height: .2rem;
 	width: 80%;
 }
-.close {
+.modal.home .close {
 	padding: 1rem 3rem!important;
 	position: absolute;
 	top: 4.3rem;
 	left: 1.7rem;
 	z-index: 999;
 }
-.close span {
+.modal.home .close span {
 	font-size: 8rem;
 	font-weight: 400;
+}
+
+/* projects style */
+.cpanel__projects-info {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding-bottom: 1.8rem;
+}
+.cpanel__projects-number {
+	text-align: center;
+}
+.cpanel__projects-number p {
+	font-size: 1.3rem;
+}
+.cpanel__projects-number span,
+.cpanel__projects-title p {
+	font-size: 2.9rem;
+	font-weight: 700;
+}
+
+.cpanel__description-top.projects .column,
+.cpanel__description-middle.projects .column {
+	width: calc(100% / 4);
+}
+.cpanel__description-top.projects .column:nth-child(3),
+.cpanel__description-middle.projects .column:nth-child(3),
+.cpanel__description-top.projects .column:nth-child(4),
+.cpanel__description-middle.projects .column:nth-child(4) {
+	width: 15%;
+}
+.cpanel__description-middle.projects .column:first-child img {
+	padding-right: 2rem;
+}
+
+/* projects-edit style */
+
+/* personnel style */
+
+/* personnel-edit style */
+
+/* style for edit modal window */
+.modal.edit .modal-dialog {
+	margin: 5% auto;
+	max-width: 50%;
+}
+.modal.edit {
+	direction: rtl;
+}
+.modal.edit .modal-content {
+	padding: 3rem;
+}
+.modal.edit .modal-header {
+	align-items: center;
+	border-bottom: none;
+}
+.modal.edit .modal-header h5 {
+	color: #000;
+	font-size: 2.4rem;
+	font-weight: 700;
+}
+.modal.edit .close span {
+	font-size: 4rem;
+}
+.modal.edit .modal-header .close {
+	margin: 0rem;
+	padding: 0 2rem;
+	position: relative;
+	left: -2rem;
+	top: 0rem;
+}
+.modal.edit .modal__line {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 2.5rem;
+	width: 100%;
+}
+.modal.edit .modal__line label {
+	font-size: 1.8rem;
+	text-align: right;
+	width: 35%;
+}
+.modal.edit .modal__line input,
+.modal.edit .modal__line textarea {
+	border: .1rem solid #b5b5b5;
+	color: #101010;
+	font-size: 1.8rem;
+	padding: 1rem 1.5rem;
+	text-align: right;
+	width: 65%;
+}
+.modal.edit .modal__line textarea {
+	min-height: 12rem;
+}
+.modal.edit .modal-footer {
+	border-top: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.modal.edit .modal-footer a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.4rem;
+}
+.modal.edit .modal-footer a:last-child {
+	color: #08b1ef;	
+}
+.modal.edit .modal-footer a:first-child {
+	background-color: #08b1ef;
+	color: #fff;
+	height: 5rem;
+	width: 19rem;
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -443,12 +564,12 @@ html, body {
 		display: flex;
 		-webkit-box-align: center;
 		-webkit-align-items: center;
-		    -ms-flex-align: center;
-		        align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
 		-webkit-box-pack: center;
 		-webkit-justify-content: center;
-		    -ms-flex-pack: center;
-		        justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
 	}
 
 	.logo {
@@ -463,7 +584,7 @@ html, body {
 	
 	.login-field {
 		-webkit-box-shadow: none;
-		        box-shadow: none;
+		box-shadow: none;
 		border-radius: 1.5rem;
 		margin: 0 7.1rem;
 		position: relative;
@@ -479,7 +600,7 @@ html, body {
 	}
 	.login-field__description {
 		-webkit-box-shadow: 0 5px 10px 1px rgba(5, 5, 5, 0.33);
-		        box-shadow: 0 5px 10px 1px rgba(5, 5, 5, 0.33);
+		box-shadow: 0 5px 10px 1px rgba(5, 5, 5, 0.33);
 		border-radius: 1.4rem;
 		opacity: 1;
 		padding: 15.8rem 12rem 6rem;
@@ -535,8 +656,8 @@ html, body {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: column;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
 		padding: 4.7rem 0 10.1rem;
 	}
 	.cpanel__user span {
@@ -549,8 +670,8 @@ html, body {
 	}
 	.cpanel__short {
 		-webkit-justify-content: space-around;
-		    -ms-flex-pack: distribute;
-		        justify-content: space-around;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
 		padding: 10rem 0 0 0;
 		width: 100%;
 	}
@@ -567,7 +688,7 @@ html, body {
 	.hide {
 		display: none!important;
 	}
-	.cpanel__title {
+	.cpanel__description-top {
 		background-color: #f6f8ff;
 		border-bottom: .1rem solid #aeb1b5;
 		display: -webkit-box;
@@ -577,15 +698,15 @@ html, body {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: row;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
 		-webkit-box-pack: justify;
 		-webkit-justify-content: space-between;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 		padding: 0 1.5rem;
 	}
-	.cpanel__extended {
+	.cpanel__description-middle {
 		border-bottom: .1rem solid #aeb1b5;
 		display: -webkit-box;
 		display: -webkit-flex;
@@ -594,35 +715,35 @@ html, body {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: row;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
 		-webkit-box-pack: justify;
 		-webkit-justify-content: space-between;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
 		padding: 0 1.5rem;
 	}
-	.cpanel__title div,
-	.cpanel__extended div {
+	.cpanel__description-top div,
+	.cpanel__description-middle div {
 		padding: 2.6rem .5rem 2.7rem;
 	}
-	.cpanel__title div:first-child,
-	.cpanel__extended div:first-child {
+	.cpanel__description-top div:first-child,
+	.cpanel__description-middle div:first-child {
 		font-size: 3.4rem;
 		width: 17%;
 	}
-	.cpanel__extended div:first-child span {
+	.cpanel__description-middle div:first-child span {
 		display: block;
 		padding-left: 1rem;
 	}
-	.cpanel__title .column,
-	.cpanel__extended .column {
+	.cpanel__description-top.home .column,
+	.cpanel__description-middle.home .column {
 		width: calc(83% / 4);
 	}
-	.cpanel__title .column {
+	.cpanel__description-top .column {
 		font-size: 3.4rem;
 	}
-	.cpanel__extended .column {
+	.cpanel__description-middle .column {
 		font-size: 3.8rem;
 	}
 
@@ -643,11 +764,11 @@ html, body {
 	}
 
 	/* cpanel style */
-	.cpanel__title,	
-	.cpanel__extended {
+	.cpanel__description-top,	
+	.cpanel__description-middle {
 		padding: 0 1rem;
 	}
-	.cpanel__extended .column {
+	.cpanel__description-middle .column {
 		font-size: 3.3rem;
 	}
 
@@ -663,11 +784,11 @@ html, body {
 	}
 
 	/* cpanel style */
-	.cpanel__title,
-	.cpanel__extended {
+	.cpanel__description-top,
+	.cpanel__description-middle {
 		padding: 0 .5rem;
 	}
-	.cpanel__extended .column {
+	.cpanel__description-middle .column {
 		font-size: 3rem;
 	}
 
