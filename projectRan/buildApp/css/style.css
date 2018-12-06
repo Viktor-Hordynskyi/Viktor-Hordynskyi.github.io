@@ -7,7 +7,13 @@ html, body {
 	line-height: 1;
 }
 .datepicker {
+	font-size: 2rem!important;
 	z-index: 9999;
+}
+@media (max-width: 767.98px) {
+	.datepicker {
+		font-size: 5rem!important;
+	}
 }
 
 /*--- Login page Style ---*/
