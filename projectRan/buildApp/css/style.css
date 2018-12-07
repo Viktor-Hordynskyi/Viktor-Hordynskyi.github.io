@@ -846,7 +846,7 @@ p {
 		font-size: 3.5rem;
 	}
 	.cpanel__description-middle.projects .column:first-child img {
-		padding-right: 2rem;
+		margin-right: 2rem;
 	}
 
 	/* personnel style */
