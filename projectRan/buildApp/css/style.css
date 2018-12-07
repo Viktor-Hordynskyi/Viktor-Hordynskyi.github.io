@@ -4,31 +4,12 @@ html, body {
 	direction: rtl;
 	font-family: 'Assistant', sans-serif;
 	font-size: 12px;
-	line-height: 1;
+	/*line-height: 1;*/
 }
-.datepicker {
-	font-size: 2rem!important;
-	z-index: 9999;
+p {
+	margin: 0;
+	padding: 0;
 }
-@media (max-width: 767.98px) {
-	.datepicker {
-		font-size: 3rem!important;
-		width: 350px;
-	}
-}
-@media (max-width: 575.98px) {
-	.datepicker {
-		font-size: 3.5rem!important;
-		width: 300px;
-	}
-}
-@media (max-width: 479.98px) {
-	.datepicker {
-		font-size: 5rem!important;
-		width: 250px;
-	}
-}
-
 
 /*--- Login page Style ---*/
 .login {
@@ -173,7 +154,11 @@ html, body {
 /* navbar style */
 .navbar {
 	background-color: #000;
+	padding: 0 1rem;
 	height: 7.4rem;
+}
+.navbar-brand {
+	padding: 0;
 }
 .navbar-brand img {
 	max-height: 5.5rem;
@@ -264,6 +249,7 @@ html, body {
 
 .cpanel__description {
 	direction: ltr;
+	padding-bottom: 3rem;
 }
 .cpanel__description-top {
 	background-color: #f6f8ff;
@@ -302,6 +288,12 @@ html, body {
 .cpanel__description-middle.home div:first-child span {
 	display: none;
 }
+.cpanel__description-top div {
+	padding: 2.1rem 0 1.9rem;
+}
+.cpanel__description-middle div {
+	padding: 1.1rem 0 .9rem;
+}
 .cpanel__description-top div,
 .cpanel__description-middle div {
 	display: -webkit-box;
@@ -316,7 +308,6 @@ html, body {
 	-webkit-justify-content: flex-end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
-	padding: 2.7rem 0 2.3rem;
 }
 .cpanel__description-top div:first-child,
 .cpanel__description-middle div:first-child {
@@ -337,6 +328,7 @@ html, body {
 	-webkit-justify-content: flex-start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
+	text-align: right;
 	width: 1rem;
 }
 .cpanel__description-top .column,
@@ -414,26 +406,42 @@ html, body {
 	font-weight: 400;
 }
 
-/* projects style */
-.cpanel__projects-info {
+/* join style projects, personnel */
+.cpanel__projects-info,
+.cpanel__personnel-info {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-end;
 	justify-content: space-between;
 	padding-bottom: 1.8rem;
 }
-.cpanel__projects-number {
+.cpanel__projects-number,
+.cpanel__personnel-number {
 	text-align: center;
 }
-.cpanel__projects-number p {
+.cpanel__projects-number p,
+.cpanel__personnel-number p {
 	font-size: 1.3rem;
 }
 .cpanel__projects-number span,
-.cpanel__projects-title p {
+.cpanel__projects-title p,
+.cpanel__personnel-number span,
+.cpanel__personnel-title p {
 	font-size: 2.9rem;
 	font-weight: 700;
 }
+.cpanel__personnel-hr {
+	border-bottom: .1rem solid #c4c4c4;
+	margin-bottom: 2.2rem;
+}
+.cpanel__personnel-hr.show {
+	display: block;
+}
+.cpanel__personnel-hr.hide {
+	display: none;
+}
 
+/* projects style */
 .cpanel__description-top.projects .column,
 .cpanel__description-middle.projects .column {
 	width: calc(100% / 4);
@@ -448,11 +456,39 @@ html, body {
 	padding-right: 2rem;
 }
 
-/* projects-edit style */
-
 /* personnel style */
+.cpanel__personnel-title {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+.cpanel__personnel-title img {
+	margin-right: 2.4rem;
+}
+.cpanel__personnel-title img.rotate {
+	transform: rotate(-90deg);
+}
 
-/* personnel-edit style */
+.cpanel__description-top.personnel.admin .column,
+.cpanel__description-middle.personnel.admin .column {
+	width: calc(100% / 6);
+}
+.cpanel__description-middle.personnel.admin .column:first-child img {
+	padding-right: 2rem;
+}
+
+.cpanel__description-top.personnel.worker .column,
+.cpanel__description-middle.personnel.worker .column {
+	width: calc(100% / 5);
+}
+/*.cpanel__description-top.personnel.worker .column:first-child {
+	padding-left: calc(12px + 4rem);
+}*/
+.cpanel__description-middle.personnel.worker .column:first-child img {
+	padding-right: 2rem;
+}
 
 /* style for edit modal window */
 .modal.edit .modal-dialog {
@@ -529,6 +565,12 @@ html, body {
 	color: #fff;
 	height: 5rem;
 	width: 19rem;
+}
+
+/* datepicker style */
+.datepicker {
+	font-size: 2rem!important;
+	z-index: 9999;
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -768,7 +810,7 @@ html, body {
 		font-size: 3.4rem;
 	}
 	.cpanel__description-middle .column {
-		font-size: 3.8rem;
+		font-size: 4.1rem;
 	}
 
 	/* modal style */
@@ -790,23 +832,23 @@ html, body {
 		align-items: center;
 	}
 	.cpanel__projects-number p {
-		font-size: 2rem;
+		font-size: 2.5rem;
 		margin-bottom: 0;
 		margin-left: 2.3rem;
 	}
 	.cpanel__projects-number span,
 	.cpanel__projects-title p {
-		font-size: 2.9rem;
+		font-size: 3.5rem;
 	}
 	.cpanel__description-middle.projects .column:first-child img {
 		padding-right: 2rem;
 	}
 
-	/* projects-edit style */
-
 	/* personnel style */
+	.cpanel__personnel-info {
+		padding: 0 2rem 3.1rem;
+	}
 
-	/* personnel-edit style */
 
 	/* style for edit modal window */
 	.modal.edit .modal-dialog {
@@ -831,6 +873,12 @@ html, body {
 		height: 7rem;
 		width: 21rem;
 	}
+
+	/* datepicker style */
+	.datepicker {
+		font-size: 3rem!important;
+		width: 350px;
+	}
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -845,12 +893,18 @@ html, body {
 		padding: 0 1rem;
 	}
 	.cpanel__description-middle .column {
-		font-size: 3.3rem;
+		font-size: 3.6rem;
 	}
 
 	/* modal style */
 	.modal-content {
 		padding: 10rem 4rem 2rem 7rem;
+	}
+
+	/* datepicker style */
+	.datepicker {
+		font-size: 3.5rem!important;
+		width: 300px;
 	}
 }
 
@@ -865,11 +919,17 @@ html, body {
 		padding: 0 .5rem;
 	}
 	.cpanel__description-middle .column {
-		font-size: 3rem;
+		font-size: 3.3rem;
 	}
 
 	/* modal style */
 	.modal-content {
 		padding: 9rem 3rem 1rem 6rem;
+	}
+
+	/* datepicker style */
+	.datepicker {
+		font-size: 5rem!important;
+		width: 250px;
 	}
 }
