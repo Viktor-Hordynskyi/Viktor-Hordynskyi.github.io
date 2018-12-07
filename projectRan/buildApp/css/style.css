@@ -850,6 +850,20 @@ p {
 	}
 
 	/* personnel style */
+	.cpanel__personnel-number {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.cpanel__personnel-number p {
+		font-size: 2.5rem;
+		margin-bottom: 0;
+		margin-left: 2.3rem;
+	}
+	.cpanel__personnel-number span,
+	.cpanel__personnel-title p {
+		font-size: 3.5rem;
+	}
 	.cpanel__personnel-info {
 		padding: 0 2rem 3.1rem;
 	}
