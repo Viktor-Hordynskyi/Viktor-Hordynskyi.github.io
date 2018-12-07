@@ -285,6 +285,10 @@ p {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
+.cpanel__description-middle .column:first-child img {
+	height: 1.5rem;
+	width: 1rem;
+}
 .cpanel__description-middle.home div:first-child span {
 	display: none;
 }
@@ -453,7 +457,7 @@ p {
 	width: 15%;
 }
 .cpanel__description-middle.projects .column:first-child img {
-	padding-right: 2rem;
+	margin-right: 2rem;
 }
 
 /* personnel style */
@@ -476,18 +480,15 @@ p {
 	width: calc(100% / 6);
 }
 .cpanel__description-middle.personnel.admin .column:first-child img {
-	padding-right: 2rem;
+	margin-right: 2rem;
 }
 
 .cpanel__description-top.personnel.worker .column,
 .cpanel__description-middle.personnel.worker .column {
 	width: calc(100% / 5);
 }
-/*.cpanel__description-top.personnel.worker .column:first-child {
-	padding-left: calc(12px + 4rem);
-}*/
 .cpanel__description-middle.personnel.worker .column:first-child img {
-	padding-right: 2rem;
+	margin-right: 2rem;
 }
 
 /* style for edit modal window */
@@ -620,7 +621,7 @@ p {
 	html, body {
 		font-size: 7px;
 	}
-	
+
 	/*--- Login page Style ---*/
 	.login {
 		background-size: cover;
@@ -647,7 +648,7 @@ p {
 		top: 6rem;
 		text-align: center;
 	}
-	
+
 	.login-field {
 		-webkit-box-shadow: none;
 		box-shadow: none;
@@ -789,6 +790,10 @@ p {
 		justify-content: space-between;
 		padding: 0 1.5rem;
 	}
+	.cpanel__description-middle .column:first-child img {
+		height: 3rem;
+		width: 2rem;
+	}
 	.cpanel__description-top div,
 	.cpanel__description-middle div {
 		padding: 2.6rem .5rem 2.7rem;
@@ -847,6 +852,12 @@ p {
 	/* personnel style */
 	.cpanel__personnel-info {
 		padding: 0 2rem 3.1rem;
+	}
+	.cpanel__description-top.personnel.admin .column,
+	.cpanel__description-middle.personnel.admin .column,
+	.cpanel__description-top.personnel.worker .column,
+	.cpanel__description-middle.personnel.worker .column {
+		width: calc(100% / 4);
 	}
 
 

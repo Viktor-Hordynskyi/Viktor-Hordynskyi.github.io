@@ -31,9 +31,9 @@ $(document).ready(function() {
 
 	$('.cpanel__personnel-title').each(function() {
 		$(this).on('click', function() {
-			$('.cpanel__personnel-title img').hasClass('rotate')
-			? $('.cpanel__personnel-title img').removeClass('rotate')
-			: $('.cpanel__personnel-title img').addClass('rotate')
+			$($(this).find('img')).hasClass('rotate')
+			? $($(this).find('img')).removeClass('rotate')
+			: $($(this).find('img')).addClass('rotate')
 		})
 	})
 })
