@@ -10,6 +10,9 @@ p {
 	margin: 0;
 	padding: 0;
 }
+a:hover, a:focus {
+	text-decoration: none;
+}
 
 /*--- Login page Style ---*/
 .login {
@@ -410,6 +413,12 @@ p {
 }
 
 /* join style projects, personnel */
+.desktop_show {
+	display: block;
+}
+.desktop_hide {
+	display: none;
+}
 .cpanel__projects-info,
 .cpanel__personnel-info {
 	display: flex;
@@ -433,15 +442,20 @@ p {
 	font-size: 2.9rem;
 	font-weight: 700;
 }
-.cpanel__personnel-hr {
-	border-bottom: .1rem solid #c4c4c4;
-	margin-bottom: 2.2rem;
+.cpanel__projects-title a,
+.cpanel__personnel-title a {
+	background-color: #08b1ef;
+	border-radius: .5rem;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5rem;
+	width: 10rem;
 }
-.cpanel__personnel-hr.show {
-	display: block;
-}
-.cpanel__personnel-hr.hide {
-	display: none;
+.cpanel__projects-title>p,
+.cpanel__personnel-title>div {
+	margin-bottom: 1rem;
 }
 
 /* projects style */
@@ -461,6 +475,10 @@ p {
 
 /* personnel style */
 .cpanel__personnel-title {
+	display: flex;
+	flex-direction: column;
+}
+.cpanel__personnel-title>div {
 	cursor: pointer;
 	display: flex;
 	flex-direction: row;
@@ -488,6 +506,16 @@ p {
 }
 .cpanel__description-middle.personnel.worker .column:first-child img {
 	margin-right: 2rem;
+}
+.cpanel__personnel-hr {
+	border-bottom: .1rem solid #c4c4c4;
+	margin-bottom: 2.2rem;
+}
+.cpanel__personnel-hr.show {
+	display: block;
+}
+.cpanel__personnel-hr.hide {
+	display: none;
 }
 
 /* style for edit modal window */
@@ -803,7 +831,6 @@ p {
 		width: 17%;
 	}
 	.cpanel__description-middle div:first-child span {
-		display: block;
 		padding-left: 1rem;
 	}
 	.cpanel__description-top.home .column,
@@ -824,6 +851,19 @@ p {
 	}
 	.modal__line span {
 		font-size: 3.5rem;
+	}
+
+	/* join style projects, personnel */
+	.desktop_show {
+		display: none;
+	}
+	.desktop_hide {
+		display: block;
+	}
+	.cpanel__projects-title a,
+	.cpanel__personnel-title a {
+		font-size: 2.5rem;
+		width: 18rem;
 	}
 
 	/* projects style */
