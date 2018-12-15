@@ -1,13 +1,13 @@
 // add style for navbar
-// $(window).on('load scroll', function() {
-// 	if ($(document).scrollTop()>0) {
-// 		$('.navbar').addClass('fixed')
-// 	} else {
-// 		$('.navbar').removeClass('fixed')
-// 	}
-// })
-
-
+window.onscroll = header = function() {
+	var nav = document.getElementById('navbar')
+	if (window.pageYOffset>0) {
+		nav.classList.add('fixed');
+	} else {
+		nav.classList.remove('fixed');
+	}
+}
+document.addEventListener("DOMContentLoaded", header);
 
 $(document).ready(function() {
 	// animate links - anchor(#)

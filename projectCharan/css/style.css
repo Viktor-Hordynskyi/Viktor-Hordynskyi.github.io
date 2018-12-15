@@ -248,7 +248,7 @@ h2.menu__title {
 .contact__data {
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 4rem;
+	padding-bottom: 4rem;
 }
 .contact__address,
 .contact__form {
