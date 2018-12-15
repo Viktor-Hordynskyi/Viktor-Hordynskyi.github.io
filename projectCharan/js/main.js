@@ -1,11 +1,13 @@
 // add style for navbar
-$(window).on('load scroll', function() {
-	if ($(document).scrollTop()>0) {
-		$('.navbar').addClass('fixed')
-	} else {
-		$('.navbar').removeClass('fixed')
-	}
-})
+// $(window).on('load scroll', function() {
+// 	if ($(document).scrollTop()>0) {
+// 		$('.navbar').addClass('fixed')
+// 	} else {
+// 		$('.navbar').removeClass('fixed')
+// 	}
+// })
+
+
 
 $(document).ready(function() {
 	// animate links - anchor(#)
@@ -58,4 +60,15 @@ $(document).ready(function() {
 			}
 		})
 	})
+
+	var swiper = new Swiper('.swiper-container', {
+		autoHeight: true,
+		pagination: {
+			el: '.swiper-pagination',
+		},
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+	});
 })

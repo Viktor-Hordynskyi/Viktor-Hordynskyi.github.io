@@ -5,14 +5,29 @@
 	<title>Title</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- Swiper Slider CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
 
 	<!-- My CSS -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<script>
+		window.onscroll = header = function() {
+			var nav = document.getElementById('navbar')
+			if (window.pageYOffset>0) {
+				nav.classList.add('fixed');
+			} else {
+				nav.classList.remove('fixed');
+			}
+		}
+		document.addEventListener("DOMContentLoaded", header);
+	</script>
 </head>
 <body>
 	<!-- Start .header -->
 	<header class="header" id="home">
-		<nav class="navbar">
+		<nav class="navbar" id="navbar">
 			<a href="/index.html" class="logo-mobile">
 				<img src="img/logo.png" alt="Mumbai Curry House">
 			</a>
@@ -92,7 +107,20 @@
 				</li>
 			</ul>
 
-			<img src="img/menu-img.jpg" alt="menu image" class="menu__slider" />
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<img src="img/menu-img.jpg" alt="menu image" class="swiper-slide" />
+					<img src="img/header-bg.jpg" alt="menu image" class="swiper-slide" />
+					<img src="img/footer-bg.jpg" alt="menu image" class="swiper-slide" />
+					<img src="img/menu-img.jpg" alt="menu image" class="swiper-slide" />
+					<img src="img/header-bg.jpg" alt="menu image" class="swiper-slide" />
+					<img src="img/footer-bg.jpg" alt="menu image" class="swiper-slide" />
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+			
 
 			<div class="menu__description show" id="food">
 				<div class="menu__first-column">
@@ -860,7 +888,13 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 
+	<!-- Swiper Slider JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+
 	<!-- My JS -->
-	<script src="js/main.js"></script>
+	<script src="js/main.js" defer></script>
+
+	<!-- Need to be deleted when the project is end. -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
