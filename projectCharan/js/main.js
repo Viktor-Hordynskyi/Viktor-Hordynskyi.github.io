@@ -1,9 +1,9 @@
 // add style for navbar
 $(window).on('load scroll', function() {
 	if ($(document).scrollTop()>0) {
-		$('.navbar__nav').addClass('fixed')
+		$('.navbar').addClass('fixed')
 	} else {
-		$('.navbar__nav').removeClass('fixed')
+		$('.navbar').removeClass('fixed')
 	}
 })
 

@@ -63,23 +63,24 @@ h1, h2 {
 
 /* header style */
 .navbar {
+	padding-top: 4.1rem;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
+	transition: all .3s linear;
 	z-index: 999;
+}
+.navbar.fixed {
+	background: #ff962d;
+	background-image: linear-gradient(to top, #ff850b 0%, #ff9831 100%);
+	padding: 2.05rem 0;
 }
 .navbar__nav {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding-top: 4.1rem;
-}
-.navbar__nav.fixed {
-	background: #ff962d;
-	background-image: linear-gradient(to top, #ff850b 0%, #ff9831 100%);
-	padding: 2.05rem 0;
 }
 .navbar__item:first-child {
 	padding-right: 2.9rem;
@@ -99,6 +100,9 @@ h1, h2 {
 	font-size: 1.2rem;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+.logo-mobile {
+	display: none;
 }
 
 .header__bg img {
@@ -209,7 +213,7 @@ h2.menu__title {
 
 /* contact style */
 .contact {
-	background: url(../img/footer-bg.jpg) center no-repeat;
+	background: url(../img/footer-bg.jpg) top center no-repeat;
 	background-size: 100%;
 	color: #fffefe;
 	position: relative;
@@ -362,6 +366,64 @@ h2.menu__title {
 @media (max-width: 767px) {
 	html, body {
 		font-size: 7px;
+	}
+
+	.navbar {
+		padding-top: 2rem;
+	}
+	.navbar.fixed {
+		padding: 1rem 0;
+	}
+	.logo-mobile {
+		display: block;
+		text-align: center;
+	}
+	.logo-mobile img {
+		height: 3.9rem;
+	}
+	.navbar__item.logo.mobile {
+		display: none;
+	}
+	.navbar__item {
+		padding: 0 2.9rem!important;
+	}
+
+	.menu__description {
+		flex-direction: column;
+	}
+	.menu__first-column,
+	.menu__second-column {
+		padding: 0 1rem;
+		width: 100%;
+	}
+
+	.contact::before {
+		background-image: linear-gradient(to bottom, #ff850b 0%, #ff9831 100%);
+	}
+	.contact h3 {
+		padding: 3rem 0;
+	}
+	.contact__data {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+	.contact__address,
+	.contact__form {
+		margin: 0 auto;
+		width: 70%;
+	}
+	.contact__address {
+		padding-bottom: 1rem;
+	}
+	.contact__map {
+		padding-bottom: 0;
+	}
+
+	.footer-container {
+		padding: 0 1rem;
+	}
+	.footer__logo {
+		width: 50%;
 	}
 }
 
