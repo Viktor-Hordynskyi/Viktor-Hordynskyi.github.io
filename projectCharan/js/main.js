@@ -20,47 +20,6 @@ $(document).ready(function() {
 		event.preventDefault();
 	});
 
-	// choice menu
-	$('.nav__link').each(function() {
-		$(this).on('click', function() {
-			$('.nav__link').removeClass('active')
-			$(this).addClass('active')
-
-			if($('.nav__link.food').hasClass('active')) {
-				$('.menu__description').removeClass('show')
-				$('.menu__description').removeClass('hide')
-				$('#food').addClass('show')
-				$('#chefs').addClass('hide')
-				$('#veggie').addClass('hide')
-				$('#dessert').addClass('hide')
-			} 
-			if($('.nav__link.chefs').hasClass('active')) {
-				$('.menu__description').removeClass('show')
-				$('.menu__description').removeClass('hide')
-				$('#food').addClass('hide')
-				$('#chefs').addClass('show')
-				$('#veggie').addClass('hide')
-				$('#dessert').addClass('hide')
-			}
-			if($('.nav__link.veggie').hasClass('active')) {
-				$('.menu__description').removeClass('show')
-				$('.menu__description').removeClass('hide')
-				$('#food').addClass('hide')
-				$('#chefs').addClass('hide')
-				$('#veggie').addClass('show')
-				$('#dessert').addClass('hide')
-			}
-			if($('.nav__link.dessert').hasClass('active')) {
-				$('.menu__description').removeClass('show')
-				$('.menu__description').removeClass('hide')
-				$('#food').addClass('hide')
-				$('#chefs').addClass('hide')
-				$('#veggie').addClass('hide')
-				$('#dessert').addClass('show')
-			}
-		})
-	})
-
 	var swiper = new Swiper('.swiper-container', {
 		autoHeight: true,
 		pagination: {
