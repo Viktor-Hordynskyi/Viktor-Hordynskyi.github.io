@@ -387,6 +387,7 @@ h2.menu__title {
 	border: .1rem solid #ffffff;
 	border-radius: .5rem;
 	color: #ff9224;
+	cursor: pointer;
 	letter-spacing: .12rem;
 	text-transform: uppercase;
 	width: 10rem;
