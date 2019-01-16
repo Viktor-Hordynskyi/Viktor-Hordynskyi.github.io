@@ -1,7 +1,7 @@
 /* Reset CSS */
 *, *::before, *::after {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -127,17 +127,23 @@ button, input {
 	background-color: #8A62FF;
 	border: 0;
 	border-radius: .5rem;
+	margin: 4.37rem 0 11.4rem;
+	padding: 0;
+}
+
+.header__button a {
+	display: block;
 	color: #fff;
 	cursor: pointer;
 	font-size: 2.4rem;
 	line-height: 2.8rem;
-	margin: 4.37rem 0 11.4rem;
+	text-decoration: none;
 	padding: 1.5rem 10rem;
 }
 
 .header__button:hover {
 	-webkit-box-shadow: 0rem 0rem 1rem .1rem #fff;
-	        box-shadow: 0rem 0rem 1rem .1rem #fff;
+	box-shadow: 0rem 0rem 1rem .1rem #fff;
 }
 
 /* Container style*/
@@ -184,8 +190,8 @@ button, input {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	margin-bottom: 13.4rem
 }
 
@@ -214,7 +220,7 @@ button, input {
 
 .form input:last-child:hover {
 	-webkit-box-shadow: 0rem 0rem 1rem .1rem #777;
-	        box-shadow: 0rem 0rem 1rem .1rem #777;
+	box-shadow: 0rem 0rem 1rem .1rem #777;
 }
 
 .form input::-webkit-input-placeholder {
@@ -269,18 +275,24 @@ hr.line {
 /* Button more info style*/
 .more-info {
 	background: #4B397F;
-	border: .1rem solid #4B397F;
+	border: 0;
 	border-radius: .5rem;
+	margin: 4.8rem 0 6.9rem;
+	padding: 0;
+}
+
+.more-info a {
 	color: #fff;
 	cursor: pointer;
+	display: block;
 	font-size: 2.4rem;
-	margin: 4.8rem 0 6.9rem;
 	padding: 1rem 9.6rem;
+	text-decoration: none;
 }
 
 .more-info:hover {
 	-webkit-box-shadow: 0rem 0rem 1rem .1rem #777;
-	        box-shadow: 0rem 0rem 1rem .1rem #777;
+	box-shadow: 0rem 0rem 1rem .1rem #777;
 }
 
 /* footer style */
@@ -292,16 +304,16 @@ hr.line {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	margin: 0 auto;
 	padding: 2.3rem 0;
 	width: 80%;
@@ -320,8 +332,8 @@ hr.line {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 }
 
 .footer__soc img {
@@ -398,9 +410,12 @@ hr.line {
 
 	.header__button {
 		border-radius: .7rem;
+		margin: 3.7rem 0 1.2rem;
+	}
+
+	.header__button a {
 		font-size: 1.5rem;
 		line-height: 1.7rem;
-		margin: 3.7rem 0 1.2rem;
 		padding: .7rem;
 	}
 
@@ -441,7 +456,7 @@ hr.line {
 	}
 
 	/* Button more info style*/
-	.more-info {
+	.more-info a {
 		font-size: 2.4rem;
 		padding: 1rem;
 	}

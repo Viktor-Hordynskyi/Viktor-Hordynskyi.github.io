@@ -26,8 +26,10 @@
 			</span>
 		</p>
 
-		<button class="header__button btn">
-			לחץ כאן להגשת מועמדות
+		<button class="header__button">
+			<a href="#form">
+				לחץ כאן להגשת מועמדות
+			</a>
 		</button>
 	</header>
 
@@ -42,7 +44,7 @@
 			</div>
 		</div>
 
-		<div class="form">
+		<div class="form" id="form">
 			<h2>
 				השאירו פרטים ואנחנו כבר חוזרים
 			</h2>
@@ -51,7 +53,7 @@
 				<input type="text" placeholder="שם מל">
 				<input type="text" placeholder="טלפון">
 				<input type="text" placeholder="כתובת מייל">
-				<input type="submit" name="submit" value="שלח!" class="btn">
+				<input type="submit" name="submit" value="שלח!">
 			</form>
 
 			<hr class="line">
@@ -94,7 +96,9 @@
 		</div>
 
 		<button class="more-info">
-			מעוניין לשמוע עוד פרטים?
+			<a href="#form">
+				מעוניין לשמוע עוד פרטים?
+			</a>
 		</button>
 
 		<hr class="line">
@@ -119,6 +123,18 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
+	<!-- Anchor animation -->
+	<script>
+		$('a').on('click', function(){
+			var anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top
+			}, 500, 'linear');
+			event.preventDefault();
+		});
+
+
+	</script>
 	<!-- check if running in facebook app -->
 	<script>
 		var ua = navigator.userAgent || navigator.vendor || window.opera;
