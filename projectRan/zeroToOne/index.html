@@ -103,7 +103,7 @@
 		<img src="img/cogwheel-small.png" alt="cogwheel" class="stickies cogwheel-small">
 	</div>
 
-	<footer class="footer" id="footer">
+	<footer class="footer">
 		<div class="footer__soc">
 			<img src="img/linkedin.png" alt="linkedin">
 			<img src="img/facebook.png" alt="facebook">				
@@ -120,17 +120,17 @@
 	crossorigin="anonymous"></script>
 	<!-- Anchor animation -->
 	<script>
-		$('.block').on('click', function(){
-			$('html, body').stop().animate({scrollTop: $('#footer').offset().top}, 500, "linear");
-		})
-
-		$('a').on('click', function(){
-			var anchor = $('a');
-			$('html, body').stop().animate({
-				scrollTop: $(anchor.attr('href')).offset().top
-			}, 500, 'linear');
-			event.preventDefault();
-		});
+		$(document).ready(function() {
+			$('a').on('click', function(){
+				var anchor = $(this);
+				event.preventDefault();
+				console.log($(anchor.attr('href')).offset().top)
+				$('html, body').stop().animate({
+					scrollTop: $(anchor.attr('href')).offset().top
+				}, 500, 'linear');
+				
+			});
+		});		
 	</script>
 	<!-- check if running in facebook app -->
 	<script>
