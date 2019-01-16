@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<header class="header">
+		<h1 class="header__title">
+			תוכנית יזמות מאפס לאחד
+		</h1>
+
+		<p class="header__description">
+			<span>
+				יזמים בנשמה? יש לכם רעיון שתמיד רציתם להגשים? יש לכם מיזם משלכם? 
+			</span>
+			<br>
+			<span>
+				בואו ללמוד לבנות עסק פעיל, חדשני ורווחי בתוכנית המקצועית ביותר בישראל!
+			</span>
+		</p>
+
+		<button class="header__button btn">
+			לחץ כאן להגשת מועמדות
+		</button>
+	</header>
+
+	<main class="container">
+		<div class="partners">
+			<div class="partners__one">
+				<img src="img/partner.png" alt="partner">
+			</div>
+
+			<div class="partners__group">
+				<img src="img/partners.jpg" alt="partners">
+			</div>
+		</div>
+
+		<div class="form">
+			<h2>
+				השאירו פרטים ואנחנו כבר חוזרים
+			</h2>
+
+			<form action="">
+				<input type="text" placeholder="שם מל">
+				<input type="text" placeholder="טלפון">
+				<input type="text" placeholder="כתובת מייל">
+				<input type="submit" name="submit" value="שלח!" class="btn">
+			</form>
+
+			<hr class="line">
+		</div>
+
+		<div class="block">
+			<h3 class="block__title">
+				מה בתכנית?
+			</h3>
+
+			<p class="block__description">
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+			</p>
+
+			<div class="block__img">
+				<img src="img/progress.png" alt="progress">
+			</div>
+		</div>
+
+		<div class="block">
+			<h3 class="block__title">
+				מה בתכנית?
+			</h3>
+
+			<p class="block__description">
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+				בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה בלה
+			</p>
+
+			<div class="block__img">
+				<img src="img/faster.png" alt="faster">
+			</div>
+		</div>
+
+		<button class="more-info">
+			מעוניין לשמוע עוד פרטים?
+		</button>
+
+		<hr class="line">
+
+		<footer class="footer">
+			<div class="footer__soc">
+				<img src="img/linkedin.png" alt="linkedin">
+				<img src="img/facebook.png" alt="facebook">				
+			</div>
+
+			<div class="footer__copyright">
+				Zero21
+			</div>
+		</footer>
+
+		<img src="img/flower.png" alt="flower" class="stickies flower">
+		<img src="img/cogwheel-big.png" alt="cogwheel" class="stickies cogwheel-big">
+		<img src="img/cogwheel-small.png" alt="cogwheel" class="stickies cogwheel-small">
+	</main>
+
+	<!-- check if running in facebook app -->
+	<script>
+		var ua = navigator.userAgent || navigator.vendor || window.opera;
+		function isFacebookApp() {
+			return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+		}
+		if (isFacebookApp()) {
+			$("head").append($("<link rel='stylesheet' href='css/facebook_style.css' type='text/css' media='screen' />"));
+		}
+	</script>
+
+	<!-- Need to be deleted when the project is end. -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
