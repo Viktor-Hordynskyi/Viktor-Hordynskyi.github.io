@@ -95,7 +95,7 @@
 			</div>
 		</div>
 
-		<button class="more-info">
+		<button class="more-info" name="#form">
 			<a href="#form">
 				מעוניין לשמוע עוד פרטים?
 			</a>
@@ -126,14 +126,12 @@
 	<!-- Anchor animation -->
 	<script>
 		$('a').on('click', function(){
-			var anchor = $(this);
+			var anchor = $('a');
 			$('html, body').stop().animate({
 				scrollTop: $(anchor.attr('href')).offset().top
 			}, 500, 'linear');
 			event.preventDefault();
 		});
-
-
 	</script>
 	<!-- check if running in facebook app -->
 	<script>
