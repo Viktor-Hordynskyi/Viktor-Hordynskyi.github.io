@@ -402,12 +402,9 @@ hr.line {
 
 	.header__button {
 		border-radius: .7rem;
-		margin: 3.7rem 0 1.2rem;
-	}
-
-	.header__button a {
 		font-size: 1.5rem;
 		line-height: 1.7rem;
+		margin: 3.7rem 0 1.2rem;
 		padding: .7rem;
 	}
 
@@ -448,7 +445,7 @@ hr.line {
 	}
 
 	/* Button more info style*/
-	.more-info a {
+	.more-info {
 		font-size: 2.4rem;
 		padding: 1rem;
 	}
