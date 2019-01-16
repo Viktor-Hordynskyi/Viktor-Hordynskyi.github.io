@@ -77,4 +77,10 @@
 	html {
 		font-size: 8px;
 	}
+
+	/* header style */
+	.header__title {
+		font-size: 26.8px;
+		padding: 63px 15.3px 32.4px;
+	}
 }
