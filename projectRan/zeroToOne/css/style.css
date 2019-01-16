@@ -127,17 +127,13 @@ button, input {
 	background-color: #8A62FF;
 	border: 0;
 	border-radius: .5rem;
-	margin: 4.37rem 0 11.4rem;
-	padding: 0;
-}
-
-.header__button a {
-	display: block;
 	color: #fff;
 	cursor: pointer;
+	display: inline-block;
 	font-size: 2.4rem;
 	line-height: 2.8rem;
 	text-decoration: none;
+	margin: 4.37rem 0 11.4rem;
 	padding: 1.5rem 10rem;
 }
 
@@ -277,15 +273,11 @@ hr.line {
 	background: #4B397F;
 	border: 0;
 	border-radius: .5rem;
-	margin: 4.8rem 0 6.9rem;
-	padding: 0;
-}
-
-.more-info a {
 	color: #fff;
 	cursor: pointer;
-	display: block;
+	display: inline-block;
 	font-size: 2.4rem;
+	margin: 4.8rem 0 6.9rem;
 	padding: 1rem 9.6rem;
 	text-decoration: none;
 }

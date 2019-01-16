@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 	<header class="header">
 		<h1 class="header__title">
 			תוכנית יזמות מאפס לאחד
@@ -26,14 +25,12 @@
 			</span>
 		</p>
 
-		<button class="header__button">
-			<a href="#form">
-				לחץ כאן להגשת מועמדות
-			</a>
-		</button>
+		<a href="#form" class="header__button">
+			לחץ כאן להגשת מועמדות
+		</a>
 	</header>
 
-	<main class="container">
+	<div class="container">
 		<div class="partners">
 			<div class="partners__one">
 				<img src="img/partner.png" alt="partner">
@@ -49,7 +46,7 @@
 				השאירו פרטים ואנחנו כבר חוזרים
 			</h2>
 
-			<form action="">
+			<form>
 				<input type="text" placeholder="שם מל">
 				<input type="text" placeholder="טלפון">
 				<input type="text" placeholder="כתובת מייל">
@@ -95,29 +92,27 @@
 			</div>
 		</div>
 
-		<button class="more-info" name="#form">
-			<a href="#form">
-				מעוניין לשמוע עוד פרטים?
-			</a>
-		</button>
+		<a href="#form" class="more-info">
+			מעוניין לשמוע עוד פרטים?
+		</a>
 
 		<hr class="line">
-
-		<footer class="footer">
-			<div class="footer__soc">
-				<img src="img/linkedin.png" alt="linkedin">
-				<img src="img/facebook.png" alt="facebook">				
-			</div>
-
-			<div class="footer__copyright">
-				Zero21
-			</div>
-		</footer>
 
 		<img src="img/flower.png" alt="flower" class="stickies flower">
 		<img src="img/cogwheel-big.png" alt="cogwheel" class="stickies cogwheel-big">
 		<img src="img/cogwheel-small.png" alt="cogwheel" class="stickies cogwheel-small">
-	</main>
+	</div>
+
+	<footer class="footer" id="footer">
+		<div class="footer__soc">
+			<img src="img/linkedin.png" alt="linkedin">
+			<img src="img/facebook.png" alt="facebook">				
+		</div>
+
+		<div class="footer__copyright">
+			Zero21
+		</div>
+	</footer>
 
 	<!-- Optional JavaScript -->
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -125,6 +120,10 @@
 	crossorigin="anonymous"></script>
 	<!-- Anchor animation -->
 	<script>
+		$('.block').on('click', function(){
+			$('html, body').stop().animate({scrollTop: $('#footer').offset().top}, 500, "linear");
+		})
+
 		$('a').on('click', function(){
 			var anchor = $('a');
 			$('html, body').stop().animate({
