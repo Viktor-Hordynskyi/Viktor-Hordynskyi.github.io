@@ -29,7 +29,9 @@ h2::after {
 	position: absolute;
 	bottom: 0;
 	left: 50%;
-	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+	    -ms-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
 	height: 1px;
 	width: 20%;
 }
@@ -46,13 +48,14 @@ h2::after {
 
 .more:hover {
 	color: #fff;
-	box-shadow: 0 0 5px 1px #000;
+	-webkit-box-shadow: 0 0 5px 1px #000;
+	        box-shadow: 0 0 5px 1px #000;
 	text-decoration: none;
 }
 
 /* header style */
 .navbar-brand {
-	margin: 3.7rem 0 5.7rem 3.7rem;
+	margin: 3rem;
 	overflow: hidden;
 	width: 9.1rem;
 }
@@ -62,7 +65,6 @@ h2::after {
 }
 
 .navbar-toggler {
-	margin-right: 3.7rem;
 	overflow: hidden;
 }
 
@@ -81,6 +83,15 @@ h2::after {
 }
 
 .header__intro {
+	background: 
+	-webkit-gradient(linear, left top, left bottom, from(rgba(196,196,196,.6)), to(rgba(196,196,196,.6))),
+	url(../img/header-img.jpg) center no-repeat;
+	background: 
+	-webkit-linear-gradient(rgba(196,196,196,.6), rgba(196,196,196,.6)),
+	url(../img/header-img.jpg) center no-repeat;
+	background: 
+	-o-linear-gradient(rgba(196,196,196,.6), rgba(196,196,196,.6)),
+	url(../img/header-img.jpg) center no-repeat;
 	background: 
 	linear-gradient(rgba(196,196,196,.6), rgba(196,196,196,.6)),
 	url(../img/header-img.jpg) center no-repeat;
@@ -108,7 +119,8 @@ h2::after {
 .aboutus {
 	background-color: #e0e0e0;
 	text-align: center;
-	clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+	        clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
 }
 
 .aboutus h2 {
@@ -130,9 +142,20 @@ h2::after {
 	margin-top: 6rem;
 }
 
-.aboutus img {
-	margin-bottom: 13.2rem;
+.aboutus__img {
+	margin: 0 auto;
 	max-width: 79rem;
+}
+
+.aboutus__img img {
+	width: 100%;
+}
+
+p.aboutus__more {
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+	margin-bottom: 13.2rem;
+	text-align: center;
 }
 
 .aboutus a {
@@ -143,7 +166,11 @@ h2::after {
 .ways {
 	margin: 0 auto;
 	padding: 11rem 0 13rem;
-	max-width: 99rem;
+}
+
+.ways__img {
+	margin: 0 auto;
+	max-width: 87.4rem;
 }
 
 .ways img {
@@ -154,7 +181,8 @@ h2::after {
 .powering {
 	background-color: #e0e0e0;
 	text-align: center;
-	clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+	        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
 }
 
 .powering h2 {
@@ -176,9 +204,14 @@ h2::after {
 	text-align: center;
 }
 
+.companies__img {
+	margin: 0 auto;
+	max-width: 87.4rem;
+}
+
 .companies img {
 	margin: 7.3rem 0 13rem;
-	max-width: 87.4rem;
+	width: 100%;
 }
 
 .companies a {
@@ -199,7 +232,8 @@ h2::after {
 	bottom: 0;
 	left: 0;
 	background-color: #e0e0e0;
-	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+	        clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
 }
 
 .partners h2 {
@@ -217,24 +251,34 @@ h2::after {
 	max-width: 76.5rem;
 }
 
-.partners img {
+.partners__img {
+	margin: 0 auto;
 	position: absolute;
+	left: 0;
+	right: 0;
 	bottom: -21rem;
-	right: 50%;
-	transform: translate(50%, 0);
 	max-width: 93.6rem;
 	z-index: 9;
 }
 
+.partners img {
+	width: 100%;
+}
+
 /* feedback style */
 .feedback {
-	padding-top: 38rem;
+	padding: 38rem 0 21rem;
 	text-align: center;
+}
+
+.feedback__img {
+	margin: 0 auto;
+	max-width: 24.6rem;
 }
 
 .feedback img {
 	margin-bottom: 2.9rem;
-	max-width: 24.6rem;
+	width: 100%;
 }
 
 .feedback h4 {
@@ -249,10 +293,16 @@ h2::after {
 }
 
 .feedback__form {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin: 0 auto;
-	padding-bottom: 21rem;
 	max-width: 43.7rem;
 }
 
@@ -264,6 +314,24 @@ h2::after {
 	line-height: 2.6rem;
 	padding: 1.1rem 0;
 	text-align: center;
+}
+
+.feedback__form input::-webkit-input-placeholder {
+	color: #c3c3c3;
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+}
+
+.feedback__form input:-ms-input-placeholder {
+	color: #c3c3c3;
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+}
+
+.feedback__form input::-ms-input-placeholder {
+	color: #c3c3c3;
+	font-size: 2.4rem;
+	line-height: 2.6rem;
 }
 
 .feedback__form input::placeholder {
@@ -283,33 +351,75 @@ h2::after {
 
 /* invite style */
 .invite {
-	background: url(../img/footer-img.png) center no-repeat;
-	background-size: 100% 100%;
 	margin-bottom: 16.35rem;
+	position: relative;
 	text-align: center;
+}
+
+.invite__img {
+	-webkit-clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 95%, 50% 100%, 0 95%);
+	        clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 95%, 50% 100%, 0 95%);
+}
+
+.invite__img::after {
+	background-color: rgba(255,255,255,.5);
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.invite img {
+	width: 100%;
 }
 
 .invite h5 {
 	font-size: 8rem;
 	line-height: 8.8rem;
-	margin: 0 auto;
-	padding: 6.6rem 0 43.4rem;
+	position: absolute;
+	top: 6.6rem;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	    -ms-transform: translate(-50%, 0);
+	        transform: translate(-50%, 0);
 	max-width: 66.5rem;
 }
 
 /* footer style */
 .footer {
 	border-top: 1px solid #9a9a9a;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding: 2rem 1.6rem;
 }
 
 .footer__soc {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .footer__soc a {
@@ -348,45 +458,95 @@ h2::after {
 /* Large desktops and laptops */
 @media (min-width: 1440px) and (max-width: 1535.98px) {
 	html {
-		font-size: 9px;
+		font-size: 10px;
 	}
 }
 @media (min-width: 1200px) and (max-width: 1439.98px) {
 	html {
-		font-size: 8px;
+		font-size: 9px;
 	}
 }
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199.98px) {
 	html {
-		font-size: 7px;
+		font-size: 8px;
 	}
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991.98px) {
 	html {
-		font-size: 6px;
+		font-size: 7px;
 	}
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 576px) and (max-width: 767.98px) {
 	html {
-		font-size: 8px;
+		font-size: 6px;
 	}
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 575.98px) {
 	html {
-		font-size: 7px;
+		font-size: 10px;
+	}
+
+	.more {
+		font-size: 3rem;
+		line-height: 3.3rem;
+		padding: 1rem 2rem;
+	}
+
+	.header__intro {
+		background: 
+		-webkit-gradient(linear, left top, left bottom, from(rgba(196,196,196,.6)), to(rgba(196,196,196,.6))),
+		url(../img/header-img-mobile.jpg) center no-repeat;
+		background: 
+		-webkit-linear-gradient(rgba(196,196,196,.6), rgba(196,196,196,.6)),
+		url(../img/header-img-mobile.jpg) center no-repeat;
+		background: 
+		-o-linear-gradient(rgba(196,196,196,.6), rgba(196,196,196,.6)),
+		url(../img/header-img-mobile.jpg) center no-repeat;
+		background: 
+		linear-gradient(rgba(196,196,196,.6), rgba(196,196,196,.6)),
+		url(../img/header-img-mobile.jpg) center no-repeat;
+		background-size: 100% 100%;	
+		padding: 20.7rem 1.8rem 20.6rem;
+	}
+	.aboutus {
+		padding: 0 1.9rem;
+	}
+	.powering {
+		padding: 0 2.5rem;
+	}
+	.companies {
+		padding: 0 3.5rem;
+	}
+	.partners {
+		padding: 0 2.5rem;
+	}
+	.partners__img {
+		bottom: -9rem;
+		padding: 0 2.5rem;
+	}
+	.feedback {
+		padding: 13.8rem 5rem 10.5rem;
+	}
+	.invite {
+		margin-bottom: 8.7rem;
+	}
+	.invite h5 {
+		font-size: 3.6rem;
+		line-height: 3.9rem;
+		top: 5rem;
 	}
 }
 
 @media (max-width: 425px) {
 	html {
-		font-size: 7px;
+		font-size: 9px;
 	}
 }

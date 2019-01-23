@@ -67,8 +67,14 @@
 			Some of the stuff we are doing:
 		</h3>
 
-		<img src="img/we-doing.png" alt="we doing" class="wow fadeInLeft">
+		<div class="aboutus__img">
+			<img src="img/we-doing.png" alt="we doing" class="wow fadeInLeft">
+		</div>
 		<br>
+		<p class="aboutus__more">
+			And many more...
+		</p>
+
 		<a href="#feedback" class="more wow zoomIn">
 			Want to Hear More? Talk To Us!
 		</a>
@@ -76,7 +82,9 @@
 	<!-- /.aboutus -->
 
 	<div class="ways">
-		<img src="img/ways.png" alt="ways" class="wow fadeInLeft">
+		<div class="ways__img">
+			<img src="img/ways.png" alt="ways" class="wow fadeInLeft">
+		</div>
 	</div>
 	<!-- /.ways -->
 
@@ -92,7 +100,9 @@
 	<!-- /.powering -->
 
 	<div class="companies">
-		<img src="img/we-doing-2.png" alt="we doing" class="wow fadeInLeft">
+		<div class="companies__img">
+			<img src="img/we-doing-2.png" alt="we doing" class="wow fadeInLeft">
+		</div>
 		<br>
 		<a href="#feedback" class="more wow zoomIn">
 			Want to Hear More? Talk To Us!
@@ -109,12 +119,16 @@
 			We have the connections that will help you to start, full power, from day one. We’ve created a network of many businesses and individuals that will get you to where you want in the fastest and most optimized path.
 		</p>
 
-		<img src="img/partners.png" alt="partner" class="partners__image wow zoomInLeft">
+		<div class="partners__img">
+			<img src="img/partners.png" alt="partner" class="partners__image wow zoomInLeft">
+		</div>
 	</div>
 	<!-- /.patners -->
 
 	<div class="feedback">
-		<img src="img/devices.png" alt="devices" class="wow zoomIn">
+		<div class="feedback__img">
+			<img src="img/devices.png" alt="devices" class="wow zoomIn">
+		</div>
 
 		<h4 class="wow fadeInDown" id="feedback">
 			Want to Hear More? Talk To Us!
@@ -134,6 +148,10 @@
 	<!-- /.feedback -->
 
 	<div class="invite">
+		<div class="invite__img">
+			<img src="img/footer-img2.jpg" alt="footer image">
+		</div>
+
 		<h5 class="wow zoomInDown">
 			Be Bold. Be Creative.
 			Start Now!
@@ -176,16 +194,5 @@
 	<script src="js/wow.min.js"></script>
 	<!-- Custom JS -->
 	<script src="js/main.js"></script>
-	<!-- check if running in facebook app -->
-	<script>
-		var ua = navigator.userAgent || navigator.vendor || window.opera;
-		function isFacebookApp() {
-			return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
-		}
-		if (isFacebookApp()) {
-			$("head").append($("<link rel='stylesheet' href='css/facebook_style.css' type='text/css' media='screen' />"));
-		}
-	</script>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
