@@ -21,6 +21,7 @@ a {
 a:hover,
 a:focus {
   color: #69c;
+  text-decoration: none;
 }
 
 .show {
@@ -73,8 +74,8 @@ a:focus {
 
 /* header style */
 .header {
-  border-bottom: 3px solid #000;
-  height: calc(4.8rem + 3px);
+  border-bottom: 8px solid #416686;
+  height: calc(5rem + 8px);
 }
 
 .navbar {
@@ -85,7 +86,7 @@ a:focus {
 .navbar__markets,
 .navbar__currency,
 .navbar__authorization {
-  height: 4.8rem;
+  height: 5rem;
 }
 
 .navbar__markets,
@@ -130,28 +131,31 @@ a:focus {
 .navbar__authorization {
   border-left: 2px solid #000;
   font-size: 2rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .navbar__authorization span {
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 /* content style */
 .content {
-  height: calc(100vh - 4.8rem - 3px);
+  height: calc(100vh - 5rem - 8px);
 }
 
 /* information style */
 .information {
   background-color: #252b38;
-  border-bottom: 2px solid #000;
-  width: 88rem;
+  /*border-bottom: 2px solid #000;*/
+  border-right: 8px solid #416686;
+  /*width: 88rem;*/
+  width: 60%;
 }
 
 /* chart style */
 .chart {
   background-color: #fff;
-  height: 43.5rem;
+  /*height: 43.5rem;*/
+  height: 65%;
   width: 100%;
 }
 
@@ -167,7 +171,8 @@ a:focus {
 
 /* orders style */
 .orders {
-  border-top: 2px solid #000;
+  border-top: 8px solid #416686;
+  height: calc(35% - 8px);
 }
 
 .orders__tabs {
@@ -230,31 +235,36 @@ a:focus {
 }
 
 .orders__title h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   padding-right: 1rem;
 }
 
 .orders__title i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.orders__data {
+  padding: 0 1rem;
 }
 
 /* data style */
 .data {
-  border-left: 2px solid #000;
-  width: calc(100% - 88rem);
+  /*border-left: 2px solid #000;*/
+  /*width: calc(100% - 88rem);*/
+  width: 40%;
 }
 
 .data__top {
-  border-bottom: 4px solid #000;
+  border-bottom: 8px solid #416686;
   height: 60%;
 }
 
 .data__left {
-  border-right: 1px solid #000;
+  border-right: 1px solid #416686;
 }
 
 .data__right {
-  border-left: 1px solid #000;
+  border-left: 1px solid #416686;
 }
 
 .data__title>div:not(:first-child),
@@ -280,7 +290,7 @@ a:focus {
 }
 
 .data__values {
-  height: 100%;
+  height: calc(100% - 3rem);
 }
 
 .data__value--numbers {
@@ -385,6 +395,7 @@ a:focus {
   border: none;
   color: #fff;
   font-size: 1.8rem;
+  margin-top: 3rem;
   padding: .5rem 0rem;
   width: 100%;
 }
@@ -397,13 +408,17 @@ a:focus {
   background-color: #f14141;
 }
 
+.data__authorization {
+  margin-top: 3rem;
+}
+
 .data__authorization a {
   font-size: 2rem;
 }
 
 .data__authorization span {
   font-size: 2rem;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 
