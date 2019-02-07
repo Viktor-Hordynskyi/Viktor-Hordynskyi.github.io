@@ -74,8 +74,8 @@ a:focus {
 
 /* header style */
 .header {
-  border-bottom: 8px solid #416686;
-  height: calc(5rem + 8px);
+  border-bottom: 6px solid #000;
+  height: calc(5rem + 6px);
 }
 
 .navbar {
@@ -139,14 +139,14 @@ a:focus {
 
 /* content style */
 .content {
-  height: calc(100vh - 5rem - 8px);
+  height: calc(100vh - 5rem - 6px);
 }
 
 /* information style */
 .information {
   background-color: #252b38;
   /*border-bottom: 2px solid #000;*/
-  border-right: 8px solid #416686;
+  border-right: 6px solid #000;
   /*width: 88rem;*/
   width: 60%;
 }
@@ -171,8 +171,8 @@ a:focus {
 
 /* orders style */
 .orders {
-  border-top: 8px solid #416686;
-  height: calc(35% - 8px);
+  border-top: 6px solid #000;
+  height: calc(35% - 6px);
 }
 
 .orders__tabs {
@@ -255,16 +255,16 @@ a:focus {
 }
 
 .data__top {
-  border-bottom: 8px solid #416686;
+  border-bottom: 6px solid #000;
   height: 60%;
 }
 
 .data__left {
-  border-right: 1px solid #416686;
+  border-right: 1px solid #000;
 }
 
 .data__right {
-  border-left: 1px solid #416686;
+  border-left: 1px solid #000;
 }
 
 .data__title>div:not(:first-child),
