@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Start .header -->
+  <header class="header container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bgcolor-grey--light">
+      <div class="navbar__container d-flex">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="logo">
+        </a>
+        
+        <div class="navbar__markets">
+          <a href="#">All Markets</a>
+        </div>
+        
+        <div class="navbar__currency">
+          <h1>ETH->BTC</h1>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu"
+      aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarmenu">
+      <div class="navbar__data d-flex">
+        <div class="navbar__element">
+          <h4>Last Price</h4>
+          <p>
+            0.031021 <span class="color-yellow">$107.32</span>
+          </p>
+        </div>
+
+        <div class="navbar__element color-pink--light">
+          <h4>24h Change</h4>
+          <p>
+            -0.000158 -0.51%
+          </p>
+        </div>
+
+        <div class="navbar__element">
+          <h4>24h High</h4>
+          <p>
+            0.031300
+          </p>
+        </div>
+
+        <div class="navbar__element">
+          <h4>24h Low</h4>
+          <p>
+            0.030900
+          </p>
+        </div>
+
+        <div class="navbar__element">
+          <h4>24h Volume</h4>
+          <p>
+            4,420.73 BTC
+          </p>
+        </div>
+      </div>
+
+      <div class="navbar__authorization">
+        <a href="#">Register</a>
+        <span>|</span>
+        <a href="#">Log In</a>
+      </div>
+
+    </div>
+  </nav>
+</header>
+<!-- End /.header -->
+
+<!-- Start .content -->
+<main class="content container-fluid row">
+  <!-- Start .information -->
+  <section class="information">
+    <!-- Start .chart -->
+    <div class="chart">
+      <h2>Chart</h2>
+    </div>
+    <!-- End /.chart -->
+
+    <!-- Start .orders -->
+    <div class="orders">
+      <div class="orders__tabs">
+        <ul>
+          <li class="orders__tab active" data-target="pending">My Pending Orders</li>
+          <li class="orders__tab" data-target="history">My History Orders</li>
+        </ul>
+      </div>
+
+      <div class="orders__container show" id="pending">
+        <div class="orders__titles">
+          <div class="orders__title">
+            <h3>Time</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Type</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Price BTC</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Quantity ETH</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+          
+          <div class="orders__title">
+            <h3>Filled ETH</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Operation</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="orders__data">
+          <h2>some data here</h2>
+          <p>My Pending Orders</p>
+        </div>
+      </div>
+
+      <div class="orders__container" id="history">
+        <div class="orders__titles">
+          <div class="orders__title">
+            <h3>Time</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Type</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Price BTC</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Quantity ETH</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="orders__title">
+            <h3>Volume BTC</h3>
+            <div class="orders__sort">
+              <a href="#">
+                <i class="im im-arrow-up"></i>
+              </a>
+              <a href="#">
+                <i class="im im-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="orders__data">
+          <h2>some data here</h2>
+          <p>My History Orders</p>
+        </div>
+      </div>
+    </div>
+    <!-- End /.orders -->
+  </section>
+  <!-- End /.information -->
+
+
+  <!-- Start .data -->
+  <section class="data">
+    <div class="data__top row">
+      <div class="data__left bgcolor-grey--light col-sm-6">
+        <div class="data__title row">
+          <div class="col-4">
+            <h4>Price(BTC)</h4>
+          </div>
+
+          <div class="col-4">
+            <h4>Amount(ETH)</h4>
+          </div>
+
+          <div class="col-4">
+            <h4>Total(BTC)</h4>
+          </div>
+        </div>
+
+        <div class="data__container">
+          <div class="data__values">
+            <div class="data__value row">
+              <div class="data__value--numbers col-4">
+                <span class="color-pink--dark">0.031038</span>
+              </div>
+
+              <div class="data__value--numbers col-4">
+                <span>0.340</span>
+              </div>
+
+              <div class="data__value--numbers col-4">
+                <span>0.01055292</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="data__selected bgcolor-grey--dark">
+            <h5 class="color-green--light">
+              0.030949 <i class="im im-arrow-up"></i><span class="color-yellow">$107.32</span>
+            </h5>
+          </div>
+
+          <div class="data__values">
+            <div class="data__value row">
+              <div class="data__value--numbers col-4">
+                <span class="color-green--light">0.031038</span>
+              </div>
+
+              <div class="data__value--numbers col-4">
+                <span>0.340</span>
+              </div>
+
+              <div class="data__value--numbers col-4">
+                <span>0.01055292</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="data__right bgcolor-blue--dark col-sm-6">
+        <div class="data__title color-blue--light row">
+          <div class="col-4">
+            <h4 class="color-blue--light">Time</h4>
+          </div>
+
+          <div class="col-4">
+            <h4 class="color-blue--light">Price BTC</h4>
+          </div>
+
+          <div class="col-4">
+            <h4 class="color-blue--light">Amount ETH</h4>
+          </div>
+        </div>
+
+        <div class="data__values">
+          <div class="data__value row">
+            <div class="data__value--numbers col-4">
+              <span>17:15:13</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span class="color-red">0.03093528</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span>11.01055292</span>
+            </div>
+          </div>
+
+          <div class="data__value row">
+            <div class="data__value--numbers col-4">
+              <span>17:15:13</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span class="color-red">0.03093528</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span>11.01055292</span>
+            </div>
+          </div>
+
+          <div class="data__value row">
+            <div class="data__value--numbers col-4">
+              <span>17:15:13</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span class="color-green">0.03093528</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span>11.01055292</span>
+            </div>
+          </div>
+
+          <div class="data__value row">
+            <div class="data__value--numbers col-4">
+              <span>17:15:13</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span class="color-red">0.03093528</span>
+            </div>
+            
+            <div class="data__value--numbers col-4">
+              <span>11.01055292</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="data__bottom row">
+      <div class="data__left bgcolor-grey--light col-sm-6">
+        <div class="data__buy--title">
+          <h3>Buy ETH</h3>
+          <p>Available:00000.000000 BTC</p>
+        </div>
+
+        <form class="data__form was-validated" novalidate="">
+          <div class="form-group">
+            <label for="input1">Price:</label>
+            <input class="form-control" type="text" id="input1" value="" required>
+            <div class="invalid-feedback">
+              Please input the price
+            </div>
+
+            <div class="form__text">BTC</div>
+          </div>
+
+          <div class="form-group">
+            <label for="input1">Amount:</label>
+            <input class="form-control" type="text" id="input1" value="" required>
+            <div class="invalid-feedback">
+              Please input the price
+            </div>
+
+            <div class="form__text">ETH</div>
+          </div>
+
+          <div class="form-group">
+            <label for="input1">Total:</label>
+            <input class="form-control" type="text" id="input1" value="" required>
+            <div class="invalid-feedback">
+              Please input the price
+            </div>
+
+            <div class="form__text">BTC</div>
+          </div>
+
+          <p class="form__fee">Fee: <span>10</span></p>
+
+          <button type="submit" class="form__button--green show">Buy</button>
+        </form>
+
+        <div class="data__authorization text-center hide">
+          <a href="#" class="color-yellow">Register</a>
+          <span>|</span>
+          <a href="#" class="color-yellow">Log In</a>
+        </div>
+      </div>
+
+      <div class="data__right bgcolor-grey--light col-sm-6">
+        <div class="data__buy--title">
+          <h3>Buy ETH</h3>
+          <p>Available:00000.000000 BTC</p>
+        </div>
+
+        <form class="data__form was-validated" novalidate="">
+          <div class="form-group">
+            <label for="input1">Price:</label>
+            <input class="form-control" type="text" id="input1" value="" required>
+            <div class="invalid-feedback">
+              Please input the price
+            </div>
+
+            <div class="form__text">BTC</div>
+          </div>
+
+          <div class="form-group">
+            <label for="input1">Amount:</label>
+            <input class="form-control" type="text" id="input1" value="" required>
+            <div class="invalid-feedback">
+              Please input the price
+            </div>
+
+            <div class="form__text">ETH</div>
+          </div>
+
+          <div class="form-group">
+            <label for="input1">Total:</label>
+            <input class="form-control" type="text" id="input1" value="" required>
+            <div class="invalid-feedback">
+              Please input the price
+            </div>
+
+            <div class="form__text">BTC</div>
+          </div>
+
+          <p class="form__fee">Fee: <span>10</span></p>
+
+          <button type="submit" class="form__button--red hide">Sell</button>
+        </form>
+
+        <div class="data__authorization text-center show">
+          <a href="#" class="color-yellow">Register</a>
+          <span>|</span>
+          <a href="#" class="color-yellow">Log In</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End /.data -->
+</main>
+<!-- End /.content -->
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+</style>
+<link rel="stylesheet" href="css/iconmonstr-iconic-font.min.css">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!-- My JS -->
+<script src="js/main.js"></script>
+
+<!-- Need to be deleted when the project is end. -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>
