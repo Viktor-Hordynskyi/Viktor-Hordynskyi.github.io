@@ -53,7 +53,6 @@ a:focus {
   color: #4c7aa9;
 }
 
-
 /* bg colors */
 .bgcolor-blue--dark {
   background-color: #252b38;
@@ -75,6 +74,7 @@ a:focus {
 /* header style */
 .header {
   border-bottom: 3px solid #000;
+  height: calc(4.8rem + 3px);
 }
 
 .navbar {
@@ -221,6 +221,14 @@ a:focus {
   align-items: center;
 }
 
+.orders__title:first-child {
+  padding-left: 1rem;
+}
+
+.orders__title:last-child {
+  padding-right: 1rem;
+}
+
 .orders__title h3 {
   font-size: 2rem;
   padding-right: 1rem;
@@ -238,7 +246,7 @@ a:focus {
 
 .data__top {
   border-bottom: 4px solid #000;
-  height: 65%;
+  height: 60%;
 }
 
 .data__left {
@@ -298,7 +306,12 @@ a:focus {
 }
 
 .data__bottom {
-  height: 35%;
+  height: 40%;
+}
+
+.data__bottom .data__left,
+.data__bottom .data__right {
+  padding-bottom: 1rem;
 }
 
 .data__buy--title {
