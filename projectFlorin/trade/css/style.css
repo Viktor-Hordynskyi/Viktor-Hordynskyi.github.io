@@ -75,7 +75,7 @@ a:focus {
 /* header style */
 .header {
   border-bottom: 6px solid #000;
-  height: calc(7rem + 6px);
+  height: calc(6rem + 6px);
 }
 
 .navbar {
@@ -86,7 +86,7 @@ a:focus {
 .navbar__markets,
 .navbar__currency,
 .navbar__authorization {
-  height: 7rem;
+  height: 6rem;
 }
 
 .navbar__markets,
@@ -139,7 +139,7 @@ a:focus {
 
 /* content style */
 .content {
-  height: calc(100vh - 7rem - 6px);
+  height: calc(100vh - 6rem - 6px);
 }
 
 /* information style */
@@ -150,7 +150,7 @@ a:focus {
   /*width: 88rem;*/
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 7rem - 6px);
+  height: calc(100vh - 6rem - 6px);
   width: 60%;
 }
 
@@ -278,7 +278,7 @@ a:focus {
   /*width: calc(100% - 88rem);*/
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 7rem - 6px);
+  height: calc(100vh - 6rem - 6px);
   width: 40%;
 }
 
