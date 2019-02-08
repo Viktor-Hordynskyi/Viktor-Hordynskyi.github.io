@@ -550,7 +550,7 @@ a:focus {
     .content {
       display: flex;
       flex-direction: column;
-      height: auto;
+      /*height: auto;*/
     }
 
     /* information style */
