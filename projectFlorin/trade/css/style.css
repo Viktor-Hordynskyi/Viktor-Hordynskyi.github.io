@@ -595,11 +595,17 @@ a:focus {
       /* information style */
       .information {
         border-right: 0;
+        height: 100%;
         width: 100%;
+      }
+
+      .chart {
+        min-height: 208px;
       }
 
       /* data style */
       .data {
+        height: 100%;
         width: 100%;
       }
 
