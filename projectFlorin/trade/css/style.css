@@ -562,6 +562,7 @@ a:focus {
     .content {
       display: flex;
       flex-direction: column;
+      position: relative;
       /*height: auto;*/
     }
 
@@ -574,6 +575,13 @@ a:focus {
 
     .chart {
       min-height: 208px;
+    }
+
+    .orders {
+      border: 6px solid #000;
+      position: absolute;
+      left: -6px;
+      right: -6px;
     }
 
     /* data style */
