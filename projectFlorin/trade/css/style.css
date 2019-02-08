@@ -732,19 +732,19 @@ a:focus {
 
         /*.data__left, .data__right {
           height: 50%;
-        }*/
-      }
+          }*/
+        }
 
-      /* iPad with portrait orientation. */
- /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
-  .content {
-    height: calc(1024px - 6rem - 6px);
-  }
-  }*/
+        /* iPad with portrait orientation. */
+        @media all and (device-width: 768px) and (device-height: 1024px) {
+          .content {
+            height: calc(1024px - 6rem - 6px);
+          }
+        }
 
-  /* iPad with landscape orientation. */
- /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
-  .content {
-    height: calc(768px - 6rem - 6px);
-  }
-}*/
+        /* iPad with landscape orientation. */
+        @media all and (device-width: 1024px) and (device-height: 768px) {
+          .content {
+            height: calc(768px - 6rem - 6px);
+          }
+        }
