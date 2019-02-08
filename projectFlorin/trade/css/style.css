@@ -159,7 +159,8 @@ a:focus {
   /*width: 88rem;*/
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 6rem - 6px);
+  /*height: calc(100vh - 6rem - 6px);*/
+  height: 100%;
   width: 60%;
 }
 
@@ -306,7 +307,8 @@ a:focus {
   /*width: calc(100% - 88rem);*/
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 6rem - 6px);
+  /*height: calc(100vh - 6rem - 6px);*/
+  height: 100%;
   width: 40%;
 }
 
