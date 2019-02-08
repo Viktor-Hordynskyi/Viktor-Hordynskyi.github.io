@@ -609,6 +609,7 @@ a:focus {
       .content {
         display: flex;
         flex-direction: column;
+        position: relative;
         height: auto;
       }
 
@@ -621,6 +622,13 @@ a:focus {
 
       .chart {
         min-height: 208px;
+      }
+
+      .orders {
+        border: 6px solid #000;
+        position: absolute;
+        left: -6px;
+        right: -6px;
       }
 
       /* data style */
@@ -709,14 +717,14 @@ a:focus {
         }
       }
 
-  /* iPad with portrait orientation. */
+      /* iPad with portrait orientation. */
  /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
   .content {
     height: calc(1024px - 6rem - 6px);
   }
-}*/
+  }*/
 
-/* iPad with landscape orientation. */
+  /* iPad with landscape orientation. */
  /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
   .content {
     height: calc(768px - 6rem - 6px);
