@@ -435,7 +435,7 @@ a:focus {
   border: none;
   color: #fff;
   font-size: 1.8rem;
-  margin-top: 1rem;
+  /*margin-top: 1rem;*/
   padding: .5rem 0rem;
   width: 100%;
 }
@@ -448,9 +448,9 @@ a:focus {
   background-color: #f14141;
 }
 
-.data__authorization {
+/*.data__authorization {
   margin-top: 1rem;
-}
+}*/
 
 .data__authorization a {
   font-size: 2rem;
