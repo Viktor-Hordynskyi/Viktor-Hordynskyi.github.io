@@ -740,13 +740,13 @@ a:focus {
         /* iPad with portrait orientation. */
         @media all and (device-width: 768px) and (device-height: 1024px) {
           .content {
-            height: calc(924px - 6rem - 6px);
+            height: calc(1024px - 6rem - 6px);
           }
         }
 
         /* iPad with landscape orientation. */
         @media all and (device-width: 1024px) and (device-height: 768px) {
           .content {
-            height: calc(668px - 6rem - 6px);
+            height: calc(768px - 6rem - 6px);
           }
         }
