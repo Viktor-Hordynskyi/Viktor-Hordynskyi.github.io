@@ -10,4 +10,12 @@ $(document).ready(function() {
 			$('#'+cb).addClass('show');
 		});
 	})
+
+	let orders = $('.orders').height();
+	$('.orders').css('bottom', '-'+(orders+6)+'px')
+})
+
+$(window).on('resize', function() {
+	let orders = $('.orders').height();
+	$('.orders').css('bottom', '-'+(orders+6)+'px')
 })

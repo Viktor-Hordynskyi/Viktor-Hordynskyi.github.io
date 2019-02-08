@@ -245,12 +245,12 @@ a:focus {
 
 .orders__title:first-child,
 .orders__data--section:first-child {
-  padding-left: 1rem;
+  margin-left: 1rem;
 }
 
 .orders__title:last-child,
 .orders__data--section:last-child {
-  padding-right: 1rem;
+  margin-right: 1rem;
 }
 
 .orders__title h3 {
@@ -657,6 +657,7 @@ a:focus {
         .content {
           display: flex;
           flex-direction: column;
+          position: relative;
           height: auto;
         }
 
@@ -669,6 +670,13 @@ a:focus {
 
         .chart {
           min-height: 208px;
+        }
+
+        .orders {
+          border: 6px solid #000;
+          position: absolute;
+          left: -6px;
+          right: -6px;
         }
 
         .orders__sort {
