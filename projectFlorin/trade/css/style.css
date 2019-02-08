@@ -314,7 +314,8 @@ a:focus {
   border-bottom: 6px solid #000;
   flex-grow: 1;
   /*height: calc(60vh - 3.5rem - 6px);*/
-  height: calc(60vh);
+  min-height: calc(30vh - 3.5rem - 6px);
+  /*height: calc(60vh);*/
 }
 
 .data__left,
@@ -564,7 +565,7 @@ a:focus {
       display: flex;
       flex-direction: column;
       position: relative;
-      /*height: auto;*/
+      height: auto;
     }
 
     /* information style */
