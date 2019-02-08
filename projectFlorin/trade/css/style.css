@@ -67,7 +67,7 @@ a:focus {
 
 /* bootstrap style */
 .container-fluid,
-.row, .col-xl, .col-sm-6 {
+.row, .col-xl, .col-sm-6, .col-6 {
   margin: 0;
   padding: 0;
 }
@@ -80,6 +80,7 @@ a:focus {
 
 .navbar {
   padding: 0;
+  z-index: 9;
 }
 
 .navbar-toggler {
@@ -661,7 +662,7 @@ a:focus {
         /* header style */
         .navbar__data {
           margin-top: 2rem;
-          padding-left: 3rem;
+          padding-left: 0rem;
         }
 
         .navbar__data,
@@ -720,9 +721,17 @@ a:focus {
           border-bottom: 1px solid #000;
         }
 
-        .data__left, .data__right {
-          height: 50%;
+        .data__title h4 {
+          padding: .5rem;
         }
+
+        .data__value--numbers {
+          padding: 0rem .5rem;
+        }
+
+        /*.data__left, .data__right {
+          height: 50%;
+        }*/
       }
 
       /* iPad with portrait orientation. */
