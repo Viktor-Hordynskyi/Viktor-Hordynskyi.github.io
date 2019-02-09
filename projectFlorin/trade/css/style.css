@@ -405,6 +405,7 @@ a:focus {
 .data__bottom .data__left,
 .data__bottom .data__right {
   padding-bottom: 1rem;
+  height: auto;
 }
 
 .data__buy--title,
@@ -738,15 +739,15 @@ a:focus {
         }
 
         /* iPad with portrait orientation. */
-        @media all and (device-width: 768px) and (device-height: 1024px) {
+        /*@media all and (device-width: 768px) and (device-height: 1024px) {
           .content {
             height: calc(1024px - 6rem - 6px);
           }
-        }
+        }*/
 
         /* iPad with landscape orientation. */
-        @media all and (device-width: 1024px) and (device-height: 768px) {
+       /* @media all and (device-width: 1024px) and (device-height: 768px) {
           .content {
             height: calc(768px - 6rem - 6px);
           }
-        }
+        }*/
