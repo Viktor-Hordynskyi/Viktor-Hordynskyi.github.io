@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>E+I Engineering Group</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -59,23 +59,24 @@
     <!-- End /.description -->
 
     <!-- Start .content -->
-    <div class="content"><!-- Start .header -->
+    <div class="content">
+      <!-- Start .header -->
       <header class="header">
         <nav class="navbar">
           <ul class="navbar__nav">
             <li class="navbar__item">
-              <a href="#" class="navbar__link wow tada" data-wow-duration="1.5s">about</a>
+              <a href="#" class="navbar__link wow slideInDown" data-wow-duration="1s">about</a>
             </li>
             <li class="navbar__item">
-              <a href="#" class="navbar__link wow tada" data-wow-duration="1.5s">services</a>
+              <a href="#" class="navbar__link wow slideInDown" data-wow-duration="1.2s">services</a>
             </li>
             <li class="navbar__item">
-              <a href="#" class="navbar__link wow tada" data-wow-duration="1.5s">products</a>
+              <a href="#" class="navbar__link wow slideInDown" data-wow-duration="1.4s">products</a>
             </li>
           </ul>
         </nav>
 
-        <a href="#" class="header__home  wow tada" data-wow-duration="1.5s">
+        <a href="#" class="header__home  wow slideInDown" data-wow-duration="1.6s">
           <img src="img/home.png" alt="home">
         </a>
       </header>
@@ -84,7 +85,7 @@
       <!-- Start .interactive -->
       <div class="interactive">
         <div class="interactive__links">
-          <div class="interactive__link">
+          <div class="interactive__link wow slideInUp" data-wow-duration="1s">
             <a href="#">
               <div class="interactive__link--image">
                 <img src="img/home_link1.jpg" alt="home intro">
@@ -93,7 +94,7 @@
             </a>
           </div>
 
-          <div class="interactive__link">
+          <div class="interactive__link wow slideInUp" data-wow-duration="1.2s">
             <a href="#">
               <div class="interactive__link--image">
                 <img src="img/home_link2.jpg" alt="home intro">
@@ -102,7 +103,7 @@
             </a>
           </div>
 
-          <div class="interactive__link">
+          <div class="interactive__link wow slideInUp" data-wow-duration="1.4s">
             <a href="#">
               <div class="interactive__link--image">
                 <img src="img/home_link3.jpg" alt="home intro">
@@ -113,26 +114,20 @@
         </div>
       </div>
       <!-- End /.interactive -->
-      <!-- End /.content -->
     </div>
-    <!-- End /.container -->
+    <!-- End /.content -->
+  </div>
+  <!-- End /.container -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first -->
+  <script src="js/jquery-3.3.1.min.js"></script>
 
-    <!-- WOW JS -->
-    <script src="js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
+  <!-- WOW JS -->
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
 
-    <!-- My JS -->
-    <!-- <script src="js/main.js"></script> -->
-
-    <!-- Need to be deleted when the project is end. -->
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-  </body>
-
-  </html>
+</html>
