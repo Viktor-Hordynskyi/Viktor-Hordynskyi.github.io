@@ -177,6 +177,7 @@ body {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	height: 100vh;
+	overflow: hidden;
 	width: calc(100% - (72.2rem + 8.1rem));
 }
 
