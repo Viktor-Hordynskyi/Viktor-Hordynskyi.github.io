@@ -13,6 +13,10 @@ $(document).ready(function() {
 
 	let orders = $('.orders').height();
 	$('.orders').css('bottom', '-'+(orders+6)+'px')
+
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
 })
 
 $(window).on('resize', function() {
