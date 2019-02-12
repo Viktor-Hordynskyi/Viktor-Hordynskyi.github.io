@@ -919,9 +919,9 @@ a:focus {
   font-size: 2rem;
 }
 .tooltip .arrow {
-  left: 65px!important;
+  /*left: 65px!important;*/
   height: 1.4rem;
-  width: 1.8rem;
+  width: 2.8rem;
 }
 
 .bs-tooltip-auto[x-placement^=bottom],
