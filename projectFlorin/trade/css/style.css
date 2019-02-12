@@ -1021,8 +1021,11 @@ a:focus {
 }
 
 .wallet__titles {
+  background-color: #ddd;
+  color: #333;
   display: flex;
   flex-direction: row;
+  padding: 1rem;
 }
 
 .wallet__titles-element span {
@@ -1048,8 +1051,11 @@ a:focus {
 }
 
 .wallet__currency {
+  background-color: #fff;
+  color: #333;
   display: flex;
   flex-direction: row;
+  padding: 1rem;
 }
 
 .wallet__currency-element span {
