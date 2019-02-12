@@ -1,0 +1,113 @@
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	html {
+		font-size: 7px;
+	}
+
+	/* header style */
+	.header__logo {
+		width: 168px;
+	}
+
+	.header__title span {
+		font-size: 70px;
+	}
+
+	/* ecommerce style */
+	.ecommerce__title h1 {
+		font-size: 77px;
+		line-height: 105px;
+		padding: 42px 0;
+		max-width: 557.9px;
+	}
+
+	.ecommerce__form-title {
+		padding: 37.8px 0 95.9px;
+		max-width: 700px;
+	}
+
+	/* footer style */
+	.footer__soc img {
+		height: 40.6px;
+		width: 42px;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 575.98px) {
+	html {
+		font-size: 7px;
+	}
+
+	/* header style */
+	.header__logo {
+		width: 147px;
+	}
+
+	.header__title span {
+		font-size: 63px;
+	}
+
+	/* ecommerce style */
+	.ecommerce__title h1 {
+		font-size: 70px;
+		line-height: 91px;
+		padding: 28px 0;
+		max-width: 557.9px;
+	}
+
+	.ecommerce__form-title {
+		padding: 37.8px 0 95.9px;
+		max-width: 700px;
+	}
+
+	/* footer style */
+	.footer__soc img {
+		height: 26.6px;
+		width: 28px;
+	}
+}
+
+@media (max-width: 425px) {
+	html {
+		font-size: 7px;
+	}
+
+	/* header style */
+	.header__logo {
+		width: 140px;
+	}
+
+	.header__title span {
+		font-size: 56px;
+		line-height: 105px;
+	}
+
+	/* ecommerce style */
+	.ecommerce__title h1 {
+		font-size: 56px;
+		line-height: 91px;
+		padding: 28px 14px;
+		max-width: 559.3px;
+	}
+
+	.ecommerce__form-title {
+		padding: 28px 14px 84px;
+		max-width: 630px;
+	}
+
+	.ecommerce__form-field input {
+		font-size: 21px;
+		padding: 3.5px 0;
+	}
+
+	.ecommerce__form-field input:not(:last-child) {
+		margin-bottom: 14px;
+	}
+
+	/* footer style */
+	.footer__soc img {
+		height: 26.6px;
+		width: 28px;
+	}
+}

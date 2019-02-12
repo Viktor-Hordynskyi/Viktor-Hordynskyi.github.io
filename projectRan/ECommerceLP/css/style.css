@@ -25,9 +25,19 @@ body {
 
 /* header style */
 .header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .header__logo {
@@ -83,9 +93,19 @@ body {
 }
 
 .ecommerce__form-field {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .ecommerce__form-field input {
@@ -106,6 +126,18 @@ body {
 	margin-bottom: 3rem;
 }
 
+.ecommerce__form-field input::-webkit-input-placeholder {
+	color: #C3C3C3;
+}
+
+.ecommerce__form-field input:-ms-input-placeholder {
+	color: #C3C3C3;
+}
+
+.ecommerce__form-field input::-ms-input-placeholder {
+	color: #C3C3C3;
+}
+
 .ecommerce__form-field input::placeholder {
 	color: #C3C3C3;
 }
@@ -118,22 +150,41 @@ body {
 
 .ecommerce__form-field input[type=submit]:hover {
 	background-color: rgba(150, 150, 150, 1);
-	
 }
 
 /* footer style */
 .footer {
 	border-top: 1px solid #9a9a9a;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	padding: 2rem 1.6rem;
 }
 
 .footer__soc {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .footer__soc a {
@@ -143,7 +194,8 @@ body {
 
 .footer__soc a:hover,
 .footer__soc a:focus {
-	box-shadow: 0 0 1rem #333;
+	-webkit-box-shadow: 0 0 1rem #333;
+	        box-shadow: 0 0 1rem #333;
 	border-radius: .5rem;
 }
 
