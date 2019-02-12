@@ -1,0 +1,335 @@
+@font-face {
+	font-family: "PostNoBillsColombo-medium"; 
+	src: url("../fonts/postnobillscolombo-medium.ttf") format("truetype"); 
+	font-style: normal; 
+	font-weight: 400;
+}
+html {
+	font-size: 10px;
+}
+
+body {
+	color: #2C2442;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	line-height: 1;
+}
+
+.header__logo,
+.header__title,
+.ecommerce__title,
+.ecommerce__form,
+.ecommerce__form-field {
+	overflow: hidden;
+}
+
+/* header style */
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header__logo {
+	margin-top: 2.9rem;
+	width: 31.6rem;
+}
+
+.header__logo img {
+	width: 100%;
+}
+
+.header__title span {
+	display: inline-block;
+	font-family: 'PostNoBillsColombo-medium';
+	font-size: 15rem;
+	line-height: 22.4rem;
+}
+
+.header__intro {
+	width: 100%;
+}
+
+.header__intro img {
+	width: 100%;
+}
+
+/* ecommerce style */
+.ecommerce {
+	background-color: #EBEBEB;
+}
+
+.ecommerce__title {
+	background-color: #C4C4C4;
+}
+
+.ecommerce__title h1 {
+	color: #636363;
+	font-size: 16rem;
+	line-height: 18.4rem;
+	padding: 4.7rem 0;
+	text-align: center;
+}
+
+.ecommerce__form {
+	padding-bottom: 13.9rem;
+}
+
+.ecommerce__form-title {
+	font-size: 4.8rem;
+	line-height: 5.5rem;
+	padding: 5.7rem 0 31.8rem;
+	text-align: center;
+}
+
+.ecommerce__form-field {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ecommerce__form-field input {
+	background-color: #fff;
+	border: 1px solid #ABABAB;
+	border-radius: .5rem;
+	font-size: 4.8rem;
+	line-height: 5.5rem;
+	padding: 2.5rem 0;
+	text-align: center;
+	max-width: 73rem;
+	width: 100%;
+}
+
+.ecommerce__form-field input:not(:last-child) {
+	margin-bottom: 4rem;
+}
+
+.ecommerce__form-field input::placeholder {
+	color: #C3C3C3;
+}
+
+.ecommerce__form-field input[type=submit] {
+	background-color: #BEBEBE;
+	color: #fff;
+}
+
+/* footer style */
+.footer {
+	border-top: 1px solid #9a9a9a;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 1.6rem;
+}
+
+.footer__soc {
+	display: flex;
+	flex-direction: row;
+}
+
+.footer__soc a {
+	display: inline-block;
+	margin-right: 1rem;
+}
+
+.footer__soc a:hover,
+.footer__soc a:focus {
+	box-shadow: 0 0 1rem #333;
+	border-radius: .5rem;
+}
+
+.footer__soc img {
+	height: 2.8rem;
+	width: 2.9rem;
+}
+
+.footer__contacts {
+	text-align: center;
+}
+
+.footer__contacts a {
+	display: inline-block;
+	margin-bottom: 1.3rem;
+}
+
+.footer__contacts a,
+.footer__contacts p {
+	color: #000;
+	font-size: 1.8rem;
+	line-height: 2rem;
+}
+
+.footer__logo {
+	max-width: 9.1rem;
+}
+
+.footer__logo img {
+	width: 100%;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1440px) and (max-width: 1535.98px) {
+	html {
+		font-size: 10px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	html {
+		font-size: 9px;
+	}
+
+	/* header style */
+	.header__logo {
+		width: 30rem;
+	}
+
+	.header__title span {
+		font-size: 12rem;
+	}
+
+	/* ecommerce style */
+	.ecommerce__title h1 {
+		line-height: 16rem;
+		margin: 0 auto;
+		padding: 10.9rem 0;
+		max-width: 79.7rem;
+	}
+
+	.ecommerce__form-title {
+		margin: 0 auto;
+		padding: 5.4rem 0 13.7rem;
+		max-width: 100rem;
+	}
+
+	/* footer style */
+	.footer__soc img {
+		height: 5.8rem;
+		width: 6rem;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	html {
+		font-size: 8px;
+	}
+
+	/* header style */
+	.header__logo {
+		width: 27rem;
+	}
+
+	.header__title span {
+		font-size: 11rem;
+	}
+
+	/* ecommerce style */
+	.ecommerce__title h1 {
+		font-size: 13rem;
+		line-height: 16rem;
+		margin: 0 auto;
+		padding: 8rem 0;
+		max-width: 79.7rem;
+	}
+
+	.ecommerce__form-title {
+		margin: 0 auto;
+		padding: 5.4rem 0 13.7rem;
+		max-width: 100rem;
+	}
+
+	/* footer style */
+	.footer__soc img {
+		height: 5.8rem;
+		width: 6rem;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	html {
+		font-size: 7px;
+	}
+
+	/* header style */
+	.header__logo {
+		width: 24rem;
+	}
+
+	.header__title span {
+		font-size: 10rem;
+	}
+
+	/* ecommerce style */
+	.ecommerce__title h1 {
+		font-size: 11rem;
+		line-height: 15rem;
+		margin: 0 auto;
+		padding: 6rem 0;
+		max-width: 79.7rem;
+	}
+
+	.ecommerce__form-title {
+		margin: 0 auto;
+		padding: 5.4rem 0 13.7rem;
+		max-width: 100rem;
+	}
+
+	/* footer style */
+	.footer__soc img {
+		height: 5.8rem;
+		width: 6rem;
+	}
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 575.98px) {
+	html {
+		font-size: 7px;
+	}
+
+	/* header style */
+	.header__logo {
+		width: 21rem;
+	}
+
+	.header__title span {
+		font-size: 9rem;
+	}
+
+	/* ecommerce style */
+	.ecommerce__title h1 {
+		font-size: 10rem;
+		line-height: 13rem;
+		margin: 0 auto;
+		padding: 4rem 0;
+		max-width: 79.7rem;
+	}
+
+	.ecommerce__form-title {
+		margin: 0 auto;
+		padding: 5.4rem 0 13.7rem;
+		max-width: 100rem;
+	}
+
+	/* footer style */
+	.footer__soc img {
+		height: 3.8rem;
+		width: 4rem;
+	}
+}
+
+@media (max-width: 425px) {
+	html {
+		font-size: 7px;
+	}
+}
