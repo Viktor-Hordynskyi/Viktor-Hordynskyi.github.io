@@ -891,6 +891,11 @@ a:focus {
   padding: 0 1rem;
 }
 
+.nav-item:hover,
+.nav-item:focus {
+  background-color: #32506f;
+}
+
 .nav-item:first-child {
   margin-left: 0;
 }
@@ -901,18 +906,9 @@ a:focus {
   padding: .5rem 1.5rem;
 }
 
-.nav-item.dropdown.show,
-.dropdown-menu.show {
-  /*background-color: #51575d;*/
-}
-
 .dropdown-menu {
   border: 0;
   padding: 0;
-}
-
-.dropdown-item:focus, .dropdown-item:hover {
-  /*color: #69c!important;*/
 }
 
 .dropdown-item:focus,
