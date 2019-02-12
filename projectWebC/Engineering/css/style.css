@@ -6,10 +6,14 @@
 	font-family: MuseoSans-300;
 	src: url("../fonts/MuseoSans-300.otf") format("opentype");
 }
+@font-face {
+	font-family: MuseoSans-700;
+	src: url("../fonts/MuseoSans-700.otf") format("opentype");
+}
 /* Reset CSS */
 *, *::before, *::after {
 	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -50,6 +54,13 @@ body {
 	line-height: 1;
 }
 
+img {
+	vertical-align: bottom;
+}
+a {
+	text-decoration: none;
+}
+
 /* container style */
 .container {
 	display: -webkit-box;
@@ -59,8 +70,8 @@ body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	height: 100vh;
 	width: 100%;
 }
@@ -77,8 +88,8 @@ body {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	padding-left: 8rem;
 	height: 100%;
 	width: calc(72.2rem + 8.1rem);
@@ -147,12 +158,12 @@ body {
 	display: flex;
 	-webkit-box-align: end;
 	-webkit-align-items: flex-end;
-	    -ms-flex-align: end;
-	        align-items: flex-end;
+	-ms-flex-align: end;
+	align-items: flex-end;
 	-webkit-box-flex: 1;
 	-webkit-flex-grow: 1;
-	    -ms-flex-positive: 1;
-	        flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
 	margin-bottom: 4rem;
 	overflow: hidden;
 }
@@ -174,8 +185,8 @@ body {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	height: 100vh;
 	overflow: hidden;
 	width: calc(100% - (72.2rem + 8.1rem));
@@ -190,12 +201,12 @@ body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-pack: justify;
 	-webkit-justify-content: space-between;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 	height: 16rem;
 	width: 100%;
 }
@@ -213,8 +224,8 @@ body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	height: 100%;
 }
 
@@ -233,16 +244,16 @@ body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	font-size: 3.5rem;
 	font-weight: 700;
 	letter-spacing: .42rem;
@@ -257,7 +268,12 @@ body {
 
 .navbar__link:hover,
 .navbar__link:focus {
+	color: #12b8ed;
 	background-color: rgba(32, 45, 84, .7);
+}
+
+.navbar__link.active {
+	color: #12b8ed;
 }
 
 .header__home {
@@ -280,13 +296,13 @@ body {
 }
 
 
-/* interactive style */
-.interactive {
+/* interactive-home style */
+.interactive-home {
 	height: calc(100% - 16rem);
 	width: 100%;
 }
 
-.interactive__links {
+.interactive-home__links {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -294,18 +310,18 @@ body {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: row;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
 	height: 100%;
 	width: 100%;
 }
 
-.interactive__link {
+.interactive-home__link {
 	height: 100%;
 	width: calc(100% / 3);
 }
 
-.interactive__link a {
+.interactive-home__link a {
 	color: #fff;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -314,8 +330,8 @@ body {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
 	text-decoration: none;
 	text-transform: uppercase;
 	-webkit-transition: all .3s;
@@ -324,25 +340,25 @@ body {
 	height: 100%;
 }
 
-.interactive__link a:hover,
-.interactive__link a:focus {
+.interactive-home__link a:hover,
+.interactive-home__link a:focus {
 	opacity: .7;
 }
 
-.interactive__link:not(:last-child) {
+.interactive-home__link:not(:last-child) {
 	border-right: 1px solid #fff;
 }
 
-.interactive__link--image {
+.interactive-home__link--image {
 	height: calc(100% - 4.5rem - 11.2rem - 9.7rem - 1px);
 }
 
-.interactive__link--image img {
+.interactive-home__link--image img {
 	height: 100%;
 	width: 100%;
 }
 
-.interactive__links span {
+.interactive-home__links span {
 	background-color: #467db2;
 	border-top: 1px solid #fff;
 	display: -webkit-box;
@@ -351,21 +367,256 @@ body {
 	display: flex;
 	-webkit-box-align: center;
 	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	-webkit-box-pack: center;
 	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	font-size: 4.5rem;
 	font-weight: 700;
 	padding: 11.2rem 0 9.7rem;
 }
 
-.interactive__links span:first-child,
-.interactive__links span:last-child {
+.interactive-home__links span:first-child,
+.interactive-home__links span:last-child {
 	background-color: #316faa;
 }
+
+/* interactive about style */
+.interactive-about {
+	height: calc(100% - 16rem);
+	width: 100%;
+}
+
+.interactive-about__links {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+}
+
+.interactive-about__link {
+	border: 1px solid #fff;
+	height: calc(100% / 2);
+	width: calc(100% / 2);
+}
+
+.interactive-about__link a {
+	color: #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	height: 100%;
+	width: 100%;
+}
+
+.interactive-about__link a:hover,
+.interactive-about__link a:focus {
+	opacity: .7;
+}
+
+.interactive-about__link--image {
+	border-bottom: 1px solid #fff;
+	height: calc(100% - 10rem);
+	width: 100%;
+}
+
+.interactive-about__link--image img {
+	height: 100%;
+	width: 100%;
+}
+
+.interactive-about__link span {
+	border-top: 1px solid #fff;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-size: 2.6rem;
+	letter-spacing: .104rem;
+	font-weight: 700;
+	height: 10rem;
+}
+
+.interactive-about__link:nth-child(odd) span {
+	background-color: #316faa;
+}
+
+.interactive-about__link:nth-child(even) span {
+	background-color: #467db2;
+}
+
+/* interactive about review style */
+.interactive-about__review {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100%;
+}
+
+.interactive-about__review--img {
+	position: relative;
+	height: calc(100% - 24rem);
+}
+
+.interactive-about__review--img img {
+	height: 100%;
+	width: 100%;
+}
+
+.interactive-about__review--link {
+	position: absolute;
+	z-index: 9;
+}
+
+.interactive-about__review--link a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.interactive-about__review--link.usa {
+	top: 3rem;
+	left: 17rem;
+	height: 9rem;
+	width: 15rem;
+}
+
+.interactive-about__review--link.donegal {
+	top: 3rem;
+	left: 34rem;
+	height: 7rem;
+	width: 11rem;
+}
+
+.interactive-about__review--link.derry {
+	top: 3rem;
+	left: 47rem;
+	height: 7rem;
+	width: 11rem;
+}
+
+.interactive-about__review--link.uae {
+	top: 3rem;
+	left: 66em;
+	height: 7rem;
+	width: 17rem;
+}
+
+.interactive-about__review--nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.interactive-about__review--description {
+	background-color: #12b8ed;
+	color: #202d54;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 6.1rem;
+	height: 24rem;
+	width: 100%;
+}
+
+.interactive-about__review--description h2 {
+	color: #fff;
+	font-family: "MuseoSans-700";
+	font-size: 3.8rem;
+	line-height: 4.846rem;
+	margin-bottom: 5rem;
+}
+
+.interactive-about__review--description p {
+	font-size: 2.1rem;
+	font-weight: 700;
+	letter-spacing: .085rem;
+	text-transform: uppercase;
+}
+
+.interactive-about__review--description span {
+	font-family: "MuseoSans-300";
+	font-size: 22px;
+	line-height: 13.7px;
+	margin-left: 3.3rem;
+}
+
+.interactive-about__review--description strong {
+	font-family: "MuseoSans-700";
+	font-size: 36px;
+}
+
+.interactive-about__review--switches {
+	display: flex;
+	flex-direction: row;
+}
+
+.interactive-about__review--switch {
+	cursor: pointer;
+	width: 22rem;
+}
+
+.interactive-about__review--switch img {
+	height: calc(100% - 10rem);
+	width: 100%;
+}
+
+.interactive-about__review--switch span {
+	background-color: #202d54;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.1rem;
+	font-weight: 700;
+	letter-spacing: .083rem;
+	text-transform: uppercase;
+	height: 10rem;
+	width: 100%;
+}
+
+.interactive-about__review--switch:hover span,
+.interactive-about__review--switch:focus span {
+	color: #12b8ed;
+}
+
+.interactive-about__review--switch:first-child {
+	opacity: .6;
+}
+
+
 
 
 @media (min-width: 2120px) {

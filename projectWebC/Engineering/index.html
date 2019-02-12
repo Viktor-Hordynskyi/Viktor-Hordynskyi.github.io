@@ -61,51 +61,51 @@
     <!-- Start .content -->
     <div class="content">
       <!-- Start .header -->
-      <header class="header wow slideInDown">
+      <header class="header wow slideInLeft">
         <nav class="navbar">
           <ul class="navbar__nav">
             <li class="navbar__item">
-              <a href="#" class="navbar__link">about</a>
+              <a href="pages/about/index.html" class="navbar__link">about</a>
             </li>
             <li class="navbar__item">
-              <a href="#" class="navbar__link">services</a>
+              <a href="pages/services/index.html" class="navbar__link">services</a>
             </li>
             <li class="navbar__item">
-              <a href="#" class="navbar__link">products</a>
+              <a href="pages/products/index.html" class="navbar__link">products</a>
             </li>
           </ul>
         </nav>
 
-        <a href="#" class="header__home">
+        <a href="index.html" class="header__home">
           <img src="img/home.png" alt="home">
         </a>
       </header>
       <!-- End /.header -->
       
-      <!-- Start .interactive -->
-      <div class="interactive">
-        <div class="interactive__links">
-          <div class="interactive__link wow slideInUp" data-wow-duration="1s">
-            <a href="#">
-              <div class="interactive__link--image">
+      <!-- Start .interactive-home -->
+      <div class="interactive-home">
+        <div class="interactive-home__links">
+          <div class="interactive-home__link wow slideInUp" data-wow-duration="1s">
+            <a href="pages/about/index.html">
+              <div class="interactive-home__link--image">
                 <img src="img/home_link1.jpg" alt="home intro">
               </div>
               <span>About</span>
             </a>
           </div>
 
-          <div class="interactive__link wow slideInUp" data-wow-duration="1.2s">
-            <a href="#">
-              <div class="interactive__link--image">
+          <div class="interactive-home__link wow slideInUp" data-wow-duration="1.2s">
+            <a href="pages/services/index.html">
+              <div class="interactive-home__link--image">
                 <img src="img/home_link2.jpg" alt="home intro">
               </div>
               <span>Services</span>
             </a>
           </div>
 
-          <div class="interactive__link wow slideInUp" data-wow-duration="1.4s">
-            <a href="#">
-              <div class="interactive__link--image">
+          <div class="interactive-home__link wow slideInUp" data-wow-duration="1.4s">
+            <a href="pages/products/index.html">
+              <div class="interactive-home__link--image">
                 <img src="img/home_link3.jpg" alt="home intro">
               </div>
               <span>Products</span>
@@ -113,7 +113,7 @@
           </div>
         </div>
       </div>
-      <!-- End /.interactive -->
+      <!-- End /.interactive-home -->
     </div>
     <!-- End /.content -->
   </div>
@@ -128,6 +128,7 @@
   <script>
     new WOW().init();
   </script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 
 </html>
