@@ -945,15 +945,22 @@ a:focus {
 }
 
 /* title */
+.wallet__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .wallet__title h2 {
   font-size: 5rem;
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 
 .wallet__title p {
   font-size: 2rem;
   letter-spacing: .2rem;
-  margin-bottom: 3rem;
+  /*margin-bottom: 3rem;*/
 }
 
 /* nav */
@@ -1131,7 +1138,7 @@ a:focus {
 }
 
 .modal-body hr {
-  border-top: 1px solid rgba(255, 255, 255, .5);
+  border-top: 1px solid #ccc;
 }
 
 .modal-address {
