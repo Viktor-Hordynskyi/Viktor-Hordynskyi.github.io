@@ -123,12 +123,12 @@ a {
 	text-transform: uppercase;
 }
 
-.description__title h1 span:first-child {
+.description__title h1 span.green {
 	background-color: #049e3d;
 	font-size: 7.4rem;
 }
 
-.description__title h1 span:last-child {
+.description__title h1 span.blue {
 	background-color: #12b8ed;
 	font-size: 4.4rem;
 }
@@ -149,6 +149,20 @@ a {
 
 .description p:not(:last-child) {
 	margin-bottom: 4rem;
+}
+
+.description ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.description ul li {
+	color: #202d54;
+	font-family: "MuseoSans-700";
+	font-size: 1.7rem;
+	line-height: 2.5rem;
+	width: calc(100% / 2);
 }
 
 .description__web-address {
@@ -296,13 +310,13 @@ a {
 }
 
 
-/* interactive-home style */
-.interactive-home {
+/* interactive style */
+.interactive {
 	height: calc(100% - 16rem);
 	width: 100%;
 }
 
-.interactive-home__links {
+.interactive__links {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -316,12 +330,12 @@ a {
 	width: 100%;
 }
 
-.interactive-home__link {
+.interactive__link {
 	height: 100%;
 	width: calc(100% / 3);
 }
 
-.interactive-home__link a {
+.interactive__link a {
 	color: #fff;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -340,25 +354,25 @@ a {
 	height: 100%;
 }
 
-.interactive-home__link a:hover,
-.interactive-home__link a:focus {
+.interactive__link a:hover,
+.interactive__link a:focus {
 	opacity: .7;
 }
 
-.interactive-home__link:not(:last-child) {
+.interactive__link:not(:last-child) {
 	border-right: 1px solid #fff;
 }
 
-.interactive-home__link--image {
-	height: calc(100% - 4.5rem - 11.2rem - 9.7rem - 1px);
+.interactive__link--image {
+	height: calc(100% - 24rem - 1px);
 }
 
-.interactive-home__link--image img {
+.interactive__link--image img {
 	height: 100%;
 	width: 100%;
 }
 
-.interactive-home__links span {
+.interactive__link span {
 	background-color: #467db2;
 	border-top: 1px solid #fff;
 	display: -webkit-box;
@@ -375,46 +389,159 @@ a {
 	justify-content: center;
 	font-size: 4.5rem;
 	font-weight: 700;
-	padding: 11.2rem 0 9.7rem;
+	height: 24rem;
 }
 
-.interactive-home__links span:first-child,
-.interactive-home__links span:last-child {
+.interactive__link:first-child span,
+.interactive__link:last-child span {
 	background-color: #316faa;
 }
 
-/* interactive about style */
-.interactive-about {
-	height: calc(100% - 16rem);
-	width: 100%;
+/* interactive review style */
+.interactive__review {
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	height: 100%;
 }
 
-.interactive-about__links {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-flex-wrap: wrap;
-	-moz-flex-wrap: wrap;
-	-ms-flex-wrap: wrap;
-	-o-flex-wrap: wrap;
-	flex-wrap: wrap;
+.interactive__review--img {
+	position: relative;
+	height: calc(100% - 24rem);
+}
+
+.interactive__review--img img {
 	height: 100%;
 	width: 100%;
 }
 
-.interactive-about__link {
-	border: 1px solid #fff;
-	height: calc(100% / 2);
+.interactive__review--link {
+	position: absolute;
+	z-index: 9;
+}
+
+.interactive__review--link a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.interactive__review--link.usa {
+	top: 5%;
+	left: 15%;
+	height: 13%;
+	width: 14%;
+}
+
+.interactive__review--link.donegal {
+	top: 5%;
+	left: 31%;
+	height: 10%;
+	width: 10%;
+}
+
+.interactive__review--link.derry {
+	top: 5%;
+	left: 42%;
+	height: 10%;
+	width: 10%;
+}
+
+.interactive__review--link.uae {
+	top: 5%;
+	left: 60%;
+	height: 10%;
+	width: 14%;
+}
+
+.interactive__review--nav {
+	display: flex;
+	flex-direction: row;
+}
+
+.interactive__review--description {
+	background-color: #12b8ed;
+	color: #202d54;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 6.1rem;
+	height: 24rem;
+	width: 100%;
+}
+
+.interactive__review--description h2 {
+	color: #fff;
+	font-family: "MuseoSans-700";
+	font-size: 3.8rem;
+	line-height: 4.846rem;
+	margin-bottom: 5rem;
+}
+
+.interactive__review--description p {
+	font-size: 2.1rem;
+	font-weight: 700;
+	letter-spacing: .085rem;
+	text-transform: uppercase;
+}
+
+.interactive__review--description span {
+	font-family: "MuseoSans-300";
+	font-size: 22px;
+	line-height: 13.7px;
+	margin-left: 3.3rem;
+}
+
+.interactive__review--description strong {
+	font-family: "MuseoSans-700";
+	font-size: 36px;
+}
+
+.interactive__review--switches {
+	display: flex;
+	flex-direction: row;
+}
+
+.interactive__review--switch {
+	cursor: pointer;
+	width: 22rem;
+}
+
+.interactive__review--switch img {
+	height: calc(100% - 10rem);
+	width: 100%;
+}
+
+.interactive__review--switch span {
+	background-color: #202d54;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 2.1rem;
+	font-weight: 700;
+	letter-spacing: .083rem;
+	text-transform: uppercase;
+	height: 10rem;
+	width: 100%;
+}
+
+.interactive__review--switch:hover span,
+.interactive__review--switch:focus span {
+	color: #12b8ed;
+}
+
+.interactive__review--switch.opacity {
+	opacity: .6;
+}
+
+/* interactive services style */
+.interactive__link--services {
+	height: 100%;
 	width: calc(100% / 2);
 }
 
-.interactive-about__link a {
+.interactive__link--services a {
 	color: #fff;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -431,26 +558,27 @@ a {
 	-o-transition: all .3s;
 	transition: all .3s;
 	height: 100%;
-	width: 100%;
 }
 
-.interactive-about__link a:hover,
-.interactive-about__link a:focus {
+.interactive__link--services a:hover,
+.interactive__link--services a:focus {
 	opacity: .7;
 }
 
-.interactive-about__link--image {
-	border-bottom: 1px solid #fff;
-	height: calc(100% - 10rem);
-	width: 100%;
+.interactive__link--services:not(:last-child) {
+	border-right: 1px solid #fff;
 }
 
-.interactive-about__link--image img {
+.interactive__link--services .interactive__link--image {
+	height: calc(100% - 10rem - 1px);
+}
+
+.interactive__link--services .interactive__link--image img {
 	height: 100%;
 	width: 100%;
 }
 
-.interactive-about__link span {
+.interactive__link--services span {
 	border-top: 1px solid #fff;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -465,158 +593,18 @@ a {
 	-ms-flex-pack: center;
 	justify-content: center;
 	font-size: 2.6rem;
-	letter-spacing: .104rem;
 	font-weight: 700;
 	height: 10rem;
 }
 
-.interactive-about__link:nth-child(odd) span {
+.interactive__link--services:first-child span {
+	background-color: #467db2;
+
+}
+
+.interactive__link--services:last-child span {
 	background-color: #316faa;
 }
-
-.interactive-about__link:nth-child(even) span {
-	background-color: #467db2;
-}
-
-/* interactive about review style */
-.interactive-about__review {
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
-	height: 100%;
-}
-
-.interactive-about__review--img {
-	position: relative;
-	height: calc(100% - 24rem);
-}
-
-.interactive-about__review--img img {
-	height: 100%;
-	width: 100%;
-}
-
-.interactive-about__review--link {
-	position: absolute;
-	z-index: 9;
-}
-
-.interactive-about__review--link a {
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-
-.interactive-about__review--link.usa {
-	top: 5%;
-	left: 15%;
-	height: 13%;
-	width: 14%;
-}
-
-.interactive-about__review--link.donegal {
-	top: 5%;
-	left: 31%;
-	height: 10%;
-	width: 10%;
-}
-
-.interactive-about__review--link.derry {
-	top: 5%;
-	left: 42%;
-	height: 10%;
-	width: 10%;
-}
-
-.interactive-about__review--link.uae {
-	top: 5%;
-	left: 60%;
-	height: 10%;
-	width: 14%;
-}
-
-.interactive-about__review--nav {
-	display: flex;
-	flex-direction: row;
-}
-
-.interactive-about__review--description {
-	background-color: #12b8ed;
-	color: #202d54;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding-left: 6.1rem;
-	height: 24rem;
-	width: 100%;
-}
-
-.interactive-about__review--description h2 {
-	color: #fff;
-	font-family: "MuseoSans-700";
-	font-size: 3.8rem;
-	line-height: 4.846rem;
-	margin-bottom: 5rem;
-}
-
-.interactive-about__review--description p {
-	font-size: 2.1rem;
-	font-weight: 700;
-	letter-spacing: .085rem;
-	text-transform: uppercase;
-}
-
-.interactive-about__review--description span {
-	font-family: "MuseoSans-300";
-	font-size: 22px;
-	line-height: 13.7px;
-	margin-left: 3.3rem;
-}
-
-.interactive-about__review--description strong {
-	font-family: "MuseoSans-700";
-	font-size: 36px;
-}
-
-.interactive-about__review--switches {
-	display: flex;
-	flex-direction: row;
-}
-
-.interactive-about__review--switch {
-	cursor: pointer;
-	width: 22rem;
-}
-
-.interactive-about__review--switch img {
-	height: calc(100% - 10rem);
-	width: 100%;
-}
-
-.interactive-about__review--switch span {
-	background-color: #202d54;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 2.1rem;
-	font-weight: 700;
-	letter-spacing: .083rem;
-	text-transform: uppercase;
-	height: 10rem;
-	width: 100%;
-}
-
-.interactive-about__review--switch:hover span,
-.interactive-about__review--switch:focus span {
-	color: #12b8ed;
-}
-
-.interactive-about__review--switch:first-child {
-	opacity: .6;
-}
-
-
 
 
 @media (min-width: 2120px) {
