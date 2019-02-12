@@ -898,19 +898,26 @@ a:focus {
 .nav-link, .dropdown-item {
   color: #fff!important;
   font-size: 2rem;
+  padding: .5rem 1.5rem;
 }
 
 .nav-item.dropdown.show,
 .dropdown-menu.show {
-  background-color: #51575d;
+  /*background-color: #51575d;*/
 }
 
 .dropdown-menu {
   border: 0;
+  padding: 0;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
-  color: #69c!important;
+  /*color: #69c!important;*/
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #32506f;
 }
 
 /* Wallet content style */
