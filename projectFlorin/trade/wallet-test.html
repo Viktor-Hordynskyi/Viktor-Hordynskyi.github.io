@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Start .header -->
+  <header class="header container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bgcolor-grey--light">
+      <div class="navbar__container d-flex">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="logo">
+        </a>
+
+        <div class="navbar__markets">
+          <a href="#">All Markets</a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu"
+      aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarmenu">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="walletDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Transactions
+          </a>
+          <div class="dropdown-menu bgcolor-grey--light" aria-labelledby="walletDropdown">
+            <a class="dropdown-item" href="#">some long link 1</a>
+            <a class="dropdown-item" href="#">link 2</a>
+            <a class="dropdown-item" href="#">link 3</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Orders</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Wallet</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Account</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!-- End /.header -->
+
+<!-- Start .content -->
+<main class="wallet content container-fluid">
+  <div class="wallet__title">
+    <h2>Account Balances</h2>
+
+    <p>
+      Estimated Holdings: 1605.00 BTC ($5567636.46)
+    </p>
+  </div>
+
+  <div class="wallet__nav">
+    <div class="wallet__balances">
+      <a href="#" class="wallet__balances--link color-blue--light">
+        Hide Small Balances
+      </a>
+      
+      <i class="wallet__balances--info im im-question" data-toggle="tooltip" data-placement="bottom" data-template=".tooltip" data-html="true" title="Tooltip on bottom <br> some other text"></i>
+
+      <div class="tooltip" role="tooltip">
+        <div class="arrow">
+        </div>
+        <div class="tooltip-inner">
+        </div>
+      </div>
+    </div>
+
+    <div class="wallet__search">
+      <button type="submit" for="search">
+        <i class="im im-magnifier"></i>
+      </button>
+      <input type="text" placeholder="Search">
+    </div>
+  </div>
+
+  <div class="wallet__data">
+    <div class="wallet__titles">
+      <div class="wallet__titles-element">
+        <span>
+          Symbol
+        </span>
+      </div>
+
+      <div class="wallet__titles-element">
+        <span>
+          Name
+        </span>
+      </div>
+
+      <div class="wallet__titles-element">
+        <span>
+          Available
+        </span>
+      </div>
+
+      <div class="wallet__titles-element">
+        <span>
+          Locked
+        </span>
+      </div>
+
+      <div class="wallet__titles-element">
+        <span>
+          Total
+        </span>
+      </div>
+
+      <div class="wallet__titles-element">
+        <span>
+          BTC Value
+        </span>
+      </div>
+
+      <div class="wallet__titles-element">
+        <span>
+          USD Value
+        </span>
+      </div>
+
+      <div class="wallet__titles-element"></div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/btc.png" alt="btc">
+        <span>
+          BTC
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Bitcoin
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/usd.png" alt="usd">
+        <span>
+          USD
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Dollar
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <img src="img/eth.png" alt="eth">
+        <span>
+          ETH
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Ethereum
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          99905.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          95.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          100000.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          1600.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5550291.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <div class="wallet__currency">
+      <div class="wallet__currency-element">
+        <!-- <img src="img/btc.png" alt="btc"> -->
+        <span>
+          PROOF
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          Proof Token
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          0.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          5.000000
+        </span>
+      </div>
+
+      <div class="wallet__currency-element">
+        <span>
+          17344.66
+        </span>
+      </div>
+
+      <div class="wallet__currency-element links">
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
+        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
+      </div>
+    </div>
+
+    <!-- Modal Deposit -->
+    <div class="modal fade" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="depositModalLable" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="depositModalLable">Deposit</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <h4 class="color-warning">
+              <i class="im im-warning-circle"></i>
+              <span>Minimum deposit: 0.1 ETH</span>
+            </h4>
+
+            <p class="color-warning">
+              We will not credit your account with tokens from that sale.<br>
+              Send only <strong>Ethereum</strong> to this deposit address, depositing tokens other than <strong>Ethereum</strong> to this address may result in your funds being lost.
+            </p>
+
+            <h3>Ethereum (ETH)</h3>
+
+            <hr>
+
+            <p>Deposit address:</p>
+            <div class="modal-address">
+              <span>0x272BA03FeF1eb2C271Aeaf49Ff59399F2e096C7C</span>
+              <a href="#" class="im im-copy"></a>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Withdraw -->
+    <div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="withdrawModalLable" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="withdrawModalLable">Withdraw</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <h4 class="color-warning">
+              <i class="im im-warning-circle"></i>
+              <span>Minimum withdrawal: 0.1 ETH</span>
+            </h4>
+
+            <p class="color-warning">
+              Please verify the address. We cannot refund an incorrect withdrawal.
+            </p>
+
+            <h3>Ethereum (ETH)</h3>
+
+            <hr>
+
+            <form class="modal-form">
+              <label for="withdrawRecipient">
+                Recipient's address
+              </label>
+              <input type="text" id="withdrawRecipient" value="56">
+
+              <label for="withdrawAmount">
+                Amount (<a href="#">99905.000000</a> available)
+              </label>
+              <input type="text" id="withdrawAmount" value="99905.000000">
+            </form>
+
+            <div class="modal-fee">
+              <div class="modal-fee-align">
+                <p>
+                  Fee: 0.01
+                </p>
+                
+                <br>
+                
+                <p>
+                  Amount (including fee): 99904.99
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">Withdraw</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- End /.content -->
+
+<!-- Start .footer -->
+<footer class="footer bgcolor-grey--dark">
+  <div class="footer__links">
+    <ul class="footer__menu">
+      <li>
+        <a href="#" class="footer__link">About</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Terms</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Privacy</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Fees</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Contact</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">API</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Apply to List</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Download</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">BNB</a>
+      </li>
+      <li>
+        <a href="#" class="footer__link">Blog</a>
+      </li>
+    </ul>
+
+    <div class="footer__soc">
+      <a href="#">
+        <i class="im im-facebook"></i>
+      </a>
+      <a href="#">
+        <i class="im im-reddit"></i>
+      </a>
+      <a href="#">
+        <i class="im im-instagram"></i>
+      </a>
+      <a href="#">
+        <i class="im im-twitter"></i>
+      </a>
+      <a href="#">
+        <i class="im im-skype"></i>
+      </a>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer__copyright">
+    <span>
+      &copy; 2017 - 2019 WebSite.com. All rights reserved
+    </span>
+  </div>
+</footer>
+<!-- End /.footer -->
+
+<link rel="stylesheet" href="css/iconmonstr-iconic-font.min.css">
+<!-- Optional JavaScript -->
+<!-- jQuery first, Popper then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<!-- My JS -->
+<script src="js/main.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+
+</html>
