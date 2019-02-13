@@ -421,37 +421,39 @@ a {
 }
 
 .interactive__review--link a {
+	color: #202d54;
 	display: block;
+	font-family: "MuseoSans-700";
+	font-size: 1.9rem;
+	line-height: 2.359rem;
 	height: 100%;
 	width: 100%;
 }
 
+.interactive__review--link:hover a,
+.interactive__review--link:focus a {
+	color: #12b8ed;
+	text-shadow: 1px 1px 0px #000;
+}
+
 .interactive__review--link.usa {
-	top: 5%;
-	left: 15%;
-	height: 13%;
-	width: 14%;
+	top: 6%;
+	left: 16%;
 }
 
 .interactive__review--link.donegal {
-	top: 5%;
-	left: 31%;
-	height: 10%;
-	width: 10%;
+	top: 6%;
+	left: 32%;
 }
 
 .interactive__review--link.derry {
-	top: 5%;
-	left: 42%;
-	height: 10%;
-	width: 10%;
+	top: 6%;
+	left: 43%;
 }
 
 .interactive__review--link.uae {
-	top: 5%;
-	left: 60%;
-	height: 10%;
-	width: 14%;
+	top: 6%;
+	left: 61%;
 }
 
 .interactive__review--nav {
@@ -531,7 +533,8 @@ a {
 	color: #12b8ed;
 }
 
-.interactive__review--switch.opacity {
+.interactive__review--switch:hover,
+.interactive__review--switch:focus {
 	opacity: .6;
 }
 
