@@ -432,6 +432,7 @@ a {
 
 .slick-button-prev, 
 .slick-button-next {
+	animation: 1.1s opacity;
 	background-color: #202d54;
 	display: flex;
 	align-items: center;
@@ -442,6 +443,16 @@ a {
 	height: 7rem;
 	width: 7rem;
 	z-index: 99;
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .slick-button-prev {
