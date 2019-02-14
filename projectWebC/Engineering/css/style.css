@@ -65,6 +65,9 @@ a:focus {
 	-webkit-tap-highlight-color: transparent;
 	outline: none;
 }
+small {
+	text-transform: lowercase;
+}
 
 /* container style */
 .container {
@@ -95,7 +98,7 @@ a:focus {
 	-webkit-flex-direction: column;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	padding: 0 8rem;
+	padding: 0 5rem;
 	height: 100%;
 	width: calc(72.2rem + 8.1rem);
 }
@@ -103,12 +106,12 @@ a:focus {
 .description__logo {
 	background-color: #1f2d57;
 	margin-bottom: 3.8rem;
-	height: 32.1rem;
+	/*height: 32.1rem;*/
 	width: 28.1rem;
 }
 
 .description__logo img {
-	padding: 7.9rem 3.8rem 4.5rem;
+	padding: 5.9rem 3.8rem 3.5rem;
 	width: 100%;
 }
 
@@ -130,22 +133,31 @@ a:focus {
 
 .description__title h1 span.green {
 	background-color: #049e3d;
-	font-size: 7.4rem;
+	font-size: 7.2rem;
 }
 
 .description__title h1 span.blue {
 	background-color: #12b8ed;
-	font-size: 4.4rem;
+	font-size: 4.2rem;
 	padding: .5rem .9rem;
 }
 
 .description__info p {
 	color: #202d54;
 	font-family: "MuseoSans-300";
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	font-weight: 400;
-	line-height: 3.999rem;
+	line-height: 4rem;
 	overflow: hidden;
+}
+
+.description__info.mf p {
+	font-size: 2.2rem;
+	line-height: 3rem;
+}
+
+.description__info.siec p {
+	line-height: 3.5rem;
 }
 
 .description__info p span {
@@ -153,7 +165,7 @@ a:focus {
 }
 
 .description p:not(:last-child) {
-	margin-bottom: 4rem;
+	margin-bottom: 2rem;
 }
 
 .description__info--list {
@@ -196,7 +208,7 @@ a:focus {
 	-webkit-flex-grow: 1;
 	-ms-flex-positive: 1;
 	flex-grow: 1;
-	margin-bottom: 4rem;
+	margin-bottom: 3rem;
 	overflow: hidden;
 }
 
@@ -694,7 +706,7 @@ a:focus {
 	background-color: #467db2;
 }
 
-/* interactive products home style */
+/* interactive products style */
 .interactive__links-products {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -716,6 +728,11 @@ a:focus {
 .interactive__link-products {
 	height: 50%;
 	width: calc(100% / 3);
+}
+
+.interactive__link-products.double {
+	height: 50%;
+	width: calc(100% / 3 * 2);
 }
 
 .interactive__link-products a {
@@ -796,10 +813,44 @@ a:focus {
 	height: 12rem;
 }
 
-.interactive__link-products:nth-child(3vn+2) span {
+.interactive__link-products:nth-child(3n+2) span {
 	background-color: #467db2;
 }
 
+/* interactive modular fabrication(mf) style */
+.interactive__link.mf {
+	width: calc(100% / 2);
+}
+
+.interactive__link.mf .interactive__link--image {
+	height: calc(100% - 10rem - 1px);
+}
+
+.interactive__link.mf span {
+	font-size: 2.6rem;
+	height: 10rem;
+}
+
+.interactive__link.mf:first-child span {
+	background-color: #467db2;
+}
+
+/* interactive Switchgear UL(sul) style*/
+.interactive__link-products.sul {
+	width: calc(100% / 2);
+}
+
+.interactive__link-products.sul .interactive__link-products--image {
+	height: calc(100% - 10rem - 1px);
+}
+
+.interactive__link-products.sul span {
+	height: 10rem;
+}
+
+.interactive__link-products:nth-child(2n+1) span {
+	background-color: #467db2;
+}
 
 @media (min-width: 2120px) {
 	html {
