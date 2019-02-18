@@ -151,7 +151,12 @@ small {
 	overflow: hidden;
 }
 
-.description__info.mf p {
+.description__info p strong {
+	font-family: "MuseoSans-700";
+}
+
+.description__info.mf p,
+.description__info.mv p {
 	font-size: 2.2rem;
 	line-height: 3rem;
 }
@@ -730,10 +735,10 @@ small {
 	width: calc(100% / 3);
 }
 
-.interactive__link-products.double {
+/*.interactive__link-products.double {
 	height: 50%;
 	width: calc(100% / 3 * 2);
-}
+}*/
 
 .interactive__link-products a {
 	color: #fff;
@@ -763,8 +768,23 @@ small {
 	border-right: 1px solid #fff;
 }
 
+.interactive__link-products--line {
+	background-color: #202d54;
+	font-size: 2.6rem;
+	font-weight: 700;
+	letter-spacing: .104rem;
+	line-height: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	height: 3.5rem;
+}
+
 .interactive__link-products--image {
 	height: calc(100% - 12rem - 1px);
+}
+
+.interactive__link-products--image.lv-home {
+	height: calc(100% - 12rem - 1px - 3.5rem);
 }
 
 .interactive__link-products--image img {
@@ -835,21 +855,22 @@ small {
 	background-color: #467db2;
 }
 
-/* interactive Switchgear UL(sul) style*/
-.interactive__link-products.sul {
+/* interactive MV Switchgear (mv) style*/
+.interactive__link-products.mv {
 	width: calc(100% / 2);
 }
 
-.interactive__link-products.sul .interactive__link-products--image {
+.interactive__link-products.mv .interactive__link-products--image {
 	height: calc(100% - 10rem - 1px);
 }
 
-.interactive__link-products.sul span {
+.interactive__link-products.mv span {
+	background-color: #467db2;
 	height: 10rem;
 }
 
-.interactive__link-products:nth-child(2n+1) span {
-	background-color: #467db2;
+.interactive__link-products.mv:nth-child(3n+1) span {
+	background-color: #316faa;
 }
 
 @media (min-width: 2120px) {
