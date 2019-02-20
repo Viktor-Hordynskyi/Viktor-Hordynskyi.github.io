@@ -126,14 +126,14 @@ small {
 .description__title h1 span {
 	color: #fff;
 	display: inline-block;
-	font-weight: 700;
+	font-weight: 500;
 	padding: 0 .9rem;
 	text-transform: uppercase;
 }
 
 .description__title h1 span.green {
 	background-color: #049e3d;
-	font-size: 7.2rem;
+	font-size: 7rem;
 }
 
 .description__title h1 span.blue {
@@ -159,6 +159,10 @@ small {
 .description__info.mv p {
 	font-size: 2.2rem;
 	line-height: 3rem;
+}
+
+.description__info.services p {
+	font-size: 2rem;
 }
 
 .description__info.siec p {
@@ -196,7 +200,7 @@ small {
 	color: #202d54;
 	font-family: "MuseoSans-700";
 	font-size: 1.7rem;
-	line-height: 2.5rem;
+	line-height: 3.5rem;
 	width: calc(100% / 2);
 }
 
@@ -770,11 +774,22 @@ small {
 
 .interactive__link-products--line {
 	background-color: #202d54;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	font-size: 2.6rem;
 	font-weight: 700;
 	letter-spacing: .104rem;
 	line-height: 3rem;
-	text-align: center;
 	text-transform: uppercase;
 	height: 3.5rem;
 }
