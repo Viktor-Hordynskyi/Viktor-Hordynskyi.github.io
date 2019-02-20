@@ -1999,7 +1999,7 @@ a:focus {
     justify-content: flex-start;
   }
   .confirm {
-    margin: 10rem auto;
+    margin: 10rem auto 0;
   }
 }
 
@@ -2018,7 +2018,8 @@ a:focus {
     justify-content: flex-start;
   }
   .confirm {
-    margin: 10rem auto;
+    margin: 8rem auto 0;
+    width: 100%;
   }
 }
 
@@ -2033,7 +2034,7 @@ a:focus {
   .login,
   .signup,
   .confirm {
-    width: 55rem;
+    width: 100%;
   }
 
   .container-confirm {  
@@ -2041,7 +2042,7 @@ a:focus {
   }
 
   .confirm {
-    margin: 10rem auto;
+    margin: 6rem auto 0;
   }
 
   .login, .signup, .confirm {
