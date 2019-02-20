@@ -1790,6 +1790,13 @@ a:focus {
 }
 
 /* login, signup and confirm styles */
+.login-container,
+.signup-container,
+.confirm-container {
+  align-items: center;
+  justify-content: center;
+}
+
 .login,
 .signup,
 .confirm {
@@ -1995,7 +2002,7 @@ a:focus {
   }
 
   /* login, signup and confirm styles */
-  .container-confirm {  
+  .confirm-container {
     justify-content: flex-start;
   }
   .confirm {
@@ -2014,11 +2021,11 @@ a:focus {
   }
 
   /* login, signup and confirm styles */
-  .container-confirm {  
+  .confirm-container {
     justify-content: flex-start;
   }
   .confirm {
-    margin: 8rem auto 0;
+    margin: 7rem auto 0;
     width: 100%;
   }
 }
@@ -2037,15 +2044,22 @@ a:focus {
     width: 100%;
   }
 
-  .container-confirm {  
+  .confirm-container {
     justify-content: flex-start;
   }
 
   .confirm {
-    margin: 6rem auto 0;
+    margin: 4rem auto 0;
   }
 
   .login, .signup, .confirm {
     padding: 2rem 3rem;
+  }
+}
+
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .login-container,
+  .signup-container {
+    height: 100%;
   }
 }
