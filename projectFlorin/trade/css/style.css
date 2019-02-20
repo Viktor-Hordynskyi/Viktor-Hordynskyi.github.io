@@ -2078,6 +2078,11 @@ a:focus {
     padding: 2rem 3rem;
   }
 
+  .login__form input[type=submit],
+  .signup__form input[type=submit] {
+    font-size: 2.5rem;
+  }
+
   .signup__form p {
     font-size: 2.2rem;
   }
