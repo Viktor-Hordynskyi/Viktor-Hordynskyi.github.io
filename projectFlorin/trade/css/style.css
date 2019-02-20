@@ -2036,7 +2036,7 @@ a:focus {
   /* login, signup and confirm styles */
   .login,
   .signup {
-    margin: 7rem auto 0;
+    margin: 10rem auto 0;
   }
 
   .login-container,
