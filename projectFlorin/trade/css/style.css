@@ -1803,7 +1803,7 @@ a:focus {
 
 .confirm {
   align-self: flex-start;
-  margin: 10rem;
+  margin-top: 10rem;
   width: 90rem;
 }
 
