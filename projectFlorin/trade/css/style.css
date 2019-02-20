@@ -1989,13 +1989,13 @@ a:focus {
   .login-container,
   .signup-container,
   .confirm-container {
-    align-items: flex-start;
+    /*align-items: flex-start;*/
   }
 
   .login,
   .signup,
   .confirm {
-    margin: 10rem auto 0;
+    /*margin: 10rem auto 0;*/
   }
 }
 
@@ -2013,13 +2013,13 @@ a:focus {
   .login-container,
   .signup-container,
   .confirm-container {
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
   }
 
   .login,
   .signup,
   .confirm {
-    margin: 10rem auto 0;
+    /*margin: 10rem auto 0;*/
   }
 }
 
@@ -2036,18 +2036,18 @@ a:focus {
   /* login, signup and confirm styles */
   .login,
   .signup {
-    margin: 10rem auto 0;
+    /*margin: 10rem auto 0;*/
   }
 
   .login-container,
   .signup-container,
   .confirm-container {
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     padding: 0 5rem;
   }
 
   .confirm {
-    margin: 7rem auto 0;
+    /*margin: 7rem auto 0;*/
     width: 100%;
   }
 }
@@ -2063,14 +2063,14 @@ a:focus {
   .login,
   .signup,
   .confirm {
-    margin: 10rem auto;
+    /*margin: 10rem auto;*/
     width: 100%;
   }
   
   .login-container,
   .signup-container,
   .confirm-container {
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     padding: 0 4rem;
   }
 
@@ -2078,13 +2078,14 @@ a:focus {
     padding: 2rem 3rem;
   }
 
-
+  .signup__form p {
+    font-size: 2.2rem;
+  }
 
   .login__footer a,
   .login__footer span,
   .signup__footer a,
-  .signup__footer span,
-  .signup__form p {
+  .signup__footer span {
     font-size: 1.9rem;
   }
 }
