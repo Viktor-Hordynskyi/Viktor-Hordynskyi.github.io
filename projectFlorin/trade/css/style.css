@@ -2063,7 +2063,7 @@ a:focus {
   .login,
   .signup,
   .confirm {
-    margin: 10rem auto 0;
+    margin: 10rem auto;
     width: 100%;
   }
   
@@ -2076,6 +2076,16 @@ a:focus {
 
   .login, .signup, .confirm {
     padding: 2rem 3rem;
+  }
+
+
+
+  .login__footer a,
+  .login__footer span,
+  .signup__footer a,
+  .signup__footer span,
+  .signup__form p {
+    font-size: 1.9rem;
   }
 }
 
