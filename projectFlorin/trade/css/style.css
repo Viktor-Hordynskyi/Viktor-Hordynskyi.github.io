@@ -1984,6 +1984,19 @@ a:focus {
   html {
     font-size: 8px;
   }
+
+  /* login, signup and confirm styles */
+  .login-container,
+  .signup-container,
+  .confirm-container {
+    align-items: flex-start;
+  }
+
+  .login,
+  .signup,
+  .confirm {
+    margin: 10rem auto 0;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -2050,7 +2063,7 @@ a:focus {
   .login,
   .signup,
   .confirm {
-    margin: 4rem auto 0;
+    margin: 6rem auto 0;
     width: 100%;
   }
   
@@ -2058,7 +2071,7 @@ a:focus {
   .signup-container,
   .confirm-container {
     justify-content: flex-start;
-    padding: 0 5rem;
+    padding: 0 4rem;
   }
 
   .login, .signup, .confirm {
