@@ -2086,6 +2086,19 @@ a:focus {
   .login__footer span,
   .signup__footer a,
   .signup__footer span {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 374.98px) {
+  .signup__form p {
+    font-size: 1.9rem;
+  }
+
+  .login__footer a,
+  .login__footer span,
+  .signup__footer a,
+  .signup__footer span {
     font-size: 1.9rem;
   }
 }
