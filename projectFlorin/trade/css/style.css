@@ -1802,6 +1802,8 @@ a:focus {
 }
 
 .confirm {
+  align-self: flex-start;
+  margin: 10rem;
   width: 90rem;
 }
 
@@ -1816,7 +1818,7 @@ a:focus {
 
 .login a,
 .signup a {
-  color: #007bff;
+  color: #4c7aa9;
 }
 
 .login__title,
@@ -1881,15 +1883,28 @@ a:focus {
   padding: .5rem 1rem;
 }
 
-.login__form-group input[type=checkbox] {
+/*.login__form-group input[type=checkbox] {
   margin-right: 1rem;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+*/
+.custom-control {
+  padding-left: 3rem;
+}
+.custom-control-label::before,
+.custom-control-label::after {
+  left: -3rem;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
   height: 1.8rem;
   width: 1.8rem;
 }
 
 .login__form input[type=submit],
 .signup__form input[type=submit] {
-  background-color: #007bff;
+  background-color: #4c7aa9;
   border: 0;
   border-radius: .5rem;
   color: #fff;
@@ -1897,6 +1912,11 @@ a:focus {
   font-size: 2rem;
   padding: .5rem 0;
   width: 100%;
+}
+
+.login__form input[type=submit]:hover,
+.signup__form input[type=submit]:hover {
+  background-color: #69c;
 }
 
 .signup__form p {
