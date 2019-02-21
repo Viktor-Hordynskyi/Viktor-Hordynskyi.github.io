@@ -1748,12 +1748,12 @@ a:focus {
 .confirm-container {
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .login,
@@ -1770,14 +1770,14 @@ a:focus {
 .container-confirm {  
   -webkit-box-pack: center;  
   -webkit-justify-content: center;  
-      -ms-flex-pack: center;  
-          justify-content: center;
+  -ms-flex-pack: center;  
+  justify-content: center;
 }
 
 .confirm {
   -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
-          align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
   margin-top: 10rem;
   width: 90rem;
 }
@@ -1867,8 +1867,8 @@ a:focus {
   top: 50%;
   bottom: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   height: 1.8rem;
   width: 1.8rem;
 }
@@ -1927,6 +1927,164 @@ a:focus {
   font-size: 1.5rem;
 }
 
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1440px) and (max-width: 1919.98px) {
+  html {
+    font-size: 9px;
+  }
+  /* login, signup and confirm styles */
+  .login,
+  .signup,
+  .confirm {
+    width: 55rem;
+  }
+
+  .confirm {
+    width: 100rem;
+  }
+
+  .confirm p {
+    font-size: 2rem;
+  }
+
+  .login__title h1,
+  .signup__title h1,
+  .confirm__title h1 {
+    font-size: 4.4rem;
+  }
+
+  .login__form-group label,
+  .signup__form-group label {
+    font-size: 2.2rem;
+  }
+
+  .login__form-group input,
+  .signup__form-group input {
+    font-size: 2.1rem;
+  }
+
+  .login__form input[type=submit],
+  .signup__form input[type=submit] {
+    font-size: 2.2rem;
+  }
+
+  .signup__form p {
+    font-size: 1.8rem;
+  }
+
+  .login__footer a,
+  .login__footer span,
+  .signup__footer a,
+  .signup__footer span {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439.98px){
+  html {
+    font-size: 7px;
+  }
+  /* login, signup and confirm styles */
+  .login,
+  .signup,
+  .confirm {
+    width: 70rem;
+  }
+
+  .confirm {
+    width: 130rem;
+  }
+
+  .confirm p {
+    font-size: 2.6rem;
+  }
+
+  .login__title h1,
+  .signup__title h1,
+  .confirm__title h1 {
+    font-size: 5.7rem;
+  }
+
+  .login__form-group label,
+  .signup__form-group label {
+    font-size: 2.8rem;
+  }
+
+  .login__form-group input,
+  .signup__form-group input {
+    font-size: 2.7rem;
+  }
+
+  .login__form input[type=submit],
+  .signup__form input[type=submit] {
+    font-size: 2.8rem;
+  }
+
+  .signup__form p {
+    font-size: 2.3rem;
+  }
+
+  .login__footer a,
+  .login__footer span,
+  .signup__footer a,
+  .signup__footer span {
+    font-size: 2.2rem;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  html {
+    font-size: 6px;
+  }
+
+  /* login, signup and confirm styles */
+  .login,
+  .signup,
+  .confirm {
+    width: 80rem;
+  }
+
+  .confirm {
+    width: 150rem;
+  }
+
+  .confirm p {
+    font-size: 3rem;
+  }
+
+  .login__title h1,
+  .signup__title h1,
+  .confirm__title h1 {
+    font-size: 6.6rem;
+  }
+
+  .login__form-group label,
+  .signup__form-group label {
+    font-size: 3.3rem;
+  }
+
+  .login__form-group input,
+  .signup__form-group input {
+    font-size: 3.2rem;
+  }
+
+  .login__form input[type=submit],
+  .signup__form input[type=submit] {
+    font-size: 3.3rem;
+  }
+
+  .signup__form p {
+    font-size: 2.6rem;
+  }
+
+  .login__footer a,
+  .login__footer span,
+  .signup__footer a,
+  .signup__footer span {
+    font-size: 2.5rem;
+  }
+}
+
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Content style */
@@ -1938,12 +2096,55 @@ a:focus {
   .confirm-container {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .login,
+  .signup,
+  .confirm {
+    width: 80rem;
   }
 
   .confirm {
     margin: 10rem auto;
+    width: 150rem;
+  }
+
+  .confirm p {
+    font-size: 3rem;
+  }
+
+  .login__title h1,
+  .signup__title h1,
+  .confirm__title h1 {
+    font-size: 6.6rem;
+  }
+
+  .login__form-group label,
+  .signup__form-group label {
+    font-size: 3.3rem;
+  }
+
+  .login__form-group input,
+  .signup__form-group input {
+    font-size: 3.2rem;
+  }
+
+  .login__form input[type=submit],
+  .signup__form input[type=submit] {
+    font-size: 3.3rem;
+  }
+
+  .signup__form p {
+    font-size: 2.6rem;
+  }
+
+  .login__footer a,
+  .login__footer span,
+  .signup__footer a,
+  .signup__footer span {
+    font-size: 2.5rem;
   }
 }
 
@@ -1964,8 +2165,8 @@ a:focus {
   .confirm-container {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .confirm {
@@ -2001,8 +2202,8 @@ a:focus {
   .confirm-container {
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .login, .signup, .confirm {
