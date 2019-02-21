@@ -640,11 +640,6 @@ a:focus {
     font-size: 9px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1439.98px) {
-  html {
-    font-size: 8px;
-  }
-}
 @media (min-width: 1200px) and (max-width: 1439.98px){
   html {
     font-size: 7px;
@@ -1323,7 +1318,6 @@ a:focus {
   padding: 0 2rem;
 }
 
-
 /* Wallet footer style */
 .footer {
   display: -webkit-box;
@@ -1429,28 +1423,6 @@ a:focus {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1440px) and (max-width: 1919.98px) {
-  html {
-    font-size: 9px;
-  }
-
-  /* Wallet header style */
-  .nav-item {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 6rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1439.98px) {
-  html {
-    font-size: 8px;
-  }
-
   /* Wallet header style */
   .nav-item {
     display: -webkit-box;
@@ -1465,10 +1437,6 @@ a:focus {
   }
 }
 @media (min-width: 1200px) and (max-width: 1439.98px){
-  html {
-    font-size: 7px;
-  }
-
   /* Wallet header style */
   .nav-item {
     display: -webkit-box;
@@ -1484,11 +1452,7 @@ a:focus {
 }
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  html {
-    font-size: 6px;
-  }
-  
+@media (min-width: 992px) and (max-width: 1199.98px) {  
   /* Wallet header style */
   .nav-item {
     display: -webkit-box;
@@ -1504,11 +1468,7 @@ a:focus {
 }
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-  html {
-    font-size: 6px;
-  }
-  
+@media (min-width: 768px) and (max-width: 991.98px) {  
   /* Wallet header style */
   .navbar-nav,
   .nav-item {
@@ -1545,10 +1505,6 @@ a:focus {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  html {
-    font-size: 6px;
-  }
-
   /* Wallet header style */
   .navbar-nav,
   .nav-item {
@@ -1666,10 +1622,6 @@ a:focus {
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-  html {
-    font-size: 5px;
-  }
-
   /* Wallet header style */
   .navbar-nav,
   .nav-item {
@@ -1794,8 +1746,14 @@ a:focus {
 .login-container,
 .signup-container,
 .confirm-container {
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .login,
@@ -1810,11 +1768,16 @@ a:focus {
 }
 
 .container-confirm {  
-  justify-content: center;
+  -webkit-box-pack: center;  
+  -webkit-justify-content: center;  
+      -ms-flex-pack: center;  
+          justify-content: center;
 }
 
 .confirm {
-  align-self: flex-start;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
   margin-top: 10rem;
   width: 90rem;
 }
@@ -1903,7 +1866,9 @@ a:focus {
   left: -3rem;
   top: 50%;
   bottom: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   height: 1.8rem;
   width: 1.8rem;
 }
@@ -1962,62 +1927,21 @@ a:focus {
   font-size: 1.5rem;
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1440px) and (max-width: 1919.98px) {
-  html {
-    font-size: 10px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1439.98px) {
-  html {
-    font-size: 9px;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1439.98px){
-  html {
-    font-size: 9px;
-  }
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  html {
-    font-size: 8px;
-  }
-
-  /* login, signup and confirm styles */
-  .login-container,
-  .signup-container,
-  .confirm-container {
-    /*align-items: flex-start;*/
-  }
-
-  .login,
-  .signup,
-  .confirm {
-    /*margin: 10rem auto 0;*/
-  }
-}
-
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-  html {
-    font-size: 7px;
-  }
   /* Content style */
   .content {
     height: calc(100vh - 6rem - 6px);
   }
 
   /* login, signup and confirm styles */
-  /*.login-container,
-  .signup-container,*/
   .confirm-container {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
-  /*.login,
-  .signup,*/
   .confirm {
     margin: 10rem auto;
   }
@@ -2025,29 +1949,23 @@ a:focus {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  html {
-    font-size: 7px;
-  }
   /* Content style */
   .content {
     height: calc(100vh - 6rem - 6px);
   }
 
   /* login, signup and confirm styles */
-  .login,
-  .signup {
-    /*margin: 10rem auto 0;*/
-  }
-
   .login-container,
   .signup-container,
   .confirm-container {
-    /*justify-content: flex-start;*/
     padding: 0 5rem;
   }
 
   .confirm-container {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .confirm {
@@ -2067,14 +1985,12 @@ a:focus {
   .login-container,
   .signup-container,
   .confirm-container {
-    /*justify-content: flex-start;*/
     padding: 0 4rem;
   }
 
   .login,
   .signup,
   .confirm {
-    /*margin: 10rem auto;*/
     width: 100%;
   }
 
@@ -2083,7 +1999,10 @@ a:focus {
   }
 
   .confirm-container {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .login, .signup, .confirm {
