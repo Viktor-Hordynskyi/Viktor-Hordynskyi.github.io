@@ -2272,7 +2272,7 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  padding: 10rem 0;
+  padding: 8rem 0;
 }
 
 .home__intro h2,
@@ -2324,7 +2324,7 @@ a:focus {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  padding: 10rem 5rem;
+  padding: 4rem 5rem;
 }
 
 .home__element {
@@ -2404,12 +2404,8 @@ a:focus {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   /* home page style */
-  .home__intro {
-    padding: 8rem 0;
-  }
-
   .home__provide {
-    padding: 4rem 5rem;
+    padding: 5rem;
   }
 
   .home__element {
