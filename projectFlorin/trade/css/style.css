@@ -2336,9 +2336,14 @@ a:focus {
 
 .home__provide {
   background-color: #333;
+  display: flex;
   flex-grow: 1;
   align-items: center;
   padding: 10rem;
+}
+
+.home__elements {
+
 }
 
 .home__element {
