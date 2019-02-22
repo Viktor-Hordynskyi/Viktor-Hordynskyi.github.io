@@ -5,7 +5,6 @@ $(document).ready(function() {
 			$(this).addClass('active');
 
 			let cb = $(this).data('target');
-			console.log($('#'+cb))
 			$('.orders__container').removeClass('show');
 			$('#'+cb).addClass('show');
 		});
@@ -25,7 +24,6 @@ $(document).ready(function() {
 			$(this).addClass('active');
 
 			let cb = $(this).data('target');
-			console.log($('#'+cb))
 			$('.markets__current').removeClass('show');
 			$('#'+cb).addClass('show');
 		});
