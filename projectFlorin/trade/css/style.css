@@ -2299,7 +2299,10 @@ a:focus {
 }
 
 .home__button {
+  background-color: #fff;
   border-radius: 1rem;
+  border: 1px solid #333;
+  color: #333;  
   display: inline-flex;
   flex-direction: row;
   align-items: center;
@@ -2322,28 +2325,12 @@ a:focus {
   margin-left: 1rem;
 }
 
-.home__button.white {
-  background-color: #fff;
-  border: 1px solid #333;
-  color: #333;
-}
-
-.home__button.green {
-  background-color: #0daa6e;
-  border: 1px solid #0daa6e;
-  color: #fff;
-}
-
 .home__provide {
   background-color: #333;
   display: flex;
   flex-grow: 1;
   align-items: center;
   padding: 10rem;
-}
-
-.home__elements {
-
 }
 
 .home__element {
