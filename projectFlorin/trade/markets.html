@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Markets page</title>
+  <title>Markets</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
@@ -14,29 +14,29 @@
   crossorigin="anonymous">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?ver=1.0">
 </head>
 
 <body>
-  <!-- Start .header -->
-  <header class="header container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-dark bgcolor-grey--light">
-      <div class="navbar__container d-flex">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="logo">
-        </a>
+<!-- Start .header -->
+<header class="header container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bgcolor-grey--light">
+    <div class="navbar__container d-flex">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="logo">
+      </a>
 
-        <div class="navbar__markets">
-          <a href="#">All Markets</a>
-        </div>
+      <div class="navbar__markets">
+        <a href="#">All Markets</a>
       </div>
+    </div>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu"
-      aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu"
+    aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarmenu">
+    <div class="collapse navbar-collapse bgcolor-grey--light" id="navbarmenu">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="walletDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -67,32 +67,18 @@
 <!-- End /.header -->
 
 <!-- Start .content -->
-<main class="wallet content container-fluid">
-  <div class="wallet__title">
-    <h2>Account Balances</h2>
-
-    <p>
-      Estimated Holdings: 1605.00 BTC ($5567636.46)
-    </p>
-  </div>
-
-  <div class="wallet__nav">
-    <div class="wallet__balances">
-      <a href="#" class="wallet__balances--link color-blue--light">
-        Hide Small Balances
-      </a>
-      
-      <i class="wallet__balances--info im im-question" data-toggle="tooltip" data-placement="bottom" data-template=".tooltip" data-html="true" title="Tooltip on bottom <br> some other text"></i>
-
-      <div class="tooltip" role="tooltip">
-        <div class="arrow">
-        </div>
-        <div class="tooltip-inner">
-        </div>
-      </div>
+<main class="markets content container-fluid">
+  <div class="markets__nav">
+    <div class="markets__tabs">
+      <span class="markets__tab active" data-target="btc">BTC</span>
+      <span class="markets__tab" data-target="eth">ETH</span>
+      <span class="markets__tab" data-target="kcs">KCS</span>
+      <span class="markets__tab" data-target="usdt">USDT</span>
+      <span class="markets__tab" data-target="tusd">TUSD</span>
+      <span class="markets__tab" data-target="pax">PAX</span>
     </div>
 
-    <div class="wallet__search">
+    <div class="markets__search">
       <button type="submit" for="search">
         <i class="im im-magnifier"></i>
       </button>
@@ -100,348 +86,1859 @@
     </div>
   </div>
 
-  <div class="wallet__data">
-    <div class="wallet__titles">
-      <div class="wallet__titles-element">
+  <div class="markets__data">
+    <div class="markets__titles">
+      <div class="markets__titles-element">
         <span>
-          Symbol
+          Market
         </span>
       </div>
 
-      <div class="wallet__titles-element">
+      <div class="markets__titles-element">
         <span>
           Name
         </span>
       </div>
 
-      <div class="wallet__titles-element">
+      <div class="markets__titles-element">
         <span>
-          Available
+          Last Price
         </span>
       </div>
 
-      <div class="wallet__titles-element">
+      <div class="markets__titles-element">
         <span>
-          Locked
+          24h Change
         </span>
       </div>
 
-      <div class="wallet__titles-element">
+      <div class="markets__titles-element">
         <span>
-          Total
+          24h Volume (BTC)
         </span>
       </div>
 
-      <div class="wallet__titles-element">
+      <div class="markets__titles-element">
         <span>
-          BTC Value
+          24h Bolume (BTC)
         </span>
-      </div>
-
-      <div class="wallet__titles-element">
-        <span>
-          USD Value
-        </span>
-      </div>
-
-      <div class="wallet__titles-element"></div>
-    </div>
-
-    <div class="wallet__currency">
-      <div class="wallet__currency-element">
-        <img src="img/btc.png" alt="btc">
-        <span>
-          BTC
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          Bitcoin
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          0.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          17344.66
-        </span>
-      </div>
-
-      <div class="wallet__currency-element links">
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
       </div>
     </div>
 
-    <div class="wallet__currency">
-      <div class="wallet__currency-element">
-        <img src="img/usd.png" alt="usd">
-        <span>
-          USD
-        </span>
+    <div class="markets__current show" id="btc">
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
       </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          Dollar
-        </span>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
       </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          0.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          17344.66
-        </span>
-      </div>
-
-      <div class="wallet__currency-element links">
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
-      </div>
-    </div>
-
-    <div class="wallet__currency">
-      <div class="wallet__currency-element">
-        <img src="img/eth.png" alt="eth">
-        <span>
-          ETH
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          Ethereum
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          99905.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          95.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          100000.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          1600.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5550291.66
-        </span>
-      </div>
-
-      <div class="wallet__currency-element links">
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
-      </div>
-    </div>
-
-    <div class="wallet__currency">
-      <div class="wallet__currency-element">
-        <span>
-          PROOF
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          Proof Token
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          0.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          5.000000
-        </span>
-      </div>
-
-      <div class="wallet__currency-element">
-        <span>
-          17344.66
-        </span>
-      </div>
-
-      <div class="wallet__currency-element links">
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#depositModal">Deposit</a>
-        <a href="#" class="color-blue--light" data-toggle="modal" data-target="#withdrawModal">Withdraw</a>
-      </div>
-    </div>
-
-    <!-- Modal Deposit -->
-    <div class="modal fade" id="depositModal" tabindex="-1" role="dialog" aria-labelledby="depositModalLable" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="depositModalLable">Deposit</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-
-          <div class="modal-body">
-            <h4 class="color-warning">
-              <i class="im im-warning-circle"></i>
-              <span>Minimum deposit: 0.1 ETH</span>
-            </h4>
-
-            <p class="color-warning">
-              We will not credit your account with tokens from that sale.<br>
-              Send only <strong>Ethereum</strong> to this deposit address, depositing tokens other than <strong>Ethereum</strong> to this address may result in your funds being lost.
-            </p>
-
-            <h3>Ethereum (ETH)</h3>
-
-            <hr>
-
-            <p>Deposit address:</p>
-            <div class="modal-address">
-              <span>0x272BA03FeF1eb2C271Aeaf49Ff59399F2e096C7C</span>
-              <a href="#" class="im im-copy"></a>
-            </div>
-          </div>
-
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
         </div>
       </div>
     </div>
 
-    <!-- Modal Withdraw -->
-    <div class="modal fade" id="withdrawModal" tabindex="-1" role="dialog" aria-labelledby="withdrawModalLable" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="withdrawModalLable">Withdraw</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          
-          <div class="modal-body">
-            <h4 class="color-warning">
-              <i class="im im-warning-circle"></i>
-              <span>Minimum withdrawal: 0.1 ETH</span>
-            </h4>
+    <div class="markets__current" id="eth">
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
 
-            <p class="color-warning">
-              Please verify the address. We cannot refund an incorrect withdrawal.
-            </p>
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
 
-            <h3>Ethereum (ETH)</h3>
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
 
-            <hr>
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
 
-            <form class="modal-form">
-              <label for="withdrawRecipient">
-                Recipient's address
-              </label>
-              <input type="text" id="withdrawRecipient" value="56">
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
 
-              <label for="withdrawAmount">
-                Amount (<a href="#">99905.000000</a> available)
-              </label>
-              <input type="text" id="withdrawAmount" value="99905.000000">
-            </form>
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
 
-            <div class="modal-fee">
-              <div class="modal-fee-align">
-                <p>
-                  Fee: 0.01
-                </p>
-                
-                <br>
-                
-                <p>
-                  Amount (including fee): 99904.99
-                </p>
-              </div>
-            </div>
-          </div>
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
 
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary" data-dismiss="modal">Withdraw</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-          </div>
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="markets__current" id="kcs">
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            KCS
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="markets__current" id="usdt">
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            USDT
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="markets__current" id="tusd">
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            TUSD
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="markets__current" id="pax">
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            PAX
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-red">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="color-green">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      </div>
+      
+      <div class="markets__currency">
+        <div class="markets__currency-element">
+          <img src="img/btc.png" alt="btc">
+          <span>
+            ETH/BTC
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            Ethereum
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            0.03107204
+          </span>
+      
+          <small>
+            107.39 USD
+          </small>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span class="">
+            -0.16%
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
+        </div>
+      
+        <div class="markets__currency-element">
+          <span>
+            1,815.0710061
+          </span>
         </div>
       </div>
     </div>
@@ -523,6 +2020,7 @@
 
 <!-- My JS -->
 <script src="js/main.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 
 </html>
