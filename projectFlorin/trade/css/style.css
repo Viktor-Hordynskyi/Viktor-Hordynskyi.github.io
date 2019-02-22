@@ -2817,7 +2817,8 @@ a:focus {
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
-  .home.content {
+  .home.content,
+  .markets.content {
     min-height: calc(100vh - 6rem - 6px - 14rem - 63px);
   }
 }
