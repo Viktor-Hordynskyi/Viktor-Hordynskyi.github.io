@@ -2361,10 +2361,7 @@ a:focus {
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* home page style */
-  .home__intro {
-    padding: 6rem 0;
-  }
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
