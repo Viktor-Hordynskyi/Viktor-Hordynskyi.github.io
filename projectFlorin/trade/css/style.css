@@ -2088,7 +2088,9 @@ a:focus {
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Content style */
-  .content {
+  .login-container,
+  .signup-container,
+  .confirm-container {
     height: calc(100vh - 6rem - 6px);
   }
 
@@ -2150,16 +2152,12 @@ a:focus {
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  /* Content style */
-  .content {
-    height: calc(100vh - 6rem - 6px);
-  }
-
   /* login, signup and confirm styles */
   .login-container,
   .signup-container,
   .confirm-container {
     padding: 0 5rem;
+    height: calc(100vh - 6rem - 6px);
   }
 
   .confirm-container {
@@ -2177,16 +2175,12 @@ a:focus {
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-  /* Content style */
-  .content {
-    height: calc(100vh - 6rem - 6px);
-  }
-
   /* login, signup and confirm styles */
   .login-container,
   .signup-container,
   .confirm-container {
     padding: 0 4rem;
+    height: calc(100vh - 6rem - 6px);
   }
 
   .login,
@@ -2330,7 +2324,7 @@ a:focus {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  padding: 10rem;
+  padding: 10rem 5rem;
 }
 
 .home__element {
@@ -2379,6 +2373,15 @@ a:focus {
   .home__provide {
     padding: 5rem;
   }
+
+  .home__element {
+    margin-bottom: 3rem;
+  }
+
+  .home__element p {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -2390,6 +2393,11 @@ a:focus {
 
   .home__element {
     margin-bottom: 3rem;
+  }
+
+  .home__element p {
+    margin: 0 auto;
+    width: 80%;
   }
 }
 
@@ -2406,6 +2414,11 @@ a:focus {
 
   .home__img {
     width: 10rem;
+  }
+
+  .home__element p {
+    margin: 0 auto;
+    width: 80%;
   }
 }
 
