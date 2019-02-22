@@ -17,6 +17,19 @@ $(document).ready(function() {
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip()
 	})
+
+	// markets page - tabs switcher
+	$('.markets__tab').each(function() {
+		$(this).on('click', function() {
+			$('.markets__tab').removeClass('active');
+			$(this).addClass('active');
+
+			let cb = $(this).data('target');
+			console.log($('#'+cb))
+			$('.markets__current').removeClass('show');
+			$('#'+cb).addClass('show');
+		});
+	})
 })
 
 $(window).on('resize', function() {
