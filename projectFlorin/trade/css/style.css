@@ -2272,7 +2272,7 @@ a:focus {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
-  padding: 8rem 0;
+  padding: 5rem 0;
 }
 
 .home__intro h2,
@@ -2353,25 +2353,25 @@ a:focus {
 
 /*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1440px) and (max-width: 1919.98px) {
-  /* home page style */
 
 }
 @media (min-width: 1200px) and (max-width: 1439.98px){
-  /* home page style */
 
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* home page style */
-
+  .home__intro {
+    padding: 6rem 0;
+  }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* home page style */
-  .home__provide {
-    padding: 5rem;
+  .home__intro {
+    padding: 6rem 0;
   }
 
   .home__element {
@@ -2387,10 +2387,6 @@ a:focus {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* home page style */
-  .home__provide {
-    padding: 5rem;
-  }
-
   .home__element {
     margin-bottom: 3rem;
   }
@@ -2404,9 +2400,9 @@ a:focus {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   /* home page style */
-  .home__provide {
+  /*.home__provide {
     padding: 5rem;
-  }
+  }*/
 
   .home__element {
     margin-bottom: 3rem;
