@@ -2408,17 +2408,11 @@ a:focus {
 .markets__tab.active {
   background-color: #ddd;
   outline: 1px solid #ccc;
-  /*border-bottom: 1px solid #ddd;*/
   color: #69c;
   position: relative;
-  /*bottom: -1px;*/
-  /*left: -1px;*/
-  /*right: -1px;*/
 }
 
-/*.markets__tab::before.active,*/
 .markets__tab.active::before {
-  /*border: 0;*/
   content: "";
   background-color: #ddd;
   position: absolute;
@@ -2429,32 +2423,15 @@ a:focus {
   z-index: 1;
 }
 
-/*.markets__tab::before,*/
-.markets__tab::after {
+.markets__tab:not(:last-child)::after {
   content: "";
+  border-right: 1px solid #ddd;
   position: absolute;
+  right: 0;
   top: calc(50% - .5rem);
   transform: translateY(-50%);
   height: 50%;
 }
-
-/*.markets__tab::before {
-  border-left: 1px solid #ddd;
-  left: 0;
-}*/
-
-.markets__tab:not(:last-child)::after {
-  border-right: 1px solid #ddd;
-  right: 0;
-}
-
-/*.markets__tab:first-child::before {
-  border-left: 0;
-}*/
-
-/*.markets__tab:last-child::after {
-  border-right: 0;
-}*/
 
 .markets__search {
   margin-bottom: 1rem;
@@ -2836,12 +2813,3 @@ a:focus {
     font-size: .8rem;
   }
 }
-
-/*@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  {
-  .home.content,
-  .markets.content {
-    min-height: calc(100vh - 6rem - 6px - 14rem - 63px);
-  }
-}*/
