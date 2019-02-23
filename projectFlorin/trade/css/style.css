@@ -2542,37 +2542,12 @@ a:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  /*width: calc(100% /4);*/
-}
-
-.markets__titles-element:nth-child(1),
-.markets__currency-element:nth-child(1) {
-  width: 15%;
-}
-
-.markets__titles-element:nth-child(2),
-.markets__currency-element:nth-child(2) {
-  width: 15%;
+  width: calc(100% /5);
 }
 
 .markets__titles-element:nth-child(3),
 .markets__currency-element:nth-child(3) {
   width: 30%;
-}
-
-.markets__titles-element:nth-child(4),
-.markets__currency-element:nth-child(4) {
-  width: 10%;
-}
-
-.markets__titles-element:nth-child(5),
-.markets__currency-element:nth-child(5) {
-  width: 15%;
-}
-
-.markets__titles-element:nth-child(6),
-.markets__currency-element:nth-child(6) {
-  width: 15%;
 }
 
 .markets__current {
@@ -2608,7 +2583,7 @@ a:focus {
   display: flex;  
   flex-direction: row;  
   align-items: center;
-  /*width: calc(100% /4);*/
+  width: calc(100% /5);
 }
 
 .markets__currency-element span {
