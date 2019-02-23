@@ -28,6 +28,15 @@ $(document).ready(function() {
 			$('#'+cb).addClass('show');
 		});
 	})
+
+	const iOS = /iPad/.test(navigator.userAgent)
+	if (iOS) {
+		let x = window.matchMedia("(min-device-width : 768px) and (max-device-width : 1024px)");
+		if (x.matches) {
+			$('.home.content').css("min-height", "calc(100vh - 6rem - 6px - 14rem - 63px)");
+			$('.markets.content').css("min-height", "calc(100vh - 6rem - 6px - 14rem - 63px)");
+		}
+	}	
 })
 
 $(window).on('resize', function() {

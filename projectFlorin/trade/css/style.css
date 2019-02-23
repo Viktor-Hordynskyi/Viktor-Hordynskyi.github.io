@@ -2412,15 +2412,31 @@ a:focus {
   color: #69c;
 }
 
-.markets__tab:not(:last-child)::after {
+.markets__tab::before,
+.markets__tab::after {
   content: "";
-  background-color: rgba(0,0,0,.1);
   position: absolute;
-  right: 0;
   top: calc(50% - .5rem);
   transform: translateY(-50%);
   height: 50%;
-  width: 1px;
+}
+
+.markets__tab::before {
+  border-left: 1px solid #ddd;
+  left: 0;
+}
+
+.markets__tab::after {
+  border-right: 1px solid #ddd;
+  right: 0;
+}
+
+.markets__tab:first-child::before {
+  border-left: 0;
+}
+
+.markets__tab:last-child::after {
+  border-right: 0;
 }
 
 .markets__tab.active::before {
@@ -2839,11 +2855,11 @@ a:focus {
   }
 }
 
-@media only screen 
+/*@media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px)  {
   .home.content,
   .markets.content {
     min-height: calc(100vh - 6rem - 6px - 14rem - 63px);
   }
-}
+}*/
