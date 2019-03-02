@@ -796,6 +796,10 @@ input.modal--save {
 		transform: translateX(-50%);
 	}
 
+	.createEvent__control {
+		width: 5.3rem;
+	}
+
 	/* management styles */
 	.management {
 		margin: 2.6rem 4.4rem;
@@ -862,6 +866,10 @@ input.modal--save {
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+	}
+
+	.createEvent__control {
+		width: 6.3rem;
 	}
 
 	/* management styles */
