@@ -347,6 +347,7 @@ button, input[type="submit"] {
 
 /* modal window styles*/
 .modal-dialog {
+	margin: 1.75rem auto;
 	max-width: 40rem;
 }
 
