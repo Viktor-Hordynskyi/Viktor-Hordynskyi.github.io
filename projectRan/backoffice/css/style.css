@@ -462,7 +462,8 @@ input.modal--save {
 	margin: 0;
 }
 
-.management__header.row {
+.management__header.row,
+.management__header .col-12 {
 	margin: 0;
 	padding: 0;
 }
@@ -472,7 +473,12 @@ input.modal--save {
 	align-items: center;
 }
 
-.management__setting img {
+.management__setting-container--img {
+	height: 3.5rem;
+	width: 3.5rem;
+}
+
+.management__setting-container--img img {
 	height: 100%;
 }
 
@@ -545,7 +551,7 @@ input.modal--save {
 
 .management__events {
 	margin: 0 auto;
-	width: 48rem;
+	max-width: 48rem;
 }
 
 .management__event {
@@ -647,4 +653,59 @@ input.modal--save {
 
 .management__event--btns img {
 	width: 100%;
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	html {
+		font-size: 12px;
+	}
+
+	/* management styles */
+	.management__setting-container {
+		margin-top: 3rem;
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	html {
+		font-size: 10px;
+	}
+
+	/* management styles */
+	.management {
+		margin: 2.6rem 4.4rem;
+	}
+
+	.management__setting-container {
+		margin-top: 3rem;
+	}
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	html {
+		font-size: 8px;
+	}
+
+	/* management styles */
+	.management {
+		margin: 2.6rem 4.4rem;
+	}
+
+	.management__setting-container {
+		margin-top: 3rem;
+	}
+
+	.management__event--link {
+		font-size: 1.8rem;
+	}
 }
