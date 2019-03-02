@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+	<meta charset="UTF-8">
+	<title>EventBUZZ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Start .createEvent -->
+	<div class="createEvent">
+		<h1>
+			אירוע חדש
+		</h1>
+
+		<form class="createEvent__form">
+			<label for="eventImg" class="createEvent__file bluegreen">
+				בחירת תמונת אירוע
+				<input type="file" id="eventImg">
+			</label>
+
+			<label for="eventImg" class="createEvent__file bluegreen">
+				בחירת תמונת רקע
+				<input type="file" id="eventImg">
+			</label>
+
+			<div class="createEvent__form-group">
+				<h2>
+					שם האירוע
+				</h2>
+				<input type="text">
+			</div>
+
+			
+			<div class="createEvent__form-group">
+				<h2>
+					מועד התחלה
+				</h2>
+
+				<div class="createEvent__form-date">
+					<div class="createEvent__form-date--hours">
+						<input type="number" value="22" min="1" max="24">
+						<input type="number" value="30" min="1" max="60">
+					</div>
+					<div class="createEvent__form-date--year">
+						<input type="date" value="2019-01-02">
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="createEvent__form-group date">
+				<h2>
+					מועד סיום
+				</h2>
+
+				<div class="createEvent__form-date">
+					<div class="createEvent__form-date--hours">
+						<input type="number" value="22" min="1" max="24">
+						<input type="number" value="30" min="1" max="60">
+					</div>
+					<div class="createEvent__form-date--year delete">
+						<input type="date" value="2019-01-02">
+						<button type="button">
+							מחק תאריך סיום
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="createEvent__form-group">
+				<h2>
+					מיקום האירוע
+				</h2>
+				<input type="text">
+			</div>
+
+			<div class="createEvent__form-textarea">
+				<h2>
+					תיאור
+				</h2>
+				<textarea></textarea>
+			</div>
+
+			<div class="createEvent__form-group ">
+				<h2>
+					קטגוריה
+				</h2>
+				<div class="createEvent__form-select">
+					<select name="category" id="eventCategory">
+						<option value="category1">קטגוריה 1</option>
+						<option value="category2">קטגוריה 2</option>
+						<option value="category3">קטגוריה 3</option>
+						<option value="category4">קטגוריה 4</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="createEvent__form-group">
+				<h2>
+					דוא"ל לפניות
+				</h2>
+				<input type="text">
+				<span class="text-purple info">
+					כתובת דוא"ל לקבלת פניות מרוכשים
+				</span>
+			</div>
+
+			<div class="createEvent__form-group">
+				<h2>
+					כתובת מקוצרת
+				</h2>
+				<input type="text">
+				<span class="text-blue info">
+					יש לכתוב את השם שמופיע לאחר ה/ לדוגמא: http://eventbuzz.co.il/<span class="text-red">myevent</span>
+				</span>
+			</div>
+
+			<div class="createEvent__form-group">
+				<h2>
+					האירוע עם מקומות מסומנים
+				</h2>
+			</div>
+
+			<div class="createEvent__form-group">
+				<h3>
+					כרטיסים
+				</h3>
+			</div>			
+
+			<div class="createEvent__form-group">
+				<h2>
+					מקסימום כרטיסים למכירה באירוע
+				</h2>
+				<input type="number" value="" min="1" max="" class="createEvent__form-tickets">
+				<span class="text-purple info">
+					מספר הכרטיסים למכירה מכל הסוגים ביחד
+				</span>
+			</div>
+
+			<hr class="createEvent__hr">
+
+			<div class="createEvent__tickets">
+				<div class="createEvent__form-group">
+					<h2>
+						שם כרטיס
+					</h2>
+					<input type="text">
+				</div>
+				
+				<div class="createEvent__form-group">
+					<h2>
+						מספר כרטיסים
+					</h2>
+					<input type="text">
+				</div>
+				
+				<div class="createEvent__form-group">
+					<h2>
+						מחיר
+					</h2>
+					<input type="text">
+				</div>
+				
+				<div class="createEvent__form-group">
+					<h2>
+						סידור הצגה
+					</h2>
+					<input type="text">
+				</div>
+				
+				<div class="createEvent__form-group controls">
+					<button type="button" class="createEvent__control">
+						<img src="img/del.png" alt="delete">
+					</button>
+
+					<button type="button" class="createEvent__control" data-toggle="modal" data-target="#modalWindow">
+						<img src="img/sett.png" alt="edit">
+					</button>
+				</div>
+			</div>
+
+			<button type="button" class="createEvent__add">
+				הוספת סוג נוסף
+			</button>
+			
+			<div class="createEvent__form-group">
+				<h4 class="info">
+					עבור כרטיסים בעלות 0 תיגבה עמלה של 2 ש"ח לכרטיס - כולל כרטיסים שנמכרו עם קופון או דרך שליחת הזמנות
+				</h4>
+			</div>			
+
+			<input type="submit" class="createEvent__save bluegreen" value="שמירה">
+		</form>
+
+		<!-- modal window -->
+		<div class="modal fade" id="modalWindow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<h2 class="modal--title">
+						אפשרויות לסוג כרטיס
+					</h2>
+
+					<form class="modal--form">
+						<h3 class="modal--label">
+							כרטיס פעיל החל מתאריך
+						</h3>
+						<input type="text">
+						<div class="modal--group">
+							<input type="number">
+							<span>:</span>
+							<input type="number">
+						</div>
+
+						<h3 class="modal--label">
+							ועד לתאריך
+						</h3>
+						<input type="text">
+						<div class="modal--group">
+							<input type="number">
+							<span>:</span>
+							<input type="number">
+						</div>
+
+						<hr class="modal--hr">
+
+						<h3 class="modal--label">
+							מקסימום כרטיסים להזמנה
+						</h3>
+						<input type="number">
+
+						<h3 class="modal--label">
+							מינימום כרטיסים להזמנה
+						</h3>
+						<input type="number">
+						
+						<hr class="modal--hr">
+
+						<label class="modal--check">
+							הצג סוג כרטיס גם אם לא פעיל
+							<input type="checkbox">
+							<span class="checkmark"></span>
+						</label>
+
+						<h3>
+							טקסט על כרטיס לא פעיל
+						</h3>
+						<input type="text">
+
+						<hr class="modal--hr">
+
+						<input type="submit" value="שמירה וסגירה" class="modal--save bluegreen">
+
+					</form>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End /.createEvent -->
+	
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
