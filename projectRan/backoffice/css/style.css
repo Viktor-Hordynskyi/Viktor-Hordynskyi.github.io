@@ -99,7 +99,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 input[type="text"] {
-	width: 61rem;
+	max-width: 61rem;
 }
 
 input[type="date"] {
@@ -110,7 +110,7 @@ textarea {
 	border-radius: 2rem / 2rem;
 	text-align: right;
 	height: 30.5rem;
-	width: 69.1rem;
+	max-width: 69.1rem;
 }
 
 select {
@@ -121,6 +121,7 @@ button, input[type="submit"] {
 	cursor: pointer;
 }
 
+/* createEvent styles */
 .createEvent > * {
 	direction: rtl;
 	margin: 0;
@@ -132,6 +133,7 @@ button, input[type="submit"] {
 	font-size: 2.3rem;
 	font-weight: bold;
 	letter-spacing: 5rem;
+	text-indent: -5rem;
 	padding: 9rem 0;
 }
 
@@ -192,7 +194,11 @@ button, input[type="submit"] {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	width: 61.1rem;
+	max-width: 61rem;
+}
+
+.createEvent__form-date--hours {
+	/*width: 100%;*/
 }
 
 .createEvent__form-date--hours input {
@@ -204,7 +210,12 @@ button, input[type="submit"] {
 }
 
 .createEvent__form-date--year {
-	width: 28rem;
+	margin-left: 7rem;
+	max-width: 28rem;
+}
+
+.createEvent__form-date--year.delete {
+	position: relative;
 }
 
 .createEvent__form-date--year.delete button {
@@ -217,6 +228,11 @@ button, input[type="submit"] {
 	line-height: 1.688rem;
 	letter-spacing: .186rem;
 	margin-top: .5rem;
+	position: absolute;
+	bottom: -2rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
 }
 
 .createEvent__form-textarea {
@@ -247,8 +263,8 @@ button, input[type="submit"] {
 	top: calc(50% + 3px);
 	left: 2px;
 	transform: translateY(-50%);
-	width: 1rem;
-	height: 1rem;
+	width: 10px;
+	height: 14px;
 	background-color: #fff;
 }
 
@@ -261,7 +277,7 @@ button, input[type="submit"] {
 
 .createEvent__form-tickets {
 	direction: rtl;
-	width: 48rem;
+	max-width: 48rem;
 }
 
 .createEvent__hr {
@@ -273,7 +289,7 @@ button, input[type="submit"] {
 
 .createEvent__tickets {
 	margin: 0 auto;
-	width: 48rem;
+	max-width: 48rem;
 }
 
 .createEvent__tickets .createEvent__form-group {
@@ -392,7 +408,7 @@ button, input[type="submit"] {
 	line-height: 1.688rem;
 	letter-spacing: 0.273rem;
 	margin: 2rem 0 1.5rem;
-	padding-right: 3rem;
+	padding-right: 4rem;
 	position: relative;
 	user-select: none;
 	height: 3rem;
@@ -482,7 +498,7 @@ input.modal--save {
 	height: 100%;
 }
 
-.management__setting span {
+.management__setting a {
 	color: #333333;
 	font-size: 1.625rem;
 	font-weight: 700;
@@ -668,6 +684,53 @@ input.modal--save {
 		font-size: 12px;
 	}
 
+	/* createEvent styles */
+	.createEvent__form {
+		margin: 0 3rem;
+	}
+
+	.createEvent__form-date {
+		position: relative;
+	}
+
+	.createEvent__form-date,
+	.createEvent__form-date--year,
+	.createEvent__form-date--hours {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.createEvent__form-date--hours {
+		margin: 2rem 0 3rem;
+	}
+
+	.createEvent__form-date--hours input {
+		width: calc(50% - 3rem);
+	}
+
+	.createEvent__form-date--hours input:first-child {
+		margin-right: 2.5rem;
+	}
+
+	.createEvent__form-date--hours input:last-child {
+		margin-left: 2.5rem;
+	}
+
+	.createEvent__form-date--year {
+		margin-left: 0;
+	}
+
+	.createEvent__form-date--year.delete {
+		position: static;
+	}
+
+	.createEvent__form-date--year.delete>button {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
 	/* management styles */
 	.management__setting-container {
 		margin-top: 3rem;
@@ -678,6 +741,58 @@ input.modal--save {
 @media (min-width: 576px) and (max-width: 767.98px) {
 	html {
 		font-size: 10px;
+	}
+
+	/* createEvent styles */
+	.createEvent h1 {
+		letter-spacing: 4rem;
+		text-indent: -4rem;
+	}
+
+	.createEvent__form {
+		margin: 0 3rem;
+	}
+
+	.createEvent__form-date {
+		position: relative;
+	}
+
+	.createEvent__form-date,
+	.createEvent__form-date--year,
+	.createEvent__form-date--hours {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.createEvent__form-date--hours {
+		margin: 2rem 0 3rem;
+	}
+
+	.createEvent__form-date--hours input {
+		width: calc(50% - 3rem);
+	}
+
+	.createEvent__form-date--hours input:first-child {
+		margin-right: 2.5rem;
+	}
+
+	.createEvent__form-date--hours input:last-child {
+		margin-left: 2.5rem;
+	}
+
+	.createEvent__form-date--year {
+		margin-left: 0;
+	}
+
+	.createEvent__form-date--year.delete {
+		position: static;
+	}
+
+	.createEvent__form-date--year.delete>button {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	/* management styles */
@@ -694,6 +809,58 @@ input.modal--save {
 @media (max-width: 575.98px) {
 	html {
 		font-size: 8px;
+	}
+
+	/* createEvent styles */
+	.createEvent h1 {
+		letter-spacing: 2.5rem;
+		text-indent: -2.5rem;
+	}
+
+	.createEvent__form {
+		margin: 0 3rem;
+	}
+
+	.createEvent__form-date {
+		position: relative;
+	}
+
+	.createEvent__form-date,
+	.createEvent__form-date--year,
+	.createEvent__form-date--hours {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.createEvent__form-date--hours {
+		margin: 2rem 0 3rem;
+	}
+
+	.createEvent__form-date--hours input {
+		width: calc(50% - 3rem);
+	}
+
+	.createEvent__form-date--hours input:first-child {
+		margin-right: 2.5rem;
+	}
+
+	.createEvent__form-date--hours input:last-child {
+		margin-left: 2.5rem;
+	}
+
+	.createEvent__form-date--year {
+		margin-left: 0;
+	}
+
+	.createEvent__form-date--year.delete {
+		position: static;
+	}
+
+	.createEvent__form-date--year.delete>button {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	/* management styles */

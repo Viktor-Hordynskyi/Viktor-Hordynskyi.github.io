@@ -16,9 +16,7 @@
 
 	<!-- Start .createEvent -->
 	<div class="createEvent">
-		<h1>
-			אירוע חדש
-		</h1>
+		<h1>aאירוע חדש</h1>
 
 		<form class="createEvent__form">
 			<label for="eventImg" class="createEvent__file bluegreen">
@@ -44,12 +42,12 @@
 					מועד התחלה
 				</h2>
 
-				<div class="createEvent__form-date">
-					<div class="createEvent__form-date--hours">
+				<div class="createEvent__form-date flex-lg-row flex-column">
+					<div class="createEvent__form-date--hours order-lg-1 order-2">
 						<input type="number" value="22" min="1" max="24">
 						<input type="number" value="30" min="1" max="60">
 					</div>
-					<div class="createEvent__form-date--year">
+					<div class="createEvent__form-date--year order-lg-2 order-1">
 						<input type="date" value="2019-01-02">
 					</div>
 				</div>
@@ -61,12 +59,12 @@
 					מועד סיום
 				</h2>
 
-				<div class="createEvent__form-date">
-					<div class="createEvent__form-date--hours">
+				<div class="createEvent__form-date flex-lg-row flex-column">
+					<div class="createEvent__form-date--hours order-lg-1 order-2">
 						<input type="number" value="22" min="1" max="24">
 						<input type="number" value="30" min="1" max="60">
 					</div>
-					<div class="createEvent__form-date--year delete">
+					<div class="createEvent__form-date--year delete order-lg-2 order-1">
 						<input type="date" value="2019-01-02">
 						<button type="button">
 							מחק תאריך סיום
