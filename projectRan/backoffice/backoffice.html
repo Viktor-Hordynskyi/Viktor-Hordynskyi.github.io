@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 	<!-- My CSS -->
-	<link rel="stylesheet" href="css/style.css?version=1.1">
+	<link rel="stylesheet" href="css/style.css?version=1.2">
 </head>
 <body>
 
@@ -121,10 +121,11 @@
 				</span>
 			</div>
 
-			<div class="createEvent__form-group">
-				<h2>
+			<div class="createEvent__form-group checkbox">
+				<label for="createEventCheck">
 					האירוע עם מקומות מסומנים
-				</h2>
+				</label>
+				<input type="checkbox" id="createEventCheck">
 			</div>
 
 			<div class="createEvent__form-group">
@@ -210,7 +211,7 @@
 						<h3 class="modal--label">
 							כרטיס פעיל החל מתאריך
 						</h3>
-						<input type="text">
+						<input type="date" value="2019-05-16">
 						<div class="modal--group">
 							<input type="number">
 							<span>:</span>
@@ -220,7 +221,7 @@
 						<h3 class="modal--label">
 							ועד לתאריך
 						</h3>
-						<input type="text">
+						<input type="date" value="2019-05-16">
 						<div class="modal--group">
 							<input type="number">
 							<span>:</span>
