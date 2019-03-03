@@ -118,8 +118,16 @@ button, input[type="submit"] {
 }
 
 /* datepicker styles */
-#picker-container {
+#picker-container1,
+#picker-container2,
+#picker-container3,
+#picker-container4 {
 	position: relative;
+}
+
+.datepicker {
+	left: 0 !important;
+	right: auto!important;
 }
 
 .datepicker table tr td, .datepicker table tr th {

@@ -50,8 +50,8 @@
 						<input type="number" value="22" min="1" max="24">
 						<input type="number" value="30" min="1" max="60">
 					</div>
-					<div class="createEvent__form-date--year order-lg-2 order-1">
-						<input type="text" value="03.03.2019" class="datepicker-here">
+					<div class="createEvent__form-date--year order-lg-2 order-1" id="picker-container1">
+						<input type="text" value="03.03.2019" class="datepicker-here1">
 					</div>
 				</div>
 			</div>
@@ -67,8 +67,8 @@
 						<input type="number" value="22" min="1" max="24">
 						<input type="number" value="30" min="1" max="60">
 					</div>
-					<div class="createEvent__form-date--year delete order-lg-2 order-1">
-						<input type="text" value="03.03.2019" class="datepicker-here">
+					<div class="createEvent__form-date--year delete order-lg-2 order-1" id="picker-container2">
+						<input type="text" value="03.03.2019" class="datepicker-here2">
 						<button type="button">
 							מחק תאריך סיום
 						</button>
@@ -215,7 +215,9 @@
 						<h3 class="modal--label">
 							כרטיס פעיל החל מתאריך
 						</h3>
-						<input type="text" value="03.03.2019" class="datepicker-here">
+						<div id="picker-container3">
+							<input type="text" value="03.03.2019" class="datepicker-here3">
+						</div>
 						<div class="modal--group">
 							<input type="number">
 							<span>:</span>
@@ -225,7 +227,9 @@
 						<h3 class="modal--label">
 							ועד לתאריך
 						</h3>
-						<input type="text" value="03.03.2019" class="datepicker-here">
+						<div id="picker-container4">
+							<input type="text" value="03.03.2019" class="datepicker-here4">
+						</div>
 						<div class="modal--group">
 							<input type="number">
 							<span>:</span>

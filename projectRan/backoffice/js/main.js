@@ -13,9 +13,31 @@ $.fn.datepicker.dates['he'] = {
 	weekStart: 0
 }
 
-$('.datepicker-here').datepicker({
+$('.datepicker-here1').datepicker({
 	language: 'he',
 	autoclose: true,
 	rtl: true,
 	orientation: 'left',
+	container: 'div#picker-container1',
+})
+$('.datepicker-here2').datepicker({
+	language: 'he',
+	autoclose: true,
+	rtl: true,
+	orientation: 'left',
+	container: 'div#picker-container2',
+})
+$('.datepicker-here3').datepicker({
+	language: 'he',
+	autoclose: true,
+	rtl: true,
+	orientation: 'left',
+	container: 'div#picker-container3',
+})
+$('.datepicker-here4').datepicker({
+	language: 'he',
+	autoclose: true,
+	rtl: true,
+	orientation: 'left',
+	container: 'div#picker-container4',
 })
