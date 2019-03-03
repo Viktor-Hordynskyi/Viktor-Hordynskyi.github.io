@@ -780,7 +780,7 @@ input.modal--save {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 	html {
-		font-size: 10px;
+		font-size: 11px;
 	}
 
 	/* datepicker styles */
@@ -850,6 +850,10 @@ input.modal--save {
 	}
 
 	/* management styles */
+	.management__events {
+		max-width: 30rem;
+	}
+
 	.management__setting-container {
 		margin-top: 1rem;
 	}
@@ -858,7 +862,7 @@ input.modal--save {
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
 	html {
-		font-size: 8px;
+		font-size: 10px;
 	}
 
 	/* datepicker styles */
@@ -873,7 +877,7 @@ input.modal--save {
 	}
 
 	.createEvent__form {
-		margin: 0 3rem;
+		margin: 0 1.5rem;
 	}
 
 	.createEvent__form-date {
@@ -929,7 +933,11 @@ input.modal--save {
 
 	/* management styles */
 	.management {
-		margin: 2rem 3rem;
+		margin: 1rem 2rem;
+	}
+
+	.management__events {
+		max-width: 35rem;
 	}
 
 	.management__setting-container {
