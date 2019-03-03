@@ -79,9 +79,9 @@ input, select, textarea {
 	direction: rtl;
 	font-size: 2.1rem;
 	line-height: 1.6rem;
-	letter-spacing: .321rem;
+	letter-spacing: .3rem;
 	margin: 0 auto;
-	padding: 1.6rem;
+	padding: 1rem;
 	text-align: center;
 	width: 100%;
 }
@@ -98,19 +98,15 @@ input[type="number"]::-webkit-inner-spin-button {
 	opacity: 1;
 }
 
-input[type="text"] {
-	max-width: 61rem;
-}
-
 input[type="date"] {
-	padding: .8rem;
+	padding: .5rem;
 }
 
 textarea {
 	border-radius: 2rem / 2rem;
 	text-align: right;
-	height: 30.5rem;
-	max-width: 69.1rem;
+	height: 20rem;
+	max-width: 60rem;
 }
 
 select {
@@ -119,6 +115,21 @@ select {
 
 button, input[type="submit"] {
 	cursor: pointer;
+}
+
+/* datepicker styles */
+#picker-container {
+	position: relative;
+}
+
+.datepicker table tr td, .datepicker table tr th {
+	font-size: 1rem;
+}
+
+.prev img,
+.next img {
+	height: 1rem;
+	width: 1rem;
 }
 
 /* createEvent styles */
@@ -132,16 +143,17 @@ button, input[type="submit"] {
 .createEvent h1 {
 	font-size: 2.3rem;
 	font-weight: bold;
-	letter-spacing: 5rem;
-	text-indent: -5rem;
-	padding: 9rem 0;
+	letter-spacing: 4rem;
+	text-indent: -4rem;
+	padding: 7rem 0;
 }
 
 .createEvent__form-group {
 	direction: ltr;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 3.4rem;
+	margin:0 auto 2rem;
+	max-width: 60rem;
 }
 
 .createEvent__form-group .info {
@@ -156,8 +168,8 @@ button, input[type="submit"] {
 	color: #1a1a1a;
 	font-size: 2.1rem;
 	font-weight: 700;
-	letter-spacing: .321rem;
-	margin-bottom: 2.9rem;
+	letter-spacing: .3rem;
+	margin-bottom: 2rem;
 }
 
 .createEvent__file {
@@ -168,12 +180,12 @@ button, input[type="submit"] {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 2rem;
-	margin: 0 auto 10rem;
+	font-size: 1.9rem;
+	margin: 0 auto 5rem;
 	overflow: hidden;
 	position: relative;
 	height: 4.9rem;
-	width: 28.1rem;
+	width: 26rem;
 }
 
 .createEvent__file input {
@@ -194,15 +206,19 @@ button, input[type="submit"] {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	max-width: 61rem;
+	/*max-width: 60rem;*/
+	width: 100%;
 }
 
 .createEvent__form-date--hours {
-	/*width: 100%;*/
+	display: flex;
+	flex-direction: row;
+	width: calc(100% - 25rem - 7rem);
 }
 
 .createEvent__form-date--hours input {
-	width: 11.7rem;
+	/*max-width: 11rem;*/
+	max-width: 50%;
 }
 
 .createEvent__form-date--hours input:first-child {
@@ -211,7 +227,7 @@ button, input[type="submit"] {
 
 .createEvent__form-date--year {
 	margin-left: 7rem;
-	max-width: 28rem;
+	max-width: 25rem;
 }
 
 .createEvent__form-date--year.delete {
@@ -257,15 +273,16 @@ button, input[type="submit"] {
 	border-color: #666 transparent transparent transparent;
 }
 
-.createEvent__form-select:before {
+.createEvent__form-select label {
 	position: absolute;
-	content: "";
-	top: calc(50% + 3px);
-	left: 2px;
+	top: calc(50% + 0px);
+	left: 1px;
 	transform: translateY(-50%);
-	width: 10px;
-	height: 14px;
+	width: 3rem;
+	height: calc(100% - 4px);
 	background-color: #fff;
+	border-top-left-radius: 10rem;
+	border-bottom-left-radius: 10rem;
 }
 
 .createEvent__form-group.checkbox {
@@ -358,6 +375,8 @@ button, input[type="submit"] {
 	letter-spacing: 0.321rem;
 	margin: 2.35rem 0 5.9rem;
 	padding: 1.6rem 3.4rem;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
 	width: fit-content;
 }
 
@@ -380,6 +399,8 @@ button, input[type="submit"] {
 
 .modal--form input[type=number] {
 	direction: ltr;
+	width: auto;
+	max-width: calc(49% - 1.9rem);
 }
 
 .modal--title {
@@ -407,6 +428,7 @@ button, input[type="submit"] {
 	font-size: 1.75rem;
 	line-height: 1.688rem;
 	margin: 0 1.9rem;
+	width: 2%;
 }
 
 .modal--hr {
@@ -760,6 +782,11 @@ input.modal--save {
 		font-size: 10px;
 	}
 
+	/* datepicker styles */
+	.datepicker table tr td, .datepicker table tr th {
+		font-size: 1.5rem;
+	}
+
 	/* createEvent styles */
 	.createEvent h1 {
 		letter-spacing: 4rem;
@@ -830,6 +857,11 @@ input.modal--save {
 @media (max-width: 575.98px) {
 	html {
 		font-size: 8px;
+	}
+
+	/* datepicker styles */
+	.datepicker table tr td, .datepicker table tr th {
+		font-size: 2rem;
 	}
 
 	/* createEvent styles */

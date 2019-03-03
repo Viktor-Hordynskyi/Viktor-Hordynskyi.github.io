@@ -9,6 +9,9 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+	<!-- Bootstrap datepiker -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+
 	<!-- My CSS -->
 	<link rel="stylesheet" href="css/style.css?version=1.2">
 </head>
@@ -48,7 +51,7 @@
 						<input type="number" value="30" min="1" max="60">
 					</div>
 					<div class="createEvent__form-date--year order-lg-2 order-1">
-						<input type="date" value="2019-01-02">
+						<input type="text" value="03.03.2019" class="datepicker-here">
 					</div>
 				</div>
 			</div>
@@ -65,7 +68,7 @@
 						<input type="number" value="30" min="1" max="60">
 					</div>
 					<div class="createEvent__form-date--year delete order-lg-2 order-1">
-						<input type="date" value="2019-01-02">
+						<input type="text" value="03.03.2019" class="datepicker-here">
 						<button type="button">
 							מחק תאריך סיום
 						</button>
@@ -92,6 +95,7 @@
 					קטגוריה
 				</h2>
 				<div class="createEvent__form-select">
+					<label></label>
 					<select name="category" id="eventCategory">
 						<option value="category1">קטגוריה 1</option>
 						<option value="category2">קטגוריה 2</option>
@@ -211,7 +215,7 @@
 						<h3 class="modal--label">
 							כרטיס פעיל החל מתאריך
 						</h3>
-						<input type="date" value="2019-05-16">
+						<input type="text" value="03.03.2019" class="datepicker-here">
 						<div class="modal--group">
 							<input type="number">
 							<span>:</span>
@@ -221,7 +225,7 @@
 						<h3 class="modal--label">
 							ועד לתאריך
 						</h3>
-						<input type="date" value="2019-05-16">
+						<input type="text" value="03.03.2019" class="datepicker-here">
 						<div class="modal--group">
 							<input type="number">
 							<span>:</span>
@@ -271,6 +275,12 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<!-- Datepicker JS -->
+	<script src="js/bootstrap-datepicker.min.js"></script>
+
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
