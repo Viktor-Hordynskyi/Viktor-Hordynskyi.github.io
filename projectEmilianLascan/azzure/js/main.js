@@ -4,7 +4,7 @@ $(document).ready(function() {
 		var anchor = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $(anchor.attr('href')).offset().top
-		}, 500, 'linear');
+		}, 1500, 'linear');
 	});
 
 	$('.navbar-toggler').on('click', function() {
