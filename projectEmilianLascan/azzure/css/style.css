@@ -591,6 +591,7 @@ strong {
   color: #021926;
   font-weight: 500;
   letter-spacing: 0.052rem;
+  margin-bottom: 1.4rem;
 }
 
 .footer__email a,
@@ -769,21 +770,6 @@ strong {
 .figure-19 {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1439px) {
