@@ -1,11 +1,13 @@
 $(document).ready(function() {
 	$('a[href^="#"]').on('click', function(e){
 		e.preventDefault();
-		var anchor = $(this);
+		let anchor = $(this);
+		let speed = (($(anchor.attr('href')).offset().top) / 3)
 		$('html, body').stop().animate({
 			scrollTop: $(anchor.attr('href')).offset().top
-		}, 1500, 'linear');
+		}, speed, 'linear');
 	});
+
 
 	$('.navbar-toggler').on('click', function() {
 		$('#navbar').toggleClass('show')
