@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inbox View</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- Start .container-fluid -->
+	<main class="main container-fluid row">
+		<!-- Start .navbar-->
+		<nav class="navbar col-lg-3">
+			<div class="navbar__header headers">
+				<a href="#" class="navbar__user bg-grey">
+					YK
+					<span class="status--green"></span>
+				</a>
+
+				<a href="#" class="navbar__edit">
+					<i class="fas fa-pen"></i>
+				</a>
+			</div>
+
+			<div class="navbar__actions">
+				<div class="navbar__list">
+					<h2 class="navbar__title">
+						<span>Me</span>
+						<i class="fas fa-bars"></i>
+					</h2>
+
+					<ul class="navbar__items">
+						<li class="navbar__item">
+							<div class="navbar__action" data-target="#inbox" data-toggle="collapse">
+								<p>
+									<i class="fas fa-angle-down navbar__dropdown--icon"></i>
+
+									<span class="navbar__name">
+										<i class="fas fa-inbox"></i>
+										Inbox
+									</span>
+								</p>
+								
+								<span class="navbar__number">1</span>
+							</div>
+
+							<div class="navbar__collapse collapse" id="inbox">
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-plus"></i>
+										Assigned to me
+									</span>
+
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-friends"></i>
+										Shared with me
+									</span>
+									
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#" class="text-blue">					
+									<span>
+										<i class="fas fa-plus-circle"></i>
+										Add individual in...
+									</span>
+									
+									<span class="navbar__number"></span>
+								</a>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-archive"></i>
+										All
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-edit"></i>
+										Drafts
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-paper-plane"></i>
+										Sent
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-trash-alt"></i>
+										Trash
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-exclamation-circle"></i>
+										Spam
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="navbar__list">
+					<h2 class="navbar__title">
+						<span>Developing Team</span>
+						<i class="fas fa-bars"></i>
+					</h2>
+
+					<ul class="navbar__items">
+						<li class="navbar__item">
+							<div class="navbar__action" data-target="#developing" data-toggle="collapse">
+								<p>
+									<i class="fas fa-angle-down navbar__dropdown--icon"></i>
+
+									<span class="navbar__name strong">
+										<i class="fas fa-inbox"></i>
+										Team inboxes
+									</span>
+								</p>
+								
+								<span class="navbar__number">1</span>
+							</div>
+
+							<div class="navbar__collapse collapse" id="developing">
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-plus"></i>
+										Assigned to me
+									</span>
+
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-friends"></i>
+										Shared with me
+									</span>
+									
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#" class="text-blue">					
+									<span>
+										<i class="fas fa-plus-circle"></i>
+										Add individual in...
+									</span>
+									
+									<span class="navbar__number"></span>
+								</a>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-archive"></i>
+										All
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-edit"></i>
+										Drafts
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-paper-plane"></i>
+										Sent
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-trash-alt"></i>
+										Trash
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-exclamation-circle"></i>
+										Spam
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="navbar__list">
+					<h2 class="navbar__title">
+						<span>Me</span>
+						<i class="fas fa-bars"></i>
+					</h2>
+
+					<ul class="navbar__items">
+						<li class="navbar__item">
+							<div class="navbar__action" data-target="#collapsemenu1" data-toggle="collapse">
+								<p>
+									<i class="fas fa-angle-down navbar__dropdown--icon"></i>
+
+									<span class="navbar__name">
+										<i class="fas fa-inbox"></i>
+										Inbox
+									</span>
+								</p>
+								
+								<span class="navbar__number">1</span>
+							</div>
+
+							<div class="navbar__collapse collapse" id="collapsemenu1">
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-plus"></i>
+										Assigned to me
+									</span>
+
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-friends"></i>
+										Shared with me
+									</span>
+									
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#" class="text-blue">					
+									<span>
+										<i class="fas fa-plus-circle"></i>
+										Add individual in...
+									</span>
+									
+									<span class="navbar__number"></span>
+								</a>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-archive"></i>
+										All
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-edit"></i>
+										Drafts
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-paper-plane"></i>
+										Sent
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-trash-alt"></i>
+										Trash
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-exclamation-circle"></i>
+										Spam
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="navbar__list">
+					<h2 class="navbar__title">
+						<span>Me</span>
+						<i class="fas fa-bars"></i>
+					</h2>
+
+					<ul class="navbar__items">
+						<li class="navbar__item">
+							<div class="navbar__action" data-target="#collapsemenu2" data-toggle="collapse">
+								<p>
+									<i class="fas fa-angle-down navbar__dropdown--icon"></i>
+
+									<span class="navbar__name">
+										<i class="fas fa-inbox"></i>
+										Inbox
+									</span>
+								</p>
+								
+								<span class="navbar__number">1</span>
+							</div>
+
+							<div class="navbar__collapse collapse" id="collapsemenu2">
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-plus"></i>
+										Assigned to me
+									</span>
+
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#">									
+									<span>
+										<i class="fas fa-user-friends"></i>
+										Shared with me
+									</span>
+									
+									<span class="navbar__number">2</span>
+								</a>
+
+								<a href="#" class="text-blue">					
+									<span>
+										<i class="fas fa-plus-circle"></i>
+										Add individual in...
+									</span>
+									
+									<span class="navbar__number"></span>
+								</a>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-archive"></i>
+										All
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-edit"></i>
+										Drafts
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-paper-plane"></i>
+										Sent
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="far fa-trash-alt"></i>
+										Trash
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+
+						<li class="navbar__item">
+							<div class="navbar__action">
+								<p>
+									<span class="navbar__name">
+										<i class="fas fa-exclamation-circle"></i>
+										Spam
+									</span>
+								</p>
+								
+								<span class="navbar__number"></span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="navbar__footer">
+				<div class="navbar__footer--action active">
+					<i class="fas fa-inbox"></i>
+				</div>
+
+				<div class="navbar__footer--action">
+					<i class="far fa-chart-bar"></i>
+				</div>
+
+				<div class="navbar__footer--action">
+					<i class="fas fa-address-book"></i>
+				</div>
+
+				<div class="navbar__footer--action">
+					<i class="fas fa-ellipsis-h"></i>
+				</div>
+			</div>
+		</nav>
+		<!-- End /.navbar-->
+
+		<!-- Start .letters -->
+		<div class="letters col-lg-4">
+			<div class="letters__header headers">
+				<input type="search" placeholder="Search...">
+				<i class="fas fa-sort-amount-up"></i>
+			</div>
+
+			<div class="letters__container">
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+
+				<div class="letters__item">
+					<div class="letters__item--title">
+						<h3>
+							James James > James
+						</h3>
+
+						<span>4D</span>
+					</div>
+
+					<div class="letters__item--re">
+						<p>
+							<span>Re:</span> Application status for Accelerator Program Lorem ipsum dolor sit amet.
+						</p>
+
+						<i>8</i>
+					</div>
+
+					<div class="letters__item--text">
+						<p>
+							Lorem ipsum dolor sit amet. Hey Jamie, Thank you for getting back to me! If you are still available f...
+						</p>
+
+						<i>G</i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End /.letters -->
+
+		<!-- Start .chat -->
+		<div class="chat col-lg-5">
+			<div class="chat__header headers">
+				<div class="chat__actions">
+					<div class="chat__action">
+						<i class="fas fa-archive"></i>
+					</div>
+
+					<div class="chat__action">
+						<i class="far fa-clock"></i>
+					</div>
+
+					<div class="chat__action">
+						<i class="far fa-trash-alt"></i>
+					</div>
+
+					<div class="chat__action">
+						<i class="fas fa-ellipsis-h"></i>
+					</div>
+				</div>
+
+				<div class="chat__options">
+					<select>
+						<option value="Inbox #1">Inbox #1</option>
+						<option value="Inbox #2">Inbox #2</option>
+						<option value="Inbox #3">Inbox #3</option>
+					</select>
+
+					<button class="chat__exit">
+						<i class="fas fa-sign-out-alt"></i>
+					</button>
+				</div>
+			</div>
+
+			<div class="chat__title">
+				<div class="chat__title--text">
+					<h5>
+						Re: Application status for Accelerator Program
+					</h5>
+
+					<div class="chat__title--box">
+						<i class="fas fa-inbox"></i>
+						inbox
+						<i class="fas fa-lock"></i>
+					</div>
+				</div>
+
+				<div class="chat__title--badge">
+					<i class="fas fa-tag"></i>
+					<i class="far fa-bell-slash"></i>
+				</div>
+			</div>
+
+			<div class="chat__messages" id="messages">
+				<div class="chat__message">
+					<div class="chat__message--title" data-toggle="collapse" data-target="#message1">
+						<div class="chat__avatar">
+							<span class="bg-yellow">kr</span>
+						</div>
+
+						<div class="chat__message--data">
+							<h6>
+								Bryan Bryan
+							</h6>
+
+							<span>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+							</span>
+						</div>
+
+						<div class="chat__message--status">
+							<span class="days">12 days</span>
+							<span class="seen show">
+								seen
+							</span>
+						</div>
+					</div>
+
+					<div class="chat__message--text collapse" id="message1" data-parent="#messages">
+						<p>
+							Hi Bryan,
+							<br><br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ratione, soluta. Necessitatibus at blanditiis facere!
+							<br><br>
+							Regards,
+							<br><br>
+							Viktor
+						</p>
+
+						<i class="fas fa-ellipsis-h more"></i>
+					</div>
+				</div>
+
+				<div class="chat__message">
+					<div class="chat__message--title" data-toggle="collapse" data-target="#message2">
+						<div class="chat__avatar">
+							<span class="bg-grey">bc</span>
+						</div>
+
+						<div class="chat__message--data">
+							<h6>
+								Bryan Bryan
+							</h6>
+
+							<span>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+							</span>
+						</div>
+
+						<div class="chat__message--status">
+							<span class="days">12 days</span>
+							<span class="seen show">
+								seen
+							</span>
+						</div>
+					</div>
+
+					<div class="chat__message--text collapse" id="message2" data-parent="#messages">
+						<p>
+							Hi Bryan,
+							<br><br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ratione, soluta. Necessitatibus at blanditiis facere!
+							<br><br>
+							Regards,
+							<br><br>
+							Viktor
+						</p>
+
+						<i class="fas fa-ellipsis-h more"></i>
+					</div>
+				</div>
+
+				<div class="chat__message">
+					<div class="chat__message--title" data-toggle="collapse" data-target="#message3">
+						<div class="chat__avatar">
+							<span class="bg-yellow">kr</span>
+						</div>
+
+						<div class="chat__message--data">
+							<h6>
+								Bryan Bryan
+							</h6>
+
+							<span>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+							</span>
+						</div>
+
+						<div class="chat__message--status">
+							<span class="days">12 days</span>
+							<span class="seen show">
+								seen
+							</span>
+						</div>
+					</div>
+
+					<div class="chat__message--text collapse" id="message3" data-parent="#messages">
+						<p>
+							Hi Bryan,
+							<br><br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ratione, soluta. Necessitatibus at blanditiis facere!
+							<br><br>
+							Regards,
+							<br><br>
+							Viktor
+						</p>
+
+						<i class="fas fa-ellipsis-h more"></i>
+					</div>
+				</div>
+
+				<div class="chat__message">
+					<div class="chat__message--title" data-toggle="collapse" data-target="#message4">
+						<div class="chat__avatar">
+							<span class="bg-yellow">kr</span>
+						</div>
+
+						<div class="chat__message--data">
+							<h6>
+								Bryan Bryan
+							</h6>
+
+							<span>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+							</span>
+						</div>
+
+						<div class="chat__message--status">
+							<span class="days">12 days</span>
+							<span class="seen show">
+								seen
+							</span>
+						</div>
+					</div>
+
+					<div class="chat__message--text collapse show" id="message4" data-parent="#messages">
+						<p>
+							Hi Bryan,
+							<br><br>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, ratione, soluta. Necessitatibus at blanditiis facere!
+							<br><br>
+							Regards,
+							<br><br>
+							Viktor
+						</p>
+
+						<i class="fas fa-ellipsis-h more"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="chat__footer">
+				<div class="chat__avatar">
+					<span class="bg-grey">yk</span>
+				</div>
+
+				<div class="chat__print">
+					<input type="text" placeholder="Type your comment...">
+
+					<i class="fas fa-paperclip"></i>
+					<i class="far fa-grin-squint"></i>
+					<i class="fas fa-arrow-circle-up"></i>
+				</div>
+			</div>
+		</div>
+		<!-- End /.chat -->
+	</main>
+	<!-- End /.container-fluid -->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+	<!-- My JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Need to be deleted when the project is end. -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
