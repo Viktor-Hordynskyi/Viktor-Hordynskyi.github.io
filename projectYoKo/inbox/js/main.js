@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	// $('.chat__messages').on('click', function() {
-	// 	if($('.chat__message--text.collapse').hasClass('show')) {
-	// 		$('.chat__message').removeClass('opacity')
-	// 	} else {
-	// 		$('.chat__message').addClass('opacity')
-	// 	}
-	// })
-	
+	$('.chat__message').on('click', function() {
+		if(!$(this).hasClass('opacity')) {
+			$('.chat__message').removeClass('opacity')
+			$(this).addClass('opacity');
+		}	else {
+			$(this).removeClass('opacity');
+		}
+	})	
 })
