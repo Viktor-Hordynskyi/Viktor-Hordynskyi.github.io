@@ -17,18 +17,14 @@
 <body>
 
 	<!-- Start .container-fluid -->
-	<main class="main container-fluid row">
+	<main class="main container-fluid">
 		<!-- Start .navbar-->
-		<nav class="navbar col-lg-3">
+		<nav class="navbar show">
 			<div class="navbar__header headers">
 				<a href="#" class="navbar__user bg-grey">
 					YK
 					<span class="status--green"></span>
-				</a>
-
-				<a href="#" class="navbar__edit">
-					<i class="fas fa-pen"></i>
-				</a>
+				</a>				
 			</div>
 
 			<div class="navbar__actions">
@@ -522,11 +518,24 @@
 					<i class="fas fa-ellipsis-h"></i>
 				</div>
 			</div>
+
+			<button class="navbar__edit" id="toggle">
+				<i class="fas fa-times desktop"></i>
+				<i class="fas fa-bars tablet"></i>
+			</button>		
 		</nav>
+
+
+
+		<!-- <div class="navbar__menu-hide">
+			<button class="navbar__edit" id="toggle">
+				<i class="fas fa-bars"></i>
+			</button>
+		</div> -->
 		<!-- End /.navbar-->
 
 		<!-- Start .letters -->
-		<div class="letters col-lg-4">
+		<div class="letters">
 			<div class="letters__header headers">
 				<input type="search" placeholder="Search...">
 				<i class="fas fa-sort-amount-up"></i>
@@ -771,7 +780,7 @@
 		<!-- End /.letters -->
 
 		<!-- Start .chat -->
-		<div class="chat col-lg-5">
+		<div class="chat">
 			<div class="chat__header headers">
 				<div class="chat__actions">
 					<div class="chat__action">
@@ -823,9 +832,7 @@
 							<li>
 								Kris
 							</li>
-						</ul>
-
-						
+						</ul>						
 					</div>
 
 					<div class="chat__option second">
@@ -852,7 +859,7 @@
 						</ul>
 					</div>
 
-					<div class="chat__option third dropleft">
+					<div class="chat__option third">
 						<div class="chat__dropdown" data-toggle="dropdown" id="chatOption3">
 							<span>Inbox #1</span><i class="fas fa-angle-down"></i>
 						</div>
@@ -870,12 +877,12 @@
 								Inbox #3
 							</li>
 						</ul>
-					</div>
-
-					<button class="chat__exit">
-						<i class="fas fa-sign-out-alt"></i>
-					</button>
+					</div>					
 				</div>
+
+				<button class="chat__exit">
+					<i class="fas fa-sign-out-alt"></i>
+				</button>
 			</div>
 
 			<div class="chat__title">

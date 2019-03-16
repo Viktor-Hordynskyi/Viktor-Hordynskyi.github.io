@@ -6,5 +6,25 @@ $(document).ready(function() {
 		}	else {
 			$(this).removeClass('opacity');
 		}
-	})	
+	})
+
+	$('#toggle').on('click', function() {
+		$('.navbar').toggleClass('show')
+
+		if($('.navbar__edit .fas').hasClass('fa-times')) {
+			$('.navbar__edit .fas').removeClass('fa-times').addClass('fa-bars')
+		} else {
+			$('.navbar__edit .fas').removeClass('fa-bars').addClass('fa-times')
+		}
+	})
+
+	if (window.matchMedia("(max-width: 767.98px)").matches) {
+		$('.navbar').removeClass('show')
+	}
+
+	$(window).on('resize', function() {
+		if (window.matchMedia("(max-width: 767.98px)").matches) {
+			$('.navbar').removeClass('show')
+		}
+	})
 })

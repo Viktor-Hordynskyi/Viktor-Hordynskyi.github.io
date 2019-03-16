@@ -18,7 +18,7 @@ p {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 h3 {
@@ -43,13 +43,14 @@ button:focus {
   outline: none;
 }
 
-.navbar__header, .navbar__actions, .navbar__footer,
-.chat__header, .chat__title, .chat__messages, .chat__footer {
+.navbar__actions, .navbar__footer,
+.chat__title, .chat__messages, .chat__footer {
   background-color: #f9f9f9;
 }
 
 .headers {
   border-bottom: 1px solid #ccc;
+  background-color: #9772f2;
   height: 8rem;
   width: 100%;
 }
@@ -83,14 +84,37 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 
 /* main styles */
 .main {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
   height: 100vh;
 }
 
 /* navbar styles */
 .navbar {
+  background-color: #9772f2;
+  width: 6rem;
+}
+
+.navbar .navbar__header,
+.navbar .navbar__actions,
+.navbar .navbar__footer {
+  display: none;
+}
+
+.navbar.show .navbar__header,
+.navbar.show .navbar__actions,
+.navbar.show .navbar__footer {
+  display: flex;
+}
+
+.navbar.show {
   border-right: 1px solid #ccc;
   display: flex;
   flex-direction: column;
+  padding: 0;
+  position: relative;
+  width: 20%;
 }
 
 .navbar__header {
@@ -128,17 +152,38 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 
 .navbar__edit {
   background-color: #09f;
+  border: 0;
   border-radius: 1rem;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
   height: 4rem;
   width: 4rem;
 }
 
+.navbar.show .navbar__edit {
+  top: 2rem;
+  right: 2rem;
+}
+
+.navbar .navbar__edit {
+  top: 2rem;
+  right: 1rem;
+}
+
 .navbar__edit i {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.navbar__edit .desktop {
+  display: block;
+}
+
+.navbar__edit .tablet {
+  display: none;
 }
 
 .navbar__actions {
@@ -172,7 +217,7 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .navbar__item * {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 
 .navbar__action {
@@ -233,7 +278,7 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .navbar__number {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .navbar__collapse a.text-blue {
@@ -241,6 +286,7 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .navbar__footer {
+  border-top: 1px solid #ccc;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -276,6 +322,10 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 /* letters styles */
+.letters {
+  width: 25%;
+}
+
 .letters__header {
   border-right: 1px solid #ccc;
   display: flex;
@@ -298,7 +348,8 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .letters__header i {
-  color: #777;
+  color: #fff;
+  cursor: pointer;
   font-size: 2rem;
   margin-left: 2rem;
 }
@@ -312,16 +363,16 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .letters__item {
-  background-color: #09f;
-  color: #fff;
+  /*background-color: #09f;*/
+  /*color: #fff;*/
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-  padding: 2rem 2rem 2rem 4rem;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 .letters__item:not(:last-child) {
-  border-bottom: .5rem solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 .letters__item--title,
@@ -358,6 +409,7 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
   font-style: normal;
   font-weight: bold;
   line-height: 1;
+  margin-left: 1rem;
   height: 2.5rem;
   width: 2.5rem;
 }
@@ -367,11 +419,17 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .letters__item--text i {
-  background-color: #fff;
-  color: #00da00;
+  background-color: #ff30cb;
+  color: #fff;
 }
 
 /* chat styles */
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .chat__header {
   display: flex;
   flex-direction: row;
@@ -390,7 +448,7 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .chat__action i {
-  color: #777;
+  color: #fff;
   cursor: pointer;
   font-size: 2rem;
   padding: .5rem;
@@ -492,7 +550,7 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 }
 
 .chat__exit i {
-  color: #777;
+  color: #fff;
   cursor: pointer;
   font-size: 2.5rem;
   padding: 1rem;
@@ -553,6 +611,7 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
 
 .chat__message {
   background-color: #fff;
+  box-shadow: 1px 1px 5px #ccc;
   border-radius: 3rem;
   margin-bottom: 2rem;
   opacity: .5;
@@ -760,11 +819,27 @@ p, span, ul, li, h1, h2, h3, h4, h5, h6,
   html {
     font-size: 4px;
   }
+
+  .navbar__edit .desktop {
+    display: none;
+  }
+
+  .navbar__edit .tablet {
+    display: block;
+  }
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   html {
     font-size: 3px;
+  }
+
+  .navbar__edit .desktop {
+    display: none;
+  }
+
+  .navbar__edit .tablet {
+    display: block;
   }
 }
