@@ -8,23 +8,57 @@ $(document).ready(function() {
 		}
 	})
 
-	$('#toggle').on('click', function() {
-		$('.navbar').toggleClass('show')
+	function check() {
+		// if($('.navbar__edit .fas').hasClass('fa-times')) {
+		// 	$('.navbar__edit .fas').removeClass('fa-times').addClass('fa-bars')
+		// } else {
+		// 	$('.navbar__edit .fas').removeClass('fa-bars').addClass('fa-times')
+		// }
+		$('.navbar__edit .fas.fa-chevron-circle-right').toggleClass('rotate')
+	}
 
-		if($('.navbar__edit .fas').hasClass('fa-times')) {
-			$('.navbar__edit .fas').removeClass('fa-times').addClass('fa-bars')
+	function rotateHide() {
+		$('.navbar__edit .fas.fa-chevron-circle-right').removeClass('rotate')
+	}
+
+	function rotateShow() {
+		$('.navbar__edit .fas.fa-chevron-circle-right').addClass('rotate')
+	}
+
+	function hide() {
+		$('.navbar').removeClass('show');
+	}
+
+	function show() {
+		$('.navbar').addClass('show');
+	}
+
+	$('#toggle').on('click', function() {
+		// $('.navbar').toggleClass('show')
+		if($('.navbar').hasClass('show')) {
+			$('.navbar').removeClass('show').addClass('hide')
 		} else {
-			$('.navbar__edit .fas').removeClass('fa-bars').addClass('fa-times')
+			$('.navbar').removeClass('hide').addClass('show')
 		}
+
+		check();
 	})
 
-	if (window.matchMedia("(max-width: 767.98px)").matches) {
-		$('.navbar').removeClass('show')
+	if (window.matchMedia("(max-width: 991.98px)").matches) {
+		hide();
+		rotateHide()
+	} else {
+		show();
+		rotateShow()
 	}
 
 	$(window).on('resize', function() {
-		if (window.matchMedia("(max-width: 767.98px)").matches) {
-			$('.navbar').removeClass('show')
+		if (window.matchMedia("(max-width: 991.98px)").matches) {
+			hide();
+			rotateHide()			
+		} else {
+			show();
+			rotateShow()
 		}
 	})
 })
