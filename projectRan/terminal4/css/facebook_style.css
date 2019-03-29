@@ -13,7 +13,7 @@
   }
 
   .navbar-nav {
-    height: calc((100vh - 150px) / 2);
+    height: calc(100vh - 150px);
   }
 
   .nav-item {

@@ -982,7 +982,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   .navbar-nav {
-    height: calc((100vh - 15rem));
+    height: calc(100vh - 15rem);
   }
 
   .navbar-nav.lang {
