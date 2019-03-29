@@ -273,7 +273,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="back-to-top" id="back-to-top">
 			<img src="img/arrow-up.png" alt="arrow">
 		</div>
@@ -289,6 +289,17 @@
 
 	<!-- My JS -->
 	<script src="js/main.js"></script>
+
+	<!-- check if running in facebook app -->
+	<script>
+		var ua = navigator.userAgent || navigator.vendor || window.opera;
+		function isFacebookApp() {
+			return (ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1);
+		}
+		if (isFacebookApp()) {
+			$("head").append($("<link rel='stylesheet' href='css/facebook_style.css' type='text/css' media='screen' />"));
+		}
+	</script>
 
 	<!-- Need to be deleted when the project is end. -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>

@@ -1,0 +1,150 @@
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  html {
+    font-size: 10px;
+  }
+
+  .navbar-collapse {
+    height: calc(100vh - 100px);
+  }
+
+  .navbar-nav.nav-menu {
+    margin-top: 50px;
+  }
+
+  .navbar-nav {
+    height: calc((100vh - 150px) / 2);
+  }
+
+  .nav-item {
+    margin-bottom: 30px;
+  }
+
+  .nav-link {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+  .dropdown-item {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  /* intro styles */
+  .intro span {
+    font-size: 150px;
+    text-shadow: 0 2px 7px rgba(255, 255, 255, 0.34);
+  }
+
+  /* footer styles */
+  .footer {
+    padding: 125px 90px 0;
+  }
+
+  .footer__logo {
+    margin-bottom: 31px;
+  }
+
+  .footer__bottom {
+    margin-bottom: 59px;
+  }
+
+  .footer__soc a {
+    margin: 95px 7px 49px;
+  }
+
+  /* home styles */
+  .home__content {
+    padding: 70px 70px 165px;
+  }
+
+  .home__element {
+    margin: 0 auto 50px;
+    max-width: 320px;
+  }
+
+  /* show styles */
+  .intro-show {
+    padding: 20px 24px;
+  }
+
+  .show__header {
+    padding: 13px 0 60px;
+  }
+
+  .show__content {
+    padding: 0 60px;
+  }
+
+  .show__iframe {
+    height: 650px;
+  }
+
+  .show__description {
+    padding: 0 20px 90px;
+  }
+
+  /* about styles */
+  .about {
+    padding: 84px 50px 190px 25px;
+  }
+
+  /* gallery styles */
+  .gallery-prev {
+    left: 20px;
+  }
+
+  .gallery-next {
+    right: 20px;
+  }
+
+  /* contact styles */
+  .contact__form-fields {
+    padding: 60px 40px 0 40px;
+  }
+
+  .contact__info {
+    padding: 114px 100px 186px;
+  }
+
+  .contact__element:not(:first-child) {
+    margin-bottom: 59px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  html {
+    font-size: 7px;
+  }
+
+  /* home styles */
+  .home__content {
+    padding: 21px 21px 115.5px;
+  }
+
+  .home__element {
+    max-width: 259px;
+  }
+
+  /* footer styles */
+  .footer {
+    padding: 70px 35px 0;
+  }
+
+  /* show styles */
+  .show__title h1 {
+    font-size: 24.5px;
+  }
+
+  .show__content {
+    padding: 0 14px;
+  }
+
+  .show__iframe {
+    height: 525px;
+  }
+
+  .show__description {
+    padding: 0 0rem 63px;
+  }
+}
