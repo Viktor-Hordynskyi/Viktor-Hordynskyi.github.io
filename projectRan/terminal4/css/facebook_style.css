@@ -115,6 +115,10 @@
   .contact__element:not(:first-child) {
     margin-bottom: 59px;
   }
+
+  .contact__element h4 {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -129,6 +133,11 @@
 
   .home__element {
     max-width: 259px;
+  }
+
+  /* intro styles */
+  .intro span {
+    font-size: 105px;
   }
 
   /* footer styles */
