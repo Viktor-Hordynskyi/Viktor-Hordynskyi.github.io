@@ -135,6 +135,10 @@
     max-width: 259px;
   }
 
+  .navbar-collapse {
+    height: calc(100vh - 70px);
+  }
+
   /* intro styles */
   .intro span {
     font-size: 105px;
