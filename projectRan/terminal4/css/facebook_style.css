@@ -20,6 +20,11 @@
     margin-bottom: 30px;
   }
 
+  .nav-link img, .dropdown-item img {
+    height: 26px;
+    width: 26px;
+  }
+
   .nav-link {
     font-size: 38px;
     line-height: 38px;

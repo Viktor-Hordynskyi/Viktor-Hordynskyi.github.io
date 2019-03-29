@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   direction: rtl;
 }
 
-.nav-item,
+.nav-item, .dropdown-item,
 .footer__middle {
   direction: ltr;
 }
@@ -100,6 +100,18 @@ h1, h2, h3, h4, h5, h6, p, a {
   padding-right: 0rem;
 }
 
+.navbar-nav.lang {
+  display: block;
+}
+
+.nav-item.dropdown.language-mobile {
+  display: none;
+}
+
+.nav-item {
+  position: relative;
+}
+
 .nav-item:not(:last-child) {
   margin-left: 5.1rem;
 }
@@ -109,12 +121,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.398rem;
-  position: relative;
 }
 
-.navbar-nav.nav-menu .nav-item .nav-link:focus::after,
-.navbar-nav.nav-menu .nav-item .nav-link:hover::after,
-.navbar-nav.nav-menu .nav-item.active .nav-link::after {
+.navbar-nav.nav-menu .nav-item:focus::after,
+.navbar-nav.nav-menu .nav-item:hover::after,
+.navbar-nav.nav-menu .nav-item.active::after {
   content: "";
   background-color: #fff;
   position: absolute;
@@ -130,6 +141,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 .navbar-nav.nav-menu .nav-item.active:focus .nav-link,
 .navbar-nav.nav-menu .nav-item.active:hover .nav-link {
   color: #fff;
+}
+
+.nav-item.dropdown.language-mobile:focus::after,
+.nav-item.dropdown.language-mobile:hover::after {
+  height: 0;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -966,7 +982,15 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   .navbar-nav {
-    height: calc((100vh - 15rem) / 2);
+    height: calc((100vh - 15rem));
+  }
+
+  .navbar-nav.lang {
+    display: none;
+  }
+
+  .nav-item.dropdown.language-mobile {
+    display: block;
   }
 
   .nav-item {
@@ -978,11 +1002,22 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-left: 0;
   }
 
+  .nav-link img, .dropdown-item img {
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
   .nav-link {
     display: inline-block;
     font-size: 3.8rem;
     line-height: 3.8rem;
     padding: 0;
+  }
+
+  .navbar-nav.nav-menu .nav-item:focus::after,
+  .navbar-nav.nav-menu .nav-item:hover::after,
+  .navbar-nav.nav-menu .nav-item.active::after {
+    width: 20%;
   }
 
   .nav-item.dropdown {
