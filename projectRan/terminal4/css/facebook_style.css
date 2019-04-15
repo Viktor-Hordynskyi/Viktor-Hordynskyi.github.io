@@ -175,4 +175,8 @@
   .navbar-collapse {
     height: calc(100vh - 58px);
   }
+
+  .navbar-nav.nav-menu {
+    overflow-y: auto;
+  }
 }

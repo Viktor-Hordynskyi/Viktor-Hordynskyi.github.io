@@ -1737,4 +1737,8 @@ h1, h2, h3, h4, h5, h6, p, a {
   .navbar-collapse {
     height: calc(100vh - 5.8rem);
   }
+
+  .navbar-nav.nav-menu {
+    overflow-y: auto;
+  }
 }
