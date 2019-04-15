@@ -65,7 +65,6 @@
 
   .home__element {
     margin: 0 auto 50px;
-    max-width: 320px;
   }
 
   /* show styles */
@@ -121,7 +120,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 479.98px) {
   html {
     font-size: 7px;
   }
@@ -129,10 +128,6 @@
   /* home styles */
   .home__content {
     padding: 21px 21px 115.5px;
-  }
-
-  .home__element {
-    max-width: 259px;
   }
 
   .navbar-collapse {
