@@ -120,6 +120,78 @@
 				</div>
 
 				<div class="home__img">
+					<img src="img/02e7411dd3da22ec8e8b86b9acec7a2a.png" alt="show">
+
+					<div class="home__time">
+						<span>רביעי</span>
+						<span>08/03 | 12:00</span>
+					</div>
+				</div>				
+
+				<div class="home__buy">
+					<span>
+						<strong>70</strong>ILS
+					</span>
+					<a href="show.html">לחץ כאן לרכישה</a>
+				</div>
+			</div>
+			
+			<div class="home__element">
+				<div class="home__name">
+					<h2>
+						שם האירוע
+					</h2>
+				</div>
+
+				<div class="home__img">
+					<img src="img/1043ef32a7f624f903934ca4a0f1fb95.jpeg" alt="show">
+
+					<div class="home__time">
+						<span>חמישי</span>
+						<span>09/03 | 22:00</span>
+					</div>
+				</div>				
+
+				<div class="home__buy">
+					<span>
+						<strong>70</strong>ILS
+					</span>
+					<a href="show.html">לחץ כאן לרכישה</a>
+				</div>
+			</div>
+
+			<div class="home__element">
+				<div class="home__name">
+					<h2>
+						כיף כיף כףי
+					</h2>
+				</div>
+
+				<div class="home__img">
+					<img src="img/5d68d3db8d7a978e5dce079b7b97756d.jpg" alt="show">
+
+					<div class="home__time">
+						<span>שישי</span>
+						<span>10/03 | 17:00</span>
+					</div>
+				</div>				
+
+				<div class="home__buy">
+					<span>
+						<strong>120</strong>ILS
+					</span>
+					<a href="show.html">לחץ כאן לרכישה</a>
+				</div>
+			</div>
+
+			<div class="home__element">
+				<div class="home__name">
+					<h2>
+						חנה המגניבה
+					</h2>
+				</div>
+
+				<div class="home__img">
 					<img src="img/show-1.jpg" alt="show">
 
 					<div class="home__time">
@@ -169,6 +241,78 @@
 
 				<div class="home__img">
 					<img src="img/show-3.jpg" alt="show">
+
+					<div class="home__time">
+						<span>שישי</span>
+						<span>10/03 | 17:00</span>
+					</div>
+				</div>				
+
+				<div class="home__buy">
+					<span>
+						<strong>120</strong>ILS
+					</span>
+					<a href="show.html">לחץ כאן לרכישה</a>
+				</div>
+			</div>
+
+			<div class="home__element">
+				<div class="home__name">
+					<h2>
+						חנה המגניבה
+					</h2>
+				</div>
+
+				<div class="home__img">
+					<img src="img/02e7411dd3da22ec8e8b86b9acec7a2a.png" alt="show">
+
+					<div class="home__time">
+						<span>רביעי</span>
+						<span>08/03 | 12:00</span>
+					</div>
+				</div>				
+
+				<div class="home__buy">
+					<span>
+						<strong>70</strong>ILS
+					</span>
+					<a href="show.html">לחץ כאן לרכישה</a>
+				</div>
+			</div>
+			
+			<div class="home__element">
+				<div class="home__name">
+					<h2>
+						שם האירוע
+					</h2>
+				</div>
+
+				<div class="home__img">
+					<img src="img/1043ef32a7f624f903934ca4a0f1fb95.jpeg" alt="show">
+
+					<div class="home__time">
+						<span>חמישי</span>
+						<span>09/03 | 22:00</span>
+					</div>
+				</div>				
+
+				<div class="home__buy">
+					<span>
+						<strong>70</strong>ILS
+					</span>
+					<a href="show.html">לחץ כאן לרכישה</a>
+				</div>
+			</div>
+
+			<div class="home__element">
+				<div class="home__name">
+					<h2>
+						כיף כיף כףי
+					</h2>
+				</div>
+
+				<div class="home__img">
+					<img src="img/5d68d3db8d7a978e5dce079b7b97756d.jpg" alt="show">
 
 					<div class="home__time">
 						<span>שישי</span>
@@ -383,6 +527,23 @@
 	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 	crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	
+	<!-- ImagesLoaded JS -->
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+	<!-- Masonry JS -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script>
+		let $masonry = $('.home__content').masonry({
+			itemSelector: '.home__element',
+			gutter: 20
+		});
+
+		$masonry.imagesLoaded().progress(function() {
+			$masonry.masonry('layout');
+			console.log("work");
+		})
+	</script>
 
 	<!-- My JS -->
 	<script src="js/main.js"></script>
