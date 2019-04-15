@@ -1217,6 +1217,15 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 10px;
   }
 
+  .navbar {
+    padding: 1rem 3rem;
+    min-height: 7rem;
+  }
+
+  .navbar-brand {
+    height: 4.5rem;
+  }
+
   /* home styles */
   .home__content {
     padding: 7rem 7rem 16.5rem;
@@ -1237,6 +1246,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 @media (max-width: 575.98px) {
   html {
     font-size: 10px;
+  }
+
+  .navbar {
+    padding: 1rem 3rem;
+    min-height: 7rem;
+  }
+
+  .navbar-brand {
+    height: 4.5rem;
   }
 
   .back-to-top {

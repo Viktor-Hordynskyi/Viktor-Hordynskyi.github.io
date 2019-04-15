@@ -4,6 +4,15 @@
     font-size: 10px;
   }
 
+  .navbar {
+    padding: 10px 30px;
+    min-height: 70px;
+  }
+
+  .navbar-brand {
+    height: 45px;
+  }
+
   .navbar-collapse {
     height: calc(100vh - 100px);
   }
