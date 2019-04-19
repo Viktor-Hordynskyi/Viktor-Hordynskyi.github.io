@@ -222,9 +222,9 @@ a {
 
 .btn--blue:hover,
 .btn--blue:focus {
-  background-color: rgba(36, 46, 78, .3);
-  color: #000;
-  box-shadow: 0 0 .5rem #000;
+  background-color: #141a2d;
+  color: #fff;
+  box-shadow: 0 0 .5rem #fff;
 }
 
 .btn--red:hover,
@@ -302,11 +302,16 @@ a {
 }
 
 .header__logo {
+  flex-shrink: 0;
   height: 3.8rem;
   width: 19.5rem;
 }
 
 .header__logo img {
+  width: 100%;
+}
+
+.header__navbar {
   width: 100%;
 }
 
@@ -321,12 +326,13 @@ a {
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 2.4rem;
-  margin-right: 4.9rem;
+  margin-left: 4.9rem;
 }
 
 .header__menu {
   display: flex;
   flex-direction: row;
+  margin-left: auto;
   margin-right: 6.7rem;
 }
 
@@ -343,7 +349,7 @@ a {
 
 .header__menu a:hover,
 .header__menu a:focus {
-  text-shadow: 0 0 1px #000;
+  color: #002ede;
 }
 
 .header__toggler {
@@ -448,7 +454,7 @@ a {
 .footer__bottom span {
   color: #ededff;
   font-family: 'Open Sans Italic';
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.6rem;
 }
 
@@ -880,6 +886,7 @@ a {
   font-size: 2.1rem;
   font-weight: 700;
   line-height: 3.1rem;
+  transition: all .2s linear;
   min-width: 18.6rem;
 }
 
@@ -1125,15 +1132,16 @@ a {
   font-size: 1.6rem;
   font-weight: 700;
   margin-top: 3.8rem;
+  transition: all .2s linear;
   height: 4rem;
   width: 14rem;
 }
 
 .contact__btn:hover,
 .contact__btn:focus {
-  background-color: rgba(36, 46, 78, .3);
-  color: #000;
-  box-shadow: 0 0 .5rem #000;
+  background-color: #141a2d;
+  color: #fff;
+  box-shadow: 0 0 .5rem #fff;
 }
 
 
@@ -1307,6 +1315,10 @@ a {
     padding: 4rem 3rem;
   }
 
+  .header__navbar span {
+    margin-left: 0;
+  }
+
   .header__toggler {
     display: block;
   }
@@ -1455,11 +1467,12 @@ a {
 
   .header__navbar span {
     font-size: 2rem;
-    margin-right: 0;
+    margin-left: 0;
     margin-bottom: 2rem;
   }
 
   .header__menu {
+    margin-left: 0;
     margin-right: 0;
     margin-bottom: 2rem;
   }
