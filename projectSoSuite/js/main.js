@@ -18,27 +18,17 @@ $(document).ready(function() {
 		} else {
 			$('.header').removeClass('fixed');
 		}
-	})
-
-	let hheader = $('.header').height();
-	$('a[href^="#"]').on('click', function(e){
-		e.preventDefault();
-		let anchor = $(this);
-		let speed = (($(anchor.attr('href')).offset().top) / 3)
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top - hheader
-		}, speed, 'linear');
-	});
+	})	
 
 	// ScrollReveal
-	ScrollReveal().reveal('.expect', { distance: '10rem' });
-	ScrollReveal().reveal('.suite', { distance: '10rem' });
-	ScrollReveal().reveal('.gallery', { distance: '10rem' });
-	ScrollReveal().reveal('.promises', { distance: '10rem' });
-	ScrollReveal().reveal('.faq', { distance: '10rem' });
-	ScrollReveal().reveal('.team', { distance: '10rem' });
-	ScrollReveal().reveal('.contact', { distance: '10rem' });
-	ScrollReveal().reveal('.footer', { distance: '10rem' });
+	ScrollReveal().reveal('.expect');
+	ScrollReveal().reveal('.suite');
+	ScrollReveal().reveal('.gallery');
+	ScrollReveal().reveal('.promises');
+	ScrollReveal().reveal('.faq');
+	ScrollReveal().reveal('.team');
+	ScrollReveal().reveal('.contact');
+	ScrollReveal().reveal('.footer');
 
 	// Initialize Swiper
 	let gallery = new Swiper ('.gallery-container', {
@@ -85,5 +75,29 @@ $(document).ready(function() {
 				slidesPerView: 1,
 			},
 		},   
+	})
+
+	let hheader = $('.header').height();
+	$('a[href^="#"]').on('click', function(e){
+		e.preventDefault();
+		let anchor = $(this);
+		let speed = (($(anchor.attr('href')).offset().top) / 8);
+
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top - hheader
+		}, speed, 'linear');
+	});
+
+	$(document).on('resize', function() {
+		let hheader = $('.header').height();
+		$('a[href^="#"]').on('click', function(e){
+			e.preventDefault();
+			let anchor = $(this);
+			let speed = (($(anchor.attr('href')).offset().top) / 8);
+
+			$('html, body').stop().animate({
+				scrollTop: $(anchor.attr('href')).offset().top - hheader
+			}, speed, 'linear');
+		});
 	})
 })
