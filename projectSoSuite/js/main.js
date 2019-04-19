@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$('.header__toggler').on('click', function() {
+		$(this).toggleClass('close');
+		$('.header__navbar').toggle('show')
+	})
+
 	let scroll = $(window).scrollTop();
 	
 	if(scroll > 0) {
@@ -26,7 +31,6 @@ $(document).ready(function() {
 	});
 
 	// ScrollReveal
-	// ScrollReveal().reveal('.intro');
 	ScrollReveal().reveal('.expect', { distance: '10rem' });
 	ScrollReveal().reveal('.suite', { distance: '10rem' });
 	ScrollReveal().reveal('.gallery', { distance: '10rem' });
@@ -46,28 +50,40 @@ $(document).ready(function() {
 			nextEl: '.gallery-button-next',
 			prevEl: '.gallery-button-prev',
 		},
+
+		breakpoints: {
+			767: {
+				slidesPerView: 1,
+			},
+		},
 	});
 
 	let faq = new Swiper ('.faq__slider', {
 		slidesPerView: 2,
 		scrollbar: {
-    	el: '.swiper-scrollbar',
-    	hide: false,
-    },
+			el: '.swiper-scrollbar',
+			hide: false,
+		},
 
-    pagination: {
-    	el: '.faq-pagination',
-    	type: 'fraction',
-    	renderFraction: function (currentClass, totalClass) {
-    		return '<span class="' + currentClass + '"></span>' +
-    		'<span class="swiper-progress-line">&nbsp;</span>' +
-    		'<span class="' + totalClass + '"></span>';
-    	},
-    },
+		pagination: {
+			el: '.faq-pagination',
+			type: 'fraction',
+			renderFraction: function (currentClass, totalClass) {
+				return '<span class="' + currentClass + '"></span>' +
+				'<span class="swiper-progress-line">&nbsp;</span>' +
+				'<span class="' + totalClass + '"></span>';
+			},
+		},
 
-    navigation: {
-    	nextEl: '.faq-button-next',
-    	prevEl: '.faq-button-prev',
-    },    
-  })
+		navigation: {
+			nextEl: '.faq-button-next',
+			prevEl: '.faq-button-prev',
+		},
+
+		breakpoints: {
+			480: {
+				slidesPerView: 1,
+			},
+		},   
+	})
 })
