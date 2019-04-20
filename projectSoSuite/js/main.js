@@ -25,63 +25,6 @@ $(document).ready(function() {
 		}
 	})	
 
-	// ScrollReveal
-	ScrollReveal().reveal('.expect');
-	ScrollReveal().reveal('.suite');
-	ScrollReveal().reveal('.gallery');
-	ScrollReveal().reveal('.promises');
-	ScrollReveal().reveal('.faq');
-	ScrollReveal().reveal('.team');
-	ScrollReveal().reveal('.contact');
-	ScrollReveal().reveal('.footer');
-
-	// Initialize Swiper
-	let gallery = new Swiper ('.gallery-container', {
-		slidesPerView: 2,
-		loop: true,
-		preloadImages: false,
-		lazy: true,
-		navigation: {
-			nextEl: '.gallery-button-next',
-			prevEl: '.gallery-button-prev',
-		},
-
-		breakpoints: {
-			767: {
-				slidesPerView: 1,
-			},
-		},
-	});
-
-	let faq = new Swiper ('.faq__slider', {
-		slidesPerView: 2,
-		scrollbar: {
-			el: '.swiper-scrollbar',
-			hide: false,
-		},
-
-		pagination: {
-			el: '.faq-pagination',
-			type: 'fraction',
-			renderFraction: function (currentClass, totalClass) {
-				return '<span class="' + currentClass + '"></span>' +
-				'<span class="swiper-progress-line">&nbsp;</span>' +
-				'<span class="' + totalClass + '"></span>';
-			},
-		},
-
-		navigation: {
-			nextEl: '.faq-button-next',
-			prevEl: '.faq-button-prev',
-		},
-
-		breakpoints: {
-			480: {
-				slidesPerView: 1,
-			},
-		},   
-	})
-
 	let hheader = $('.header').height();
 	$('a[href^="#"]').on('click', function(e){
 		e.preventDefault();
@@ -104,5 +47,37 @@ $(document).ready(function() {
 				scrollTop: $(anchor.attr('href')).offset().top - hheader
 			}, speed, 'linear');
 		});
+	})
+
+	$('#back-to-top').on('click', function(){
+		$('html, body').stop().animate({scrollTop:0}, 300, "linear");
+	})
+
+	// JS for FAQ page
+	let height = $('.faq-page__element-answer.open').prop('scrollHeight');
+	$('.faq-page__element-answer.open').css('max-height', height);
+
+	$('.accordion').on('click', function() {
+		let css = $(this).next().css('max-height');
+		let height = $(this).next().prop('scrollHeight');
+		let next = $(this).next();
+
+		if(css == '0px') {
+			next.css('max-height', height)
+		} else {
+			next.css('max-height', 0)
+		}
+	})
+
+	$('.faq-page__category').on('click', function() {
+		let ctgr = $(this).data('target');
+
+		if(!$('#'+ctgr).hasClass('show')) {
+			$('.faq-page__description').removeClass('show');
+			$('#'+ctgr).addClass('show');
+
+			$('.faq-page__category').removeClass('active');
+			$(this).addClass('active');
+		}
 	})
 })
