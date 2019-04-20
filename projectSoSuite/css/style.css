@@ -1429,6 +1429,10 @@ a {
     padding-right: 2rem;
   }
 
+  .intro__title {
+    font-size: 7rem;
+  }
+
   .intro__description {
     font-size: 3rem;
   }
@@ -1475,11 +1479,13 @@ a {
 
   .expect__block-description p {
     font-size: 3rem;
+    line-height: 3.5rem;
   }
 
   /* suite styles */
   .suite__description {
     font-size: 3rem;
+    line-height: 3.5rem;
     padding: 0 2rem;
   }
 
@@ -1490,6 +1496,7 @@ a {
 
   .gallery__description h4 {
     font-size: 3rem;
+    line-height: 3.5rem;
   }
 
   /* promises styles */
@@ -1532,6 +1539,7 @@ a {
 
   .promises__block-description {
     font-size: 2.8rem;
+    line-height: 3.3rem;
   }
 
   /* FAQ styles */
@@ -1554,6 +1562,7 @@ a {
 
   .team__description {
     font-size: 2.8rem;
+    line-height: 3.3rem;
     margin: 0 auto;
     max-width: 90%;
   }
