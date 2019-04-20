@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	let hover = window.matchMedia("(hover)");
+	if(!hover.matches) {
+		$('.touch').addClass('no-touch');
+	}
+
 	$('.header__toggler').on('click', function() {
 		$(this).toggleClass('close');
 		$('.header__navbar').toggle('show')

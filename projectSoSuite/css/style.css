@@ -220,11 +220,24 @@ a {
   transform: scale(1.01);
 }
 
+.btn:hover.no-touch,
+.btn:focus.no-touch {
+  text-shadow: none;
+  transform: scale(1);
+}
+
 .btn--blue:hover,
 .btn--blue:focus {
-  background-color: #141ab7;
+  background-color: #141a2d;
   color: #fff;
   box-shadow: 0 0 .5rem #000;
+}
+
+.btn--blue:hover.no-touch,
+.btn--blue:focus.no-touch {
+  background-color: #242e4e;
+  color: #fff;
+  box-shadow: none;
 }
 
 .btn--red:hover,
@@ -234,11 +247,25 @@ a {
   box-shadow: 0 0 .5rem #000;
 }
 
+.btn--red:hover.no-touch,
+.btn--red:focus.no-touch {
+  background-color: #d5484c;
+  color: #fff;
+  box-shadow: none;
+}
+
 .btn--white:hover,
 .btn--white:focus {
   background-color: #d5484c;
   color: #fff;
   box-shadow: 0 0 .5rem #fff;
+}
+
+.btn--white:hover.no-touch,
+.btn--white:focus.no-touch {
+  background-color: #fff;
+  color: #303133;
+  box-shadow: none;
 }
 
 .btn--red {
@@ -838,7 +865,7 @@ a {
   font-family: 'Playfair Display Bold';
   font-size: 6rem;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: 7rem;
   margin-bottom: 6rem;
   text-align: center;
   text-transform: uppercase;
@@ -907,6 +934,12 @@ a {
 .faq__btn:focus {
   background-color: #d5484c;
   color: #fff;
+}
+
+.faq__btn:hover.no-touch,
+.faq__btn:focus.no-touch {
+  background-color: #fff;
+  color: #d5484c;
 }
 
 .faq-button-prev,
@@ -1157,6 +1190,13 @@ a {
   box-shadow: 0 0 .5rem #fff;
 }
 
+.contact__btn:hover.no-touch,
+.contact__btn:focus.no-touch {
+  background-color: #242e4e;
+  color: #fff;
+  box-shadow: none;
+}
+
 
 
 
@@ -1311,6 +1351,12 @@ a {
     font-size: 6px;
   }
 
+  .btn {
+    border-radius: 3rem;
+    font-size: 2.2rem;
+    height: 5rem;
+  }
+
   /* header style */
   .header .container {
     padding: 0 2rem;
@@ -1383,6 +1429,10 @@ a {
     padding-right: 2rem;
   }
 
+  .intro__description {
+    font-size: 3rem;
+  }
+
   .intro__why {
     flex-direction: column;
     margin-top: 5.4rem;
@@ -1393,7 +1443,9 @@ a {
   }
 
   .intro__why h2 {
+    font-size: 2.5rem;
     margin-right: 0rem;
+    margin-bottom: 1rem;
   }
 
   .intro__why .btn {
@@ -1401,6 +1453,12 @@ a {
   }
 
   /* expect styles */
+  .expect__subtitle {
+    font-size: 2.8rem;
+    margin: 1rem auto;
+    max-width: 90%;
+  }
+
   .expect__blocks {
     flex-wrap: wrap;
     margin: 0 2rem;
@@ -1411,8 +1469,17 @@ a {
     max-width: 48%;
   }
 
+  .expect__block-title h3 {
+    font-size: 4rem;
+  }
+
+  .expect__block-description p {
+    font-size: 3rem;
+  }
+
   /* suite styles */
   .suite__description {
+    font-size: 3rem;
     padding: 0 2rem;
   }
 
@@ -1421,9 +1488,17 @@ a {
     padding: 3.5rem 2rem 5.6rem;
   }
 
+  .gallery__description h4 {
+    font-size: 3rem;
+  }
+
   /* promises styles */
   .promises {
     background: none;
+  }
+
+  .promises__title {
+    margin-bottom: 3rem;
   }
 
   .promises__blocks {
@@ -1448,7 +1523,24 @@ a {
   }
 
   .promises__data {
-    padding: 7rem 8rem 4rem 6rem;
+    padding: 3rem 4rem 4rem 3rem;
+  }
+
+  .promises__block-title {
+    font-size: 4rem;
+  }
+
+  .promises__block-description {
+    font-size: 2.8rem;
+  }
+
+  /* FAQ styles */
+  .faq-slide p {
+    font-size: 2.6rem;
+  }
+
+  .faq__btn {
+    font-size: 2.2rem;
   }
 
   /* team styles */
@@ -1460,8 +1552,21 @@ a {
     margin-top: 5rem;
   }
 
+  .team__description {
+    font-size: 2.8rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .team__footnote {
+    font-size: 2.5rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
   .team .btn--red {
-    margin: 0 auto 5rem;
+    margin: 2rem auto 5rem;
+    width: 30rem;
   }
 
   .team__footnote {
@@ -1478,7 +1583,45 @@ a {
   }
 
   .contact__block {
+    max-width: 75rem;
+  }
+
+  .contact__note {
+    font-size: 2.8rem;
+  }
+
+  .contact__block {
     margin: 2rem auto;
+  }
+
+  .contact__element-small {
+    max-width: 50%;
+  }
+
+  .contact__element-small label,
+  .contact__element-large label {
+    font-size: 2.5rem;
+  }
+
+  .contact__element-small input,
+  .contact__element-large input,
+  .contact__element-large textarea {
+    font-size: 2.5rem;
+  }
+
+  .contact__element-small input,
+  .contact__element-large input {
+    height: 5rem;
+  }
+
+  .contact__element-large textarea {
+    height: 13rem;
+  }
+
+  .contact__btn {
+    border-radius: 3rem;
+    font-size: 2.2rem;
+    height: 5rem;
   }
 }
 
@@ -1532,12 +1675,11 @@ a {
 
   /* intro style */
   .intro__title {
-    font-size: 6rem;
+    font-size: 5.8rem;
   }
 
   /* expect styles */
   .expect__subtitle {
-    font-size: 2.3rem;
     padding: 0 2rem;
   }
 
@@ -1550,18 +1692,8 @@ a {
     max-width: 100%;
   }
 
-  .expect__block-title h3 {
-    font-size: 3rem;
-  }
-
   .expect__block-description p {
-    font-size: 2.4rem;
     line-height: 3rem;
-  }
-
-  /* promises styles */
-  .promises__block-description {
-    font-size: 2.2rem;
   }
 
   /* faq styles */
@@ -1570,18 +1702,17 @@ a {
     max-width: 90%;
   }
 
-  /* team styles */
-  .team__description,
-  .team__footnote {
-    font-size: 2.2rem;
-  }
-
   /* contact styles */
   .contact__block {
     padding: 2rem 7rem 3rem 3rem;
+    max-width: 90%;
   }
 
   .contact__note {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+  }
+
+  .contact__element-small {
+    max-width: 49%;
   }
 }
