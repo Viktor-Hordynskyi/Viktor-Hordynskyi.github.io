@@ -927,9 +927,9 @@ a {
   font-family: 'Montserrat Bold';
   font-size: 4rem;
   font-weight: 700;
-  line-height: 3.1rem;
+  line-height: 4.5rem;
   margin: 0 auto 2.8rem;
-  max-width: 34rem;
+  max-width: 90%;
 }
 
 .faq-slide p {
@@ -939,7 +939,7 @@ a {
   font-weight: 300;
   line-height: 3.1rem;
   margin: 0 auto;
-  max-width: 31rem;
+  max-width: 90%;
 }
 
 .faq__nav {
@@ -1483,6 +1483,11 @@ a {
   html {
     font-size: 9px;
   }
+
+  /* team styles */
+  .team .btn--red {
+    margin: 0 auto 70rem;
+  }
 }
 
 /* Portrait tablets and medium desktops */
@@ -1522,7 +1527,19 @@ a {
   }
 
   .team .btn--red {
-    margin: 0 auto 48rem;
+    margin: 0 auto 50rem;
+  }
+
+  @media (max-width: 1099px) {
+    .team .btn--red {
+      margin: 0 auto 42rem;
+    }
+  }
+
+  @media (max-width: 1049px) {
+    .team .btn--red {
+      margin: 0 auto 38rem;
+    }
   }
 
   .team__footnote {
@@ -1707,6 +1724,7 @@ a {
 
   .intro__title {
     font-size: 7rem;
+    margin-top: 15rem;
   }
 
   .intro__description {
@@ -1749,17 +1767,18 @@ a {
   }
 
   .expect__block-title h3 {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 5.5rem;
   }
 
   .expect__block-description p {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 4.5rem;
   }
 
   /* suite styles */
   .suite__description {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 4.5rem;
     padding: 0 2rem;
   }
@@ -1770,7 +1789,7 @@ a {
   }
 
   .gallery__description h4 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     line-height: 4.5rem;
   }
 
@@ -1809,7 +1828,8 @@ a {
   }
 
   .promises__block-title {
-    font-size: 4rem;
+    font-size: 5rem;
+    line-height: 6.5rem;
   }
 
   .promises__block-description {
@@ -1818,8 +1838,14 @@ a {
   }
 
   /* FAQ styles */
+  .faq-slide h3 {
+    font-size: 5rem;
+    line-height: 6.5rem;
+  }
+
   .faq-slide p {
-    font-size: 2.6rem;
+    font-size: 2.8rem;
+    line-height: 4.5rem;
   }
 
   .faq__nav {
@@ -1995,12 +2021,6 @@ a {
 
   .expect__block {
     max-width: 100%;
-  }
-
-  /* faq styles */
-  .faq-slide h3,
-  .faq-slide p {
-    max-width: 90%;
   }
 
   /* contact styles */

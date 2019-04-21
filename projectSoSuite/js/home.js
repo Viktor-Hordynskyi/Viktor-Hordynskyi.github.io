@@ -12,9 +12,12 @@ $(document).ready(function() {
 	// Initialize Swiper
 	let gallery = new Swiper ('.gallery-container', {
 		slidesPerView: 2,
+		watchSlidesVisibility: 2,
 		loop: true,
 		preloadImages: false,
-		lazy: true,
+		lazy: {
+			loadPrevNext:true,
+		},
 		navigation: {
 			nextEl: '.gallery-button-next',
 			prevEl: '.gallery-button-prev',
