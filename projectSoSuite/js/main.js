@@ -36,6 +36,16 @@ $(document).ready(function() {
 		}, speed, 'linear');
 	});
 
+	if(window.location.hash == '#contact') {
+		location.hash = '';
+		let hheader = $('.header').height();
+		let anchor = $('#contact');
+		let speed = (($(anchor).offset().top) / 8);
+		$('html, body').stop().animate({
+			scrollTop: $(anchor).offset().top - hheader
+		}, speed, 'linear');
+	}
+
 	$(document).on('resize', function() {
 		let hheader = $('.header').height();
 		$('a[href^="#"]').on('click', function(e){
@@ -63,7 +73,8 @@ $(document).ready(function() {
 		let next = $(this).next();
 
 		if(css == '0px') {
-			next.css('max-height', height)
+			$('.faq-page__element-answer').css('max-height', 0)
+			next.css('max-height', height)			
 		} else {
 			next.css('max-height', 0)
 		}

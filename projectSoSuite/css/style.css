@@ -215,55 +215,55 @@ a {
   height: 4rem;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover
+/*.btn:focus*/ {
   text-shadow: 0 0 .1rem #fff;
   transform: scale(1.01);
 }
 
-.btn:hover.no-touch,
-.btn:focus.no-touch {
+.btn:hover.no-touch
+/*.btn:focus.no-touch*/ {
   text-shadow: none;
   transform: scale(1);
 }
 
-.btn--blue:hover,
-.btn--blue:focus {
+.btn--blue:hover
+/*.btn--blue:focus*/ {
   background-color: #141a2d;
   color: #fff;
   box-shadow: 0 0 .5rem #000;
 }
 
-.btn--blue:hover.no-touch,
-.btn--blue:focus.no-touch {
+.btn--blue:hover.no-touch
+/*.btn--blue:focus.no-touch*/ {
   background-color: #242e4e;
   color: #fff;
   box-shadow: none;
 }
 
-.btn--red:hover,
-.btn--red:focus {
+.btn--red:hover
+/*.btn--red:focus*/ {
   background-color: #fff;
   color: #d5484c;
   box-shadow: 0 0 .5rem #000;
 }
 
-.btn--red:hover.no-touch,
-.btn--red:focus.no-touch {
+.btn--red:hover.no-touch
+/*.btn--red:focus.no-touch*/ {
   background-color: #d5484c;
   color: #fff;
   box-shadow: none;
 }
 
-.btn--white:hover,
-.btn--white:focus {
+.btn--white:hover
+/*.btn--white:focus*/ {
   background-color: #d5484c;
   color: #fff;
   box-shadow: 0 0 .5rem #fff;
 }
 
-.btn--white:hover.no-touch,
-.btn--white:focus.no-touch {
+.btn--white:hover.no-touch
+/*.btn--white:focus.no-touch*/ {
   background-color: #fff;
   color: #303133;
   box-shadow: none;
@@ -365,6 +365,12 @@ a {
   width: 19.5rem;
 }
 
+.header__logo a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .header__logo img {
   width: 100%;
 }
@@ -422,8 +428,8 @@ a {
   line-height: 2.4rem;
 }
 
-.header__menu a:hover,
-.header__menu a:focus {
+.header__menu a:hover
+/*.header__menu a:focus*/ {
   color: #002ede;
 }
 
@@ -966,14 +972,14 @@ a {
   min-width: 18.6rem;
 }
 
-.faq__btn:hover,
-.faq__btn:focus {
+.faq__btn:hover
+/*.faq__btn:focus*/ {
   background-color: #d5484c;
   color: #fff;
 }
 
-.faq__btn:hover.no-touch,
-.faq__btn:focus.no-touch {
+.faq__btn:hover.no-touch
+/*.faq__btn:focus.no-touch*/ {
   background-color: #fff;
   color: #d5484c;
 }
@@ -1004,17 +1010,17 @@ a {
 }
 
 .faq-button-prev.swiper-button-disabled:hover,
-.faq-button-prev.swiper-button-disabled:focus,
-.faq-button-next.swiper-button-disabled:hover,
-.faq-button-next.swiper-button-disabled:focus {
+/*.faq-button-prev.swiper-button-disabled:focus,*/
+.faq-button-next.swiper-button-disabled:hover
+/*.faq-button-next.swiper-button-disabled:focus*/ {
   background-color: rgba(0, 0, 0, .5);
   color: rgba(255, 255, 255, .5);
 }
 
 .faq-button-prev:hover,
-.faq-button-prev:focus,
-.faq-button-next:hover,
-.faq-button-next:focus {
+/*.faq-button-prev:focus,*/
+.faq-button-next:hover
+/*.faq-button-next:focus*/ {
   background-color: #fff;
   color: #000;
 }
@@ -1219,15 +1225,15 @@ a {
   width: 14rem;
 }
 
-.contact__btn:hover,
-.contact__btn:focus {
+.contact__btn:hover
+/*.contact__btn:focus*/ {
   background-color: #141a2d;
   color: #fff;
   box-shadow: 0 0 .5rem #fff;
 }
 
-.contact__btn:hover.no-touch,
-.contact__btn:focus.no-touch {
+.contact__btn:hover.no-touch
+/*.contact__btn:focus.no-touch*/ {
   background-color: #242e4e;
   color: #fff;
   box-shadow: none;
@@ -1277,8 +1283,8 @@ a {
   background-position: top -5.3rem right -19.4rem;
 }
 
-.term-of-us {
-  background: url(../img/term-of-us-bg.png) no-repeat;
+.terms-of-use {
+  background: url(../img/terms-of-use-bg.png) no-repeat;
   background-position: top -5.3rem right -19.4rem;
 }
 
@@ -1288,13 +1294,13 @@ a {
   padding: 75.2rem 0 20rem;
 }
 
-.term-of-us .container {
+.terms-of-use .container {
   flex-direction: column;
   padding: 69.7rem 0 23.4rem;
 }
 
 .guest-policy__title,
-.term-of-us__title,
+.terms-of-use__title,
 .privacy-policy__title {
   margin: 0 auto;
   max-width: 100.5rem;
@@ -1302,7 +1308,7 @@ a {
 }
 
 .guest-policy__title h1,
-.term-of-us h1,
+.terms-of-use h1,
 .privacy-policy__title h1 {
   font-family: 'Playfair Display Bold';
   font-size: 6rem;
@@ -1315,7 +1321,7 @@ a {
   margin-bottom: 7.8rem;
 }
 
-.term-of-us h1 {
+.terms-of-use h1 {
   margin-bottom: 9.1rem;
 }
 
@@ -1333,20 +1339,20 @@ a {
 }
 
 .guest-policy__lists,
-.term-of-us__lists,
+.terms-of-use__lists,
 .privacy-policy__lists {
   margin: 0 auto;
   max-width: 100.5rem;
 }
 
 .guest-policy__list-group:not(:last-child),
-.term-of-us__list-group:not(:last-child),
+.terms-of-use__list-group:not(:last-child),
 .privacy-policy__list-group:not(:last-child) {
   margin-bottom: 7.3rem;
 }
 
 .guest-policy__list-title,
-.term-of-us__list-title,
+.terms-of-use__list-title,
 .privacy-policy__list-title {
   color: #d5484c;
   font-family: 'Playfair Display Bold';
@@ -1357,7 +1363,7 @@ a {
 }
 
 .guest-policy__list-paragraph,
-.term-of-us__list-paragraph,
+.terms-of-use__list-paragraph,
 .privacy-policy__list-paragraph {
   font-family: 'Montserrat Light';
   font-size: 2.1rem;
@@ -1366,13 +1372,13 @@ a {
 }
 
 .guest-policy__list-paragraph:not(:last-child),
-.term-of-us__list-paragraph:not(:last-child),
+.terms-of-use__list-paragraph:not(:last-child),
 .privacy-policy__list-paragraph:not(:last-child) {
   margin-bottom: 5rem;
 }
 
 .guest-policy__list-paragraph strong,
-.term-of-us__list-paragraph strong,
+.terms-of-use__list-paragraph strong,
 .privacy-policy__list-paragraph strong {
   font-family: 'Montserrat Bold';
   font-weight: bold;
@@ -1478,15 +1484,78 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Large desktops and laptops */
+@media (min-width: 1440px) and (max-width: 1699px) {
+  .faq-page .container {
+    padding: 86.5rem 0 30.4rem;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1439px) {
   html {
     font-size: 9px;
   }
 
+  /* back to top styles */
+  .back-to-top {
+    right: 8rem;
+    bottom: 8rem;
+  }
+
   /* team styles */
   .team .btn--red {
     margin: 0 auto 70rem;
+  }
+
+  /* other pages styles */
+  .story {
+    background-position: top -10rem center;
+    background-size: 120rem;
+  }
+
+  .guest-policy,
+  .faq-page,
+  .privacy-policy,
+  .terms-of-use {
+    background-position: top -5rem right 0;
+    background-size: 120rem;
+  }
+
+  .story .container,
+  .guest-policy .container,
+  .faq-page .container,
+  .privacy-policy .container,
+  .terms-of-use .container {
+    min-height: calc(100vh - 3.6rem - 22.6rem);
+  }
+
+  .story .container {
+    padding: 78rem 0 20rem;
+  }
+
+  .guest-policy .container {
+    padding: 60rem 0 20rem;
+  }
+
+  .faq-page .container {
+    padding: 59rem 0 20rem;
+  }
+
+  .privacy-policy .container {
+    padding: 53rem 0 20rem;
+  }
+
+  .terms-of-use .container {
+    padding: 58rem 0 20rem;
   }
 }
 
@@ -1494,6 +1563,12 @@ a {
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
     font-size: 8px;
+  }
+
+  /* back to top styles */
+  .back-to-top {
+    right: 5rem;
+    bottom: 5rem;
   }
 
   /* footer style */
@@ -1555,12 +1630,60 @@ a {
     background-position: top 15rem right 2rem;
     background-size: 50%;
   }
+
+  /* our story page styles */
+  .story {
+    background-position: top -8rem center;
+    background-size: 99rem;
+  }
+
+  .guest-policy,
+  .faq-page,
+  .privacy-policy,
+  .terms-of-use {
+    background-position: top -5rem right 0;
+    background-size: 99rem;
+  }
+
+  .story .container,
+  .guest-policy .container,
+  .faq-page .container,
+  .privacy-policy .container,
+  .terms-of-use .container {
+    min-height: calc(100vh - 3.6rem - 22.6rem);
+  }
+
+  .story .container {
+    padding: 65rem 0 15rem;
+  }
+
+  .guest-policy .container {
+    padding: 48rem 0 15rem;
+  }
+
+  .faq-page .container {
+    padding: 49rem 0 15rem;
+  }
+
+  .privacy-policy .container {
+    padding: 43rem 0 15rem;
+  }
+
+  .terms-of-use .container {
+    padding: 48rem 0 15rem;
+  }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
     font-size: 7px;
+  }
+
+  /* back to top styles */
+  .back-to-top {
+    right: 5rem;
+    bottom: 3rem;
   }
 
   /* header styles */
@@ -1590,7 +1713,7 @@ a {
   }
 
   .footer__bottom {
-    padding: 2rem 0;
+    height: 4rem;
   }
 
   /* intro styles */
@@ -1625,12 +1748,65 @@ a {
     background-position: top 15rem right 2rem;
     background-size: 50%;
   }
+
+  /* our story page styles */
+  .story {
+    background-position: top -8rem center;
+    background-size: 76rem;
+  }
+
+  .guest-policy,
+  .faq-page,
+  .privacy-policy,
+  .terms-of-use {
+    background-position: top -5rem right 0;
+    background-size: 99rem;
+  }
+
+  .story .container,
+  .guest-policy .container,
+  .faq-page .container,
+  .privacy-policy .container,
+  .terms-of-use .container {
+    min-height: calc(100vh - 4rem - 22.6rem);
+  }
+
+  .story .container {
+    padding: 51rem 0 10rem;
+  }
+
+  .guest-policy .container {
+    padding: 48rem 0 15rem;
+  }
+
+  .faq-page .container {
+    padding: 49rem 0 15rem;
+  }
+
+  .faq-page__element-title,
+  .faq-page__element-answer {
+    padding-right: 1rem;
+  }
+
+  .privacy-policy .container {
+    padding: 43rem 0 15rem;
+  }
+
+  .terms-of-use .container {
+    padding: 48rem 0 15rem;
+  }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   html {
     font-size: 6px;
+  }
+
+  /* back to top styles */
+  .back-to-top {
+    right: 5rem;
+    bottom: 2rem;
   }
 
   .btn {
@@ -1709,7 +1885,7 @@ a {
   }
 
   .footer__bottom {
-    padding: 4rem 0;
+    height: 10rem;
   }
 
   /* intro styles */
@@ -1954,6 +2130,75 @@ a {
     height: 7rem;
     width: 25rem;
   }
+
+  /* other pages styles */
+  .story {
+    background-position: top 0rem center;
+    background-size: 47rem;
+  }
+
+  .guest-policy,
+  .faq-page,
+  .privacy-policy,
+  .terms-of-use {
+    background-position: top -4rem right 0;
+    background-size: 76rem;
+  }
+
+  .story .container,
+  .guest-policy .container,
+  .faq-page .container,
+  .privacy-policy .container,
+  .terms-of-use .container {
+    min-height: calc(100vh - 10rem - 22.6rem);
+  }
+
+  .guest-policy__list-title,
+  .terms-of-use__list-title,
+  .privacy-policy__list-title,
+  .faq-page__element-title {
+    font-size: 4rem;
+    line-height: 5.5rem;
+  }
+
+  .story__description p,
+  .guest-policy__list-paragraph,
+  .terms-of-use__list-paragraph,
+  .privacy-policy__list-paragraph,
+  .faq-page__element-answer {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+  }
+
+  .privacy-policy__subtitle {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .story .container {
+    padding: 36rem 4rem 10rem;
+  }
+
+  .guest-policy .container {
+    padding: 38rem 4rem 15rem;
+  }
+
+  .faq-page .container {
+    padding: 39rem 0 15rem;
+  }
+
+  .faq-page__element-title,
+  .faq-page__element-answer {
+    padding-right: 1rem;
+  }
+
+  .privacy-policy .container {
+    padding: 33rem 4rem 15rem;
+  }
+
+  .terms-of-use .container {
+    padding: 38rem 4rem 15rem;
+  }
 }
 
 /* Landscape phones and smaller */
@@ -2035,5 +2280,40 @@ a {
 
   .contact__element-small {
     max-width: 49%;
+  }
+
+  /* other pages styles */
+  .guest-policy,
+  .faq-page,
+  .privacy-policy,
+  .terms-of-use {
+    background-position: top 0rem right 0;
+    background-size: 62rem;
+  }
+
+  .guest-policy .container {
+    padding: 33rem 4rem 15rem;
+  }
+
+  .faq-page .container {
+    padding: 34rem 0 15rem;
+  }
+
+  .privacy-policy .container {
+    padding: 28rem 4rem 15rem;
+  }
+
+  .terms-of-use .container {
+    padding: 33rem 4rem 15rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .faq-page__categories {
+    width: 20rem;
+  }
+
+  .faq-page__description {
+    margin-left: 2rem;
   }
 }
