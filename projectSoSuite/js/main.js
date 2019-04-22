@@ -18,13 +18,11 @@ $(document).ready(function() {
 	}
 
 	// add a fixed property to header (on scroll and resize)
-	$(document).on('scroll resize', function() {
+	$(window).on('scroll resize', function() {
 		let scroll = $(window).scrollTop();
 		let header = $('.header').height();
 
-		// $('.header').addClass('fixed');
-		
-		if(scroll > header/2) {
+		if(scroll > 0) {
 			$('.header').addClass('fixed');
 		} else {
 			$('.header').removeClass('fixed');
