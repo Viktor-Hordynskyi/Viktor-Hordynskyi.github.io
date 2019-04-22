@@ -9,13 +9,7 @@ $(document).ready(function() {
 	$('.header__toggler').on('click', function() {
 		$(this).toggleClass('close');
 		$('.header__navbar').toggle('show')
-	})
-
-	// add a fixed property to header (on load)
-	let scroll = $(window).scrollTop();	
-	if(scroll > 0) {
-		$('.header').addClass('fixed');
-	}
+	})	
 
 	// add a fixed property to header (on scroll and resize)
 	$(window).on('scroll resize', function() {
@@ -27,7 +21,13 @@ $(document).ready(function() {
 		} else {
 			$('.header').removeClass('fixed');
 		}
-	})	
+	})
+
+	// add a fixed property to header (on load)
+	let scroll = $(window).scrollTop();	
+	if(scroll > 0) {
+		$('.header').addClass('fixed');
+	}
 
 	// scrolling to anchor
 	let hheader = $('.header').height();

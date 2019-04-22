@@ -218,7 +218,7 @@ a {
 .btn:hover
 /*.btn:focus*/ {
   text-shadow: 0 0 .1rem #fff;
-  transform: scale(1.01);
+  /*transform: scale(1.01);*/
 }
 
 .btn:hover.no-touch
@@ -268,8 +268,8 @@ a {
 
 .btn--blue:hover.no-touch
 /*.btn--blue:focus.no-touch*/ {
-  background-color: #fff;
-  color: #242e4e;
+  background-color: #242e4e;
+  color: #fff;
   box-shadow: none;
 }
 
@@ -1897,6 +1897,11 @@ a {
     height: 10rem;
   }
 
+  .footer__bottom a,
+  .footer__bottom span {
+    font-size: 2rem;
+  }
+
   /* intro styles */
   .intro {
     background: #acc9d1;
@@ -1992,7 +1997,7 @@ a {
   }
 
   .promises__block {
-    height: 100%;
+    height: auto;
   }
 
   .promises__block:nth-child(odd),
@@ -2314,6 +2319,11 @@ a {
 }
 
 @media (max-width: 400px) {
+  .footer__bottom a,
+  .footer__bottom span {
+    font-size: 1.5rem;
+  }
+
   .faq-page__categories {
     width: 20rem;
   }
