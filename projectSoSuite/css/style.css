@@ -227,18 +227,13 @@ a {
   transform: scale(1);
 }
 
-.btn--blue:hover
-/*.btn--blue:focus*/ {
-  background-color: #141a2d;
+.btn--red {
+  background-color: #d5484c;
   color: #fff;
-  box-shadow: 0 0 .5rem #000;
-}
-
-.btn--blue:hover.no-touch
-/*.btn--blue:focus.no-touch*/ {
-  background-color: #242e4e;
-  color: #fff;
-  box-shadow: none;
+  font-family: 'Montserrat Bold';
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 21.6rem;
 }
 
 .btn--red:hover
@@ -255,6 +250,39 @@ a {
   box-shadow: none;
 }
 
+.btn--blue {
+  background-color: #242e4e;
+  color: #fff;
+  font-family: 'Open Sans Bold';
+  font-size: 1.6rem;
+  font-weight: 700;
+  width: 23.8rem;
+}
+
+.btn--blue:hover
+/*.btn--blue:focus*/ {
+  background-color: #fff;
+  color: #242e4e;
+  box-shadow: 0 0 .5rem #242e4e;
+}
+
+.btn--blue:hover.no-touch
+/*.btn--blue:focus.no-touch*/ {
+  background-color: #fff;
+  color: #242e4e;
+  box-shadow: none;
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #303133;
+  font-family: 'Open Sans Bold';
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  width: 17.9rem;
+}
+
 .btn--white:hover
 /*.btn--white:focus*/ {
   background-color: #d5484c;
@@ -267,34 +295,6 @@ a {
   background-color: #fff;
   color: #303133;
   box-shadow: none;
-}
-
-.btn--red {
-  background-color: #d5484c;
-  color: #fff;
-  font-family: 'Montserrat Bold';
-  font-size: 1.6rem;
-  font-weight: 700;
-  width: 21.6rem;
-}
-
-.btn--blue {
-  background-color: #242e4e;
-  color: #fff;
-  font-family: 'Open Sans Bold';
-  font-size: 1.6rem;
-  font-weight: 700;
-  width: 23.8rem;
-}
-
-.btn--white {
-  background-color: #fff;
-  color: #303133;
-  font-family: 'Open Sans Bold';
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 2.4rem;
-  width: 17.9rem;
 }
 
 .quotation-mark img {
@@ -430,7 +430,7 @@ a {
 
 .header__menu a:hover
 /*.header__menu a:focus*/ {
-  color: #002ede;
+  color: #d5484c;
 }
 
 .header__toggler {
@@ -1227,9 +1227,9 @@ a {
 
 .contact__btn:hover
 /*.contact__btn:focus*/ {
-  background-color: #141a2d;
-  color: #fff;
-  box-shadow: 0 0 .5rem #fff;
+  background-color: #fff;
+  color: #242e4e;
+  box-shadow: 0 0 .5rem #242e4e;
 }
 
 .contact__btn:hover.no-touch
@@ -1855,6 +1855,11 @@ a {
     padding: 4rem 3rem;
   }
 
+  .header__menu a {
+    font-size: 2.8rem;
+    line-height: 4.5rem;
+  }
+
   .header__navbar span {
     margin-left: 0;
   }
@@ -2222,10 +2227,6 @@ a {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 2rem;
-  }
-
-  .header__menu a {
-    font-size: 2rem;
   }
 
   /* footer style */
