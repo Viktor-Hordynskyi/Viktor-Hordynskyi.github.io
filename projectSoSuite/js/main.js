@@ -11,10 +11,22 @@ $(document).ready(function() {
 		$('.header__navbar').toggle('show')
 	})	
 
-	// add a fixed property to header (on scroll and resize)
-	$(window).on('scroll resize', function() {
-		let scroll = $(window).scrollTop();
-		let header = $('.header').height();
+	
+	let ioc = /iphone|ipad/i.test(navigator.userAgent);
+	if(ioc) {
+		$(window).on('scroll resize touchmove', function() {
+			let scroll = $(window).scrollTop();
+
+			if(scroll > 0) {
+				$('.header').addClass('fixed');
+			} else {
+				$('.header').removeClass('fixed');
+			}
+		})
+	} else {
+		// add a fixed property to header (on scroll and resize)
+		$(window).on('scroll resize', function() {
+			let scroll = $(window).scrollTop();
 
 		if(scroll > 0) {
 			$('.header').addClass('fixed');
@@ -22,6 +34,7 @@ $(document).ready(function() {
 			$('.header').removeClass('fixed');
 		}
 	})
+	}
 
 	// add a fixed property to header (on load)
 	let scroll = $(window).scrollTop();	
