@@ -539,6 +539,10 @@ a {
   line-height: 1.6rem;
 }
 
+.footer__bottom a:hover {
+  color: #d5484c;
+}
+
 .footer__bottom span:not(:last-child) {
   font-style: normal;
   margin: 0 .9rem;
