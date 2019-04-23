@@ -552,7 +552,7 @@ a {
 
 /* intro styles */
 .intro {
-  background: url(../img/intro.svg) top right no-repeat;
+  background: url(../img/intro.jpg) top right no-repeat;
   background-position: top -4.5rem right -4.3rem;
 }
 
@@ -1906,7 +1906,9 @@ a {
 
   /* intro styles */
   .intro {
-    background: #acc9d1;
+    background: url(../img/intro-mobile.jpg) top right no-repeat;
+    background-position: top -45rem right -75rem;
+    background-size: 240rem;
   }
 
   .intro .container {
@@ -2069,7 +2071,9 @@ a {
 
   /* team styles */
   .team {
-    background: none;
+    background: url(../img/team-mobile.png) top center no-repeat;
+    background-size: 77rem;
+    background-position: top -20% right 50%;
   }
 
   .team__title {
@@ -2085,18 +2089,14 @@ a {
 
   .team__footnote {
     font-size: 2.5rem;
-    margin: 0 auto;
+    line-height: 4.5rem;
+    margin: 50rem auto 7rem;
     max-width: 90%;
   }
 
   .team .btn--red {
     margin: 2rem auto 5rem;
     width: 50rem;
-  }
-
-  .team__footnote {
-    line-height: 4.5rem;
-    margin: 0 auto 14rem;
   }
 
   /* contact styles */
@@ -2156,15 +2156,15 @@ a {
   /* other pages styles */
   .story {
     background-position: top 0rem center;
-    background-size: 47rem;
+    background-size: 68rem;
   }
 
   .guest-policy,
   .faq-page,
   .privacy-policy,
   .terms-of-use {
-    background-position: top -4rem right 0;
-    background-size: 76rem;
+    background-position: top -4rem right 95%;
+    background-size: 130rem;
   }
 
   .story .container,
@@ -2198,15 +2198,15 @@ a {
   }
 
   .story .container {
-    padding: 36rem 4rem 10rem;
+    padding: 53rem 4rem 10rem;
   }
 
   .guest-policy .container {
-    padding: 38rem 4rem 15rem;
+    padding: 65rem 4rem 15rem;
   }
 
   .faq-page .container {
-    padding: 39rem 0 15rem;
+    padding: 65rem 0 15rem;
   }
 
   .faq-page__element-title,
@@ -2215,11 +2215,11 @@ a {
   }
 
   .privacy-policy .container {
-    padding: 33rem 4rem 15rem;
+    padding: 55rem 4rem 15rem;
   }
 
   .terms-of-use .container {
-    padding: 38rem 4rem 15rem;
+    padding: 65rem 4rem 15rem;
   }
 }
 
@@ -2286,6 +2286,11 @@ a {
     max-width: 100%;
   }
 
+  /* team styles */
+  .team {
+    background-position: top 30% right 50%;
+  }
+
   /* contact styles */
   .contact__block {
     padding: 2rem 7rem 3rem 3rem;
@@ -2301,28 +2306,36 @@ a {
   }
 
   /* other pages styles */
+  .story {
+    background-size: 55rem;
+  }
+
   .guest-policy,
   .faq-page,
   .privacy-policy,
   .terms-of-use {
-    background-position: top 0rem right 0;
-    background-size: 62rem;
+    background-position: top -6rem right 95%;
+    background-size: 100rem;
+  }
+
+  .story .container {
+    padding: 43rem 4rem 10rem;
   }
 
   .guest-policy .container {
-    padding: 33rem 4rem 15rem;
+    padding: 47rem 4rem 15rem;
   }
 
   .faq-page .container {
-    padding: 34rem 0 15rem;
+    padding: 48rem 0 15rem;
   }
 
   .privacy-policy .container {
-    padding: 28rem 4rem 15rem;
+    padding: 42rem 4rem 15rem;
   }
 
   .terms-of-use .container {
-    padding: 33rem 4rem 15rem;
+    padding: 47rem 4rem 15rem;
   }
 }
 
