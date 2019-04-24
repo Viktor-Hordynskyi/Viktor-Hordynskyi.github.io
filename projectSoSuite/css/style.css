@@ -579,8 +579,9 @@ a {
 
 /* intro styles */
 .intro {
-  background: url(../img/intro.jpg) top right no-repeat;
-  background-position: top -4.5rem right -4.3rem;
+  /*background: url(../img/intro.jpg) top -4.5rem right -4.3rem no-repeat;*/
+  background: url(../img/intro.svg) top right no-repeat;
+  /*background-position: top -4.5rem right -4.3rem;*/
 }
 
 .intro .container {
@@ -833,8 +834,9 @@ a {
 
 /* promises styles */
 .promises {
-  background: url(../img/promises-bg.png) top left no-repeat;
-  background-position: top 21.5rem left -19.2rem;
+  /*background: url(../img/promises-bg.png) top 21.5rem left -19.2rem no-repeat;*/
+  background: url(../img/promises-bg.svg) top -5.8rem left no-repeat;
+  /*background-position: top 21.5rem left -19.2rem;*/
 }
 
 .promises .container {
@@ -2115,10 +2117,10 @@ a {
 
   /* team styles */
   .team {
-    background: url(../img/team-mobile.png) top center no-repeat;
-    /*background: url(../img/team-mobile.svg) top center no-repeat;*/
+    /*background: url(../img/team-mobile.png) top center no-repeat;*/
+    background: url(../img/team-mobile.svg) top center no-repeat;
     background-size: 77rem;
-    background-position: top -20% right 50%;
+    /*background-position: top -20% right 50%;*/
   }
 
   .team__title {
@@ -2345,7 +2347,7 @@ a {
 
   /* team styles */
   .team {
-    background-position: top 0% right 50%;
+    /*background-position: top 0% right 50%;*/
   }
 
   /* contact styles */
