@@ -7,7 +7,7 @@
   url('../fonts/AustinCyr-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Italic';
@@ -17,7 +17,7 @@
   url('../fonts/Montserrat-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Extra Light Italic';
@@ -27,7 +27,7 @@
   url('../fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Light';
@@ -37,7 +37,7 @@
   url('../fonts/Montserrat-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Light Italic';
@@ -47,7 +47,7 @@
   url('../fonts/Montserrat-LightItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Medium';
@@ -57,7 +57,7 @@
   url('../fonts/Montserrat-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat SemiBold';
@@ -67,7 +67,7 @@
   url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Semibold Italic';
@@ -77,7 +77,7 @@
   url('../fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Regular';
@@ -87,7 +87,7 @@
   url('../fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat Bold';
@@ -97,7 +97,7 @@
   url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Italic';
@@ -107,7 +107,7 @@
   url('../fonts/OpenSans-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Regular';
@@ -117,7 +117,7 @@
   url('../fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Semibold';
@@ -127,7 +127,7 @@
   url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Open Sans Bold';
@@ -137,7 +137,7 @@
   url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Playfair Display Bold';
@@ -147,7 +147,7 @@
   url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: optional;
+  font-display: swap;
 }
 
 /* Reset CSS */
