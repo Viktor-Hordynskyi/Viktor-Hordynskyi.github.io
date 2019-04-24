@@ -7,6 +7,7 @@
   url('../fonts/AustinCyr-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Italic';
@@ -16,6 +17,7 @@
   url('../fonts/Montserrat-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Extra Light Italic';
@@ -25,6 +27,7 @@
   url('../fonts/Montserrat-ExtraLightItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Light';
@@ -34,6 +37,7 @@
   url('../fonts/Montserrat-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Light Italic';
@@ -43,6 +47,7 @@
   url('../fonts/Montserrat-LightItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Medium';
@@ -52,6 +57,7 @@
   url('../fonts/Montserrat-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat SemiBold';
@@ -61,6 +67,7 @@
   url('../fonts/Montserrat-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Semibold Italic';
@@ -70,6 +77,7 @@
   url('../fonts/Montserrat-SemiBoldItalic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Regular';
@@ -79,6 +87,7 @@
   url('../fonts/Montserrat-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Montserrat Bold';
@@ -88,6 +97,7 @@
   url('../fonts/Montserrat-ExtraBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Open Sans Italic';
@@ -97,6 +107,7 @@
   url('../fonts/OpenSans-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Open Sans Regular';
@@ -106,6 +117,7 @@
   url('../fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Open Sans Semibold';
@@ -115,6 +127,7 @@
   url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Open Sans Bold';
@@ -124,6 +137,7 @@
   url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 @font-face {
   font-family: 'Playfair Display Bold';
@@ -133,6 +147,7 @@
   url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 
 /* Reset CSS */
@@ -513,6 +528,14 @@ a {
   display: block;
 }
 
+.footer__soc-element a.touch:hover {
+  transform: scale(1.2);
+}
+
+.footer__soc-element a.no-touch:hover {
+  transform: scale(1);
+}
+
 .footer__soc-element:not(:last-child) {
   margin-bottom: 1.8rem;
 }
@@ -543,6 +566,10 @@ a {
 
 .footer__bottom a:hover {
   color: #d5484c;
+}
+
+.footer__bottom a.no-touch:hover {
+  color: #ededff;
 }
 
 .footer__bottom span:not(:last-child) {
