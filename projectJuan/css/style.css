@@ -1,0 +1,654 @@
+/*@font-face {
+  font-family: 'ITCAvantGardeStd-Md';
+  src: url('../fonts/ITCAvantGardeStd-Md.eot');
+  src: url('../fonts/ITCAvantGardeStd-Md.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ITCAvantGardeStd-Md.woff') format('woff'),
+  url('../fonts/ITCAvantGardeStd-Md.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}*/
+@font-face {
+  font-family: 'ITCAvantGardeStd-Bold';
+  src: url('../fonts/ITCAvantGardeStd-Bold.eot');
+  src: url('../fonts/ITCAvantGardeStd-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ITCAvantGardeStd-Bold.woff') format('woff'),
+  url('../fonts/ITCAvantGardeStd-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Roboto-Regular.woff') format('woff'),
+  url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.eot');
+  src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Roboto-Bold.woff') format('woff'),
+  url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #fff;
+  font-family: 'Roboto-Regular';
+  font-weight: 400;
+  line-height: 1;
+}
+
+a {
+  color: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+/* container styles */
+.container {
+  background-color: #152e6c;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 64rem;
+}
+
+/* header styles */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 6rem;
+}
+
+.header__team,
+.header__user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__team--name,
+.header__user--name {
+  font-size: 2rem;
+}
+
+.header__team--count,
+.header__user--help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.header__team--count {
+  font-size: 2rem;
+  background-color: #f41c45;
+  border-radius: 50%;
+}
+
+.header__user--help img {
+  height: 100%;
+  width: 100%;
+}
+
+/* cash styles */
+.cash {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+
+.cash__deposit {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  color: #222;
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: 900;
+  padding: 1rem 5rem;
+}
+
+.cash__add {
+  margin-left: 2rem;
+  height: 5.5rem;
+  width: 5.5rem;
+}
+
+.cash__add img {
+  height: 100%;
+  width: 100%;
+}
+
+/* button style */
+.btn {
+  border-radius: 1rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 0 auto 1rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+.btn--short {
+  padding: 1rem 2rem;
+}
+
+.btn--long {
+  width: 90%;
+}
+
+.btn--aqua {
+  background-color: #0cb4fc;  
+}
+
+.btn--blue {
+  background-color: #2662fc;
+}
+
+/* begin and begin-load styles */
+.begin {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  min-height: calc(100vh - 6rem - 10rem);
+}
+
+.begin__title {
+  background-color: #14214d;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.begin-load__logo,
+.begin__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.begin-load__logo {
+  background: url(../img/Alagaster-Logo@1x.png) center no-repeat;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.begin__intro {
+  background: url(../img/Horse_Intro@1x.png) bottom right no-repeat;
+  background-size: contain;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.begin__note {
+  display: flex;
+  flex-grow: 1;
+  align-items: flex-end;
+  font-family: 'ITCAvantGardeStd-Bold';
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: .4rem;
+  margin-left: 3rem;
+  margin-bottom: 5rem;
+  text-align: left;
+}
+
+.begin-load__note {
+  font-family: 'ITCAvantGardeStd-Bold';
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  margin-top: 15%;
+}
+
+/* getcash styles */
+.getcash {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  min-height: calc(100vh - 6rem - 10rem);
+}
+
+.getcash__note {
+  background-color: #14214d;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+.getcash__note img {
+  margin-right: 1rem;
+  height: 1.1rem;
+}
+
+.getcash__tabs {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-top: 2rem;
+}
+
+.getcash__tabs-titles {
+  display: flex;
+  flex-direction: row;
+}
+
+.getcash__tab-title {
+  background-color: #2c427a;
+  border-radius: 2rem 2rem 0 0;
+  color: #d5d9e4;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+  margin: 0 1rem;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  width: calc(50% - 1rem);
+}
+
+.getcash__tab-title.show {
+  background-color: #eaedee;
+  color: #222;
+}
+
+.getcash__tab-title:first-child {
+  margin-left: 0;
+}
+.getcash__tab-title:last-child {
+  margin-right: 0;
+}
+
+.getcash__tab {
+  background-color: #eaedee;
+  display: none;
+  flex-grow: 1;
+  padding: .5rem;
+}
+
+.getcash__tab.show {
+  display: block;
+}
+
+/* bet tab styles */
+#bet .getcash__top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#bet .getcash__element {
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem;
+  width: calc(50% - 2rem);
+}
+
+#bet .getcash__element img {
+  height: 3rem;
+}
+
+#bet .getcash__horse-name {
+  flex-grow: 1;
+}
+
+#bet .getcash__horse-name h4 {
+  color: #222;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#bet .getcash__bottom {
+  background-color: #152e6c;
+  border-radius: 1rem 1rem 0 0;
+  margin: 0 1rem;
+  padding: 1rem;
+}
+#bet .getcash__bottom-col1,
+#bet .getcash__bottom-col2,
+#bet .getcash__bottom-col3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#bet .getcash__bottom-col1 {
+  justify-content: flex-start;
+  width: 65%;
+}
+
+#bet .getcash__bottom-col2 {
+  width: 8%;
+}
+
+#bet .getcash__bottom-col3 {
+  justify-content: flex-end;
+  width: 27%;
+}
+
+#bet .getcash__bottom--titles {
+  display: flex;
+  flex-direction: row;
+}
+
+#bet .getcash__bottom--titles span {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#bet .getcash__hl {
+  background-color: #415987;
+  border: 0;
+  margin: 1rem 0;
+  padding: 0;
+  height: .2rem;
+}
+
+#bet .getcash__bottom--element {
+  display: flex;
+  flex-direction: row;
+}
+
+#bet .getcash__bottom--element:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+#bet .getcash__bottom--element span {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#bet .getcash__bottom--element img {
+  margin-right: 1rem;
+  height: 2.5rem;
+}
+
+/* train tab styles */
+#train .getcash__top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#train .getcash__element {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  width: calc(50% - 2rem);
+}
+
+#train .getcash__element--block {
+  border: 1px solid #b5b5b5;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#train .getcash__element--block-logo {
+  height: 6rem;
+  width: 6rem;
+}
+
+#train .getcash__horse {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+#train .getcash__horse p {
+  color: #222;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+#train .getcash__horse img {
+  height: 3rem;
+}
+
+#train .getcash__element--subtitle {
+  color: #222;
+  font-size: 1.5rem;
+  margin: 1rem 0 1rem 6rem;
+  text-transform: uppercase;
+}
+
+/* donate styles */
+.donate {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  min-height: calc(100vh - 6rem - 10rem);
+}
+
+.donate__note {
+  background-color: #14214d;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 0 auto 2rem;
+  padding: 1rem 2rem;
+}
+
+.donate__note img {
+  margin-right: 1rem;
+  height: 1.1rem;
+}
+
+.donate__content {
+  background-color: #eaedee;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.donate__info {
+  background-color: #fff;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem 2rem 0;
+  text-align: left;
+}
+
+.donate__title {
+  color: #152e6c;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.donate__paragraph {
+  color: #222;
+  font-size: 1.3rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.donate__element {
+  border-bottom: .2rem solid #dadada;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.donate__element:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.donate__element strong {
+  color: #222;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.donate__element span {
+  color: #c4c4c4;
+}
+
+.donate__element a {
+ margin: 0;
+ padding: 1rem 0;
+ text-align: center;
+ width: 13rem;
+}
+
+.donate__your {
+  background-color: #fff;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.donate__your p {
+  color: #222;
+  font-size: 1.3rem;
+  line-height: 1.3;
+}
+
+.donate__your strong {
+  color: #222;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.donate .btn--long {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Landscape phones and smaller */
+@media (min-width: 375px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (min-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 801px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
