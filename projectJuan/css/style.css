@@ -284,7 +284,7 @@ a {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: .4rem;
-  margin-left: 3rem;
+  margin-left: 1rem;
   margin-bottom: 5rem;
   text-align: left;
 }
@@ -489,8 +489,8 @@ a {
 }
 
 #train .getcash__element--block-logo {
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 #train .getcash__horse {
@@ -499,7 +499,7 @@ a {
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 #train .getcash__horse p {
@@ -508,14 +508,18 @@ a {
   font-weight: bold;
 }
 
+#train .getcash__horse a {
+  display: block;
+}
+
 #train .getcash__horse img {
-  height: 3rem;
+  height: 2.5rem;
 }
 
 #train .getcash__element--subtitle {
   color: #222;
   font-size: 1.5rem;
-  margin: 1rem 0 1rem 6rem;
+  margin: .5rem 1rem 1rem;
   text-transform: uppercase;
 }
 
@@ -948,6 +952,10 @@ a {
   justify-content: space-around;
   margin-top: 2rem;
   width: 100%;
+}
+
+.results__block--smile a {
+  display: block;
 }
 
 .results__block--smile img {
