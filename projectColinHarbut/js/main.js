@@ -9,4 +9,10 @@ $(document).ready(function() {
 	$grid.imagesLoaded().progress( function() {
 		$grid.masonry();
 	});
+
+	// Bootstrap Lightbox
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+		event.preventDefault();
+		$(this).ekkoLightbox();
+	});
 })
