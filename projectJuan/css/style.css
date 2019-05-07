@@ -1000,7 +1000,6 @@ a {
 }
 
 .results__block--smile {
-  background-color: pink;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1012,9 +1011,7 @@ a {
 }
 
 .results__block--smile a {
-  background-color: red;
   display: block;
-  padding: .5rem;
   height: 5rem;
 }
 
