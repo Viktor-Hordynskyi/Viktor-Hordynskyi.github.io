@@ -1015,12 +1015,14 @@ a {
 }
 
 .results__block--smile a {
-  display: inline-block;
+  background-color: red;
+  display: block;
+  padding: .5rem;
   height: 5rem;
 }
 
 .results__block--smile img {
-  height: 5rem;
+  height: 100%;
 }
 
 /* team styles */
