@@ -1009,16 +1009,17 @@ a {
   align-items: center;
   justify-content: space-around;
   margin-top: 2rem;
+  height: 5rem;
   width: 100%;
 }
 
 .results__block--smile a {
   display: block;
+  height: 100%;
 }
 
 .results__block--smile img {
-  height: 5rem;
-  width: 5rem;
+  height: 100%;
 }
 
 /* team styles */
