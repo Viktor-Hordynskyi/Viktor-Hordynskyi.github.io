@@ -993,8 +993,8 @@ a {
 }
 
 .results__block--smiles {
-  display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   margin-top: 2rem;
 }
 
@@ -1008,7 +1008,6 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  flex-shrink: 0;
   margin-top: 2rem;
   height: 5rem;
   width: 100%;
