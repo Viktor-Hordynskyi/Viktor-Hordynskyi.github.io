@@ -165,7 +165,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 10rem;
+  height: 6rem;
 }
 
 .cash__deposit {
@@ -173,9 +173,9 @@ a {
   border-radius: 1.5rem;
   color: #222;
   display: inline-block;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 900;
-  padding: 1rem 5rem;
+  padding: .5rem 4rem;
 }
 
 .cash__add {
@@ -265,7 +265,7 @@ a {
   flex-direction: column;
   text-align: center;
   height: 100%;
-  max-height: calc(100vh - 6rem - 10rem);
+  max-height: calc(100vh - 6rem - 6rem);
 }
 
 .begin__title {
@@ -325,7 +325,7 @@ a {
   flex-direction: column;
   text-align: center;
   height: 100%;
-  min-height: calc(100vh - 6rem - 10rem);
+  min-height: calc(100vh - 6rem - 6rem);
 }
 
 .getcash__note {
@@ -578,7 +578,7 @@ a {
   flex-direction: column;
   text-align: center;
   height: 100%;
-  min-height: calc(100vh - 6rem - 10rem);
+  min-height: calc(100vh - 6rem - 6rem);
 }
 
 .donate__note {
@@ -1022,7 +1022,7 @@ a {
   align-items: center;
   text-align: center;
   height: 100%;
-  min-height: calc(100vh - 6rem - 10rem);
+  min-height: calc(100vh - 6rem - 6rem);
 }
 
 .team__content {
