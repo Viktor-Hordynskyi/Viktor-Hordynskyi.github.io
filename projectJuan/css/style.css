@@ -1001,9 +1001,11 @@ a {
 .results__block--smiles h3 {
   color: #222;
   font-size: 2rem;
+  height: 2rem;
 }
 
 .results__block--smile {
+  background-color: pink;
   display: flex;
   flex-direction: row;
   align-items: center;
