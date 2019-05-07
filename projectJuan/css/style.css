@@ -1015,7 +1015,7 @@ a {
 }
 
 .results__block--smile a {
-  display: flex;
+  display: inline-block;
   height: 5rem;
 }
 
