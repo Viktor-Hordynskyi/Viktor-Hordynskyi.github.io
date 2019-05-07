@@ -1008,13 +1008,14 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+  flex-grow: 1;
   margin-top: 2rem;
   height: 5rem;
   width: 100%;
 }
 
 .results__block--smile a {
-  display: block;
+  display: flex;
   height: 100%;
 }
 
