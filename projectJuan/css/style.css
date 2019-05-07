@@ -268,8 +268,6 @@ a {
   flex-direction: column;
   flex-grow: 1;
   text-align: center;
-  /*height: 100%;*/
-  /*max-height: calc(100vh - 6rem - 6rem);*/
 }
 
 .begin__title {
@@ -304,7 +302,6 @@ a {
 
 .begin__note {
   display: flex;
-  /*flex-grow: 1;*/
   align-items: flex-end;
   font-family: 'ITCAvantGardeStd-Bold';
   font-size: 3rem;
@@ -313,7 +310,6 @@ a {
   margin-left: 1rem;
   margin-bottom: 5rem;
   text-align: left;
-  /*height: 100%;*/
 }
 
 .begin-load__note {
@@ -944,8 +940,6 @@ a {
   align-items: center;
   flex-grow: 1;
   text-align: center;
-  /*height: 100%;*/
-  /*max-height: calc(100vh - 6rem);*/
 }
 
 .results__intro {
@@ -959,7 +953,6 @@ a {
   flex-grow: 1;
   flex-shrink: 0;
   padding: 2rem;
-  /*height: 100%;*/
   width: 100%;
 }
 
@@ -1106,7 +1099,18 @@ a {
 
 
 
+@media (orientation: landscape) {
+  /* container styles */
+  .container.h100 {
+    height: auto;
+    max-height: none;
+  }
 
+  /* begin styles */
+  .begin-load__note {
+    margin: 15rem 0 1rem;
+  }
+}
 
 
 /* Landscape phones and smaller */
@@ -1135,6 +1139,12 @@ a {
 @media (min-width: 768px) {
   html {
     font-size: 14px;
+  }
+
+  /* container styles */
+  .container.h100 {
+    height: auto;
+    max-height: none;
   }
 
   /* button style */
