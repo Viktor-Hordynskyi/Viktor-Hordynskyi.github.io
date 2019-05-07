@@ -1016,11 +1016,11 @@ a {
 
 .results__block--smile a {
   display: flex;
-  height: 100%;
+  height: 5rem;
 }
 
 .results__block--smile img {
-  height: 100%;
+  height: 5rem;
 }
 
 /* team styles */
