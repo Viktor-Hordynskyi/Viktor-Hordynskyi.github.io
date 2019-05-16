@@ -899,6 +899,29 @@ body {
     width: 100%;
   }
 
+  .intro-forms__title h3 {
+    font-size: 4rem;
+  }
+
+  .intro-forms__switch h4,
+  .intro-forms__switch h4 span {
+    font-size: 3.5rem;
+  }
+
+  .intro-forms__switch h4 br {
+    display: none;
+  }
+
+  .intro-forms__form input,
+  .intro-forms__form select,
+  .intro-forms-line p {
+    font-size: 3rem;
+  }
+
+  .intro-forms__info p {
+    font-size: 2rem;
+  }
+
   /* about styles */
   .about {
     color: #fff;
@@ -965,10 +988,6 @@ body {
     display: none;
   }
 
-  .tips .btn {
-    font-size: 3.2rem;
-  }
-
   /* next styles */
   .next__top {
     margin-bottom: 2rem;
@@ -984,10 +1003,6 @@ body {
 
   .next__list__items p {
     margin-bottom: 2rem;
-  }
-
-  .next .btn {
-    font-size: 3.2rem;
   }
 
   /* time styles */
@@ -1043,7 +1058,12 @@ body {
   }
 
   .hurry__block {
+    margin-bottom: 4rem;
     width: 100%;
+  }
+
+  .hurry__info {
+    margin-top: 2rem;
   }
 
   .hurry__info p,
@@ -1081,6 +1101,7 @@ body {
   }
 
   .why__signature h4 {
+    font-size: 2.5rem;
     position: relative;
     right: 25rem;
   }
@@ -1099,9 +1120,21 @@ body {
     font-size: 4px;
   }
 
+  /* intro styles */
+  .intro-forms__switch h4,
+  .intro-forms__switch h4 span {
+    font-size: 3rem;
+  }
+
   /* about styles */
   .about__image {
     max-width: 15rem;
+  }
+
+  /* tips and next styles */
+  .tips .btn,
+  .next .btn {
+    font-size: 3.2rem;
   }
 
   /* footer styles */
