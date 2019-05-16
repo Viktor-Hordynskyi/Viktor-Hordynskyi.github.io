@@ -61,23 +61,9 @@ footer, header, hgroup, menu, nav, section {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 html {
   font-size: 10px;
 }
-
 body {
   font-family: 'Decalotype-Regular';
   font-weight: 400;
@@ -1038,6 +1024,11 @@ body {
     max-width: 100%;
   }
 
+  /* header styles */
+  .header {
+    height: 9.5rem;
+  }
+
   /* about styles */
   .about .container {
     align-items: flex-start;
@@ -1128,7 +1119,11 @@ body {
     display: none;
   }
 
-  .next__list-items p {
+  .next__list-image {
+    height: 35rem;
+  }
+
+  .next__list-items p:not(:last-child) {
     margin-bottom: 2rem;
   }
 
