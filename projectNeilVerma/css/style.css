@@ -396,12 +396,11 @@ body {
   width: calc((100% - 6rem) / 3);
 }
 
-.hurry__video {
+.hurry__image {
   width: 100%;
 }
 
-.hurry__video iframe {
-  height: 100%;
+.hurry__image img {
   width: 100%;
 }
 
@@ -478,7 +477,7 @@ body {
 }
 
 .why__info {
-  background: url(../img/why-man.png) bottom right no-repeat, #276e92;
+  background: url(../img/why-Neil.png) bottom right no-repeat, #276e92;
   background-size: 50%;
   color: #fdfafa;
   flex-shrink: 0;
@@ -694,14 +693,14 @@ body {
   height: 100%;
 }
 
-.next__list__items {
+.next__list-items {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
 }
 
-.next__list__items p {
+.next__list-items p {
   font-size: 2.5rem;
   font-weight: 400;
   line-height: 2.7rem;
@@ -1005,10 +1004,6 @@ body {
     margin-right: 1rem;
   }
 
-  .next__list__items p {
-    margin-bottom: 2rem;
-  }
-
   /* time styles */
   .time__description .btn {
     font-size: 3.2rem;
@@ -1098,16 +1093,16 @@ body {
   .why__info p {
     font-size: 2.5rem;
     line-height: 3.5rem;
+    width: 80%;
   }
 
   .why__signature {
-    text-align: right;
+    margin-top: 3rem;
   }
 
   .why__signature h4 {
     font-size: 2.5rem;
-    position: relative;
-    right: 25rem;
+    margin-left: 2rem;
   }
 
   /* tips styles */
@@ -1133,6 +1128,10 @@ body {
     display: none;
   }
 
+  .next__list-items p {
+    margin-bottom: 2rem;
+  }
+
   /* footer styles */
   .footer__bg-image {
     position: absolute;
@@ -1153,10 +1152,31 @@ body {
     font-size: 3rem;
   }
 
+  /* why styles */
+  .why__info {
+    background-size: 40rem;
+  }
+
+  .why__info p {
+    width: 59%;
+  }
+
+  .why__signature {
+    margin-top: 0;
+  }
+
   /* tips and next styles */
   .tips .btn,
   .next .btn {
     font-size: 3.2rem;
+  }
+
+  .next__list-items p br {
+    display: none;
+  }
+
+  .next__list-image {
+    height: 46rem;
   }
 
   /* footer styles */
