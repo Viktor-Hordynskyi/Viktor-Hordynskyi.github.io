@@ -324,13 +324,14 @@ body {
 .about .container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .about__data {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 5rem;
+  margin: 2rem 5rem 2rem 0;
 }
 
 .about__group:not(:last-child) {
@@ -339,7 +340,7 @@ body {
 
 .about__group h2 {
   font-family: 'Decalotype-Bold';
-  font-size: 4.3rem;
+  font-size: 4rem;
   line-height: 5.207rem;
   font-weight: 700;
 }
