@@ -139,12 +139,12 @@ body {
 
 .intro-data__title h2 {
   font-family: 'Decalotype-ExtraBold';
-  font-size: 10rem;
+  font-size: 7rem;
   margin-bottom: 1.1rem;
 }
 
 .intro-data__title h1 {
-  font-size: 4rem;
+  font-size: 3.2rem;
 }
 
 .intro-data__video {
@@ -182,7 +182,7 @@ body {
 }
 
 .intro-forms__title h3 {
-  font-size: 3.1rem;
+  font-size: 3.4rem;
   font-variant: small-caps;
   font-weight: 700;
 }
@@ -340,14 +340,14 @@ body {
 
 .about__group h2 {
   font-family: 'Decalotype-Bold';
-  font-size: 4rem;
-  line-height: 5.207rem;
+  font-size: 4.8rem;
+  line-height: 6rem;
   font-weight: 700;
 }
 
 .about__group p {
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 2.2rem;
+  line-height: 3rem;
 }
 
 .about__image {
@@ -372,7 +372,7 @@ body {
 }
 
 .hurry__title h2 {
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 700;
 }
 
@@ -409,7 +409,7 @@ body {
 }
 
 .hurry__info p {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 2.5rem;
   text-align: justify;
 }
@@ -537,7 +537,7 @@ body {
   font-family: 'Decalotype-Bold';
   font-size: 4rem;
   font-weight: 700;
-  line-height: 5.7rem;
+  line-height: 4.7rem;
   margin-bottom: 3rem;
   text-transform: uppercase;
 }
@@ -556,7 +556,7 @@ body {
 
 .tips__paragraphs p {
   color: #000000;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .tips__promo {
@@ -606,10 +606,10 @@ body {
 .next__title h2 {
   color: #fafbfb;
   font-family: 'Decalotype-Bold';
-  font-size: 7rem;
+  font-size: 5.2rem;
   font-weight: 700;
   line-height: 6.5rem;
-  padding: 4rem 2rem;
+  padding: 3rem 0;
   text-transform: uppercase;
 }
 
@@ -623,7 +623,6 @@ body {
 .next__top {
   display: flex;
   flex-direction: row;
-  margin-bottom: 3rem;
 }
 
 .next__top-info {
@@ -631,14 +630,14 @@ body {
 }
 
 .next__top-info p {
-  font-size: 4rem;
+  font-size: 3.2rem;
   line-height: 5rem;
   margin-bottom: 4rem;
 }
 
 .next__top-info h3 {
   font-family: 'Decalotype-Bold';
-  font-size: 6rem;
+  font-size: 4.8rem;
   font-weight: 700;
 }
 
@@ -660,7 +659,7 @@ body {
 }
 
 .next__paragraph p {
-  font-size: 4rem;
+  font-size: 3.2rem;
   line-height: 5rem;
 }
 
@@ -713,10 +712,10 @@ body {
 .time__title h2 {
   color: #fafbfb;
   font-family: 'Decalotype-Bold';
-  font-size: 7rem;
+  font-size: 5.2rem;
   font-weight: 700;
   line-height: 6.5rem;
-  padding: 4rem 2rem;
+  padding: 3rem 0;
   text-transform: uppercase;
 }
 
@@ -728,7 +727,7 @@ body {
 }
 
 .time__description p {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   line-height: 4rem;
 }
 
@@ -739,25 +738,25 @@ body {
 
 .time__description h2 {
   font-family: 'Decalotype-Bold';
-  font-size: 5.5rem;
+  font-size: 4.8rem;
   line-height: 5.6rem;
 }
 
 .time__description h3 {
   color: #ce3a36;
-  font-size: 4.5rem;
+  font-size: 5.6rem;
   line-height: 5.6rem;
-  margin: 1.5rem 0;
+  margin: 3.5rem 0;
 }
 
 .time__description h4 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   line-height: 4rem;
   margin-bottom: 4rem;
 }
 
 .time__description h5 {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   line-height: 3.506rem;
 }
 
