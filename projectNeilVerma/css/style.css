@@ -679,6 +679,7 @@ body {
 }
 
 .next__list-image {
+  flex-shrink: 0;
   margin-right: 2.8rem;
   max-height: 27rem;
 }
