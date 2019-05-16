@@ -421,6 +421,9 @@ body {
 }
 
 .why__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-grow: 1;
   margin-right: 5rem;
 }
@@ -440,7 +443,7 @@ body {
 .why__intro-image {
   margin: 0 auto;
   position: relative;
-  max-width: 24.3rem;
+  max-width: 30rem;
   z-index: 9;
 }
 
@@ -464,8 +467,11 @@ body {
 
 .why__info {
   background: url(../img/why-Neil.png) bottom right no-repeat, #276e92;
-  background-size: 50%;
+  background-size: 65%;
   color: #fdfafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-shrink: 0;
   max-width: 35%;
 }
@@ -492,10 +498,10 @@ body {
   text-transform: uppercase;
 }
 
-.why__signature {
-  margin-top: 25rem;  
+/*.why__signature {
+  margin-top: 30rem;  
 }
-
+*/
 .why__signature h4 {
   background-color: #000000;
   display: inline-block;
@@ -955,6 +961,11 @@ body {
     width: calc((100% - 6rem) / 3);
   }
 
+  /* why styles */
+  .why__info {
+    background-size: 55%;
+  }
+
   /* tips styles */
   .tips .container {
     padding: 0;
@@ -1013,6 +1024,34 @@ body {
   }
 }
 
+@media (max-width: 660px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* container styles */
+  .container {
+    max-width: 95%;
+  }
+
+  /* why styles */
+  .why__info {
+    background-size: 65%;
+  }
+
+  .why__intro {
+    margin-right: 2rem;
+  }
+
+  .why__intro h2 {
+    font-size: 2.7rem;
+  }
+
+  /*.why__signature {
+    margin-top: 25rem;
+  }*/
+}
+
 /* Landscape phones and smaller */
 @media (max-width: 576px) {
   html {
@@ -1035,6 +1074,10 @@ body {
 
   .why__intro h2 {
     font-size: 2.9rem;
+  }
+
+  .why__info {
+    background-size: 60%;
   }
 }
 
@@ -1113,6 +1156,8 @@ body {
 
   .why__signature {
     margin-top: 3rem;
+    margin-right: 24rem;
+    text-align: left;
   }
 
   .why__signature h4 {
@@ -1182,6 +1227,8 @@ body {
 
   .why__signature {
     margin-top: 0;
+    margin-right: 2rem;
+    text-align: right;
   }
 
   /* tips and next styles */
