@@ -626,12 +626,12 @@ body {
 }
 
 .next__top-info {
-  padding-top: 4rem;
+  padding-top: 1rem;
 }
 
 .next__top-info p {
   font-size: 3.2rem;
-  line-height: 5rem;
+  line-height: 4rem;
   margin-bottom: 4rem;
 }
 
@@ -643,7 +643,7 @@ body {
 
 .next__top-book {
   flex-shrink: 0;
-  max-width: 48rem;
+  max-width: 40rem;
 }
 
 .next__top-book img {
