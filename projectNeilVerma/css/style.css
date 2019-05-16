@@ -681,7 +681,7 @@ body {
 .next__list-image {
   flex-shrink: 0;
   margin-right: 2.8rem;
-  max-height: 27rem;
+  height: 27rem;
 }
 
 .next__list-image img {
@@ -692,6 +692,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .next__list__items p {
