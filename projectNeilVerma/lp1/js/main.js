@@ -10,4 +10,9 @@ $(document).ready(function() {
 			$(this).addClass('active');
 		}
 	})
+
+	$('#upgrade').on('click', function() {
+		let value = $('#upgrade').prop('value')
+		$('#upgrade-price').text(value + '.00$')
+	})
 })
