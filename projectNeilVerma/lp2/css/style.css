@@ -740,12 +740,12 @@ a {
   }
 
   /* steps styles */
-  /*.steps__image {
-    max-width: 20rem;
-  }*/
+  .steps__image {
+    max-width: 27rem;
+  }
 
   .steps__info p {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   /* why styles */
@@ -909,7 +909,7 @@ a {
   }
 
   .steps__info p {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 
   /* who styles */
