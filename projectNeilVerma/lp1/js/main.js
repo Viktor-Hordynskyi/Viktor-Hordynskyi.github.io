@@ -17,13 +17,13 @@ $(document).ready(function() {
 		let sum = parseFloat(value) + parseFloat(total);
 
 		if($('#upgrade').prop('checked')) {			
-			$('#upgrade-price').text(value + '$');
+			$('#upgrade-price').text('$' + value);
 			
-			$('#total-price').text(sum + '$');
+			$('#total-price').text('$' + sum);
 		} else {
-			$('#upgrade-price').text('0.00$');
+			$('#upgrade-price').text('$0.00');
 
-			$('#total-price').text(total + '$');
+			$('#total-price').text('$' + total);
 		}
 		
 	})
