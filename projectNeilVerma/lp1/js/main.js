@@ -12,7 +12,19 @@ $(document).ready(function() {
 	})
 
 	$('#upgrade').on('click', function() {
-		let value = $('#upgrade').prop('value')
-		$('#upgrade-price').text(value + '.00$')
+		let value = $('#upgrade').prop('value');
+		let total = $('#total-price').data('value');
+		let sum = parseFloat(value) + parseFloat(total);
+
+		if($('#upgrade').prop('checked')) {			
+			$('#upgrade-price').text(value + '$');
+			
+			$('#total-price').text(sum + '$');
+		} else {
+			$('#upgrade-price').text('0.00$');
+
+			$('#total-price').text(total + '$');
+		}
+		
 	})
 })
