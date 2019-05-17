@@ -701,19 +701,74 @@ a {
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 5px;
+    font-size: 6px;
+  }
+
+  /* container styles*/
+  .container {
+    max-width: 120rem;
+  }
+
+  @media (max-width: 850px) {
+    /* why styles */
+    .why .container {
+      padding: 0;
+      max-width: 100%;
+    }
+
+    .why__info {
+      padding-bottom: 10rem;
+    }
+  }
+
+  /* contact styles */
+  .contact__title h2 {
+    padding-top: 2rem;
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   html {
-    font-size: 4px;
+    font-size: 5px;
   }
 
   /* container styles*/
   .container {
     padding: 0 2rem;
+  }
+
+  /* steps styles */
+  .steps__image {
+    max-width: 20rem;
+  }
+
+  .steps__info p {
+    font-size: 2rem;
+  }
+
+  /* why styles */
+  .why .container {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .why__info {
+    padding-bottom: 10rem;
+  }
+
+  /* contact styles */
+  .contact__title h2 {
+    padding-top: 2rem;
+  }
+
+  .contact__form input,
+  .contact__form textarea {
+    font-size: 2.2rem;
+  }
+
+  .contact__form input[type=submit] {
+    padding: 2.5rem 10rem;
   }
 
   /* footer styles */
@@ -722,7 +777,7 @@ a {
   }
 
   .footer__data {
-    margin-right: 15rem;
+    margin-right: 0rem;
   }
 
   .footer__bg-image {
@@ -735,34 +790,7 @@ a {
 
 @media (max-width: 660px) {
   html {
-    font-size: 5px;
-  }
-}
-
-/* Landscape phones and smaller */
-@media (max-width: 576px) {
-  html {
-    font-size: 4px;
-  }
-}
-
-@media (max-width: 480px) {
-  html {
-    font-size: 4px;
-  }
-
-  /* footer styles */
-  .footer__bg-image {
-    position: absolute;
-    top: 0rem;
-    right: 0rem;
-    max-width: 15rem;
-  }
-}
-
-@media (max-width: 375px) {
-  html {
-    font-size: 4px;
+    font-size: 6px;
   }
 
   /* header styles */
@@ -819,12 +847,25 @@ a {
     width: 100%;
   }
 
+  .promo__title h2 {
+    font-size: 3rem;
+  }
+
+  .promo__title h2 br {
+    display: none;
+  }
+
+  .promo__info li {
+    font-size: 2.2rem;
+  }
+
   /* from styles */
   .from__title h2 {
     font-size: 4rem;
   }
 
   .from__elements {
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 4rem 2rem;
   }
@@ -902,7 +943,7 @@ a {
 
   .why__info {
     box-shadow: 0 0 2.3rem rgba(0, 0, 0, 0.13);
-    padding: 8.4rem 2rem 5rem 2rem;
+    padding: 6rem 2rem 5rem 2rem;
     max-width: 100%;
   }
 
@@ -925,12 +966,17 @@ a {
     margin-bottom: 2rem;
   }
 
+  .authors__avatar {
+    margin-right: 2rem;
+    width: 30rem;
+  }
+
   /* more styles */
   .more {
-    background-position: bottom center;
+    background-position: bottom right -5rem;
   }
   .more .container {
-    padding: 2rem 2rem 1rem;
+    padding: 2rem 2rem 3rem;
   }
 
   .more__info {
@@ -942,8 +988,54 @@ a {
     padding-top: .5rem;
   }
 
+  .contact__form input,
+  .contact__form textarea {
+    font-size: 2.2rem;
+  }
+
   .contact__form-group input {
     width: calc((100% - 4.5rem) / 2);
+  }
+
+  .contact__form input[type=submit] {
+    padding: 2.5rem 10rem;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }  
+
+  /* footer styles */
+  .footer__slogan h2 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .footer__bg-image {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* from styles */
+  .from__element {
+    height: 14rem;
   }
 
   /* footer styles */
