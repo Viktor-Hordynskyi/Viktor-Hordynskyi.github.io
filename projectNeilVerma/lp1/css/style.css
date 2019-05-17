@@ -235,8 +235,9 @@ body {
   flex-direction: column;
 }
 
-.intro-forms__form input,
-.intro-forms__form select {
+#form1.intro-forms__form input[type=text],
+.intro-forms__form input[type=email],
+.intro-forms__form .intro-forms__form-select1 {
   border: none;
   border-radius: 1.5rem;
   color: #606060;
@@ -300,6 +301,183 @@ body {
 .intro-forms__info p {
   font-size: 1rem;
 }
+
+.intro-forms__subtile {
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.intro-forms__subtile h3 {
+  font-size: 2.5rem;
+}
+
+.input-forms__radio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.input-forms__radio-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-forms__radio-group input[type=radio] {
+  margin: 0 1rem 0 0;
+}
+
+.input-forms__radio label,
+.input-forms__radio h4 {
+  font-size: 2rem;
+}
+
+.input-forms__radio-block {
+  background-color: #ec6a66;
+  margin-bottom: 2rem;
+  padding: 2.5rem;
+  transform: scaleX(1.2);
+}
+
+.input-forms__radio-block input[type=radio] {
+  margin: 0 1rem 0 0;
+}
+
+.input-forms__radio-image {
+  margin: 0 auto;
+  max-width: 60%;
+}
+
+.input-forms__radio-image img {
+  width: 100%;
+}
+
+.input-form__card input,
+.input-form__card select {
+  color: #606060;
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+
+.input-forms__card-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.input-forms__card-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-forms__card-group label {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.input-forms__card-wrapper:first-child
+.input-forms__card-group:first-child {
+  width: 60%;
+}
+
+.input-forms__card-wrapper:first-child
+.input-forms__card-group:last-child {
+  width: 35%;
+}
+
+.input-forms__card-wrapper:nth-child(2)
+.input-forms__card-group:first-child {
+  width: 40%;
+}
+
+.input-forms__card-wrapper:nth-child(2)
+.input-forms__card-group:last-child {
+  width: 55%;
+}
+
+.input-forms__total {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-forms__total-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.input-forms__total-block:first-child {
+  border-bottom: 1px solid #fff;
+}
+
+.input-forms__total-block:last-child {
+  border-top: 1px solid #fff;
+}
+
+.input-forms__total-block h3 {
+  font-size: 2.5rem;
+}
+
+.input-forms__upgrade {
+  background-color: #eee;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.input-forms__upgrade label {
+  color: #ec6a66;
+  font-size: 2.2rem;
+}
+
+.input-forms__upgrade p {
+  color: #000;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.input-forms__upgrade p span {
+  color: #ec6a66;
+  text-decoration: underline;
+}
+
+.input-forms__upgrade h5 {
+  background-color: #fff;
+  color: #000;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-top: 2rem;
+  padding: 1rem .5rem;
+  text-align: center;
+}
+
+.input-forms__garant {
+  font-size: 1.5rem;
+  margin: 2rem auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* about styles */
 .about {
