@@ -572,6 +572,7 @@ a {
 
 .contact__form textarea {
   box-shadow: 0 0 3.1rem rgba(0, 0, 0, 0.11);
+  font-family: 'Decalotype-Regular';
   margin-bottom: 4.5rem;
   min-height: 24rem;
   width: 100%;
@@ -739,9 +740,9 @@ a {
   }
 
   /* steps styles */
-  .steps__image {
+  /*.steps__image {
     max-width: 20rem;
-  }
+  }*/
 
   .steps__info p {
     font-size: 2rem;
@@ -803,6 +804,10 @@ a {
     padding: 0;
   }
 
+  .header__button a {
+    font-size: 3rem;
+  }
+
   /* navbar styles */
   .navbar {
     background-color: #fff;
@@ -814,7 +819,7 @@ a {
   }
 
   .navbar__logo a {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
   }
 
@@ -826,9 +831,17 @@ a {
     margin-bottom: 2rem;
   }
 
+  .navbar__menu a {
+    font-size: 3.4rem;
+  }
+
   /* intro styles */
   .intro {
     padding: 0 2rem;
+  }
+
+  .intro__note p {
+    font-size: 2.2rem;
   }
 
   .intro__bottom {
@@ -848,7 +861,7 @@ a {
   }
 
   .promo__title h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .promo__title h2 br {
@@ -856,12 +869,12 @@ a {
   }
 
   .promo__info li {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
 
   /* from styles */
   .from__title h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   .from__elements {
@@ -896,7 +909,7 @@ a {
   }
 
   .steps__info p {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
   }
 
   /* who styles */
@@ -936,6 +949,14 @@ a {
     padding: 2.6rem 2rem;
   }
 
+  .who__info h3 {
+    font-size: 3.5rem;
+  }
+
+  .who__info p {
+    font-size: 2.3rem;
+  }
+
   /* why styles */
   .why .container {
     padding: 0;
@@ -945,6 +966,14 @@ a {
     box-shadow: 0 0 2.3rem rgba(0, 0, 0, 0.13);
     padding: 6rem 2rem 5rem 2rem;
     max-width: 100%;
+  }
+
+  .why__info h2 {
+    margin-bottom: 2rem;
+  }
+
+  .why__info p {
+    font-size: 3rem;
   }
 
   .why__bg {
@@ -971,6 +1000,16 @@ a {
     width: 30rem;
   }
 
+  .authors__data h2 {
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .authors__data h3,
+  .authors__info p {
+    font-size: 2.8rem;
+  }
+
   /* more styles */
   .more {
     background-position: bottom right -5rem;
@@ -983,6 +1022,10 @@ a {
     max-width: 45rem;
   }
 
+  .more__info p {
+    font-size: 2.6rem;
+  }
+
   /* contact styles */
   .contact__title h2 {
     padding-top: .5rem;
@@ -990,7 +1033,7 @@ a {
 
   .contact__form input,
   .contact__form textarea {
-    font-size: 2.2rem;
+    font-size: 3.2rem;
   }
 
   .contact__form-group input {
