@@ -140,12 +140,12 @@ a {
 
 .intro__titles h2 {
   font-family: 'Decalotype-ExtraBold';
-  font-size: 5.4rem;
+  font-size: 6.4rem;
   margin-bottom: 3rem;
 }
 
 .intro__titles h1 {
-  font-size: 2.9rem;
+  font-size: 3.6rem;
 }
 
 .intro__image {
@@ -173,7 +173,7 @@ a {
 
 .intro__note p {
   color: #ffffff;
-  font-size: 1.9rem;
+  font-size: 2.2rem;
 }
 
 /* wrapper styles */
@@ -291,7 +291,7 @@ a {
 
 .steps__block h2 {
   font-family: 'Decalotype-ExtraBold';
-  font-size: 5.5rem;
+  font-size: 4.8rem;
   text-transform: uppercase;
 }
 
@@ -603,7 +603,12 @@ a {
 
 /* footer styles */
 .footer {
-  background-color: #ffffff;
+  background-color: #369dd7;
+  padding-bottom: 6rem;
+}
+
+.footer__bg {
+  background-color: #fff;
   padding: 4rem 0 5rem;
 }
 
@@ -1019,7 +1024,7 @@ a {
   }
 
   .more__info {
-    max-width: 45rem;
+    max-width: 55rem;
   }
 
   .more__info p {
@@ -1049,6 +1054,19 @@ a {
 @media (max-width: 576px) {
   html {
     font-size: 6px;
+  }
+  
+  /* more styles */
+  .more__info {
+    max-width: 100%;
+  }
+
+  .more__info p:nth-child(2) {
+    max-width: 50rem;
+  }
+
+  .more__info p:nth-child(3) {
+    max-width: 45rem;
   }
 }
 

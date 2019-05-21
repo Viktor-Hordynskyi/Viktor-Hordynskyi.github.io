@@ -118,7 +118,7 @@ a {
 
 .intro__title h1 {
   font-family: 'Decalotype-ExtraBold';
-  font-size: 7rem;
+  font-size: 8rem;
   margin-bottom: 5rem;
 }
 
@@ -619,6 +619,14 @@ a {
 
   /* more styles */
   .more__info {
+    max-width: 100%;
+  }
+
+  .more__info p:nth-child(3) {
+    max-width: 50rem;
+  }
+
+  .more__info p:nth-child(4) {
     max-width: 50rem;
   }
 

@@ -119,8 +119,16 @@ a {
 .intro__titles h1 {
   color: #ffffff;
   font-family: 'Decalotype-Bold';
-  font-size: 3.5rem;
+  font-size: 4.3rem;
   text-transform: uppercase;
+}
+
+.intro__titles .intro__titles-br {
+  display: block;
+}
+
+.intro__titles h1 br {
+  display: none;
 }
 
 .intro__video {
@@ -206,8 +214,9 @@ a {
 }
 
 .toolbox__element p {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-align: justify;
+  text-transform: lowercase;
 }
 
 .toolbox__element p span {
@@ -215,6 +224,7 @@ a {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-align: left;
+  text-transform: uppercase;
 }
 
 .toolbox__element__img {
@@ -264,11 +274,16 @@ a {
   margin-bottom: 9rem;
 }
 
-.reasons__elements {
+.reasons__top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 13rem;
+  margin-bottom: 10rem;
+}
+
+.reasons__bottom {
+  margin: 0 auto 13rem;
+  max-width: 50%;
 }
 
 .reasons__left,
@@ -457,7 +472,12 @@ a {
 
 /* footer styles */
 .footer {
-  background-color: #ffffff;
+  background-color: #369dd7;
+  padding-bottom: 6rem;
+}
+
+.footer__bg {
+  background-color: #fff;
   padding: 4rem 0 5rem;
 }
 
@@ -551,6 +571,11 @@ a {
   html {
     font-size: 7px;
   }
+
+  /* intro styles */
+  .intro__titles h1 {
+    font-size: 3.6rem;
+  }
 }
 
 /* Portrait tablets and small desktops */
@@ -567,6 +592,11 @@ a {
   /* header styles */
   .header {
     background: #369dd7;
+  }
+
+  /* intro styles */
+  .intro__titles h1 {
+    font-size: 4.1rem;
   }
 }
 
@@ -618,6 +648,11 @@ a {
     font-size: 5px;
   }
 
+  /* intro styles */
+  .intro__titles h1 {
+    font-size: 3.8rem;
+  }
+
   /* clients styles */
   .clients__title h2 {
     font-size: 4.5rem;
@@ -642,7 +677,7 @@ a {
   }
 
   /* intro styles */
-  .intro__titles h1 br {
+  .intro__titles .intro__titles-br {
     display: none;
   }
   
@@ -670,6 +705,11 @@ a {
 @media (max-width: 480px) {
   html {
     font-size: 5px;
+  }
+  
+  /* intro styles */
+  .intro__titles h1 br {
+    display: block;
   }
 
   /* toolbox styles */
@@ -712,8 +752,12 @@ a {
   }
 
   /* reason styles */
-  .reasons__elements {
+  .reasons__top {
     flex-direction: column;
+  }
+
+  .reasons__bottom {
+    max-width: 100%;
   }
 
   .reasons__left {

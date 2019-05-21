@@ -950,7 +950,12 @@ body {
 
 /* footer styles */
 .footer {
-  background-color: #ffffff;
+  background-color: #369dd7;
+  padding-bottom: 6rem;
+}
+
+.footer__bg {
+  background-color: #fff;
   padding: 4rem 0 5rem;
 }
 
