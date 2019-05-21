@@ -1,0 +1,322 @@
+/* Fonts */
+@font-face {
+  font-family: 'almoni-dl-aaa-400';
+  src: url('../fonts/almoni-dl-aaa-400.eot');
+  src: url('../fonts/almoni-dl-aaa-400.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/almoni-dl-aaa-400.woff') format('woff'),
+  url('../fonts/almoni-dl-aaa-400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'almoni-dl-aaa-700';
+  src: url('../fonts/almoni-dl-aaa-700.eot');
+  src: url('../fonts/almoni-dl-aaa-700.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/almoni-dl-aaa-700.woff') format('woff'),
+  url('../fonts/almoni-dl-aaa-700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'almoni-dl-aaa-400';
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* container styles */
+.container {
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 120rem;
+}
+
+/* header styles */
+.header__intro {
+  max-width: 100%;
+}
+
+.header__intro img {
+  width: 100%;
+}
+
+/* title styles */
+.title {
+  padding: 8.4rem 0 8rem;
+}
+
+.title h1 {
+  color: #3c3c3c;
+  font-family: 'almoni-dl-aaa-700';
+  font-size: 9.5rem;
+  text-align: right;
+}
+
+/* events__styles */
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 13.5rem;
+}
+
+.events__element {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 9px 25px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 8rem;
+  width: calc(100% / 3 - 20px);
+}
+
+.events__image {
+  width: 100%;
+}
+
+.events__image img {
+  width: 100%;
+}
+
+.events__data {
+  padding: 0 2.5rem;
+}
+
+.events__title {
+  margin: 3rem 0 2rem;
+}
+
+.events__title h2 {
+  color: #3c3c3c;
+  font-size: 2.6rem;
+  text-align: right;
+}
+
+.events__info {
+  direction: rtl;
+  color: #8b8b8b;
+  margin-bottom: 3rem;
+}
+
+.events__location,
+.events__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.events__icon {
+  margin-left: 1rem;
+  height: 1.4rem;
+  width: 1.4rem;
+}
+
+.events__icon img {
+  width: 100%;
+}
+
+.events__location {
+  margin-bottom: 1rem;
+}
+
+.events__location h3 {
+  color: #8b8b8b;
+  font-size: 1.8rem;
+}
+
+.events__when h3 {
+  font-size: 1.8rem;
+}
+
+.events__when h3:not(:last-child) {
+  margin-bottom: .5rem;
+}
+
+.events__when h3 span {
+  font-family: 'almoni-dl-aaa-700';
+}
+
+.events__link {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.events__link a {
+  background-color: #3c3c3c;
+  border-radius: 25.5px;
+  color: #fff;  
+  display: inline-block;
+  font-family: 'almoni-dl-aaa-700';
+  font-size: 2rem;
+  padding: 1.45rem 5.3rem;
+  text-decoration: none;
+}
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 10px;
+  }
+
+  /* events__styles */
+  .events__element {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 10px;
+  }
+
+  /* events__styles */
+  .events__element {
+    width: calc(100% / 2 - 15px);
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+
+  /* events__styles */
+  .events__element {
+    width: 100%;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+
+  /* title styles */
+  .title {
+    padding: 2rem 0;
+  }
+
+  .title h1 {
+    font-size: 3.5rem;
+  }
+
+  /* events__styles */
+  .events {
+    margin-bottom: 2.1rem;
+  }
+
+  .events__element {
+    margin-bottom: 2.1rem;
+  }
+
+  .events__data {
+    padding: 0 1.5rem;
+  }
+
+  .events__title {
+    margin: 1.5rem 0 3.7rem;
+  }
+
+  .events__title h2 {
+    font-size: 2.2rem;
+  }
+
+  .events__info {
+    margin-bottom: 2.1rem;
+  }
+
+  .events__link {
+    margin-bottom: 1.9rem;
+  }
+
+  .events__link a {
+    padding: 1.4rem 6.3rem;
+  }
+}
