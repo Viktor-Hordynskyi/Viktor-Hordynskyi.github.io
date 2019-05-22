@@ -1,0 +1,71 @@
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+
+  /* container styles */
+  .container {
+    padding: 0 10px;
+  }
+
+  /* events__styles */
+  .events__element {
+    width: 100%;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+}
+/* Landscape phones and smaller */
+@media (max-width: 375px) {
+  html {
+    font-size: 10px;
+  }
+
+  /* title styles */
+  .title {
+    padding: 20px 0;
+  }
+
+  .title h1 {
+    font-size: 35px;
+  }
+
+  /* events__styles */
+  .events {
+    margin-bottom: 21px;
+  }
+
+  .events__element {
+    margin-bottom: 21px;
+  }
+
+  .events__data {
+    padding: 0 15px;
+  }
+
+  .events__title {
+    margin: 15px 0 37px;
+  }
+
+  .events__title h2 {
+    font-size: 22px;
+  }
+
+  .events__info {
+    margin-bottom: 21px;
+  }
+
+  .events__link {
+    margin-bottom: 19px;
+  }
+
+  .events__link a {
+    padding: 14px 63px;
+  }
+}

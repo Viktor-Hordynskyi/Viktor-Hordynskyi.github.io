@@ -98,6 +98,7 @@ body {
 
 .title h1 {
   color: #3c3c3c;
+  direction: rtl;
   font-family: 'almoni-dl-aaa-700';
   font-size: 9.5rem;
   text-align: right;
@@ -138,6 +139,14 @@ body {
   padding: 0 2.5rem;
 }
 
+.events__title h2,
+.events__location h3,
+.events__when h3,
+.events__lenk a {
+  direction: rtl;
+  text-align: right;
+}
+
 .events__title {
   margin: 3rem 0 2rem;
 }
@@ -145,11 +154,9 @@ body {
 .events__title h2 {
   color: #3c3c3c;
   font-size: 2.6rem;
-  text-align: right;
 }
 
 .events__info {
-  direction: rtl;
   color: #8b8b8b;
   margin-bottom: 3rem;
 }
@@ -163,6 +170,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  justify-content: flex-end;
 }
 
 .events__icon {
