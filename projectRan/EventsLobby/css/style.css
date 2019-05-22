@@ -163,6 +163,7 @@ body {
 
 .events__location,
 .events__date {
+  direction: rtl;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,7 +171,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  justify-content: flex-end;
 }
 
 .events__icon {
