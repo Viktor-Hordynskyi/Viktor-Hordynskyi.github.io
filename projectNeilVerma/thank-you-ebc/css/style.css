@@ -1,0 +1,345 @@
+/* Fonts */
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: url('../fonts/Decalotype-Regular.eot');
+  src: url('../fonts/Decalotype-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Regular.woff') format('woff'),
+  url('../fonts/Decalotype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: url('../fonts/Decalotype-Bold.eot');
+  src: url('../fonts/Decalotype-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Bold.woff') format('woff'),
+  url('../fonts/Decalotype-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Decalotype-Regular';
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 130rem;
+}
+
+/* header styles */
+.header {
+  background-color: #fff;
+}
+
+/* navbar styles */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+  /*transition: .3s all linear;*/
+  height: 12rem;
+}
+
+.navbar.fixed {
+  background-color: #fff;
+  box-shadow: 0 .5rem 1rem #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar.fixed .navbar__menu {
+  display: none;
+}
+
+.navbar__logo {
+  height: 7rem;
+  z-index: 999;
+}
+
+.navbar__logo img {
+  height: 100%;
+}
+
+.navbar__toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  height: 3rem;
+  width: 4rem;
+  z-index: 999;
+}
+
+.navbar__toggler span {
+  display: block;
+  height: .5rem;
+  width: 100%;
+}
+
+.navbar__toggler span:nth-child(odd) {
+  background: #000;
+}
+
+.navbar__toggler.close span:nth-child(odd) {
+  background: transparent;
+}
+
+.navbar__toggler.close span:nth-child(even) {
+  background: #000;
+}
+
+.navbar__toggler.close span:nth-child(2) {
+  transform: rotate(45deg) translateX(.8rem);
+}
+
+.navbar__toggler.close span:nth-child(4) {
+  transform: rotate(-45deg) translateX(.8rem);
+}
+
+.navbar__hamburger-menu {
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar__hamburger-menu.show {
+  display: flex;
+}
+
+.navbar__hamburger-menu li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.navbar__hamburger-menu a {
+  color: #222;
+  display: block;
+  font-family: 'Decalotype-Bold';
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.navbar__hamburger-menu a:hover {
+  color: #3593c5;
+}
+
+.navbar__hamburger-menu li:last-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar__hamburger-menu li:last-child a {
+  margin: 0 2rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.navbar__hamburger-menu li:last-child a:hover {
+  box-shadow: 0 0 1rem #000;
+  border-radius: 50%;
+}
+
+.navbar__hamburger-menu li:last-child a img {
+  width: 100%;
+}
+
+/* thx-ebc styles */
+.thx-ebc {
+  background-color: #429ace;
+  min-height: calc(100vh - 12rem);
+}
+
+.thx-ebc__title {
+  padding: 15rem 0 10rem;
+  text-align: center;
+}
+
+.thx-ebc__title h1 {
+  color: #fff;
+  font-family: 'Decalotype-Bold';
+  font-size: 8rem;
+}
+
+.thx-ebc__video {
+  margin: 0 auto;
+  height: 60rem;
+  max-width: 110rem;
+}
+
+.thx-ebc__video iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.thx-ebc__note {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.thx-ebc__note h2 {
+  color: #fff; 
+  font-size: 3rem;
+  margin: 4rem 0 8rem;
+}
+
+.thx-ebc__note a {
+  background-color: #3b5998;
+  border-radius: 1rem;
+  color: #fff;  
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2rem;
+  letter-spacing: .3rem;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.thx-ebc__note a:hover {
+  color: #429ace;
+}
+
+.thx-ebc__note a img {
+  margin-right: 2rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* container styles */
+  .container {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* navbar styles */
+  .navbar {
+    height: 16rem;
+  }
+
+  /* thx-ebc styles */
+  .thx-ebc {
+    min-height: calc(100vh - 16rem);
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* navbar styles */
+  .navbar {
+    padding: 0 2rem;
+  }
+}
