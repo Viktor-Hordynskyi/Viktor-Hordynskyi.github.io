@@ -624,7 +624,60 @@ body {
 .footer__soc a img {
   width: 100%;
 }
+/*------------------*/
+/*---pages styles---*/
+/*------------------*/
+/* legal and privacy styles*/
+.privacy,
+.legal {
+  color: #171717;
+  padding: 3rem 0 2rem;
+}
 
+.privacy h1,
+.legal h1 {
+  font-family: 'Decalotype-Black';
+  font-size: 5rem;
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.privacy h1::before,
+.legal h1::before {
+  content: "";
+  background-color: #3593c5;
+  position: absolute;
+  left: 0;
+  bottom: -3rem;
+  height: 3px;
+  width: 10%;
+}
+
+.privacy h2,
+.legal h2 {
+  font-family: 'Decalotype-Bold';
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.privacy p,
+.legal p {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.privacy ul,
+.legal ul {
+  list-style: disc;
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.privacy ul li,
+.legal ul li {
+  font-size: 1.8rem;
+}
 
 
 
@@ -787,8 +840,8 @@ body {
   }
 
   /* navbar styles */
-  .navbar__menu li {
-    margin: 0 1.5rem;
+  .navbar {
+    padding: 0 2rem;
   }
 
   /* intro styles */
@@ -805,6 +858,10 @@ body {
 
   .build__item {
     width: 30%;
+  }
+
+  .build__item-title h4 {
+    font-size: 2.6rem;
   }
 
   .build__gif {

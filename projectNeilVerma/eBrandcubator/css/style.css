@@ -1,0 +1,443 @@
+/* Fonts */
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: url('../fonts/Decalotype-Regular.eot');
+  src: url('../fonts/Decalotype-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Regular.woff') format('woff'),
+  url('../fonts/Decalotype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Light';
+  src: url('../fonts/Decalotype-Light.eot');
+  src: url('../fonts/Decalotype-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Light.woff') format('woff'),
+  url('../fonts/Decalotype-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: url('../fonts/Decalotype-Bold.eot');
+  src: url('../fonts/Decalotype-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Bold.woff') format('woff'),
+  url('../fonts/Decalotype-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Decalotype-Regular';
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 130rem;
+}
+
+/* header styles */
+.header {
+  background: url(../img/header-bg.jpg) center no-repeat;
+  background-size: 100% 100%;
+  padding: 18rem 0 25rem;
+}
+
+.header__welcome {
+  background: url(../img/header-welcome-bg.png) bottom left no-repeat;
+  background-size: contain;
+  color: #fff;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 0 2rem 5rem;
+  max-width: 89rem;
+}
+
+.header__welcome h1 {
+  font-family: 'Decalotype-Bold';
+  font-size: 12.1rem;
+  line-height: 12rem;
+  letter-spacing: 0.292rem;
+}
+
+.header__welcome h2 {
+  font-family: 'Decalotype-Light';
+  font-size: 7.6rem;
+  letter-spacing: 0.122rem;
+}
+
+.header__logo {
+  position: absolute;
+  right: 0;
+  bottom: -22rem;
+}
+
+.header__logo {
+  margin-left: auto;
+  max-width: 30rem;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+/* hey styles */
+.hey {
+  background-color: #d1d6e1;
+}
+
+.hey__title {
+  padding: 8rem 0 5rem;
+}
+
+.hey__title h2 {
+  font-family: 'Decalotype-Bold';
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.hey__title p {
+  font-size: 2.5rem;
+}
+
+.hey__title p:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.hey__elements {
+  margin-bottom: 7rem;
+}
+
+.hey__element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hey__element:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.hey__image {
+  background-color: #ffffff;
+  border: 0.5rem solid #37a7dd;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 14.5rem;
+  width: 14.5rem;
+}
+
+.hey__image img {
+  height: 12rem;
+  width: 12rem;
+}
+
+.hey__info {
+  font-size: 2.5rem;
+  margin-left: 7.5rem;
+}
+
+.hey__info h3 {
+  font-family: 'Decalotype-Bold';
+}
+
+/* steps styles */
+.steps {
+  background-color: #ffffff;
+}
+
+.steps__title {
+  padding: 11rem 0 4rem;
+}
+
+.steps__title h2 {
+  font-family: 'Decalotype-Bold';
+  font-size: 3rem;
+}
+
+.steps__elements {
+  margin-bottom: 7rem;
+}
+
+.steps__element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.steps__element:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+.steps__image {
+  background-color: #ffffff;
+  border: 0.5rem solid #111111;
+  border-radius: 50%;
+  padding: 1rem;
+  height: 13.5rem;
+  width: 13.5rem;
+}
+
+.steps__image img {
+  height: 11rem;
+  width: 11rem;
+}
+.steps__info {
+  font-size: 2.5rem;
+  margin-left: 7.5rem;
+}
+
+.steps__info h3 {
+  font-family: 'Decalotype-Bold';
+  font-size: 3rem;
+}
+
+.steps__info p a {
+  color: #379dd7;
+}
+
+/* promo styles */
+.promo {
+  background: url(../img/promo-avatar.png) bottom right no-repeat, #379dd7;
+  background-size: 30%;
+}
+
+.promo__data {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 11rem 0 6rem;
+  max-width: 100rem;
+}
+
+.promo__data p {
+  font-family: 'Decalotype-Light';
+}
+
+.promo__data p:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.promo__data h2 {
+  font-weight: bold;
+}
+
+.promo__sign {
+  width: 16rem;
+}
+
+.promo__sign img {
+  width: 100%;
+}
+
+/* promo-button styles */
+.promo-button {
+  padding: 10rem 0;
+  text-align: center;
+}
+
+.promo-button a {
+  background-color: #f47571;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 4.5rem;
+  padding: 4rem 7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.promo-button a:hover {
+  background-color: #111111;
+}
+
+/*------------------*/
+/* start page style */
+/*------------------*/
+.start {
+  background-color: #429ace;
+  height: 100vh;
+}
+
+.start__data {
+  background: url(../img/start-avatar.png) bottom left no-repeat;
+  background-size: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  padding-top: 30rem;
+  text-align: right;
+  height: 100%;
+}
+
+.start__title {
+  color: #fff;
+  margin-bottom: 4rem;
+}
+
+.start__title h1 {
+  font-family: 'Decalotype-Bold';
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.start__title h2 {
+  background-color: rgba(27, 20, 100, .24);
+  display: inline-block;
+  font-size: 2.3rem;
+  padding: .5rem;
+}
+
+.start__buttons {
+  margin-bottom: 12rem;
+}
+
+.start__buttons a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 2.5rem;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.start__buttons a.red {
+  background-color: #f47571;
+}
+
+.start__buttons a.green {
+  background-color: #388a96;
+  margin-left: 3rem;
+}
+
+.start__logo {
+  margin-left: auto;
+  width: 25rem;
+}
+
+.start__logo img {
+  width: 100%;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* container styles */
+  .container {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* header styles */
+  .header__welcome h2 {
+    font-size: 7rem;
+  }
+
+  .header__welcome h1 {
+    font-size: 9.5rem;
+  }
+
+  /* promo styles */
+  .promo {
+    background-size: 38%;
+  }
+}
