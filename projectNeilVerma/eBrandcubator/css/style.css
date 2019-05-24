@@ -373,6 +373,15 @@ body {
   html {
     font-size: 9px;
   }
+
+  /* start styles */
+  .start__title h1 {
+    font-size: 5.1rem;
+  }
+
+  .start__title h2 {
+    font-size: 2.7rem;
+  }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   html {
@@ -383,6 +392,14 @@ body {
   .start {
     background-size: 50%;
   }
+
+  .start__title h1 {
+    font-size: 5.1rem;
+  }
+
+  .start__title h2 {
+    font-size: 2.7rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   html {
@@ -391,6 +408,14 @@ body {
   /* start styles */
   .start {
     background-size: 50%;
+  }
+
+  .start__title h1 {
+    font-size: 5.1rem;
+  }
+
+  .start__title h2 {
+    font-size: 2.7rem;
   }
 }
 
