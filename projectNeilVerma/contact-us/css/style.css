@@ -1,0 +1,520 @@
+/* Fonts */
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: url('../fonts/Decalotype-Regular.eot');
+  src: url('../fonts/Decalotype-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Regular.woff') format('woff'),
+  url('../fonts/Decalotype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Light';
+  src: url('../fonts/Decalotype-Light.eot');
+  src: url('../fonts/Decalotype-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Light.woff') format('woff'),
+  url('../fonts/Decalotype-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: url('../fonts/Decalotype-Bold.eot');
+  src: url('../fonts/Decalotype-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Bold.woff') format('woff'),
+  url('../fonts/Decalotype-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Black';
+  src: url('../fonts/Decalotype-Black.eot');
+  src: url('../fonts/Decalotype-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Black.woff') format('woff'),
+  url('../fonts/Decalotype-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Decalotype-Regular';
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 130rem;
+}
+
+/* header styles */
+.header {
+  background-color: #fff;
+}
+
+/* navbar styles */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+  /*transition: .3s all linear;*/
+  height: 12rem;
+}
+
+.navbar.fixed {
+  background-color: #fff;
+  box-shadow: 0 .5rem 1rem #ccc;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar.fixed .navbar__menu {
+  display: none;
+}
+
+.navbar__logo {
+  height: 7rem;
+  z-index: 999;
+}
+
+.navbar__logo img {
+  height: 100%;
+}
+
+.navbar__toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  height: 3rem;
+  width: 4rem;
+  z-index: 999;
+}
+
+.navbar__toggler span {
+  display: block;
+  height: .5rem;
+  width: 100%;
+}
+
+.navbar__toggler span:nth-child(odd) {
+  background: #000;
+}
+
+.navbar__toggler.close span:nth-child(odd) {
+  background: transparent;
+}
+
+.navbar__toggler.close span:nth-child(even) {
+  background: #000;
+}
+
+.navbar__toggler.close span:nth-child(2) {
+  transform: rotate(45deg) translateX(.8rem);
+}
+
+.navbar__toggler.close span:nth-child(4) {
+  transform: rotate(-45deg) translateX(.8rem);
+}
+
+.navbar__hamburger-menu {
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 99;
+}
+
+.navbar__hamburger-menu.show {
+  display: flex;
+}
+
+.navbar__hamburger-menu li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.navbar__hamburger-menu a {
+  color: #222;
+  display: block;
+  font-family: 'Decalotype-Bold';
+  font-size: 5rem;
+  text-decoration: none;
+}
+
+.navbar__hamburger-menu a:hover {
+  color: #3593c5;
+}
+
+.navbar__hamburger-menu li:last-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar__hamburger-menu li:last-child a {
+  margin: 0 2rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.navbar__hamburger-menu li:last-child a:hover {
+  box-shadow: 0 0 1rem #000;
+  border-radius: 50%;
+}
+
+.navbar__hamburger-menu li:last-child a img {
+  width: 100%;
+}
+
+/* contact styles */
+.contact {
+  min-height: calc(100vh - 12rem - 14rem);
+}
+
+.contact__title {
+  margin-bottom: 10rem;
+}
+
+.contact__title h1 {
+  font-family: 'Decalotype-Black';
+  font-size: 4rem;
+  position: relative;
+}
+
+.contact__title h1:before {
+  content: "";
+  background-color: #3593c5;
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  height: 3px;
+  width: 5%;
+}
+
+.contact__map {
+  margin-bottom: 6rem;
+  height: 50rem;
+  width: 100%;
+}
+
+.contact__map iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+.contact__info h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.contact__form,
+.contact__offices {
+  width: 48%;
+}
+
+.contact__form input[type=text],
+.contact__form input[type=email],
+.contact__form textarea {
+  background-color: #f6f6f6;
+  border: none;
+  color: #171717;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding: 2.5rem 3rem;
+  width: 100%;
+}
+
+.contact__form ::placeholder {
+  color: #171717;
+}
+
+.contact__form textarea {
+  min-height: 20rem;
+}
+
+.contact__form input[type=submit] {
+  background-color: #00a8ff;
+  border: none;
+  border-radius: 5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2rem 3rem;
+}
+
+.contact__offices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact__office {
+  width: 48%;
+}
+
+.contact__image {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.contact__image img {
+  width: 100%;
+}
+
+.contact__office p {
+  font-family: 'Decalotype-Light';
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+/* footer styles */
+.footer {
+  background-color: #3c84bf;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+  height: 14rem;
+}
+
+.footer__terms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__terms a {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer__terms a:first-child {
+  margin-right: 5rem;
+}
+
+.footer__terms a img {
+  margin-bottom: 2rem;
+  width: 5rem;
+}
+
+.footer__logo {
+  width: 10rem;
+}
+
+.footer__logo img {
+  width: 100%;
+}
+
+.footer__soc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__soc a {
+  display: block;
+  width: 5rem;
+}
+
+.footer__soc a:last-child {
+  margin-left: 5rem;
+}
+
+.footer__soc a img {
+  width: 100%;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* container styles */
+  .container {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  /* contact styles */
+  .contact__map {
+    height: 70rem;
+  }
+
+  .contact__info h2 {
+    font-size: 3rem;
+  }
+
+  .contact__form input[type=text],
+  .contact__form input[type=email], 
+  .contact__form textarea {
+    font-size: 2.5rem;
+  }
+
+  .contact__office p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* contact styles */
+  .contact__info {
+    flex-direction: column;
+  }
+
+  .contact__form,
+  .contact__offices {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .contact__form {
+    margin-bottom: 5rem;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* navbar styles */
+  .navbar {
+    height: 16rem;
+  }
+
+  /* contact styles */
+  .contact {
+    min-height: calc(100vh - 16rem - 14rem)
+  }
+
+  .contact__form,
+  .contact__offices {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* contact styles */
+  .contact__form,
+  .contact__offices {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* navbar styles */
+  .navbar {
+    padding: 0 2rem;
+  }
+}
