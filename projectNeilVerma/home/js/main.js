@@ -24,20 +24,20 @@ $(document).ready(function() {
 		slidesPerView: 4,
 		spaceBetween: 20,
 		breakpoints: {
-	    375: {
-	    	slidesPerView: 1,
-	    	spaceBetween: 0
-	    },
-	    576: {
-	    	slidesPerView: 2,
-	    	spaceBetween: 10
-	    },
-	    767: {
-	    	slidesPerView: 3,
-	    	spaceBetween: 20
-    }
-  }
-});
+			375: {
+				slidesPerView: 1,
+				spaceBetween: 0
+			},
+			576: {
+				slidesPerView: 2,
+				spaceBetween: 10
+			},
+			767: {
+				slidesPerView: 3,
+				spaceBetween: 20
+			}
+		}
+	});
 
 	var mySwiper = new Swiper ('.what__slider', {
 		direction: 'horizontal',

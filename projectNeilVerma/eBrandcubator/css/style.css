@@ -293,18 +293,18 @@ body {
 /* start page style */
 /*------------------*/
 .start {
-  background-color: #429ace;
+  background: url(../img/start-avatar.png) bottom left no-repeat, #429ace;
+  background-size: 50%;
   height: 100vh;
 }
 
 .start__data {
-  background: url(../img/start-avatar.png) bottom left no-repeat;
-  background-size: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: auto;
-  padding-top: 30rem;
+  padding-top: 20rem;
+  position: relative;
   text-align: right;
   height: 100%;
 }
@@ -316,14 +316,14 @@ body {
 
 .start__title h1 {
   font-family: 'Decalotype-Bold';
-  font-size: 4rem;
+  font-size: 4.6rem;
   margin-bottom: 1rem;
 }
 
 .start__title h2 {
   background-color: rgba(27, 20, 100, .24);
   display: inline-block;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   padding: .5rem;
 }
 
@@ -350,12 +350,20 @@ body {
 }
 
 .start__logo {
+  margin-top: 10rem;
   margin-left: auto;
   width: 25rem;
 }
 
 .start__logo img {
   width: 100%;
+}
+
+.start__sign {
+  color: #fff;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 7%;
 }
 
 
@@ -401,6 +409,11 @@ body {
     padding: 0 2rem;
     max-width: 100%;
   }
+
+  /* start page style */
+  .start__sign {
+    left: 10%;
+  }
 }
 
 @media (max-width: 660px) {
@@ -413,6 +426,23 @@ body {
 @media (max-width: 576px) {
   html {
     font-size: 4px;
+  }
+
+  /* start page style */
+  .start {
+    background-size: 65%;
+  }
+
+  .start__title h1 {
+    font-size: 4rem;
+  }
+
+  .start__title h2 {
+    font-size: 2.3rem;
+  }
+
+  .start__sign {
+    left: 15%;
   }
 }
 
@@ -439,5 +469,14 @@ body {
   /* promo styles */
   .promo {
     background-size: 38%;
+  }
+
+  /* start page style */
+  .start {
+    background-size: 80%;
+  }
+
+  .start__sign {
+    left: 15%;
   }
 }

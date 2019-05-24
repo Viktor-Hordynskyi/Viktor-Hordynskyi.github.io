@@ -111,7 +111,7 @@ body {
   justify-content: space-between;
   padding: 0 7rem;
   transition: .3s all linear;
-  height: 12rem;
+  height: 14rem;
 }
 
 .navbar.fixed {
@@ -136,7 +136,7 @@ body {
 }
 
 .navbar__logo {
-  height: 7rem;
+  height: 9rem;
 }
 
 .navbar__logo img:first-child {
@@ -166,7 +166,6 @@ body {
   font-family: 'Decalotype-Bold';
   font-size: 2.5rem;
   text-decoration: none;
-  text-transform: uppercase;
   padding: .5rem 0;
 }
 
@@ -181,17 +180,22 @@ body {
   cursor: pointer;
   position: relative;
   height: 3rem;
-  width: 4rem;
+  width: 4.5rem;
   z-index: 999;
 }
 
 .navbar__toggler span {
+  border-radius: 1rem;
   display: block;
   height: .5rem;
   width: 100%;
 }
 
 .navbar__toggler span:nth-child(odd) {
+  background: #fff;
+}
+
+.navbar.fixed .navbar__toggler span:nth-child(odd) {
   background: #000;
 }
 
@@ -204,11 +208,11 @@ body {
 }
 
 .navbar__toggler.close span:nth-child(2) {
-  transform: rotate(45deg) translateX(.8rem);
+  transform: rotate(45deg) translateX(22%);
 }
 
 .navbar__toggler.close span:nth-child(4) {
-  transform: rotate(-45deg) translateX(.8rem);
+  transform: rotate(-45deg) translateX(22%);
 }
 
 .navbar__hamburger-menu {
@@ -273,8 +277,8 @@ body {
   align-items: flex-end;
   justify-content: center;
   margin-left: auto;
-  height: calc(100vh - 12rem);
-  max-width: 55rem;
+  height: calc(100vh - 14rem);
+  max-width: 71rem;
 }
 
 .intro__title {
@@ -284,7 +288,7 @@ body {
 .intro__title h1 {
   color: #fff;
   font-family: 'Decalotype-Bold';
-  font-size: 6.2rem;
+  font-size: 8rem;
   margin-bottom: 4rem;
   position: relative;
   text-align: right;
@@ -310,14 +314,15 @@ body {
 
 .intro__subtitle h2 {
   color: #fff;
-  font-size: 2.1rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
 }
 
 .intro__subtitle a {
   background-color: #f47571;
   color: #fff;
-  font-size: 1.7rem;
+  font-family: 'Decalotype-Black';
+  font-size: 1.8rem;
   padding: 1.5rem 2rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -345,13 +350,14 @@ body {
 .build__title h2 {
   color: #3593c5;
   font-family: 'Decalotype-Black';
-  font-size: 3.5rem;
+  font-size: 5rem;
   margin-bottom: 2.5rem;
 }
 
 .build__title h3 {
   color: #9d9e9e;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -450,7 +456,7 @@ body {
   font-size: 1.7rem;
   letter-spacing: 0.14rem;
   margin: 0 1.5rem 2rem;
-  padding: .5rem 1rem;
+  padding: .7rem 1.5rem;
   text-decoration: none;
   text-transform: uppercase;
 }
