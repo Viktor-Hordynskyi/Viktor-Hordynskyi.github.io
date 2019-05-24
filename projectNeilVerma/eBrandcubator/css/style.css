@@ -192,7 +192,7 @@ body {
 
 .steps__title h2 {
   font-family: 'Decalotype-Bold';
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .steps__elements {
@@ -377,10 +377,19 @@ body {
   html {
     font-size: 8px;
   }
+
+  /* start styles */
+  .start {
+    background-size: 50%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   html {
     font-size: 7px;
+  }
+  /* start styles */
+  .start {
+    background-size: 50%;
   }
 }
 
@@ -389,12 +398,22 @@ body {
   html {
     font-size: 6px;
   }
+
+  /* start styles */
+  .start {
+    background-size: 60%;
+  }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
     font-size: 5px;
+  }
+
+  /* start styles */
+  .start {
+    background-size: 60%;
   }
 }
 
@@ -411,6 +430,10 @@ body {
   }
 
   /* start page style */
+  .start {
+    background-size: 50%;
+  }
+
   .start__sign {
     left: 10%;
   }
