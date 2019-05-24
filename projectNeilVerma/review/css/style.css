@@ -147,12 +147,17 @@ body {
 }
 
 .navbar__toggler span {
+  border-radius: 1rem;
   display: block;
   height: .5rem;
   width: 100%;
 }
 
 .navbar__toggler span:nth-child(odd) {
+  background: #fff;
+}
+
+.navbar.fixed .navbar__toggler span:nth-child(odd) {
   background: #000;
 }
 
@@ -164,12 +169,20 @@ body {
   background: #000;
 }
 
+.navbar.fixed .navbar__toggler.close span:nth-child(odd) {
+  background: transparent;
+}
+
+.navbar.fixed .navbar__toggler.close span:nth-child(even) {
+  background: #000;
+}
+
 .navbar__toggler.close span:nth-child(2) {
-  transform: rotate(45deg) translateX(.8rem);
+  transform: rotate(45deg) translateX(20%);
 }
 
 .navbar__toggler.close span:nth-child(4) {
-  transform: rotate(-45deg) translateX(.8rem);
+  transform: rotate(-45deg) translateX(20%);
 }
 
 .navbar__hamburger-menu {

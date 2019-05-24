@@ -56,5 +56,19 @@ $(document).ready(function() {
 	$("#toggler").on('click', function() {
 		$('.navbar__hamburger-menu').toggleClass('show');
 		$('.navbar__toggler').toggleClass('close');
+
+		let w_scroll = $(window).scrollTop();
+		let navbar = $('.navbar').height();
+		let t_top = $('.content').offset().top;	
+
+		if($('.navbar__hamburger-menu').hasClass('show')) {
+			$('.parallax').css({'perspective' : 'none'})
+		} else {
+			if ((t_top-navbar) <= w_scroll) {
+				$('.parallax').css({'perspective' : 'none'})
+			} else {
+				$('.parallax').css({'perspective' : '2px'})
+			}
+		}		
 	})	
 })
