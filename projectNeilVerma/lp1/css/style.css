@@ -1191,8 +1191,39 @@ body {
   }
 
   /* why styles */
+  .why .container {
+    flex-direction: column;
+  }
+
   .why__info {
-    background-size: 55%;
+    background-size: 30rem;
+    max-width: 100%;
+  }
+
+  .why__intro {
+    margin-right: 0rem;
+  }
+
+  .why__info h3 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .why__info p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    width: 80%;
+  }
+
+  .why__signature {
+    margin-top: 3rem;
+    margin-right: 24rem;
+    text-align: left;
+  }
+
+  .why__signature h4 {
+    font-size: 2.5rem;
+    margin-left: 2rem;
   }
 
   /* tips styles */
@@ -1269,11 +1300,7 @@ body {
 
   /* why styles */
   .why__info {
-    background-size: 65%;
-  }
-
-  .why__intro {
-    margin-right: 2rem;
+    background-size: 30rem;
   }
 
   .why__intro h2 {
@@ -1297,16 +1324,12 @@ body {
     padding: 3rem 3rem 6.5rem !important;
   }
 
-  .why__intro {
-    margin-right: 2rem;
-  }
-
   .why__intro h2 {
     font-size: 2.9rem;
   }
 
   .why__info {
-    background-size: 60%;
+    background-size: 30rem;
   }
 }
 
@@ -1344,42 +1367,6 @@ body {
     line-height: 3.5rem;
   }
 
-  /* why styles */
-  .why .container {
-    flex-direction: column;
-  }
-
-  .why__intro {
-    margin-right: 0rem;
-  }
-
-  .why__info {
-    background-size: 25rem;
-    max-width: 100%;
-  }
-
-  .why__info h3 {
-    font-size: 3rem;
-    line-height: 4rem;
-  }
-
-  .why__info p {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
-    width: 80%;
-  }
-
-  .why__signature {
-    margin-top: 3rem;
-    margin-right: 24rem;
-    text-align: left;
-  }
-
-  .why__signature h4 {
-    font-size: 2.5rem;
-    margin-left: 2rem;
-  }
-
   /* tips styles */
   .tips__top {
     flex-direction: column;
@@ -1396,6 +1383,11 @@ body {
 
   .tips__promo-mobile img {
     width: 100%;
+  }
+
+	/* why styles */
+  .why__info {
+    background-size: 25rem;
   }
 
   /* next styles */
