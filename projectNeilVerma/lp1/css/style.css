@@ -1063,7 +1063,7 @@ body {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   html {
-    font-size: 4px;
+    font-size: 5px;
   }
 
   /* container styles */
@@ -1075,6 +1075,10 @@ body {
   /* intro styles */
   .intro .container {
     flex-direction: column;
+  }
+
+  .intro-data__title {
+    text-align: center;
   }
 
   .intro-forms {
@@ -1144,8 +1148,23 @@ body {
   }
 
   /* hurry styles */
+  .hurry__blocks {
+    flex-wrap: wrap;
+  }
+
   .hurry__block {
-    width: calc((100% - 6rem) / 3);
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+
+  .hurry__info {
+    margin-top: 2rem;
+  }
+
+  .hurry__info p,
+  .hurry__info h3 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
   }
 
   /* why styles */
@@ -1156,6 +1175,10 @@ body {
   /* tips styles */
   .tips .container {
     padding: 0;
+  }
+
+  .tips__title h2 {
+    font-size: 3.6rem;
   }
 
   .tips__data {    
@@ -1292,20 +1315,6 @@ body {
     display: none;
   }
 
-  /* hurry styles */
-  .hurry__blocks {
-    flex-wrap: wrap;
-  }
-
-  .hurry__block {
-    margin-bottom: 4rem;
-    width: 100%;
-  }
-
-  .hurry__info {
-    margin-top: 2rem;
-  }
-
   .hurry__info p,
   .hurry__info h3 {
     font-size: 2.5rem;
@@ -1394,6 +1403,10 @@ body {
   }
 
   /* intro styles */
+  .intro-data__title h1 {
+    font-size: 3.6rem;
+  }
+
   .intro-forms__switch h4,
   .intro-forms__switch h4 span {
     font-size: 3rem;
