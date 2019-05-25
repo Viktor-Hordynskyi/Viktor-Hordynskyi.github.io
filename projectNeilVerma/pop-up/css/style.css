@@ -72,7 +72,7 @@ body {
 
 /* popup styles */
 .popup {
-  background-color: #e6e7e8;
+  
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -85,6 +85,14 @@ body {
   text-align: center;
   height: 42rem;
   width: 72rem;
+}
+
+.popup.blue {
+  background-color: #00a8ff;
+}
+
+.popup.grey {
+  background-color: #e6e7e8;
 }
 
 .popup__close {
@@ -113,7 +121,7 @@ body {
 
 .popup__title h3 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .popup__form {
@@ -122,6 +130,7 @@ body {
   width: 90%;
 }
 
+.popup__form input[type=text],
 .popup__form input[type=email] {
   border: 1px solid #00a8ff;
   border-radius: 1rem;
@@ -130,12 +139,13 @@ body {
   padding: 1rem 2rem;
 }
 
+.popup__form input[type=text]:focus,
 .popup__form input[type=email]:focus {
   outline: none;
 }
 
 .popup__form input[type=submit] {
-  background-color: #00a8ff;
+  background-color: #f16763;
   border: none;
   border-radius: 5rem;
   color: #fff;
@@ -152,12 +162,10 @@ body {
 }
 
 .popup__note {
-  color: #777;
+  color: #333;
   font-family: 'Decalotype-Light';
   font-size: 2rem;
-}
-
-.popup__note span {
+  margin-top: 2rem;
 }
 
 

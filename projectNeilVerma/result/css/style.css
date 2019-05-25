@@ -149,6 +149,10 @@ body {
   font-weight: bold;
 }
 
+.result__description-br {
+  display: none;
+}
+
 .result__button {
   text-align: center;
   margin-top: 10rem;
@@ -210,6 +214,10 @@ body {
   .container {
     padding: 0 2rem;
     max-width: 100%;
+  }
+
+  .result__description-br {
+    display: block;
   }
 }
 

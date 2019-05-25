@@ -249,7 +249,7 @@ body {
   background-color: #36a6dc;
   color: #fff;
   text-align: center;
-  padding: 10rem 0 4rem;
+  padding: 2rem 0 4rem;
 }
 
 .review__title h1 {
@@ -502,7 +502,7 @@ body {
 }
 
 .review__group input[type=submit] {
-  background-color: #36a6dc;
+  background-color: #db6e6e;
   border: none;
   border-radius: 2rem;
   color: #fff;
@@ -531,6 +531,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
+  width: 16rem;
 }
 
 .footer__terms a {
@@ -543,9 +545,9 @@ body {
   text-transform: uppercase;
 }
 
-.footer__terms a:first-child {
+/*.footer__terms a:first-child {
   margin-right: 5rem;
-}
+}*/
 
 .footer__terms a img {
   margin-bottom: 2rem;
@@ -564,6 +566,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 16rem;
 }
 
 .footer__soc a {

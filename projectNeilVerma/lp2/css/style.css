@@ -96,6 +96,10 @@ a {
   text-transform: uppercase;
 }
 
+.header__button a {
+  color: #fff;
+}
+
 .header__button.shadow {
   box-shadow: 0.1rem 0.4rem 1.3rem rgba(127, 127, 127, 0.77);
 }
@@ -141,7 +145,7 @@ a {
 .intro__titles h2 {
   font-family: 'Decalotype-ExtraBold';
   font-size: 6.4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .intro__titles h1 {
@@ -534,9 +538,10 @@ a {
   box-shadow: 0 0 5.5rem rgba(0, 0, 0, 0.16);
   color: #fff;
   display: inline-block;
-  font-size: 3.2rem;
+  font-size: 4rem;
   letter-spacing: -0.018rem;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem;
+  text-transform: uppercase;
 }
 
 /* contact styles */
@@ -596,9 +601,10 @@ a {
   box-shadow: 0 0 6.3rem rgba(54, 157, 215, 0.45);
   color: #ffffff;
   display: inline-block;
-  font-size: 3.2rem;
+  font-size: 4rem;
   letter-spacing: -0.018rem;
-  padding: 3.5rem 10rem;
+  padding: 2.5rem 10rem;
+  text-transform: uppercase;
 }
 
 /* footer styles */
@@ -742,6 +748,11 @@ a {
   /* container styles*/
   .container {
     padding: 0 2rem;
+  }
+
+  /* intro styles */
+  .intro__titles {
+    text-align: center;
   }
 
   /* steps styles */

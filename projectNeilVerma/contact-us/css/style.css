@@ -446,6 +446,11 @@ body {
     max-width: 100%;
   }
 
+  /* navbar styles */
+  .navbar {
+    padding: 0 2rem;
+  }
+
   /* contact styles */
   .contact__map {
     height: 70rem;

@@ -211,15 +211,29 @@ body {
   }
 
   /* container styles */
-  .login .container {
+  /*.login .container {
     background-position: center left 5rem;
+    padding: 0 5rem;
+    max-width: 100%;
+  }*/
+  
+  /* login styles */
+  /*.login__data {
+    margin-right: 0rem;
+    width: 50%;
+  }*/
+
+  /* container styles */
+  .login .container {
+    background-position: top 10rem center;
+    background-size: 30%;
     padding: 0 5rem;
     max-width: 100%;
   }
   
   /* login styles */
   .login__data {
-    margin-right: 0rem;
+    margin: 25rem auto 0;
     width: 50%;
   }
 }
@@ -242,6 +256,20 @@ body {
   html {
     font-size: 4px;
   }
+
+  /* container styles */
+  .login .container {
+    background-position: top 10rem center;
+    background-size: 40%;
+    padding: 0 5rem;
+    max-width: 100%;
+  }
+  
+  /* login styles */
+  .login__data {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 @media (max-width: 375px) {
@@ -249,15 +277,5 @@ body {
     font-size: 4px;
   }
 
-  /* container styles */
-  .login .container {
-    background-position: top 10rem center;
-    padding: 0 5rem;
-    max-width: 100%;
-  }
   
-  /* login styles */
-  .login__data {
-    width: 100%;
-  }
 }

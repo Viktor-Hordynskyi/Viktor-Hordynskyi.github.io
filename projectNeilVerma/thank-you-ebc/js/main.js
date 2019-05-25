@@ -1,10 +1,3 @@
-$(document).ready(function() {
-	$("#toggler").on('click', function() {
-		$('.navbar__hamburger-menu').toggleClass('show');
-		$('.navbar__toggler').toggleClass('close');
-	})	
-})
-
 $(window).on('load scroll', function() {
 	// show navbar when scroll page
 	let w_scroll = $(window).scrollTop();

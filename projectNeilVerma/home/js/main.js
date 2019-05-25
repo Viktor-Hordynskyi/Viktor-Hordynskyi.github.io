@@ -70,5 +70,12 @@ $(document).ready(function() {
 				$('.parallax').css({'perspective' : '2px'})
 			}
 		}		
-	})	
+	})
+
+	$('.build__item-active').on('click', function() {
+		let item = $(this).data('target');
+
+		$('#'+item).addClass('show');
+		$('.build__items').addClass('show');
+	})
 })

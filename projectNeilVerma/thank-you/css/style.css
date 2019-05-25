@@ -142,6 +142,20 @@ body {
   html {
     font-size: 5px;
   }
+
+  /* thx styles */
+  .thx .container {
+    justify-content: flex-start;
+  }
+
+  .thx__title h1 {
+    font-size: 8rem;
+  }
+
+  .thx__logo {
+    margin-top: 30rem;
+    width: 43rem;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -154,6 +168,20 @@ body {
   .container {
     padding: 0 2rem;
     max-width: 100%;
+  }
+
+  /* thx styles */
+  .thx .container {
+    justify-content: flex-start;
+  }
+
+  .thx__title h1 {
+    font-size: 8rem;
+  }
+
+  .thx__logo {
+    margin-top: 10rem;
+    width: 43rem;
   }
 }
 

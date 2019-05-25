@@ -371,16 +371,26 @@ body {
 }
 
 .build__items {
-  display: flex;
+  display: none;
   flex-direction: row;
   justify-content: center;
   text-align: left;
 }
 
+.build__items.show {
+  display: flex;
+}
+
 .build__item {
   border: 1px solid #f16864;
   border-radius: 1rem;
+  opacity: 0;
   width: 25%;
+  z-index: 3;
+}
+
+.build__item.show {
+  opacity: 1;
 }
 
 .build__item.pos1,
@@ -473,10 +483,38 @@ body {
 .build__gif {
   margin: 5rem auto 0;
   max-width: 50rem;
+  position: relative;
 }
 
 .build__gif img {
   width: 100%;
+}
+
+#b__i-a1,
+#b__i-a2,
+#b__i-a3 {
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  height: 9rem;
+  width: 9rem;
+  z-index: 2;
+}
+
+#b__i-a2 {
+  left: 0rem;
+  top: 11.5rem;
+}
+
+#b__i-a1 {
+  top: 0rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#b__i-a3 {
+  right: 0rem;
+  top: 11.5rem;
 }
 
 /* partners styles */
@@ -552,7 +590,7 @@ body {
 .what__slider h4 {
   color: #f16864;
   font-family: 'Decalotype-Black';
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 .what .swiper-button-prev,
@@ -650,6 +688,17 @@ body {
   padding: 3rem 0 2rem;
 }
 
+.privacy__logo,
+.legal__logo {
+  margin-bottom: 3rem;
+  width: 32rem;
+}
+
+.privacy__logo img,
+.legal__logo img {
+  width: 100%;
+}
+
 .privacy h1,
 .legal h1 {
   font-family: 'Decalotype-Black';
@@ -738,13 +787,56 @@ body {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   html {
-    font-size: 4px;
+    font-size: 5px;
   }
 
   /* container styles */
   .container {
     padding: 0 2rem;
     max-width: 100%;
+  }
+
+  /* navbar styles */
+  .navbar__menu li a {
+    font-size: 4rem;
+  }
+
+  /* intro styles */
+  .intro {
+    margin: 0 auto;
+    padding-right: 0;
+    max-width: 60%;
+  }
+
+  .intro__title h1 {
+    font-size: 8.5rem;
+    text-align: center;
+  }
+
+  .intro__title h1:before {
+    width: 100%;
+  }
+
+  .intro__subtitle {
+    flex-direction: column;
+  }
+
+  .intro__subtitle h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .intro__subtitle a {
+    font-size: 3rem;
+  }
+
+  /* build styles */
+  .build__title h2 {
+    font-size: 13rem;
+  }
+
+  .build__title h3 {
+    font-size: 3.5rem;
   }
 
   /* what styles */
@@ -758,6 +850,11 @@ body {
     font-size: 5px;
   }
 
+  /* intro styles */
+  .intro {
+    max-width: 70%;
+  }
+
   /* what styles */
   .what__slider h3 {
     font-size: 3rem;
@@ -768,12 +865,18 @@ body {
     font-size: 3rem;
   }
 
+  .what .swiper-button-prev,
+  .what .swiper-button-next {
+    height: 6rem;
+    width: 6rem;
+  }
+
   .what .swiper-button-prev {
-    left: 43%;
+    left: 40%;
   }
 
   .what .swiper-button-next {
-    right: 43%;
+    right: 40%;
   }
 }
 
@@ -807,15 +910,7 @@ body {
   .intro {
     margin: 0 auto;
     height: calc(100vh - 16rem);
-    max-width: 50%;
-  }
-
-  .intro__title h1 {
-    text-align: left;
-  }
-
-  .intro br {
-    display: none;
+    max-width: 70%;
   }
 }
 
@@ -828,7 +923,7 @@ body {
   .intro {
     margin: 0 auto;
     height: calc(100vh - 16rem);
-    max-width: 70%;
+    max-width: 90%;
   }
 
   /* build styles */

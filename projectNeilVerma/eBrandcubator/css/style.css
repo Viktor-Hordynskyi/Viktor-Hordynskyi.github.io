@@ -294,7 +294,7 @@ body {
 /*------------------*/
 .start {
   background: url(../img/start-avatar.png) bottom left -12rem no-repeat, #429ace;
-  background-size: 90rem;
+  background-size: 85rem;
   height: 100vh;
 }
 

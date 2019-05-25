@@ -215,14 +215,14 @@ body {
 }
 
 .thx-ebc__title {
-  padding: 10rem 0 5rem;
+  padding: 5rem 0;
   text-align: center;
 }
 
 .thx-ebc__title h1 {
   color: #fff;
   font-family: 'Decalotype-Bold';
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .thx-ebc__video {
@@ -245,6 +245,10 @@ body {
   color: #fff; 
   font-size: 2.8rem;
   margin: 4rem 0 8rem;
+}
+
+.thx-ebc__note h2 br {
+  display: none;
 }
 
 .thx-ebc__note a {
@@ -313,6 +317,15 @@ body {
   .container {
     padding: 0 2rem;
     max-width: 100%;
+  }
+
+  /* thx-ebc styles */
+  .thx-ebc__note h2 {
+    font-size: 3.8rem;
+  }
+
+  .thx-ebc__note h2 br {
+    display: block;
   }
 }
 
