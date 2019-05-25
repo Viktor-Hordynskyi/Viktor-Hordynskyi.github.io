@@ -294,7 +294,7 @@ body {
 /*------------------*/
 .start {
   background: url(../img/start-avatar.png) bottom left -12rem no-repeat, #429ace;
-  background-size: 55%;
+  background-size: 90rem;
   height: 100vh;
 }
 
@@ -375,7 +375,7 @@ body {
 
   /* start styles */
   .start {
-    background-size: 45%;
+    background-size: 80rem;
   }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
@@ -385,7 +385,7 @@ body {
 
   /* start styles */
   .start {
-    background-size: 45%;
+    background-size: 80rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -395,7 +395,7 @@ body {
 
   /* start styles */
   .start {
-    background-size: 55%;
+    background-size: 80rem;
   }
 }
 
@@ -407,7 +407,7 @@ body {
 
   /* start styles */
   .start {
-    background-size: 55%;
+    background-size: 100rem;
   }
 }
 
@@ -419,7 +419,7 @@ body {
 
   /* start styles */
   .start {
-    background-size: 60%;
+    background-size: 110rem;
   }
 }
 
@@ -437,7 +437,7 @@ body {
 
   /* start page style */
   .start {
-    background-size: 50%;
+    background-size: 90rem;
   }
 
   .start__sign {
@@ -459,7 +459,7 @@ body {
 
   /* start page style */
   .start {
-    background-size: 65%;
+    background-size: 80rem;
   }
 
   .start__title h1 {
@@ -502,10 +502,17 @@ body {
 
   /* start page style */
   .start {
-    background-size: 80%;
+    background-size: 70rem;
   }
 
   .start__sign {
     left: 15%;
+  }
+}
+
+@media (max-width: 320px) {
+  /* start page style */
+  .start {
+    background-size: 60rem;
   }
 }
