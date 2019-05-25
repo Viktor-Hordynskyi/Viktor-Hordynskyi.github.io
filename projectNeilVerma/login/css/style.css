@@ -91,10 +91,13 @@ body {
   justify-content: flex-end;
 }
 
+.login__data {
+  margin-right: 20rem;
+}
+
 .login__title {
   margin-bottom: 6rem;
 }
-
 
 .login__title h1 {
   color: #fff;
@@ -173,17 +176,17 @@ body {
 /* Large desktops and laptops */
 @media (min-width: 1600px) and (max-width: 1919px) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   html {
-    font-size: 7px;
+    font-size: 8px;
   }
 }
 
@@ -208,9 +211,16 @@ body {
   }
 
   /* container styles */
-  .container {
-    padding: 0 2rem;
+  .login .container {
+    background-position: center left 5rem;
+    padding: 0 5rem;
     max-width: 100%;
+  }
+  
+  /* login styles */
+  .login__data {
+    margin-right: 0rem;
+    width: 50%;
   }
 }
 
@@ -225,6 +235,7 @@ body {
   html {
     font-size: 4px;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -236,5 +247,17 @@ body {
 @media (max-width: 375px) {
   html {
     font-size: 4px;
+  }
+
+  /* container styles */
+  .login .container {
+    background-position: top 10rem center;
+    padding: 0 5rem;
+    max-width: 100%;
+  }
+  
+  /* login styles */
+  .login__data {
+    width: 100%;
   }
 }

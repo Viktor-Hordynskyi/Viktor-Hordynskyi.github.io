@@ -78,7 +78,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 7rem;
-  /*transition: .3s all linear;*/
   height: 12rem;
 }
 
@@ -216,14 +215,14 @@ body {
 }
 
 .thx-ebc__title {
-  padding: 15rem 0 10rem;
+  padding: 10rem 0 5rem;
   text-align: center;
 }
 
 .thx-ebc__title h1 {
   color: #fff;
   font-family: 'Decalotype-Bold';
-  font-size: 8rem;
+  font-size: 4rem;
 }
 
 .thx-ebc__video {
@@ -244,7 +243,7 @@ body {
 
 .thx-ebc__note h2 {
   color: #fff; 
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 4rem 0 8rem;
 }
 
@@ -276,17 +275,17 @@ body {
 /* Large desktops and laptops */
 @media (min-width: 1600px) and (max-width: 1919px) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   html {
-    font-size: 7px;
+    font-size: 8px;
   }
 }
 

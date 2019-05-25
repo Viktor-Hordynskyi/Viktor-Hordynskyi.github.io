@@ -645,7 +645,7 @@ body {
 
 .why__info {
   background: url(../img/why-Neil.png) bottom right no-repeat, #276e92;
-  background-size: 65%;
+  background-size: 50%;
   color: #fdfafa;
   display: flex;
   flex-direction: column;
@@ -1028,17 +1028,21 @@ body {
 /* Large desktops and laptops */
 @media (min-width: 1600px) and (max-width: 1919px) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   html {
-    font-size: 7px;
+    font-size: 8px;
+  }
+
+  .why__info {
+    background-size: 60%;
   }
 }
 

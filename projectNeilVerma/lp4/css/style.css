@@ -119,7 +119,7 @@ a {
 .intro__titles h1 {
   color: #ffffff;
   font-family: 'Decalotype-Bold';
-  font-size: 4.3rem;
+  font-size: 3.6rem;
   text-transform: uppercase;
 }
 
@@ -552,17 +552,17 @@ a {
 /* Large desktops and laptops */
 @media (min-width: 1600px) and (max-width: 1919px) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1440px) and (max-width: 1599px) {
   html {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   html {
-    font-size: 7px;
+    font-size: 8px;
   }
 }
 
