@@ -98,6 +98,11 @@ body {
   height: 100%;
 }
 
+.header__logo a {
+  display: block;
+  height: 100%;
+}
+
 .header__logo img {
   height: 100%;
 }

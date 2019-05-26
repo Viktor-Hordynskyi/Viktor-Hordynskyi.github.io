@@ -99,6 +99,11 @@ body {
   z-index: 999;
 }
 
+.navbar__logo a {
+  display: block;
+  height: 7rem;
+}
+
 .navbar__logo img {
   height: 100%;
 }

@@ -249,12 +249,12 @@ a {
 .resources__info h4 {
   font-family: 'Decalotype-Bold';
   font-size: 4rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 1rem;
 }
 
 .resources__info p {
   font-size: 2rem;
-  margin-bottom: 5.6rem;
+  margin-bottom: 1rem;
 }
 
 .resources__info a {
@@ -263,6 +263,32 @@ a {
 
 .resources__avatar img {
   width: 100%;
+}
+
+.resources__form input[type=text],
+.resources__form input[type=email] {
+  border: 1px solid #333;
+  color: #333;
+  font-family: 'Decalotype-Bold';
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  padding: .5rem 1rem;
+  width: 85%;
+}
+
+.resources__form input::placeholder {
+  color: #333;
+}
+
+.resources__form input[type=submit] {
+  background-color: #f16763;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.5rem;
+  padding: 1rem 5.5rem;
+  width: 85%;
 }
 
 /* what styles */
@@ -534,6 +560,10 @@ a {
     margin: 2rem auto;
   }
 
+  .resources__info h4 {
+    margin-bottom: 3rem;
+  }
+
   .resources__info p {
     margin-bottom: 0;
   }
@@ -601,6 +631,7 @@ a {
 
   /* resouces styles */
   .resources__info {
+    padding-bottom: 1rem;
     width: 55%;
   }
 
@@ -660,6 +691,15 @@ a {
 @media (max-width: 375px) {
   html {
     font-size: 4px;
+  }
+
+  /* resources styles */
+  .resources__info-img {
+    margin: 1rem auto;
+  }
+
+  .resources__info h4 {
+    margin-bottom: 1rem;
   }
 
   /* footer styles */

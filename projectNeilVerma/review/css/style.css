@@ -123,6 +123,11 @@ body {
   height: 7rem;
 }
 
+.navbar__logo a {
+  display: block;
+  height: 7rem;
+}
+
 .navbar__logo img:first-child {
   display: block;
 }
