@@ -1,0 +1,157 @@
+/* ----------------------------------------
+				Fonts
+------------------------------------------*/
+
+// Open Sans
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Light'), local('OpenSans-Light'), url('../fonts/OpenSans/opensanslight.woff2') format('woff2'), url('../fonts/OpenSans/opensanslight.woff') format('woff'), url('../fonts/OpenSans/opensanslight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('../fonts/OpenSans/opensanslightitalic.woff2') format('woff2'), url('../fonts/OpenSans/opensanslightitalic.woff') format('woff'), url('../fonts/OpenSans/opensanslightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'), local('OpenSans'), url('../fonts/OpenSans/opensans.woff2') format('woff2'), url('../fonts/OpenSans/opensans.woff') format('woff'), url('../fonts/OpenSans/opensans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url('../fonts/OpenSans/opensansitalic.woff2') format('woff2'), url('../fonts/OpenSans/opensansitalic.woff') format('woff'), url('../fonts/OpenSans/opensansitalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('../fonts/OpenSans/opensanssemibold.woff2') format('woff2'), url('../fonts/OpenSans/opensanssemibold.woff') format('woff'), url('../fonts/OpenSans/opensanssemibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url('../fonts/OpenSans/opensanssemibolditalic.woff2') format('woff2'), url('../fonts/OpenSans/opensanssemibolditalic.woff') format('woff'), url('../fonts/OpenSans/opensanssemibolditalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url('../fonts/OpenSans/opensansbold.woff2') format('woff2'), url('../fonts/OpenSans/opensansbold.woff') format('woff'), url('../fonts/OpenSans/opensansbold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('../fonts/OpenSans/opensansbolditalic.woff2') format('woff2'), url('../fonts/OpenSans/opensansbolditalic.woff') format('woff'), url('../fonts/OpenSans/opensansbolditalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url('../fonts/OpenSans/opensansextrabold.woff2') format('woff2'), url('../fonts/OpenSans/opensansextrabold.woff') format('woff'), url('../fonts/OpenSans/opensansextrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url('../fonts/OpenSans/opensansextrabolditalic.woff2') format('woff2'), url('../fonts/OpenSans/opensansextrabolditalic.woff') format('woff'), url('../fonts/OpenSans/opensansextrabolditalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+// Decalotype 
+
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: local('Decalotype-Regular'), local('Decalotype-Regular'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Regular.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Regular.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-Black';
+  src: local('Decalotype-Black'), local('Decalotype-Black'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Black.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Black.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: local('Decalotype-Bold'), local('Decalotype-Bold'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Bold.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Bold.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-BoldItalic';
+  src: local('Decalotype-BoldItalic'), local('Decalotype-BoldItalic'), 
+  url('../fonts/Decalotype/WEB/Decalotype-BoldItalic.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-BoldItalic.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-ExtraBold';
+  src: local('Decalotype-ExtraBold'), local('Decalotype-ExtraBold'), 
+  url('../fonts/Decalotype/WEB/Decalotype-ExtraBold.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-ExtraBold.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-Italic';
+  src: local('Decalotype-Italic'), local('Decalotype-Italic'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Italic.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Italic.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-Light';
+  src: local('Decalotype-Light'), local('Decalotype-Light'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Light.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Light.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-LightItalic';
+  src: local('Decalotype-LightItalic'), local('Decalotype-LightItalic'), 
+  url('../fonts/Decalotype/WEB/Decalotype-LightItalic.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-LightItalic.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-Medium';
+  src: local('Decalotype-Medium'), local('Decalotype-Medium'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Medium.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Medium.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-SemiBold';
+  src: local('Decalotype-SemiBold'), local('Decalotype-SemiBold'), 
+  url('../fonts/Decalotype/WEB/Decalotype-SemiBold.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-SemiBold.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Decalotype-SemiBold';
+  src: local('Decalotype-SemiBold'), local('Decalotype-SemiBold'), 
+  url('../fonts/Decalotype/WEB/Decalotype-SemiBold.woff2') format('woff2'), 
+  url('../fonts/Decalotype/WEB/Decalotype-SemiBold.woff') format('woff'), 
+  url('../fonts/Decalotype/WEB/Decalotype-SemiBold.ttf') format('truetype');
+}
+

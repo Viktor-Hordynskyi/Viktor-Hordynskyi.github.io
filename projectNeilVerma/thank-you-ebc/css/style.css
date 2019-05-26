@@ -21,7 +21,8 @@
 }
 /* Reset CSS */
 *, *::before, *::after {
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -36,20 +37,20 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 html {
   font-size: 10px;
@@ -73,17 +74,27 @@ body {
 
 /* navbar styles */
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 7rem;
   height: 12rem;
 }
 
 .navbar.fixed {
   background-color: #fff;
-  box-shadow: 0 .5rem 1rem #ccc;
+  -webkit-box-shadow: 0 .5rem 1rem #ccc;
+          box-shadow: 0 .5rem 1rem #ccc;
   position: fixed;
   top: 0;
   width: 100%;
@@ -109,9 +120,16 @@ body {
 }
 
 .navbar__toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   cursor: pointer;
   position: relative;
   height: 3rem;
@@ -151,19 +169,30 @@ body {
 }
 
 .navbar__toggler.close span:nth-child(2) {
-  transform: rotate(45deg) translateX(20%);
+  -webkit-transform: rotate(45deg) translateX(20%);
+      -ms-transform: rotate(45deg) translateX(20%);
+          transform: rotate(45deg) translateX(20%);
 }
 
 .navbar__toggler.close span:nth-child(4) {
-  transform: rotate(-45deg) translateX(20%);
+  -webkit-transform: rotate(-45deg) translateX(20%);
+      -ms-transform: rotate(-45deg) translateX(20%);
+          transform: rotate(-45deg) translateX(20%);
 }
 
 .navbar__hamburger-menu {
   background-color: #fff;
   display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -173,6 +202,8 @@ body {
 }
 
 .navbar__hamburger-menu.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -193,9 +224,16 @@ body {
 }
 
 .navbar__hamburger-menu li:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navbar__hamburger-menu li:last-child a {
@@ -205,7 +243,8 @@ body {
 }
 
 .navbar__hamburger-menu li:last-child a:hover {
-  box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
   border-radius: 50%;
 }
 
@@ -260,9 +299,16 @@ body {
   background-color: #3b5998;
   border-radius: 1rem;
   color: #fff;  
+  display: -webkit-inline-box;  
+  display: -ms-inline-flexbox;  
   display: inline-flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2rem;
   letter-spacing: .3rem;
   padding: 2rem 4rem;
