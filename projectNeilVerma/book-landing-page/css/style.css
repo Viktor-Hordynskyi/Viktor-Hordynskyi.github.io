@@ -423,6 +423,10 @@ body {
   font-size: 2rem;
 }
 
+.input-forms__radio ul li span {
+  margin-right: .5rem;
+}
+
 .input-forms__radio-block {
   background-color: #ec6a66;
   margin-bottom: 2rem;
