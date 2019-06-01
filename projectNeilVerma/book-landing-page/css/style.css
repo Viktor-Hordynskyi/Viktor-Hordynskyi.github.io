@@ -415,7 +415,10 @@ body {
   margin: 0 1rem 0 0;
 }
 
-.input-forms__radio label,
+.input-forms__radio label {
+  font-size: 1.7rem;
+}
+
 .input-forms__radio h4 {
   font-size: 2rem;
 }
@@ -431,6 +434,9 @@ body {
 
 .input-forms__radio-block input[type=radio] {
   margin: 0 1rem 0 0;
+  vertical-align: text-bottom;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .input-forms__radio-image {
@@ -549,6 +555,16 @@ body {
   color: #000;
   font-size: 1.8rem;
   margin-top: 1rem;
+}
+
+.input-forms__upgrade ul li {
+  color: #000;
+  font-size: 1.8rem;
+  list-style: disc;
+}
+
+.input-forms__upgrade ul li {
+  margin-left: 2rem;
 }
 
 .input-forms__upgrade p span {
