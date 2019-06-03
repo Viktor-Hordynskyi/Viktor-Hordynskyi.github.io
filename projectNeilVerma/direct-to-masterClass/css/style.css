@@ -624,7 +624,7 @@ img {
 
 .hero-blackFont {
   background-color: #ccc;
-  background-image: url("../images/heroDark.jpg");
+  background-image: url("../images/heroDark2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -944,8 +944,8 @@ img {
 .darkReview-section {
   padding-top: 50px;
   padding-bottom: 70px;
-  background-color: #1B1B1B;
-  color: #7D7D7D;
+  background-color: #2d9bd4;
+  color: #fff;
 }
 
 .darkReview-section__container {
@@ -976,7 +976,7 @@ img {
 
 .darkReview-section__col {
   width: calc( 50% - 36px/2 - 15px);
-  border-bottom: 5px solid #7D7D7D;
+  border-bottom: 5px solid #fff;
   margin-bottom: 20px;
 }
 
@@ -1030,12 +1030,12 @@ img {
   font-family: 'Decalotype-Bold';
   font-size: 26px;
   margin-bottom: 10px;
-  color: #C0C0C0;
+  color: #fff;
 }
 
 .darkReviewTextBlock__p {
   font-family: 'Decalotype-Regular';
-  color: #7D7D7D;
+  color: #fff;
   font-size: 14px;
   line-height: 18px;
 }
@@ -1063,8 +1063,8 @@ img {
 }
 
 .footer {
-  background-color: #1B1B1B;
-  padding: 30px 0;
+  background-color: #2d9bd4;
+  padding: 0 0 30px;
   width: 100%;
 }
 
