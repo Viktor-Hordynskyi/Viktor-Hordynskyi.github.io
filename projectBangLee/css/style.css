@@ -233,7 +233,7 @@ a {
 /* intro styles */
 .intro {
   background: url(../img/intro-bg.jpg) top center no-repeat;
-  background-size: auto 100%;
+  background-size: 100% 100%;
   padding: 13.5rem 0 0;
 }
 
@@ -418,7 +418,7 @@ a {
 /* support styles */
 .support {
   background: url(../img/support-bg.jpg) top right no-repeat;
-  background-size: auto 100%;
+  background-size: 100% 100%;
   padding: 10rem 0 23rem;
 }
 
@@ -556,6 +556,17 @@ a {
 @media (min-width: 1680px) and (max-width: 1919px) {
   html {
     font-size: 10px;
+  }
+}
+@media (max-width: 1679px) {
+  /* intro styles */
+  .intro {
+    background-size: auto 100%;
+  }
+
+  /* support styles */
+  .support {
+    background-size: auto 100%;
   }
 }
 @media (min-width: 1440px) and (max-width: 1679px) {
