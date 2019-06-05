@@ -18,7 +18,7 @@ $(document).ready(function() {
 	})
 })
 
-$(window).on('load resize', function() {
+$(window).on('load', function() {
 	// initialize Swiper
 	let introSwiper = new Swiper ('.intro__slider', {
 		init: false,
@@ -40,8 +40,8 @@ $(window).on('load resize', function() {
 	})
 
 	if(window.matchMedia("(max-width: 767px)").matches) {
-		introSwiper.init();
-		supportSwiper.init();
+		introSwiper.init(false);
+		supportSwiper.init(false);
 	}
 })
 
