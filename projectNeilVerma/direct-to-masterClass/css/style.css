@@ -623,8 +623,8 @@ img {
 }
 
 .hero-blackFont {
-  background-color: #ccc;
-  background-image: url("../images/heroDark2.jpg");
+  background-color: #2d9bd4;
+  background-image: url("../images/heroDark.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
