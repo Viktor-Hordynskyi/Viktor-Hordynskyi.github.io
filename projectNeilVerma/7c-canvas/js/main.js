@@ -14,15 +14,14 @@ $(document).ready(function() {
 			$(this).removeClass('cut');
 			
 			$(this).next().removeClass('show');
-			
+
 			if($(this).children('textarea').val() == "") {
 				$(this).removeClass('before');
 			}
 		})
-	})
 
-	// $('#core1').on('focusout', function() {
-	// 	console.log($(this).val())	
-	// })
-	
+		if($(this).children('textarea').val() != "") {
+			$(this).addClass('before');
+		}
+	})	
 })
