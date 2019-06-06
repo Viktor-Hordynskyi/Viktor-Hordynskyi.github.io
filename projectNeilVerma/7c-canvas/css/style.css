@@ -397,16 +397,18 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: absolute;
+  /*position: absolute;
   bottom: 0;
-  left: 0;
-  transition: height .3s linear;
+  left: 0;*/
+  transition: all .3s linear;
   transform: translateY(100%);
+  height: 0;
   width: 100%;
 }
 
 .content__nav.show {
   transform: translateY(0%);
+  height: auto;
 }
 
 .content__nav-comment {
@@ -538,6 +540,10 @@ html, body {
   margin: 0 2rem;
 }
 
+.content__calc:last-child {
+  margin: 0 2rem 2rem;
+}
+
 .content__calc h4 {
   color: #606060;
   font-size: 1.4rem;
@@ -585,7 +591,7 @@ html, body {
 /* menu toggler styles */
 .menu-toggler {
   position: absolute;
-  top: 5rem;
+  top: 4.5rem;
   left: 0;
 }
 
@@ -637,45 +643,85 @@ html, body {
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
-    font-size: 6px;
+    font-size: 7px;
   }
 }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   html {
-    font-size: 5px;
+    font-size: 7px;
   }
 }
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   html {
-    font-size: 5px;
+    font-size: 7px;
+  }
+
+  /* wrapper styles */
+  .wrapper {
+    height: auto;
+  }
+
+  /* content styles */
+  .content {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .content__element {
+    margin-bottom: 2rem;
+  }
+
+  .content__logo-big {
+    margin: 2rem auto 2rem 2rem;
+  }
+
+  .content__subgroup h5 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .content__line input {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 660px) {
   html {
-    font-size: 5px;
+    font-size: 7px;
   }
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 576px) {
   html {
-    font-size: 4px;
+    font-size: 7px;
+  }
+
+  /* header styles */
+  .header {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   html {
-    font-size: 4px;
+    font-size: 7px;
   }
 }
 
 @media (max-width: 375px) {
   html {
-    font-size: 4px;
+    font-size: 6px;
   }  
 }
