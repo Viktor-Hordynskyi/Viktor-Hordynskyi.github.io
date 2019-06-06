@@ -380,11 +380,10 @@ html, body {
 }
 
 .content__textarea {
+  flex-grow: 1;
   position: relative;
-  height: 100%;
 }
 .content__textarea label {
-  /*content: "";*/
   background: url(../img/lines.png), #fff;
   cursor: text;
   display: block;
@@ -394,15 +393,13 @@ html, body {
   transform: translateX(-50%);
   height: 100%;
   width: calc(100% - 4rem);
-  /*z-index: 9;*/
 }
 
 .content__textarea.before label {
-  /*content: none;*/
   display: none;
 }
 
-.content__textarea.cut textarea {
+.content__textarea.cut {
   margin-bottom: 6rem;
 }
 

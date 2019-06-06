@@ -12,8 +12,17 @@ $(document).ready(function() {
 
 		$(this).on('focusout', function() {
 			$(this).removeClass('cut');
-			$(this).removeClass('before');
+			
 			$(this).next().removeClass('show');
+			
+			if($(this).children('textarea').val() == "") {
+				$(this).removeClass('before');
+			}
 		})
 	})
+
+	// $('#core1').on('focusout', function() {
+	// 	console.log($(this).val())	
+	// })
+	
 })
