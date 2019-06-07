@@ -254,6 +254,7 @@ only screen and ( min-resolution: 1.25dppx)
 {
   .intro {
     background: url(../img/intro-bg@2x.jpg) top right no-repeat;
+    background-size: 100% 100%;
   }
 }
 
@@ -311,6 +312,11 @@ only screen and ( min-resolution: 1.25dppx)
   text-align: center;
   height: auto;
   width: 36rem;
+}
+
+.intro__element.el-w {
+  margin: 0 !important;
+  width: 36rem !important;
 }
 
 .intro__info {
@@ -492,6 +498,7 @@ only screen and ( min-resolution: 1.25dppx)
 {
   .support {
     background: url(../img/support-bg@2x.jpg) top right no-repeat;
+    background-size: 100% 100%;
   }
 }
 
@@ -523,6 +530,11 @@ only screen and ( min-resolution: 1.25dppx)
 
 .support__element {
   height: auto;
+}
+
+.support__element.sup-w {
+  margin: 0 !important;
+  width: 100% !important;
 }
 
 .support__element:first-child {

@@ -22,26 +22,50 @@ $(window).on('load resize', function() {
 	// initialize Swiper
 	let introSwiper = new Swiper ('.intro__slider', {
 		init: false,
-		slidesPerView: 1,
+		slidesPerView: 3,
 		spaceBetween: 15,
+		noSwiping: true,
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
+			clickable:true,
 		},
-	})
+		watchOverflow: true,
+		breakpoints: {
+			767: {
+				slidesPerView: 1,
+				noSwiping: false,
+			}
+		}
+	});
+
 	let supportSwiper = new Swiper ('.support__slider', {
 		init: false,
-		slidesPerView: 1,
+		slidesPerView: 3,
 		spaceBetween: 15,
+		noSwiping: true,
 		pagination: {
 			el: '.swiper-pagination',
 			type: 'bullets',
+			clickable:true,
 		},
-	})
+		watchOverflow: true,
+		breakpoints: {
+			767: {
+				slidesPerView: 1,
+				noSwiping: false,
+			}
+		}
+	});
 
-	if(window.matchMedia("(max-width: 767px)").matches) {
-		introSwiper.init(false);
-		supportSwiper.init(false);
+	if(this.matchMedia("(max-width: 767px)").matches) {
+		introSwiper.init(true);
+		$('.intro__element').removeClass('el-w');
+		supportSwiper.init(true);
+		$('.support__element').removeClass('sup-w');
+	} else {
+		$('.intro__element').addClass('el-w');
+		$('.support__element').addClass('sup-w');
 	}
 })
 
