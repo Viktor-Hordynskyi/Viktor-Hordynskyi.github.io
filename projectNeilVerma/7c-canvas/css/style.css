@@ -1208,6 +1208,14 @@ button:focus {
           flex-grow: 1;
 }
 
+.content__subgroup:nth-of-type(2)
+.content__subgroup-right {
+  display: flex;
+  flex-direction: column;
+  -ms-align-items: flex-end;
+  justify-content: flex-end;
+}
+
 .content__subgroup-right {
   -ms-flex-negative: 0;
       flex-shrink: 0;

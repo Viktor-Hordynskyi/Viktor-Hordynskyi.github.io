@@ -9,16 +9,16 @@ $(document).ready(function() {
 		$(this).on('click', function() {
 			if($('#'+name).hasClass('show')) {
 				$('#'+name).removeClass('show');
-				$('.wrapper').removeClass('sidebar-show sidebar-notepad column');
+				$('.wrapper').removeClass('sidebar-show sidebar-notepad');
 			}	else {
 				$('.sidebar>div').removeClass('show');
 				$('#'+name).addClass('show');
 
 				if(name == 'notepad') {
 					$('.wrapper').removeClass('sidebar-show');
-					$('.wrapper').addClass('sidebar-notepad column');
+					$('.wrapper').addClass('sidebar-notepad');
 				} else {
-					$('.wrapper').removeClass('sidebar-notepad column');
+					$('.wrapper').removeClass('sidebar-notepad');
 					$('.wrapper').addClass('sidebar-show');
 				}
 			}		
@@ -115,7 +115,6 @@ $(document).ready(function() {
 
 		if(window.matchMedia("(min-width: 768px)").matches) {
 			setTimeout(function() {
-				// if($('.container').width() <= 1000) {
 				if(($('.wrapper').hasClass('menu-show') ||	$('.wrapper').hasClass('sidebar-notepad') || $('.wrapper').hasClass('sidebar-show')) && $('.container').width() <= 1000) {
 					$('.wrapper').addClass('column');
 				} else {
