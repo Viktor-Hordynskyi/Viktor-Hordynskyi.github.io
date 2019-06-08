@@ -7,12 +7,21 @@ $(document).ready(function() {
 		let name = $(this).data('target');
 
 		$(this).on('click', function() {
-			$('.wrapper').toggleClass('right-show');
-			if(name == 'notepad') {
-				$('.wrapper').toggleClass('right-notepad column');
-			}
+			if($('#'+name).hasClass('show')) {
+				$('#'+name).removeClass('show');
+				$('.wrapper').removeClass('right-show right-notepad column');
+			}	else {
+				$('.right>div').removeClass('show');
+				$('#'+name).addClass('show');
 
-			$('#'+name).toggleClass('show');
+				if(name == 'notepad') {
+					$('.wrapper').removeClass('right-show');
+					$('.wrapper').addClass('right-notepad column');
+				} else {
+					$('.wrapper').removeClass('right-notepad column');
+					$('.wrapper').addClass('right-show');
+				}
+			}		
 		})
 	})
 
@@ -54,13 +63,13 @@ $(document).ready(function() {
 		let nav = $('.content__nav');
 		
 		if (!comment.is(e.target) 
-				&& comment.has(e.target).length === 0
-				&& !nav.is(e.target) 
-				&& nav.has(e.target).length === 0
-				) {
-				$(comment).removeClass('show');
-		}			
-	})
+			&& comment.has(e.target).length === 0
+			&& !nav.is(e.target) 
+			&& nav.has(e.target).length === 0
+			) {
+			$(comment).removeClass('show');
+	}			
+})
 
 	$('.content__comment-form').each(function() {
 		$(this).children('input').on('click', function() {

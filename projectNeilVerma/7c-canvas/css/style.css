@@ -1052,7 +1052,8 @@ html, body {
   width: auto;
 }
 
-.right-show .right {
+.right-show .right,
+.right-notepad .right {
   transform: translateX(0%);
 }
 
