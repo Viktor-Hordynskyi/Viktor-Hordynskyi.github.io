@@ -116,11 +116,11 @@ button:focus {
   padding-left: 30rem;
 }
 
-.right-show {
+.sidebar-show {
   padding-right: 40rem;
 }
 
-.right-notepad {
+.sidebar-notepad {
   padding-right: 80rem;
 }
 
@@ -746,7 +746,7 @@ button:focus {
 }
 
 .content__comment.top {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .1);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 94%, 60% 94%, 50% 100%, 40% 94%, 0 94%);
   padding: 1rem 1rem 3rem;
   left: 50%;
@@ -767,7 +767,7 @@ button:focus {
 }
 
 .content__comment.left {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .1);
   clip-path: polygon(0 0, 94% 0, 94% 40%, 100% 50%, 94% 60%, 94% 100%, 0 100%);
   padding: 1rem 2rem 1rem 1rem;
   left: -100%;
@@ -788,7 +788,7 @@ button:focus {
 }
 
 .content__comment.right {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .1);
   clip-path: polygon(4% 0, 100% 0, 100% 100%, 4% 100%, 4% 60%, 0 50%, 4% 40%);
   padding: 1rem 1rem 1rem 2rem;
   right: -100%;
@@ -809,7 +809,7 @@ button:focus {
 }
 
 .content__comment.bottom {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, .1);
   clip-path: polygon(0 6%, 40% 6%, 50% 0, 60% 6%, 100% 6%, 100% 100%, 0 100%);
   padding: 3rem 1rem 1rem;
   left: 50%;
@@ -831,7 +831,7 @@ button:focus {
 
 .content__comment-item {
   background-color: #fff;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #f7f7f9;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
@@ -907,12 +907,33 @@ button:focus {
   width: 100%;
 }
 
+.content__input-small {
+  position: relative;
+  height: 2rem;
+  width: 100%;
+}
+
+.content__input-small input {
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 1px solid #999;
+  width: 90%;
+}
+
+.content__input-small.hide input {
+  border: none;
+}
+
+.content__input-small input:focus {
+  outline: none;
+}
+
 .content__subgroup h5 {
   color: #606060;
   font-family: 'Decalotype-MediumItalic';
   font-size: 1rem;
   line-height: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .content__group h4 {
@@ -956,7 +977,7 @@ button:focus {
   margin-right: 1rem;
 }
 
-.content__subgroup-left input {
+.content__subgroup-left input.color-input {
   background: transparent;
   border: 1px solid #333;
   height: 3rem;
@@ -1050,8 +1071,8 @@ button:focus {
   height: 2rem;
 }
 
-/* right styles */
-.right {
+/* sidebar styles */
+.sidebar {
   background-color: #fff;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
   position: fixed;
@@ -1063,34 +1084,34 @@ button:focus {
   width: auto;
 }
 
-.right-show .right,
-.right-notepad .right {
+.sidebar-show .sidebar,
+.sidebar-notepad .sidebar {
   transform: translateX(0%);
 }
 
-.right .history,
-.right .share,
-.right .account,
-.right .notepad {
+.sidebar .history,
+.sidebar .share,
+.sidebar .account,
+.sidebar .notepad {
   box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
   flex-direction: column;
   height: 100%;
 }
 
-.right .history__title,
-.right .share__title,
-.right .account__title,
-.right .notepad__title {
+.sidebar .history__title,
+.sidebar .share__title,
+.sidebar .account__title,
+.sidebar .notepad__title {
   background-color: #4bb4bf;
   box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
   padding: 2rem 0;
   position: relative;
 }
 
-.right .history__title h2,
-.right .share__title h2,
-.right .account__title h2,
-.right .notepad__title h2 {
+.sidebar .history__title h2,
+.sidebar .share__title h2,
+.sidebar .account__title h2,
+.sidebar .notepad__title h2 {
   color: #fff;
   font-family: 'Decalotype-SemiBold';
   font-size: 2rem;
@@ -1099,7 +1120,7 @@ button:focus {
   text-transform: uppercase;
 }
 
-.right__close {
+.sidebar__close {
   position: absolute;
   right: 2rem;
   top: 50%;
@@ -1108,7 +1129,7 @@ button:focus {
   width: 5rem;
 }
 
-.right__close button {
+.sidebar__close button {
   background-color: transparent;
   border: none;
   color: #fff;
@@ -1120,7 +1141,7 @@ button:focus {
   width: 100%;
 }
 
-.right__close button:focus {
+.sidebar__close button:focus {
   outline: none;
 }
 
@@ -1405,7 +1426,7 @@ button:focus {
   display: none;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 5rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -1419,13 +1440,13 @@ button:focus {
 }
 
 .video-popup__title {
-  padding: 2rem;
+  padding: 2rem 0 4rem;
 }
 
 .video-popup__title h2 {
   color: #000;
   font-family: 'Decalotype-SemiBold';
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
@@ -1544,8 +1565,8 @@ button:focus {
     padding-left: 0;
   }
 
-  .right-show,
-  .right-notepad {
+  .sidebar-show,
+  .sidebar-notepad {
     padding-right: 0rem;
   }
 
@@ -1581,11 +1602,14 @@ button:focus {
   }
 
   /* right styles */
-  .right {
+  .sidebar {
     z-index: 999;
   }
 
   /* video popup styles */
+  .video-popup__title h2 br {
+    display: none;
+  }
   .video-popup__frame {
     height: 30%;
     width: 100%;
@@ -1637,14 +1661,14 @@ button:focus {
   }
 
   /* right styles */
-  .right {
+  .sidebar {
     width: 100%;
   }
 
-  .right .history,
-  .right .share,
-  .right .account,
-  .right .notepad {
+  .sidebar .history,
+  .sidebar .share,
+  .sidebar .account,
+  .sidebar .notepad {
     width: 100%;
   }
 }

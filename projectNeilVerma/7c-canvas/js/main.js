@@ -9,17 +9,17 @@ $(document).ready(function() {
 		$(this).on('click', function() {
 			if($('#'+name).hasClass('show')) {
 				$('#'+name).removeClass('show');
-				$('.wrapper').removeClass('right-show right-notepad column');
+				$('.wrapper').removeClass('sidebar-show sidebar-notepad column');
 			}	else {
-				$('.right>div').removeClass('show');
+				$('.sidebar>div').removeClass('show');
 				$('#'+name).addClass('show');
 
 				if(name == 'notepad') {
-					$('.wrapper').removeClass('right-show');
-					$('.wrapper').addClass('right-notepad column');
+					$('.wrapper').removeClass('sidebar-show');
+					$('.wrapper').addClass('sidebar-notepad column');
 				} else {
-					$('.wrapper').removeClass('right-notepad column');
-					$('.wrapper').addClass('right-show');
+					$('.wrapper').removeClass('sidebar-notepad column');
+					$('.wrapper').addClass('sidebar-show');
 				}
 			}		
 		})
@@ -95,10 +95,10 @@ $(document).ready(function() {
 		})
 	})
 
-	$('.right__close').each(function() {
+	$('.sidebar__close').each(function() {
 		$(this).on('click', function() {
 			$(this).parent().parent().removeClass('show');
-			$('.wrapper').removeClass('right-show right-notepad column');
+			$('.wrapper').removeClass('sidebar-show sidebar-notepad column');
 		})		
 	})
 
@@ -113,12 +113,32 @@ $(document).ready(function() {
 		let sduration = $('.wrapper').css('transition-duration');
 		let msduration = Number.parseFloat(sduration) * 1000;
 
-		setTimeout(function() {
-			if($('.container').width() <= 1000) {
-				$('.wrapper').addClass('column');
-			} else {
-				$('.wrapper').removeClass('column');
+		if(window.matchMedia("(min-width: 768px)").matches) {
+			setTimeout(function() {
+				if($('.container').width() <= 1000) {
+					$('.wrapper').addClass('column');
+				} else {
+					$('.wrapper').removeClass('column');
+				}
+			}, msduration)
+		}
+	})
+
+	$('.content__input-small').each(function() {
+		$(this).on('focusin', function() {
+			$(this).addClass('hide');
+		})
+
+		$(this).on('focusout', function() {
+			$(this).removeClass('hide');
+			
+			if($(this).children('input').val() != "") {
+				$(this).addClass('hide');
 			}
-		}, msduration)		
-	})	
+		})
+
+		if($(this).children('input').val() != "") {
+			$(this).addClass('hide');
+		}
+	})
 })
