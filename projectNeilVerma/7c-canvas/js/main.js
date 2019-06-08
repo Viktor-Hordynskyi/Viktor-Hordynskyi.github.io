@@ -3,8 +3,17 @@ $(document).ready(function() {
 		$('.wrapper').toggleClass('menu-show');
 	})
 
-	$('#history').on('click', function() {
-		$('.wrapper').toggleClass('history-show');
+	$('.header__buttons button').each(function() {
+		let name = $(this).data('target');
+
+		$(this).on('click', function() {
+			$('.wrapper').toggleClass('right-show');
+			if(name == 'notepad') {
+				$('.wrapper').toggleClass('right-notepad column');
+			}
+
+			$('#'+name).toggleClass('show');
+		})
 	})
 
 	$('.content__group').each(function() {
@@ -45,17 +54,41 @@ $(document).ready(function() {
 		let nav = $('.content__nav');
 		
 		if (!comment.is(e.target) 
-			&& comment.has(e.target).length === 0
-			&& !nav.is(e.target) 
-			&& nav.has(e.target).length === 0
-			) {
-			$(comment).removeClass('show');
-	}			
-})
+				&& comment.has(e.target).length === 0
+				&& !nav.is(e.target) 
+				&& nav.has(e.target).length === 0
+				) {
+				$(comment).removeClass('show');
+		}			
+	})
 
 	$('.content__comment-form').each(function() {
 		$(this).children('input').on('click', function() {
 			$(this).parent().parent().removeClass('show');
 		})
+	})
+
+	$('.content__title-btn').each(function() {
+		$(this).on('click', function() {
+			$(this).toggleClass('off');
+
+			let first = $(this).parent().nextAll('.content-first');
+			let second = $(this).parent().nextAll('.content-second');
+
+			if($(this).hasClass('off')) {
+				$(first).removeClass('show');
+				$(second).addClass('show');				
+			} else {
+				$(first).addClass('show');
+				$(second).removeClass('show');
+			}
+		})
+	})
+
+	$('.right__close').each(function() {
+		$(this).on('click', function() {
+			$(this).parent().parent().removeClass('show');
+			$('.wrapper').removeClass('right-show right-notepad column');
+		})		
 	})
 })
