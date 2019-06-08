@@ -66,10 +66,11 @@ $(document).ready(function() {
 			&& comment.has(e.target).length === 0
 			&& !nav.is(e.target) 
 			&& nav.has(e.target).length === 0
-			) {
+			)
+		{
 			$(comment).removeClass('show');
-	}			
-})
+		}			
+	})
 
 	$('.content__comment-form').each(function() {
 		$(this).children('input').on('click', function() {
@@ -100,4 +101,24 @@ $(document).ready(function() {
 			$('.wrapper').removeClass('right-show right-notepad column');
 		})		
 	})
+
+	$('.video-open').on('click', function() {
+		$('.video-popup').addClass('show');
+	})
+	$('.video-close').on('click', function() {
+		$('.video-popup').removeClass('show');
+	})
+
+	$('.wrapper').on('click', function() {
+		let sduration = $('.wrapper').css('transition-duration');
+		let msduration = Number.parseFloat(sduration) * 1000;
+
+		setTimeout(function() {
+			if($('.container').width() <= 1000) {
+				$('.wrapper').addClass('column');
+			} else {
+				$('.wrapper').removeClass('column');
+			}
+		}, msduration)		
+	})	
 })
