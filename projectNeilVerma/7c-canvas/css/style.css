@@ -495,6 +495,7 @@ button:focus {
   -o-transition: all .3s linear;
   transition: all .3s linear;
   visibility: hidden;
+  white-space: nowrap;
 }
 
 .header__buttons button:focus {
