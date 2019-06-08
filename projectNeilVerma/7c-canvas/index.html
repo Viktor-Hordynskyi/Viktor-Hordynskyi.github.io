@@ -99,7 +99,7 @@
 						<span class="tooltip">Account</span>
 					</button>
 
-					<button data-target="add">
+					<button data-target="create">
 						<img src="img/Plus.svg" alt="plus">
 						<span class="tooltip">add</span>
 					</button>
@@ -550,7 +550,7 @@
 						</div>
 					</div>
 
-					<div class="content__element element-60">
+					<div class="content__element element-60 auto-scroll">
 						<div class="content__title">
 							<h2>
 								<img src="img/Creatives.svg" alt="Creatives">
@@ -585,21 +585,19 @@
 										<div class="content__subgroup-colors">
 											<span style="background-color:red;"></span>
 											<span style="background-color:green;"></span>
-											<span style="background-color:blue;"></span>
+											<input type="button" value="+" class="color-input">
 										</div>
-										<input type="button" value="+" class="color-input">
+
+										<h3>Typography</h3>
+										<div class="content__input-small">
+											<input type="text" id="domain">
+										</div>
 									</div>
 
 									<div class="content__subgroup-right">
 										<h3>Packaging</h3>
 										<input type="button" value="+">
 									</div>
-								</div>
-
-								<h4>Typography</h4>
-								<div class="content__textarea">
-									<textarea id="typography" placeholder="What do your customers want as it relates to your product or service?"></textarea>
-									<label for="typography"></label>
 								</div>
 
 								<div class="content__nav">
@@ -1553,6 +1551,38 @@
 				</form>
 			</div>
 			<!-- End /.account -->
+
+			<!-- Start .create -->
+			<div class="create" id="create">
+				<div class="create__title">
+					<h4>
+						"title" <span> - has been saved.</span>
+					</h4>
+
+					<div class="sidebar__close">
+						<button>
+							x
+						</button>
+					</div>
+				</div>
+
+				<div class="create__content">
+					<h3>
+						CREATE A NEW 7C CANVAS
+					</h3>
+
+					<p>
+						Give your 7C Canvas a name
+					</p>
+
+					<form>
+						<input type="text">
+						
+						<input type="submit" value="CREATE 7C CANVAS">
+					</form>
+				</div>
+			</div>
+			<!-- End /.create -->
 
 			<!-- Start .notepad -->
 			<div class="notepad" id="notepad">

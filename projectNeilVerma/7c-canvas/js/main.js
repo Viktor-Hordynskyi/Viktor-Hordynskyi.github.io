@@ -115,7 +115,8 @@ $(document).ready(function() {
 
 		if(window.matchMedia("(min-width: 768px)").matches) {
 			setTimeout(function() {
-				if($('.container').width() <= 1000) {
+				// if($('.container').width() <= 1000) {
+				if(($('.wrapper').hasClass('menu-show') ||	$('.wrapper').hasClass('sidebar-notepad') || $('.wrapper').hasClass('sidebar-show')) && $('.container').width() <= 1000) {
 					$('.wrapper').addClass('column');
 				} else {
 					$('.wrapper').removeClass('column');
