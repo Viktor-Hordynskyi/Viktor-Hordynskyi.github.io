@@ -271,6 +271,7 @@ a {
 }
 
 .attend__btn {
+  margin-bottom: 2rem;
   text-align: center;
 }
 
@@ -282,7 +283,7 @@ a {
   font-family: 'Decalotype-Bold';
   font-size: 2.5rem;
   letter-spacing: -0.076rem;
-  padding: 2rem 9rem;
+  padding: 2rem 8rem;
   text-transform: uppercase;
 }
 
