@@ -1282,6 +1282,12 @@ button:focus {
   width: 3rem;
 }
 
+.content__subgroup-left input.color-input.chosen {
+  background: inherit;
+  border: none;
+  color: transparent;
+}
+
 .content__group.channel {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
