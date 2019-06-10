@@ -31,15 +31,9 @@
 				</div>
 
 				<div class="menu__search-buttons">
-					<a href="#">
-						<img src="img/icon-quarter.svg" alt="quarter">
-					</a>
-
-					<a href="#">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" class="Icon Icon--addSimple">
-							<path fill-rule="evenodd" d="M811.384615,411.384615 L588.615385,411.384615 L588.615385,188.615385 C588.615385,139.692308 548.923077,100 500,100 C451.076923,100 411.384615,139.692308 411.384615,188.615385 L411.384615,411.384615 L188.615385,411.384615 C139.692308,411.384615 100,451.076923 100,499.897436 C100,548.923077 139.692308,588.615385 188.615385,588.615385 L411.384615,588.615385 L411.384615,811.282051 C411.384615,860.307692 451.076923,900 500,900 C548.923077,900 588.615385,860.307692 588.615385,811.282051 L588.615385,588.615385 L811.384615,588.615385 C860.307692,588.615385 900,548.923077 900,499.897436 C900,451.076923 860.307692,411.384615 811.384615,411.384615"></path>
-						</svg>
-					</a>
+					<button data-target="create" class="plus-btn">
+						<img src="img/Plus-white.svg" alt="plus">
+					</button>
 				</div>
 			</div>
 
@@ -56,11 +50,9 @@
 					create new 7c canvas
 				</h3>
 
-				<a href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000" class="Icon Icon--addSimple">
-						<path fill-rule="evenodd" d="M811.384615,411.384615 L588.615385,411.384615 L588.615385,188.615385 C588.615385,139.692308 548.923077,100 500,100 C451.076923,100 411.384615,139.692308 411.384615,188.615385 L411.384615,411.384615 L188.615385,411.384615 C139.692308,411.384615 100,451.076923 100,499.897436 C100,548.923077 139.692308,588.615385 188.615385,588.615385 L411.384615,588.615385 L411.384615,811.282051 C411.384615,860.307692 451.076923,900 500,900 C548.923077,900 588.615385,860.307692 588.615385,811.282051 L588.615385,588.615385 L811.384615,588.615385 C860.307692,588.615385 900,548.923077 900,499.897436 C900,451.076923 860.307692,411.384615 811.384615,411.384615"></path>
-					</svg>
-				</a>
+				<button data-target="create" class="plus-btn">
+					<img src="img/Plus-white.svg" alt="plus">
+				</button>
 			</div>
 
 			<!-- Start .menu-toggler -->
@@ -84,15 +76,15 @@
 				</div>
 
 				<div class="header__buttons">
-					<button data-target="history">
-						<img src="img/History2.svg" alt="history">
-						<span class="tooltip">history</span>
-					</button>
-
 					<button data-target="share">
 						<img src="img/Share.svg" alt="share">
 						<span class="tooltip">share</span>
 					</button>
+
+					<button data-target="history">
+						<img src="img/History2.svg" alt="history">
+						<span class="tooltip">history</span>
+					</button>					
 
 					<button data-target="account">
 						<img src="img/Account.svg" alt="account">
@@ -583,8 +575,8 @@
 									<div class="content__subgroup-left">
 										<h3>Colors</h3>
 										<div class="content__subgroup-colors">
-											<span style="background-color:red;"></span>
-											<span style="background-color:green;"></span>
+											<input type="button" style="background-color:red;"></input>
+											<input type="button" style="background-color:green;"></input>
 											<input type="button" value="+" class="color-input">
 										</div>
 

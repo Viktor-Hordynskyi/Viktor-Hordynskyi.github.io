@@ -5,6 +5,7 @@ $(document).ready(function() {
 
 	$('.header__buttons button').each(function() {
 		let name = $(this).data('target');
+		let plus = $('.menu__search-buttons button').data('target');
 
 		$(this).on('click', function() {
 			if($('#'+name).hasClass('show')) {
@@ -25,17 +26,41 @@ $(document).ready(function() {
 		})
 	})
 
+	$('.plus-btn').each(function() {
+		let plus = $(this).data('target');
+
+		$(this).on('click', function() {
+			if($('#'+plus).hasClass('show')) {
+				$('#'+plus).removeClass('show');
+				$('.wrapper').removeClass('sidebar-show sidebar-notepad');
+			}	else {
+				$('.sidebar>div').removeClass('show');
+				$('#'+plus).addClass('show');
+
+				if(plus == 'notepad') {
+					$('.wrapper').removeClass('sidebar-show');
+					$('.wrapper').addClass('sidebar-notepad');
+				} else {
+					$('.wrapper').removeClass('sidebar-notepad');
+					$('.wrapper').addClass('sidebar-show');
+				}
+			}		
+		})
+	})
+
 	$('.content__group').each(function() {
 		$(this).on('focusin', function() {
 			$(this).children('.content__textarea').addClass('cut');
 			$(this).children('.content__textarea').addClass('before');
 			$(this).children('.content__textarea').next().addClass('show');
+			$(this).children('.content__nav').addClass('show');
 		})
 
 		$(this).on('focusout', function() {
 			$(this).children('.content__textarea').removeClass('cut');
 			
 			$(this).children('.content__textarea').next().removeClass('show');
+			$(this).children('.content__nav').removeClass('show');
 
 			if($(this).children('.content__textarea').children('textarea').val() == "") {
 				$(this).children('.content__textarea').removeClass('before');
