@@ -167,3 +167,9 @@ $(document).ready(function() {
 		}
 	})
 })
+
+$(window).on('resize', function() {
+	if(this.matchMedia("(max-width: 1024px)").matches) {
+		$('.wrapper').removeClass('menu-show')
+	}
+})
