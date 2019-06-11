@@ -1994,17 +1994,17 @@ button:focus {
 
   /* wrapper styles */
   .menu-show {
-    padding-left: 50%;
+    padding-left: 40%;
   }
 
   .sidebar-show,
   .sidebar-notepad {
-    padding-right: 50%;
+    padding-right: 60%;
   }
 
   /* menu styles */
   .menu {
-    width: 50%;
+    width: 40%;
   }
 
   .menu-show .menu-toggler {
@@ -2014,7 +2014,7 @@ button:focus {
 
   /* sidebar styles */
   .sidebar {
-    width: 50%;
+    width: 60%;
     z-index: 888;
   }
 
