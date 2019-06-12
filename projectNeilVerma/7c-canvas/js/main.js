@@ -51,6 +51,7 @@ $(document).ready(function() {
 	$('.content__group').each(function() {
 		$(this).on('focusin', function() {
 			$(this).children('.content__textarea').addClass('cut');
+			$(this).children('.content__subgroup-wrapper').addClass('cut');
 			$(this).children('.content__textarea').addClass('before');
 			$(this).children('.content__textarea').next().addClass('show');
 			$(this).children('.content__nav').addClass('show');
@@ -58,6 +59,7 @@ $(document).ready(function() {
 
 		$(this).on('focusout', function() {
 			$(this).children('.content__textarea').removeClass('cut');
+			$(this).children('.content__subgroup-wrapper').removeClass('cut');
 			
 			$(this).children('.content__textarea').next().removeClass('show');
 			$(this).children('.content__nav').removeClass('show');
@@ -67,14 +69,15 @@ $(document).ready(function() {
 			}
 			$(this).next().on('click', function() {
 				$(this).children('.content__textarea').addClass('cut');
+				$(this).children('.content__subgroup-wrapper').addClass('cut');
 				$(this).children('.content__textarea').addClass('before');
 				$(this).children('.content__textarea').next().addClass('show');
 			})
 		})
 
-		if($(this).children('textarea').val() != "") {
-			$(this).addClass('before');
-		}
+		// if($(this).children('textarea').val() != "") {
+		// 	$(this).addClass('before');
+		// }
 	})
 
 	$('.content__nav button').each(function() {
@@ -149,23 +152,23 @@ $(document).ready(function() {
 		}
 	})
 
-	$('.content__input-small').each(function() {
-		$(this).on('focusin', function() {
-			$(this).addClass('hide');
-		})
+	// $('.content__input-small').each(function() {
+	// 	$(this).on('focusin', function() {
+	// 		$(this).addClass('hide');
+	// 	})
 
-		$(this).on('focusout', function() {
-			$(this).removeClass('hide');
+	// 	$(this).on('focusout', function() {
+	// 		$(this).removeClass('hide');
 			
-			if($(this).children('input').val() != "") {
-				$(this).addClass('hide');
-			}
-		})
+	// 		if($(this).children('input').val() != "") {
+	// 			$(this).addClass('hide');
+	// 		}
+	// 	})
 
-		if($(this).children('input').val() != "") {
-			$(this).addClass('hide');
-		}
-	})
+	// 	if($(this).children('input').val() != "") {
+	// 		$(this).addClass('hide');
+	// 	}
+	// })
 })
 
 $(window).on('resize', function() {
