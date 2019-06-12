@@ -121,11 +121,31 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 7rem;
+  /*padding: 0 7rem;*/
   -webkit-transition: .3s all linear;
   -o-transition: .3s all linear;
   transition: .3s all linear;
   height: 12rem;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  flex-grow: 1;
+  -webkit-transition: .3s all linear;
+  -o-transition: .3s all linear;
+  transition: .3s all linear;
 }
 
 .navbar.fixed {
@@ -177,6 +197,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 
 .navbar__menu li{
@@ -928,7 +951,12 @@ body {
   
   /* header styles */
   .header::after {
-    background-position: left -58rem center;
+    background-position: left -40rem center;
+  }
+
+  /* navbar styles */
+  .navbar__menu {
+    justify-content: center;
   }
 
   /* intro styles */
@@ -999,6 +1027,10 @@ body {
   }
 
   /* navbar styles */
+  .navbar__menu {
+    justify-content: center;
+  }
+
   .navbar__menu li a {
     font-size: 4rem;
   }
@@ -1012,7 +1044,7 @@ body {
 
   .intro__title h1 {
     font-size: 9rem;
-    line-height: 20rem;
+    line-height: 12rem;
     text-align: center;
   }
 
@@ -1039,11 +1071,11 @@ body {
 
   /* build styles */
   .build__title h2 {
-    font-size: 13rem;
+    font-size: 10rem;
   }
 
   .build__title h3 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 
   /* what styles */
@@ -1105,7 +1137,8 @@ body {
   }
 
   /* navbar styles */
-  .navbar {
+  .navbar,
+  .navbar .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     height: 16rem;
@@ -1163,6 +1196,20 @@ body {
   .build__gif {
     margin: 8rem auto 0;
     width: 35rem;
+  }
+
+  #b__i-a1 {
+    
+  }
+
+  #b__i-a2 {
+    left: -1rem;
+    top: 7.5rem;
+  }
+
+  #b__i-a3 {
+    right: -1rem;
+    top: 7.5rem;
   }
 }
 
