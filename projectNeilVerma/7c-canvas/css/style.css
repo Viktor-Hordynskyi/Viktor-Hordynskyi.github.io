@@ -290,9 +290,16 @@ button:focus {
 .menu__list li {
   color: #fff;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: 'Decalotype-Bold';
   font-size: 2rem;
   padding: 1rem 1rem 1rem 3rem;
@@ -623,7 +630,8 @@ button:focus {
 }
 
 .group-half {
-  flex-basis: calc((100% - 14rem) / 2);
+  -ms-flex-preferred-size: calc((100% - 14rem) / 2);
+      flex-basis: calc((100% - 14rem) / 2);
 }
 
 /* content styles */
@@ -689,7 +697,8 @@ button:focus {
 .content-first,
 .content-second {
   display: none;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .content-first.show,
@@ -733,7 +742,8 @@ button:focus {
   flex-grow: 1;
   overflow: hidden;
   position: relative;
-  flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
@@ -800,10 +810,18 @@ button:focus {
 }
 
 .content__logo-big {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-basis: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin: 0 auto;
   position: relative;
   width: 14rem;
@@ -822,7 +840,9 @@ button:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 11rem;
 }
 
@@ -1404,10 +1424,18 @@ button:focus {
 }
 
 .content__calcs {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-basis: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   margin-bottom: 6rem;
 }
 

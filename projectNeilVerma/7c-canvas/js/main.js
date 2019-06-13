@@ -160,23 +160,6 @@ $(document).ready(function() {
 			}, msduration)
 		}
 	})
-	// $('.content__input-small').each(function() {
-	// 	$(this).on('focusin', function() {
-	// 		$(this).addClass('hide');
-	// 	})
-
-	// 	$(this).on('focusout', function() {
-	// 		$(this).removeClass('hide');
-
-	// 		if($(this).children('input').val() != "") {
-	// 			$(this).addClass('hide');
-	// 		}
-	// 	})
-
-	// 	if($(this).children('input').val() != "") {
-	// 		$(this).addClass('hide');
-	// 	}
-	// })
 })
 
 $(window).on('resize load', function() {

@@ -913,6 +913,41 @@ body {
     font-size: 8px;
   }
 
+  /* intro styles */
+  .intro {
+    max-width: 75rem;
+  }
+
+  .intro__title h1 {
+    font-size: 7.75rem;
+  }
+
+  .intro__subtitle h2 {
+    font-size: 2.5rem;
+  }
+
+  .intro__subtitle a {
+    font-size: 1.8rem;
+  }
+
+  /* build styles */
+  .build__title h2 {
+    font-size: 6rem;
+  }
+
+  .build__title h3 {
+    font-size: 2.5rem;
+  }
+
+  /* what styles */
+  .what__slider h3 {
+    font-size: 2.5rem;
+  }
+
+  .what__slider h4 {
+    font-size: 2.7rem;
+  }
+
   /* legal and privacy styles */
   .privacy h2,
   .legal h2,
@@ -929,6 +964,54 @@ body {
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
     font-size: 6px;
+  }
+
+  /* intro styles */
+  .intro {
+    max-width: 98rem;
+  }
+
+  .navbar__menu li a {
+    font-size: 3rem;
+  }
+
+  .intro__title h1 {
+    font-size: 10.3rem;
+  }
+
+  .intro__subtitle h2 {
+    font-size: 3rem;
+  }
+
+  .intro__subtitle a {
+    font-size: 2.3rem;
+  }
+
+  /* build styles */
+  .build__title h2 {
+    font-size: 8rem;
+  }
+
+  .build__title h3 {
+    font-size: 3rem;
+  }
+
+  /* what styles */
+  .what .container {
+    max-width: 120rem;
+  }
+
+  .what__title h2 {
+    font-size: 7rem;
+  }
+
+  .what__slider h3 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  .what__slider h4 {
+    font-size: 3.2rem;
   }
 
   /* legal and privacy styles */
@@ -948,7 +1031,7 @@ body {
   html {
     font-size: 5px;
   }
-  
+
   /* header styles */
   .header::after {
     background-position: left -40rem center;
@@ -959,17 +1042,21 @@ body {
     justify-content: center;
   }
 
+  .navbar__menu li a {
+    font-size: 3rem;
+  }
+
   /* intro styles */
   .intro {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
     margin: 20rem auto 0;
-    max-width: 80rem;
+    max-width: 98rem;
   }
 
   .intro__title h1 {
-    font-size: 8.2rem;
+    font-size: 10.2rem;
     margin-bottom: 6rem;
     text-align: center;
   }
@@ -997,9 +1084,31 @@ body {
     font-size: 3rem;
   }
 
+  /* build styles */
+  .build__title h2 {
+    font-size: 8rem;
+  }
+
+  .build__title h3 {
+    font-size: 3rem;
+  }
+
   /* what styles */
   .what .container {
-    width: 70%;
+    max-width: 120rem;
+  }
+
+  .what__title h2 {
+    font-size: 7rem;
+  }
+
+  .what__slider h3 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  .what__slider h4 {
+    font-size: 3.2rem;
   }
 
   /* legal and privacy styles */
