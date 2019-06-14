@@ -90,6 +90,7 @@ body {
 .header {
   position: relative;
   height: 100%;
+  z-index: 999;
 }
 
 .header::after {
@@ -128,6 +129,7 @@ body {
   transition: .3s all linear;
   height: 12rem;
   width: 100%;
+  z-index: 999;
 }
 
 .navbar .container {
@@ -365,11 +367,13 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 32rem;
   margin-left: auto;
+  padding-top: 32rem;  
   padding-right: 7rem;
+  position: relative;
   height: calc(100vh - 12rem);
   max-width: 62rem;
+  z-index: 0;
 }
 
 .intro__title {
@@ -1051,7 +1055,8 @@ body {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    margin: 20rem auto 0;
+    margin: 0 auto 0;
+    padding-top: 40rem;
     max-width: 98rem;
   }
 
@@ -1147,7 +1152,7 @@ body {
   /* intro styles */
   .intro {
     margin: 0 auto;
-    padding: 20rem 0;
+    padding: 40rem 0;
     max-width: 60%;
   }
 

@@ -114,6 +114,20 @@ button:focus {
   overflow: auto;
 }
 
+::-webkit-scrollbar {
+  width: .5rem;
+}
+::-webkit-scrollbar-track {
+  background: #ddd; 
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #999; 
+}
+
 /* wrapper styles */
 .wrapper {
   background-color: #f7f7f9;
@@ -620,8 +634,8 @@ button:focus {
 }
 
 .group-vshort {
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
 }
 
 .group-third {
