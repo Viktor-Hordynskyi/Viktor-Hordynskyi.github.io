@@ -363,9 +363,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 20rem;
   margin-left: auto;
   padding-right: 7rem;
   height: calc(100vh - 12rem);
@@ -1034,7 +1032,7 @@ body {
 
   /* header styles */
   .header::after {
-    background-position: left -40rem center;
+    background-position: left -25rem center;
   }
 
   /* navbar styles */
