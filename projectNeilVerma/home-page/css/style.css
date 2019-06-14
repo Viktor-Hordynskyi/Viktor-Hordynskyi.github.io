@@ -365,7 +365,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding-top: 20rem;
+  padding-top: 32rem;
   margin-left: auto;
   padding-right: 7rem;
   height: calc(100vh - 12rem);
