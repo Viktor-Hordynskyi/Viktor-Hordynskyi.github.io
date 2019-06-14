@@ -121,11 +121,13 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*padding: 0 7rem;*/
+  position: fixed;
+  top: 0;
   -webkit-transition: .3s all linear;
   -o-transition: .3s all linear;
   transition: .3s all linear;
   height: 12rem;
+  width: 100%;
 }
 
 .navbar .container {
@@ -363,7 +365,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 20rem;
+  padding-top: 20rem;
   margin-left: auto;
   padding-right: 7rem;
   height: calc(100vh - 12rem);
