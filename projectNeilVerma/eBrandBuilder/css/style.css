@@ -6593,6 +6593,7 @@ body#direct-to-masterClass {
 
   #external-book-page .header .container {
     padding: 0;
+    max-width: 100%;
   }
 
   #external-book-page .header__button a {
@@ -6667,10 +6668,20 @@ body#direct-to-masterClass {
 
   #external-book-page .promo__title h2 {
     font-size: 3.5rem;
+    line-height: 4.5rem;
   }
 
   #external-book-page .promo__title h2 br {
     display: none;
+  }
+
+  #external-book-page .promo__image {
+    height: 20rem;
+  }
+
+  #external-book-page .promo__info {
+    margin: 0 auto;
+    width: 60%;
   }
 
   #external-book-page .promo__info li {
@@ -6877,6 +6888,12 @@ body#direct-to-masterClass {
   html {
     font-size: 4px;
   }
+
+  /* promo styles */
+  #external-book-page .promo__info {
+    margin: 0 auto;
+    width: 70%;
+  }
   
   /* more styles */
   #external-book-page .more__info {
@@ -6895,6 +6912,12 @@ body#direct-to-masterClass {
 @media (max-width: 480px) {
   html {
     font-size: 4px;
+  }
+
+  /* promo styles */
+  #external-book-page .promo__info {
+    margin: 0 auto;
+    width: 80%;
   }
 
   /* who styles */
@@ -6935,6 +6958,12 @@ body#direct-to-masterClass {
 @media (max-width: 375px) {
   html {
     font-size: 4px;
+  }
+
+  /* promo styles */
+  #external-book-page .promo__info {
+    margin: 0 auto;
+    width: 90%;
   }
 
   /* from styles */
