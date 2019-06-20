@@ -1854,23 +1854,19 @@ body {
   margin-bottom: 1rem;
 }
 
-#book-landing-page .input-forms__card-wrapper:first-child
-#book-landing-page .input-forms__card-group:first-child {
+#book-landing-page .input-forms__card-wrapper:first-child .input-forms__card-group:first-child {
   width: 60%;
 }
 
-#book-landing-page .input-forms__card-wrapper:first-child
-#book-landing-page .input-forms__card-group:last-child {
+#book-landing-page .input-forms__card-wrapper:first-child .input-forms__card-group:last-child {
   width: 35%;
 }
 
-#book-landing-page .input-forms__card-wrapper:nth-child(2)
-#book-landing-page .input-forms__card-group:first-child {
+#book-landing-page .input-forms__card-wrapper:nth-child(2) .input-forms__card-group:first-child {
   width: 40%;
 }
 
-#book-landing-page .input-forms__card-wrapper:nth-child(2)
-#book-landing-page .input-forms__card-group:last-child {
+#book-landing-page .input-forms__card-wrapper:nth-child(2) .input-forms__card-group:last-child {
   width: 55%;
 }
 
