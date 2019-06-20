@@ -82,8 +82,7 @@ $(document).ready(function() {
 			$('#upgrade-price').text('$0.00');
 
 			$('#total-price').text('$' + total);
-		}
-		
+		}		
 	})
 })
 
@@ -212,10 +211,18 @@ $(document).ready(function() {
 })
 
 // ScrollReval JS initialization
-window.sr = ScrollReveal();
-sr.reveal('.reveal', {
-	duration: 2000
-});
+$(window).on('load', function() {
+	if(
+			$('body').prop('id') == 'Meet-Neil' ||
+			$('body').prop('id') == 'eBrandConsult' ||
+			$('body').prop('id') == 'eBrandServices'
+		) {
+		window.sr = ScrollReveal();
+		sr.reveal('.reveal', {
+			duration: 2000
+		});
+	}
+})
 
 $(document).ready(function () {
 	// JS for eBrandConsult

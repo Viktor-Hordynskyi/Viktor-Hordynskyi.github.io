@@ -6246,7 +6246,7 @@ body#direct-to-masterClass {
 
 /* more styles */
 #external-book-page .more {
-  background: url(../img/external-book-page/more-bg-img.png) center no-repeat, #dee0ec;
+  background: url(../img/external-book-page/more-bg-img.png) bottom center no-repeat, #dee0ec;
   background-size: contain;
   position: relative;
 }
@@ -7306,7 +7306,7 @@ body#direct-to-masterClass {
 
 /* more styles */
 #internal-book-page .more {
-  background: url(../img/internal-book-page/more-bg-img.png) center no-repeat, #dee0ec;
+  background: url(../img/internal-book-page/more-bg-img.png) bottom center no-repeat, #dee0ec;
   background-size: contain;
   position: relative;
 }
