@@ -1,0 +1,633 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+}
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+button {
+	cursor: pointer;
+}
+
+@font-face {
+	font-family: "Decalotype-Bold";
+	src: url(../fonts/Decalotype-Bold.ttf);
+}
+
+@font-face {
+	font-family: "Decalotype-Black";
+	src: url(../fonts/Decalotype-Black.otf);
+}
+
+@font-face {
+	font-family: "Decalotype-Regular";
+	src: url(../fonts/Decalotype-Regular.ttf);
+}
+
+@font-face {
+	font-family: "Decalotype-Medium";
+	src: url(../fonts/Decalotype-Medium.otf);
+}
+
+@font-face {
+	font-family: "Decalotype-Light";
+	src: url(../fonts/Decalotype-Light.otf);
+}
+
+#Meet-Neil .text br {
+	line-height: 2;
+}
+
+#Meet-Neil p,
+#Meet-Neil a,
+#Meet-Neil li {
+	font-family: "Decalotype-Regular";
+	color: #3b3b3b;
+	letter-spacing: 2.4px;
+}
+
+#Meet-Neil h1,
+#Meet-Neil h2,
+#Meet-Neil h3 {
+	font-family: "Decalotype-Bold";
+	letter-spacing: 4px;
+}
+
+#Meet-Neil .main {
+	width: 965px;
+	margin: 0 auto;
+	background-image: url("../img/iconbg.png");
+	background-repeat: no-repeat;
+	background-position: 100% 8%;
+}
+
+#Meet-Neil .content {
+	width: 720px;
+	margin: 0 auto;
+}
+
+#Meet-Neil header {
+	padding-top: 170px;
+	padding-bottom: 110px;
+	position: relative;
+}
+
+#Meet-Neil .quote-img {
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 115px;
+	z-index: 1;
+}
+
+#Meet-Neil .quote {
+	padding-top: 0px;
+	position: relative;
+	z-index: 10;
+}
+#Meet-Neil footer p{
+	letter-spacing: 2px;
+}
+
+#Meet-Neil .quote:before {
+	content: url(../img/quote.png);
+	position: absolute;
+	width: 41px;
+	height: auto;
+	top: 0;
+	left: 0;
+}
+
+#Meet-Neil .quote p {
+	color: #244c67;
+	font-size: 25px;
+	font-family: "Decalotype-Bold";
+	padding-top: 50px;
+}
+
+#Meet-Neil .quote p.name {
+	color: #f26864;
+	font-size: 18px;
+	line-height: 20px;
+	font-family: "Decalotype-Regular";
+	padding-top: 10px;
+}
+
+#Meet-Neil .firsts {
+	margin-top: 120px;
+}
+
+#Meet-Neil .firsts h2 {
+	color: #f26864;
+	font-size: 38px;
+	padding-bottom: 45px;
+}
+
+#Meet-Neil .firsts p {
+	font-size: 16px;
+	color: #3b3b3b;
+	line-height: 1.6;
+}
+
+#Meet-Neil .firsts h2.diff {
+	font-size: 36px;
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+
+#Meet-Neil .firsts .diff-text {
+	line-height: 1.3;
+	letter-spacing: 2.9px;
+}
+
+#Meet-Neil .firsts li {
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 1;
+	position: relative;
+	margin: 25px 0;
+	margin-left: 25px;
+	
+}
+#Meet-Neil .firsts li:before {
+	content: '';
+	background-size: 100%;
+	background-position: center;
+	width: 16px;
+	height: 100%;
+	background-image: url(../img/logo.png);
+	position: absolute;
+	background-repeat: no-repeat;
+	top: 0;
+	left: -25px;	
+}
+
+#Meet-Neil .firsts ul {
+	margin-bottom: 30px;
+}
+
+#Meet-Neil .first__button {
+	text-align: center;
+}
+
+#Meet-Neil .first__button a {
+	display: inline-block;
+	background-color: #f26864;
+	color: white;
+	padding: 18px 34px;
+	border: none;
+	border-radius: 10px;
+	font-family: "Decalotype-Regular";
+	font-size: 44px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 70px;
+	margin-bottom: 65px;
+	text-decoration: none;
+}
+
+#Meet-Neil .branch {
+	padding-top: 10px;
+	overflow: hidden;
+	margin-bottom: 100px;
+	padding-bottom: 70px;
+	
+	position: relative;
+}
+
+#Meet-Neil .branch-bg {
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 94.8%;
+	background-color: #379dd7;
+	top: 23px;
+	left: 50%;
+}
+
+#Meet-Neil .branch-bg:before,
+#Meet-Neil .branch-bg:after {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	border: 2px solid #379dd7;
+	background-color: #379dd7;
+	border-radius: 50%;
+}
+
+#Meet-Neil .branch-bg:before {
+	top: -15px;
+	left: calc(50% - 9px);
+}
+
+#Meet-Neil .branch-bg:after {
+	bottom: -7px;
+	left: calc(50% - 9px);
+}
+
+#Meet-Neil .branch {
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+#Meet-Neil #Meet-Neil .branch .half p {
+	font-size: 16px;
+	letter-spacing: 1.4px;
+}
+
+#Meet-Neil .half {
+	width: 50%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#Meet-Neil .halfc {
+	padding-right: 34px;
+	padding-left: 15px;
+}
+
+#Meet-Neil .halfcpad {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 60px;
+}
+
+#Meet-Neil .block {
+	padding: 30px 0;
+	overflow: hidden;
+}
+
+#Meet-Neil .block-3 {
+	padding-top: 55px;
+}
+
+#Meet-Neil .block-3 .sp1 {
+	margin-top: 0;
+	margin-left: 0;
+}
+
+#Meet-Neil .block-3 .imgr-wrap {
+	margin-top: 20px;
+}
+
+#Meet-Neil .block h3 {
+	color: #f26864;
+	font-size: 34px;
+	margin-bottom: 15px;
+}
+
+#Meet-Neil .imgr {
+	width: 95%;
+	right: 16px;
+}
+
+#Meet-Neil .imgl {
+	width: 100%;
+	margin-top: 35px;
+}
+
+#Meet-Neil .imgr-wrap,
+#Meet-Neil .imgl-wrap {
+	margin-top: 50px;
+	margin-left: 70px;
+	position: relative;
+	width: 296px;
+	height: auto;
+}
+
+#Meet-Neil .imgl-wrap {
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+#Meet-Neil .imgr-wrap:after,
+#Meet-Neil .imgl-wrap:after {
+	position: absolute;
+	content: '';
+	width: 16px;
+	height: 16px;
+	border: 2px solid #379dd7;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+#Meet-Neil .imgr-wrap:before,
+#Meet-Neil .imgl-wrap:before {
+	position: absolute;
+	content: '';
+	width: 90px;
+	height: 3px;
+	background-color: #379dd7;
+}
+
+#Meet-Neil .imgl-wrap:after {
+	top: 50%;
+	right: -61px;
+}
+
+#Meet-Neil .imgl-wrap:before {
+	width: 68px;
+	top: 53%;
+	right: -45px;
+}
+
+#Meet-Neil .imgr-wrap:after {
+	top: 43%;
+	left: -79px;
+}
+
+#Meet-Neil .imgr-wrap:before {
+	top: 46%;
+	left: -70px;
+}
+
+#Meet-Neil .imgr.title1:before {
+	width: 130px;
+}
+
+#Meet-Neil .titleRight.title4:before {
+	width: 215px;
+}
+
+#Meet-Neil .sp1 {
+	margin-top: 130px;
+	margin-left: 16px;
+}
+
+#Meet-Neil .sp1 ul {
+	list-style-type: none;
+}
+
+
+/*---- Footer  ----*/
+
+#Meet-Neil footer {
+	background-color: #3c84bf;
+	width: 100%;
+}
+
+#Meet-Neil footer a {
+	text-decoration: none;
+}
+
+#Meet-Neil footer .right-bar {
+	float: right;
+	width: 30%;
+	padding-top: 27px;
+}
+
+#Meet-Neil footer .left-bar {
+	padding-top: 27px;
+	float: left;
+	width: 30%;
+}
+
+#Meet-Neil .footer-logo {
+	width: 40%;
+	float: left;
+	padding-top: 11px;
+}
+
+#Meet-Neil .footer-logo img {
+	display: block;
+	width: 52px;
+	height: auto;
+	margin: 0 auto;
+}
+
+#Meet-Neil footer p {
+	font-size: 8px;
+	font-family: 'Arial', sans-serif;
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 15px;
+
+}
+
+#Meet-Neil footer .l1,
+#Meet-Neil footer .l2,
+#Meet-Neil footer .r1,
+#Meet-Neil footer .r2 {
+	display: inline-block;
+
+}
+
+#Meet-Neil footer .l1 {
+	margin-right: 25px;
+}
+
+#Meet-Neil footer .r1 {
+	margin-right: 25px;
+}
+
+#Meet-Neil footer .r1,
+#Meet-Neil footer .r2 {
+	display: inline-block;
+	float: right;
+}
+
+#Meet-Neil footer .l1 img,
+#Meet-Neil footer .l2 img,
+#Meet-Neil footer .r1 img,
+#Meet-Neil footer .r2 img {
+	width: 26px;
+	height: 26px;
+	margin: 0 auto;
+	display: block;
+}
+
+#Meet-Neil footer .r2 img {
+	margin-right: 40px;
+}
+
+/*---- /footer  ----*/
+/* responsive */
+
+@media screen and (min-width: 1200px) {
+	#Meet-Neil footer .content{
+	width: 1200px;
+}
+	#Meet-Neil .quote p {
+		font-size: 40px;
+	}
+	#Meet-Neil .quote p.name {
+		font-size: 25px;
+		line-height: 1.2;
+	}
+	#Meet-Neil .quote-img {
+		top: 50px;
+		width: 550px;
+		right: -100px;
+	}
+	#Meet-Neil .main {
+		background-position: 100% 15%;
+		width: 1000px;
+	}
+	#Meet-Neil .content {
+		width: 100%;
+	}
+	#Meet-Neil .branch {
+		max-width: 1000px;		
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#Meet-Neil footer .content{
+		width: 90%;
+	}
+}
+@media screen and (max-width: 965px) {
+	#Meet-Neil footer .content {
+		width: 90%;
+	}
+	#Meet-Neil .main {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#Meet-Neil .half {
+		width: 100%;
+		text-align: center;
+	}
+	#Meet-Neil .branch {
+		position: relative;
+	}
+	#Meet-Neil .branch-bg {
+		display: none;
+	}
+	#Meet-Neil .imgr-wrap,
+	#Meet-Neil .imgl-wrap {
+		width: 150px;
+		position: absolute;
+		top: 30px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	#Meet-Neil .imgr-wrap:after,
+	#Meet-Neil .imgl-wrap:after,
+	#Meet-Neil .imgr-wrap:before,
+	#Meet-Neil .imgl-wrap:before {
+		display: none;
+	}
+	#Meet-Neil .block {
+		padding-bottom: 0;
+	}
+	#Meet-Neil .sp1 {
+		margin-top: 10px;
+	}
+	#Meet-Neil .halfcpad,
+	#Meet-Neil .halfc {
+		padding-left: 0px;
+		padding-right: 0;
+		max-width: 300px;
+		margin: 0 auto;
+		margin-top: 160px;
+	}
+	#Meet-Neil .imgr-wrap,
+	#Meet-Neil .imgl-wrap {
+		margin: 0 auto;
+	}
+	#Meet-Neil .imgr-wrap img,
+	#Meet-Neil .imgl-wrap img {
+		margin: 0;
+	}
+	#Meet-Neil .block-3 .imgr-wrap {
+		margin-top: 0;
+	}
+	#Meet-Neil .block-3 {
+		padding-top: 20px;
+	}
+	#Meet-Neil .content {
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 0 20px;
+	}
+	#Meet-Neil .firsts h2.diff {
+		font-size: 40px;
+		padding: 30px 0;
+	}
+	#Meet-Neil .quote-img {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	#Meet-Neil .quote-img {
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+	}
+	#Meet-Neil .quote p {
+		font-size: 20px;
+		text-align: center;
+	}
+	#Meet-Neil .quote:before {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+	#Meet-Neil header {
+		padding-top: 400px;
+	}
+	#Meet-Neil .firsts {
+		margin-top: 10px;
+	}
+	#Meet-Neil .firsts h2.diff {
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	#Meet-Neil footer .r2 img{
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	#Meet-Neil footer .l1,
+	#Meet-Neil footer .l2,
+	#Meet-Neil footer .r1,
+	#Meet-Neil footer .r2{
+		display: block;
+		float: none;
+		margin: 0 auto;
+		width: 100%;
+	}
+	#Meet-Neil .footer-logo{
+		padding-top: 45px;
+	}
+	#Meet-Neil .half {
+		width: 100%;
+	}
+	#Meet-Neil .branch {
+		background: white;
+	}
+	#Meet-Neil .halfcpad {
+		padding-left: 0px;
+	}
+	#Meet-Neil .half {
+		padding-right: 0px;
+	}
+	#Meet-Neil button {
+		font-size: 26px;
+		margin-top: 40px;
+	}
+	#Meet-Neil .firsts h2 {
+		font-size: 35px;
+	}
+	#Meet-Neil .firsts li {
+		font-size: 18px;
+	}
+}

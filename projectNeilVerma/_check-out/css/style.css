@@ -1,0 +1,207 @@
+/* Fonts */
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: url('../fonts/Decalotype-Regular.eot');
+  src: url('../fonts/Decalotype-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Regular.woff') format('woff'),
+  url('../fonts/Decalotype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Medium';
+  src: url('../fonts/Decalotype-Medium.eot');
+  src: url('../fonts/Decalotype-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Medium.woff') format('woff'),
+  url('../fonts/Decalotype-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Decalotype-Regular';
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* check styles */
+#check-out .check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 7rem 13rem;
+}
+
+#check-out .check__space {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 60%;
+}
+
+#check-out .check__content {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-align: center;
+  width: 40%;
+}
+
+#check-out .check__logo {
+  margin: 0 auto 8rem;
+  max-width: 30rem;
+}
+
+#check-out .check__logo img {
+  width: 100%;
+}
+
+#check-out .check__info {
+  font-family: 'Decalotype-Medium';
+  text-align: left;
+}
+
+#check-out .check__info h1 {
+  color: #2f9dd8;
+  font-family: 'Decalotype-Medium';
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 3rem; 
+}
+
+#check-out .check__info h2 {
+  color: #2f9dd8;
+  font-size: 3rem;
+  margin-bottom: 3rem; 
+}
+
+#check-out .check__info p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#check-out .check__info p span {
+  font-style: italic;
+}
+
+#check-out .check__info ul {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  list-style-type: disc;
+  padding-left: 2.5rem;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* check styles */
+  #check-out .check {
+    padding: 3rem 4rem 8rem;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* check styles */
+  #check-out .check {
+    padding: 2rem 2rem 4rem;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 4px;
+  }
+}

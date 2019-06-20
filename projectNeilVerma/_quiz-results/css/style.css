@@ -1,0 +1,248 @@
+/* Fonts */
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: url('../fonts/Decalotype-Regular.eot');
+  src: url('../fonts/Decalotype-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Regular.woff') format('woff'),
+  url('../fonts/Decalotype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: url('../fonts/Decalotype-Bold.eot');
+  src: url('../fonts/Decalotype-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Bold.woff') format('woff'),
+  url('../fonts/Decalotype-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Black';
+  src: url('../fonts/Decalotype-Black.eot');
+  src: url('../fonts/Decalotype-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Black.woff') format('woff'),
+  url('../fonts/Decalotype-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Decalotype-Regular';
+  font-weight: 400;
+  line-height: normal;
+}
+
+#result .container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 130rem;
+}
+
+/* result styles */
+#result .result__title {
+  margin-top: 3rem;
+}
+
+#result .result__title h2 {
+  font-family: 'Decalotype-Bold';
+  font-size: 4rem;
+  margin-bottom: 12rem;
+  position: relative;
+}
+
+#result .result__title h2::before {
+  content: "";
+  background-color: #2f9dd8;
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  height: 3px;
+  width: 10%;
+}
+
+#result .result__subtitle {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+#result .result__subtitle h1 {
+  font-family: 'Decalotype-Black';
+  font-size: 6rem;
+}
+
+#result .result__subtitle h1 strong {
+  font-size: 8rem;
+}
+
+#result .result__subtitle h1 span {
+  color: #2f9dd8;
+}
+
+#result .result__image {
+  margin: 0 auto;
+  max-width: 70rem;
+}
+
+#result .result__image img {
+  width: 100%;
+}
+
+#result .result__description {
+  margin: 10rem 0;
+}
+
+#result .result__description p {
+  font-size: 3.5rem;
+}
+
+#result .result__description p:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+#result .result__description p span:first-child {
+  color: #2f9dd8;
+  font-family: 'Decalotype-Bold';
+  font-size: 7rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+#result .result__description p span:last-child {
+  font-weight: bold;
+}
+
+#result .result__description-br {
+  display: none;
+}
+
+#result .result__button {
+  text-align: center;
+  margin-top: 10rem;
+}
+
+#result .result__button a {
+  background-color: #f36a66;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 auto;
+  padding: 3rem 7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#result .result__description a:hover {
+  background-color: #111;
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* container styles */
+  #result .container {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+
+  #result .result__description-br {
+    display: block;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 5px;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 4px;
+  }
+}

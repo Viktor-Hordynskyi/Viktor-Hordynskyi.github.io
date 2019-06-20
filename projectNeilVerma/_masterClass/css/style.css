@@ -1,0 +1,1023 @@
+/* Fonts */
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: url('../fonts/Decalotype-Regular.eot');
+  src: url('../fonts/Decalotype-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Regular.woff') format('woff'),
+  url('../fonts/Decalotype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: url('../fonts/Decalotype-Bold.eot');
+  src: url('../fonts/Decalotype-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Bold.woff') format('woff'),
+  url('../fonts/Decalotype-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-ExtraBold';
+  src: url('../fonts/Decalotype-ExtraBold.eot');
+  src: url('../fonts/Decalotype-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-ExtraBold.woff') format('woff'),
+  url('../fonts/Decalotype-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Decalotype-Regular';
+  font-weight: 400;
+  line-height: normal;
+}
+
+#masterClass a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* container styles */
+#masterClass .container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 130rem;
+}
+
+/* header styles */
+#masterClass .header {
+  background: url(../img/bg-image.png) top right no-repeat, #369dd7;
+  background-size: 100% 100%;
+  padding-bottom: 7.5rem;
+}
+
+/* navbar styles */
+#masterClass .navbar {
+  background-color: #fff;
+}
+
+#masterClass .navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 10rem;
+}
+
+#masterClass .navbar__logo {
+  display: block;
+  height: 7rem;
+}
+
+#masterClass .navbar__logo img {
+  height: 100%;
+}
+
+#masterClass .navbar__button {
+  background-color: #f16763;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+/* intro styles */
+#masterClass .intro__titles {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+#masterClass .intro__titles h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+#masterClass .intro__titles h2 br {
+  display: none;
+}
+
+#masterClass .intro__titles h1 {
+  color: #ffffff;
+  font-family: 'Decalotype-Bold';
+  font-size: 3.4rem;
+  text-transform: uppercase;
+}
+
+#masterClass .intro__titles .intro__titles-br {
+  display: block;
+}
+
+#masterClass .intro__titles h1 br {
+  display: none;
+}
+
+#masterClass .intro__video {
+  margin: 0 auto;
+  height: 57rem;
+  max-height: 57rem;
+  max-width: 100rem;
+}
+
+#masterClass .intro__video iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* wrapper styles */
+#masterClass .wrapper {
+  background-color: #369dd7;
+}
+
+/* toolbox styles */
+#masterClass .toolbox {
+  background-color: #eeeeee;
+}
+
+#masterClass .toolbox__title {
+  text-align: center;
+  position: relative;
+  top: -3.5rem;
+}
+
+#masterClass .toolbox__title a {
+  background-color: #db6e6e;
+  color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Decalotype-Bold';
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 1.5rem 6rem;
+}
+
+#masterClass .toolbox__title h3 {
+  font-size: 3.2rem;
+  margin: 2.5rem 0 0;
+}
+
+#masterClass .toolbox__title h3 span {
+  display: block;
+  font-size: 6rem;
+}
+
+#masterClass .toolbox__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 8rem;
+}
+
+#masterClass .toolbox__element:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#masterClass .toolbox__element__data {
+  line-height: 3rem;
+  margin-right: 3.5rem;
+  text-transform: uppercase;
+}
+
+#masterClass .toolbox__element:nth-child(even)
+#masterClass .toolbox__element__data {
+  margin-left: 3.5rem;
+}
+
+#masterClass .toolbox__element h4 {
+  font-size: 3rem;
+  margin-top: 3rem;
+  margin-bottom: .5rem;
+}
+
+#masterClass .toolbox__element p {
+  font-size: 2.2rem;
+  text-align: justify;
+  text-transform: lowercase;
+}
+
+#masterClass .toolbox__element p span {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+#masterClass .toolbox__element__img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 45rem;
+  max-width: 45rem;
+}
+
+#masterClass .toolbox__element__img img {
+  width: 100%;
+}
+
+/* promo styles */
+#masterClass .promo {
+  text-align: center;
+  padding: 5.5rem 0;
+}
+
+#masterClass .promo a {
+  background-color: #db6e6e;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Decalotype-Bold';
+  font-size: 6rem;
+  padding: 2.5rem 7rem;
+  text-transform: uppercase;
+}
+
+/* resons styles */
+#masterClass .reasons {
+  background-color: #f9fafc;
+}
+
+#masterClass .reasons__title {
+  padding-top: 8rem;
+}
+
+#masterClass .reasons__title h2 {
+  font-size: 4rem;
+  margin-bottom: 4.5rem;
+  text-transform: uppercase;
+}
+
+#masterClass .reasons__title h3 {
+  font-size: 3.3rem;
+  line-height: 4.5rem;
+  margin-bottom: 9rem;
+}
+
+#masterClass .reasons__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10rem;
+}
+
+#masterClass .reasons__bottom {
+  margin: 0 auto 13rem;
+  max-width: 50%;
+}
+
+#masterClass .reasons__left,
+#masterClass .reasons__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: calc((100% - 10rem) / 2);
+}
+
+#masterClass .reasons__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#masterClass .reasons__element:not(:last-child) {
+  margin-bottom: 10rem;
+}
+
+#masterClass .reasons__img {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 10rem;
+}
+
+#masterClass .reasons__img img {
+  width: 100%;
+}
+
+#masterClass .reasons__element p {
+  font-size: 2.8rem;
+  margin-left: 2.5rem;
+  text-align: justify;
+}
+
+/* testimonials styles */
+#masterClass .testimonials__title {
+  background-color: #38393a;
+  padding: 3rem 0;
+}
+
+#masterClass .testimonials__title h2 {
+  color: #fafbfb;
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#masterClass .testimonials__data {
+  background-color: #ebebeb;
+  padding: 7rem 0;
+}
+
+#masterClass .testimonials__data p {
+  background-color: #da6c6c;
+  font-size: 3.2rem;
+  padding: 2.5rem 3rem;
+}
+
+#masterClass .testimonials__data p span {
+  display: block;
+  font-style: italic;
+}
+
+/* clients styles */
+#masterClass .clients__title {
+  background-color: #38393a;
+  padding: 3rem 0;
+}
+
+#masterClass .clients__title h2 {
+  color: #fafbfb;
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#masterClass .clients__elements {
+  background-color: #fff;
+}
+
+#masterClass .clients__elements .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem 0;
+}
+
+#masterClass .clients__element {
+  height: 9rem;
+}
+
+#masterClass .clients__element img {
+  height: 100%;
+}
+
+/* about styles */
+#masterClass .about__title {
+  background-color: #38393a;
+  padding: 3rem 0;
+}
+
+#masterClass .about__title h2 {
+  color: #fafbfb;
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#masterClass .about__data {
+  background-color: #ebebeb;
+}
+
+#masterClass .about__data .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 3rem 0 15rem;
+}
+
+#masterClass .about__avatar {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 35rem;
+  max-width: 35rem;
+}
+
+#masterClass .about__avatar img {
+  width: 100%;
+}
+
+#masterClass .about__info {
+  margin-left: 4rem;
+}
+
+#masterClass .about__info h3 {
+  font-size: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+#masterClass .about__info p {
+  color: #222121;
+  font-size: 3rem;
+}
+
+#masterClass .about__info p:last-of-type {
+  color: #838383;
+}
+
+#masterClass .about__info p:not(:last-of-type) {
+  margin-bottom: 4rem;
+}
+
+/* footer styles */
+#masterClass .footer__bg {
+  background-color: #fff;
+  padding: 4rem 0 5rem;
+}
+
+#masterClass .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#masterClass .footer__data {
+  margin-right: 30rem;
+}
+
+#masterClass .footer__logo {
+  margin-bottom: 3.5rem;
+  max-width: 30rem;
+}
+
+#masterClass .footer__logo img {
+  width: 100%;
+}
+
+#masterClass .footer__address {
+  margin-bottom: 4rem;
+}
+
+#masterClass .footer__address h3 {
+  font-size: 2.5rem;
+}
+
+#masterClass .footer__address h3:first-child {
+  margin-bottom: 4rem;
+}
+
+#masterClass .footer__slogan {
+  position: relative;
+}
+
+#masterClass .footer__slogan h2 {
+  font-family: 'Decalotype-ExtraBold';
+  font-size: 7rem;
+  line-height: 8rem;
+}
+
+#masterClass .footer__bg-image {
+  position: absolute;
+  top: -14rem;
+  right: -15rem;
+  max-width: 30rem;
+}
+
+#masterClass .footer__bg-image img {
+  width: 100%;
+}
+
+/* bottom-footer styles */
+#masterClass .bottom-footer {
+  background-color: #369dd7;
+}
+
+#masterClass .bottom-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#masterClass .bottom-footer--links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 0;
+}
+
+#masterClass .bottom-footer a {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.5rem;
+  margin: 0 2rem;
+  text-decoration: none;
+}
+
+#masterClass .bottom-footer a img {
+  margin-bottom: 1rem;
+  height: 7rem;
+  width: 7rem;
+}
+
+#masterClass .bottom-footer a:hover {
+  color: #141621;
+}
+
+#masterClass .bottom-footer h2 {
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  width: 25rem;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 8px;
+  }
+
+  /* intro styles */
+  #masterClass .intro__titles h1 {
+    font-size: 3.4rem;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 6px;
+  }
+
+  /* intro styles */
+  #masterClass .intro__titles h1 {
+    font-size: 3.3rem;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* container styles*/
+  #masterClass .container {
+    max-width: 120rem;
+  }
+
+  /* header styles */
+  #masterClass .header {
+    background: #369dd7;
+  }
+
+  /* intro styles */
+  #masterClass .intro__titles h1 {
+    font-size: 4.1rem;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* container styles*/
+  #masterClass .container {
+    padding: 0 2rem;
+  }
+
+  /* header styles */
+  #masterClass .header {
+    background: #369dd7;
+  }
+
+  /* intro styles */
+  #masterClass .intro__titles h2 br {
+    display: block;
+  }
+
+  /* about styles */
+  #masterClass .about__data .container {
+    padding: 3rem 2rem 5rem;
+  }
+
+  /* upper-footer styles */
+  .upper-footer__top a {
+    font-size: 3.5rem;
+  }
+
+  /* footer styles */
+  #masterClass .footer .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  #masterClass .footer__data {
+    margin-right: 0rem;
+  }
+
+  #masterClass .footer__bg-image {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 5px;
+  }
+
+  /* intro styles */
+  #masterClass .intro__titles h1 {
+    font-size: 3.8rem;
+  }
+
+  /* clients styles */
+  #masterClass .clients__title h2 {
+    font-size: 4.5rem;
+  }
+
+  #masterClass .clients__elements .container {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 4rem 2rem;
+  }
+
+  #masterClass .clients__element {
+    margin: 0 1rem 4rem;
+    height: 14rem;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 4px;
+  }
+
+  /* intro styles */
+  #masterClass .intro__titles .intro__titles-br {
+    display: none;
+  }
+  
+  /* toolbox styles */
+  #masterClass .toolbox__element p {
+    margin-bottom: 2rem;
+  }
+
+  #masterClass .toolbox__element__img {
+    width: 75rem;
+    max-width: 75rem;
+  }
+
+  /* reason styles */
+  #masterClass .reasons__left,
+  #masterClass .reasons__right {
+    width: calc((100% - 4rem) / 2);
+  }
+
+  #masterClass .reasons__img {
+    width: 7rem;
+  }
+
+  /* promo styles */
+  #masterClass .promo a {
+    font-size: 5rem;
+    padding: 2.5rem;
+  }
+
+  /* about styles */
+  #masterClass .about__avatar {
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 4px;
+  }
+
+  #masterClass .intro__titles h1 br {
+    display: none;
+  }
+
+  /* toolbox styles */
+  #masterClass .toolbox__title a {
+    font-size: 3.5rem;
+    padding: 2.5rem;
+  }
+
+  #masterClass .toolbox__title h2 span {
+    font-size: 3.5rem;
+  }
+
+  #masterClass .toolbox__title h3 {
+    font-size: 2.5rem;
+  }
+
+  #masterClass .toolbox__title h3 span {
+    font-size: 5rem;
+  }
+
+  #masterClass .toolbox__element {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #masterClass .toolbox__element__data {
+    margin-right: 0;
+  }
+
+  #masterClass .toolbox__element__img {
+    margin: 0 auto;
+    width: 70rem;
+    max-width: 70rem;
+  }
+
+  #masterClass .toolbox__element:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #masterClass .toolbox__element:nth-child(even)
+  #masterClass .toolbox__element__data {
+    margin-left: 0;
+  }
+
+  /* promo styles */
+  #masterClass .promo a {
+    font-size: 3.5rem;
+    padding: 2.5rem;
+  }
+
+  /* reason styles */
+  #masterClass .reasons__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #masterClass .reasons__bottom {
+    max-width: 100%;
+  }
+
+  #masterClass .reasons__left {
+    margin-bottom: 10rem;
+  }
+
+  #masterClass .reasons__left,
+  #masterClass .reasons__right {
+    width: 100%;
+  }
+
+  #masterClass .reasons__img {
+    width: 7rem;
+  }
+
+  /* about styles */
+  #masterClass .about__data .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  #masterClass .about__info {
+    margin-left: 0;
+  }
+
+  #masterClass .about__avatar {
+    margin: 0 auto;
+  }
+
+  /* footer styles */
+  #masterClass .footer__slogan h2 {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  #masterClass .footer__bg-image {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 4px;
+  }
+  
+  /* toolbox styles */
+  #masterClass .toolbox__title h2 span {
+    font-size: 4rem;
+  }
+
+  #masterClass .toolbox__title h3 {
+    font-size: 2.8rem;
+  }
+
+  #masterClass .toolbox__title h3 span {
+    font-size: 5.8rem;
+  }
+
+  #masterClass .toolbox__element h4 {
+    font-size: 4rem;
+  }
+
+  #masterClass .toolbox__element p {
+    font-size: 2.3rem;
+  }
+
+  #masterClass .toolbox__element p span {
+    font-size: 2.5rem;
+  }
+
+  /* reasons styles */
+  #masterClass .reasons__title h2 {
+    text-align: center;
+  }
+
+  #masterClass .reasons__element p {
+    font-size: 3.5rem;
+  }
+
+  /* testimonials styles */
+  #masterClass .testimonials__data p {
+    font-size: 3.5rem;
+    text-align: justify;
+  }
+
+  /* clients styles */
+  #masterClass .clients__element {
+    height: 14rem;
+  }
+
+  /* about styles */
+  #masterClass .about__info p {
+    font-size: 3.5rem;
+  }
+
+  /* footer styles */
+  #masterClass .footer__data {
+    margin-right: 0;
+  }
+
+  #masterClass .footer__slogan h2 {
+    font-size: 6rem;
+  }
+
+  #masterClass .footer__bg-image {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    max-width: 15rem;
+  }
+}
