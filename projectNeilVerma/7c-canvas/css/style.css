@@ -3586,6 +3586,10 @@ button:focus {
     padding: 0 3rem;
   }
 
+  #download .btn {
+    font-size: 2.5rem;
+  }
+
   /* promo styles */
   #download .promo__list li {
     font-size: 2.5rem;
@@ -3740,6 +3744,11 @@ button:focus {
   html {
     font-size: 7px;
   }
+
+  /* intro styles */
+  #download .intro__form .btn {
+    width: 60%;
+  }
 }
 
 /* Landscape phones and smaller */
@@ -3751,6 +3760,11 @@ button:focus {
   /* header styles */
   #download .header {
     background: #369dd7;
+  }
+
+  /* intro styles */
+  #download .intro__form .btn {
+    width: 70%;
   }
 
   /* about styles */
@@ -3784,6 +3798,11 @@ button:focus {
 @media (max-width: 480px) {
   html {
     font-size: 7px;
+  }
+  
+  /* intro styles */
+  #download .intro__form .btn {
+    width: 80%;
   }
 
   /* footer styles */
