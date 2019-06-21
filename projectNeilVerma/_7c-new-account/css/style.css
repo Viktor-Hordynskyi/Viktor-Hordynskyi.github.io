@@ -1,0 +1,607 @@
+/* Fonts */
+@font-face {
+  font-family: 'Decalotype-Regular';
+  src: url('../fonts/Decalotype-Regular.eot');
+  src: url('../fonts/Decalotype-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Regular.woff') format('woff'),
+  url('../fonts/Decalotype-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Light';
+  src: url('../fonts/Decalotype-Light.eot');
+  src: url('../fonts/Decalotype-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Light.woff') format('woff'),
+  url('../fonts/Decalotype-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Black';
+  src: url('../fonts/Decalotype-Black.eot');
+  src: url('../fonts/Decalotype-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Black.woff') format('woff'),
+  url('../fonts/Decalotype-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-Bold';
+  src: url('../fonts/Decalotype-Bold.eot');
+  src: url('../fonts/Decalotype-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-Bold.woff') format('woff'),
+  url('../fonts/Decalotype-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Decalotype-ExtraBold';
+  src: url('../fonts/Decalotype-ExtraBold.eot');
+  src: url('../fonts/Decalotype-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Decalotype-ExtraBold.woff') format('woff'),
+  url('../fonts/Decalotype-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Reset CSS */
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Decalotype-Regular';
+  font-weight: 400;
+  line-height: normal;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* container styles */
+#account .container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 130rem;
+}
+
+#account .intro .container,
+#account .attend .container {
+  max-width: 140rem;
+}
+
+/* intro styles */
+#account .intro {
+  background: url(../img/intro-bg.jpg) top center no-repeat;
+  background-size: 100% 100%;
+}
+
+#account .intro__logo {
+  margin: 0 auto;
+  height: 15rem;
+  max-width: 80%;
+}
+
+#account .intro__logo img {
+  margin-top: 3rem;
+  height: 10rem;
+}
+
+#account .intro .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0 25rem;
+}
+
+#account .intro__title h1 {
+  color: #3a7e89;
+  font-family: 'Decalotype-Black';
+  font-size: 8.5rem;
+  text-transform: uppercase;
+}
+
+#account .intro__form {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 3.5rem;
+  width: 55rem;
+}
+
+#account .intro__group {
+  margin-bottom: 4rem;
+  position: relative;
+  width: 100%;
+}
+
+#account .intro__group:last-child {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#account .intro__group.short {
+  width: 49%;
+}
+
+#account .intro__group input {
+  border: 2px solid #999;
+  font-size: 2rem;
+  padding: 0 1rem;
+  height: 6rem;
+  width: 100%;
+}
+
+#account .intro__group input:focus {
+  outline: none;
+}
+
+#account .intro__group label {
+  background-color: #fff;
+  font-family: 'Decalotype-Light';
+  font-size: 1.6rem;
+  position: absolute;
+  left: 0;
+  top: -.8rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+#account .intro__group input[type="submit"] {
+  background-color: #ec6966;
+  border: none;
+  border-radius: .5rem;
+  color: #ffffff;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+}
+
+#account .intro__group a {
+  color: #2d9bd4;
+  font-family: 'Decalotype-Light';
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+/* attend styles */
+#account .attend {
+  background-color: #3a7e89;
+}
+
+#account .attend__title {
+  background-color: #fff;
+  padding: 7rem 0;
+}
+
+#account .attend__title h2 {
+  font-family: 'Decalotype-Bold';
+  font-size: 6.3rem;
+  letter-spacing: -0.192rem;
+  text-align: center;
+}
+
+#account .attend__blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 14rem 0 6rem;
+}
+
+#account .attend__block {
+  background-color: #fff;
+  padding: 4rem 3rem 10rem;
+  width: 32%;
+}
+
+#account .attend__image {
+  text-align: center;
+  height: 13rem;
+}
+
+#account .attend__image img {
+  height: 100%;
+}
+
+#account .attend__info {
+  padding-top: 2.5rem;
+}
+
+#account .attend__info h3 {
+  font-family: 'Decalotype-Bold';
+  font-size: 3.9rem;
+  line-height: 4rem;
+  letter-spacing: -0.04rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#account .attend__info ul {
+  list-style-type: square;
+  padding-left: 2rem;
+}
+
+#account .attend__info li {
+  font-size: 2.8rem;
+  letter-spacing: -0.018rem;
+}
+
+#account .attend__btn {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#account .attend__btn a {
+  box-shadow: 0 0 1.7rem rgba(113, 113, 113, 0.16);
+  background-color: #ec6966;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Decalotype-Bold';
+  font-size: 2.5rem;
+  letter-spacing: -0.076rem;
+  padding: 2rem 8rem;
+  text-transform: uppercase;
+}
+
+
+/* wrapper styles */
+#account .wrapper {
+  background-color: #369dd7;
+}
+
+/* footer styles */
+#account .footer {
+  background-color: #3a7e89;
+  padding: 6rem 0;
+}
+
+#account .footer__bg {
+  background-color: #fff;
+  padding: 4rem 0 5rem;
+}
+
+#account .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#account .footer__data {
+  margin-right: 30rem;
+}
+
+#account .footer__logo {
+  margin-bottom: 3.5rem;
+  max-width: 30rem;
+}
+
+#account .footer__logo img {
+  width: 100%;
+}
+
+#account .footer__address {
+  margin-bottom: 4rem;
+}
+
+#account .footer__address h3 {
+  font-size: 2.5rem;
+}
+
+#account .footer__address h3:first-child {
+  margin-bottom: 4rem;
+}
+
+#account .footer__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#account .footer__soc a {
+  display: block;
+  max-width: 8rem;
+}
+
+#account .footer__soc a img {
+  width: 100%;
+}
+
+#account .footer__slogan {
+  position: relative;
+}
+
+#account .footer__slogan h2 {
+  font-family: 'Decalotype-ExtraBold';
+  font-size: 7rem;
+  line-height: 8rem;
+}
+
+#account .footer__bg-image {
+  position: absolute;
+  top: -14rem;
+  right: -15rem;
+  max-width: 30rem;
+}
+
+#account .footer__bg-image img {
+  width: 100%;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1600px) and (max-width: 1919px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1599px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 8px;
+  }
+
+  #account .intro .container {
+    max-width: 119rem;
+  }
+
+  #account .intro__title h1 {
+    font-size: 7.5rem;
+  }
+
+  #account .intro__form {
+    width: 50rem;
+  }
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 7px;
+  }
+
+  #account .intro .container {
+    max-width: 113rem;
+  }
+
+  #account .intro__title h1 {
+    font-size: 7.5rem;
+  }
+
+  #account .intro__form {
+    width: 50rem;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 7px;
+  }
+
+  /* container styles */
+  #account .container {
+    padding: 0 3rem;
+    max-width: 100%;
+  }
+
+  #account .intro .container {
+    max-width: 75%;
+  }
+
+  #account .intro__title h1 {
+    font-size: 6rem;
+  }
+
+  #account .intro__form {
+    padding: 1.5rem;
+    width: 50rem;
+  }
+  
+  /* footer styles */
+  #account .footer .container {
+    justify-content: space-between;
+  }
+
+  #account .footer__data {
+    margin-right: 0rem;
+  }
+
+  #account .footer__slogan {
+    margin-right: 15rem;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 7px;
+  }
+
+  /* container styles */
+  #account .container {
+    padding: 0 1.5rem;
+    max-width: 100%;
+  }
+
+  #account .intro .container {
+    flex-direction: column;
+    max-width: 75%;
+  }
+
+  #account .intro__title h1 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  #account .intro__form {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  /* attend styles */
+  #account .attend__blocks {
+    flex-direction: column;
+  }
+
+  #account .attend__block {
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  /* footer styles */
+  #account .footer .container {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  #account .footer__data {
+    margin-right: 0rem;
+  }
+
+  #account .footer__bg-image {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    max-width: 15rem;
+  }
+}
+
+@media (max-width: 660px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 576px) {
+  html {
+    font-size: 7px;
+  }
+
+  /* footer styles */
+  #account .footer__address h3:first-child {
+    margin-bottom: 2rem;
+  }
+
+  #account .footer__slogan h2 {
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 7px;
+  }
+
+  /* footer styles */
+  #account .footer__bg-image {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    max-width: 15rem;
+  }
+
+  #account .footer__logo {
+    margin-bottom: 1rem;
+    max-width: 25rem;
+  }
+
+  #account .footer__address h3 {
+    font-size: 2rem;
+  }
+
+  #account .footer__soc a {
+    max-width: 7rem;
+  }
+
+  #account .footer__slogan h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  #account .footer__bg-image {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    max-width: 10rem;
+  }
+}
+
+@media (max-width: 375px) {
+  html {
+    font-size: 6px;
+  }
+
+  /* footer styles */
+  #account .footer__data {
+    margin-right: 0;
+  }
+
+  #account .footer__logo {
+    margin-bottom: 1rem;
+    max-width: 25rem;
+  }
+
+  #account .footer__slogan h2 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }  
+}

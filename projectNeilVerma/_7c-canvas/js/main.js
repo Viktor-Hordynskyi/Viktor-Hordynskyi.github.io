@@ -1,4 +1,3 @@
-// JS for main page
 $(document).ready(function() {
 	$('.menu-toggler').on('click', function() {
 		$('.wrapper').toggleClass('menu-show');
@@ -173,15 +172,4 @@ $(window).on('resize load', function() {
 	}	else {
 		$('.content__comment').removeClass('position-mobile');
 	}	
-})
-
-// JS for login and reset pages
-$(document).ready(function() {
-	$('#show-pas').on('click', function() {
-		if($(this).prev().prop('type') == 'password') {
-			$(this).prev().attr('type', 'text');
-		} else {
-			$(this).prev().attr('type', 'password');
-		}
-	})
 })
