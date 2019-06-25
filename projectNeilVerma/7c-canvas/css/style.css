@@ -122,6 +122,7 @@ body {
 }
 html, body {
   height: 100%;
+  max-height: 100%;
 }
 a {
   color: #000000;
@@ -132,6 +133,18 @@ button {
 }
 button:focus {
   outline: none;
+}
+
+/* root styles */
+#root,
+#home,
+#main,
+#account,
+#access,
+#download {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
 }
 
 /*------------------*/
@@ -171,6 +184,7 @@ button:focus {
   -o-transition: all .3s cubic-bezier(0.86, 0, 0.07, 1);
   transition: all .3s cubic-bezier(0.86, 0, 0.07, 1);
   height: 100%;
+  max-height: 100%;
 }
 
 #main .menu-show {
@@ -432,6 +446,7 @@ button:focus {
   flex-direction: column;
   position: relative;
   height: 100%;
+  max-height: 100%;
   width: 100%;
 }
 
@@ -450,6 +465,7 @@ button:focus {
   margin-bottom: 2rem;
   padding: 3rem 4rem 2rem;
   position: relative;
+  height: 13rem;
   width: 100%;
 }
 
@@ -629,7 +645,6 @@ button:focus {
   padding: 1rem 1rem .5rem;
   text-decoration: none;
   text-transform: uppercase;
-  /*height: 2rem;*/
 }
 
 #main .header__video button img {
@@ -692,6 +707,7 @@ button:focus {
   -o-transition: all .3s linear;
   transition: all .3s linear;
   height: 100%;
+  max-height: calc(100% - 6rem - 13rem);
 }
 
 #main .col {
@@ -726,9 +742,11 @@ button:focus {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  position: relative;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
+  height: 100%;
 }
 
 #main .content__element:not(:last-child) {
@@ -764,7 +782,6 @@ button:focus {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  position: relative;
   -webkit-transition: all .3s linear;
   -o-transition: all .3s linear;
   transition: all .3s linear;
@@ -1133,7 +1150,7 @@ button:focus {
   background-color: rgba(0, 0, 0, .1);
   -webkit-clip-path: polygon(0 0, 94% 0, 94% 40%, 100% 50%, 94% 60%, 94% 100%, 0 100%);
   clip-path: polygon(0 0, 94% 0, 94% 40%, 100% 50%, 94% 60%, 94% 100%, 0 100%);
-  padding: 1rem 2rem 1rem 1rem;
+  padding: 1rem 3rem 1rem 1rem;
   left: -100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1158,7 +1175,7 @@ button:focus {
   background-color: rgba(0, 0, 0, .1);
   -webkit-clip-path: polygon(4% 0, 100% 0, 100% 100%, 4% 100%, 4% 60%, 0 50%, 4% 40%);
   clip-path: polygon(4% 0, 100% 0, 100% 100%, 4% 100%, 4% 60%, 0 50%, 4% 40%);
-  padding: 1rem 1rem 1rem 2rem;
+  padding: 1rem 1rem 1rem 3rem;
   right: -100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1366,7 +1383,6 @@ button:focus {
 
 #main .content__input-small {
   position: relative;
-  /*height: 2rem;*/
   width: 100%;
 }
 
@@ -1554,6 +1570,8 @@ button:focus {
 /* footer styles */
 #main .footer {
   background-color: #44a8ad;
+  flex-shrink: 0;
+  height: 6rem;
 }
 
 #main .footer button {
@@ -1576,9 +1594,10 @@ button:focus {
   font-family: 'Decalotype-Bold';
   font-size: 2rem;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem;
   text-decoration: none;
   text-transform: uppercase;
+  height: 100%;
 }
 
 #main .footer button img {
@@ -2518,6 +2537,11 @@ button:focus {
 /*---------------------*/
 /* account page styles */
 /*---------------------*/
+/* wrapper styles */
+ .wrapper {
+  height: 100%;
+}
+
 /* container styles */
 #account .container {
   margin: 0 auto;
@@ -3076,6 +3100,11 @@ button:focus {
   text-transform: uppercase;
   padding: 2rem 1rem;
   width: 30%;
+}
+
+/* wrapper style */
+#download .wrapper {
+  height: 100%;
 }
 
 /* container styles */
