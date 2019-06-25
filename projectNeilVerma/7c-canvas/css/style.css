@@ -707,7 +707,7 @@ button:focus {
   -o-transition: all .3s linear;
   transition: all .3s linear;
   height: 100%;
-  max-height: calc(100% - 6rem - 13rem);
+  max-height: calc(100% - 6rem - 13rem - 2rem);
 }
 
 #main .col {
