@@ -99,7 +99,7 @@ $(document).ready(function() {
 		}
 	})
 
-	$('.content__nav button').each(function() {
+	$('.open-comment').each(function() {
 		$(this).on('click', function() {
 			$(this).parent().parent().parent().next().toggleClass('show');
 		})
