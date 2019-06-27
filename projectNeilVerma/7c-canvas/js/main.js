@@ -50,6 +50,18 @@ $(document).ready(function() {
 	})
 
 	$('.content__group').each(function() {
+		$(this)
+					.children('.content__nav')
+					.children('.content__nav-buttons')
+					.children('.save')
+					.on('click', function() {
+			$(this).parent().parent().addClass('saved');
+			$this = $(this)
+			setTimeout(function() {
+				$this.parent().parent().removeClass('saved');
+			}, 1500)
+		})
+
 		$(this).on('focusin', function() {
 			$(this).children('.content__textarea').addClass('cut');
 			$(this).children('.content__calcs').addClass('cut');
@@ -110,6 +122,12 @@ $(document).ready(function() {
 	$('.content__comment-form').each(function() {
 		$(this).children('input').on('click', function() {
 			$(this).parent().parent().removeClass('show');
+		})
+	})
+
+	$('.content__comment-close').each(function() {
+		$(this).on('click', function() {
+			$(this).parent().removeClass('show')
 		})
 	})
 
