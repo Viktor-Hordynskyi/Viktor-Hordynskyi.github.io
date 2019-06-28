@@ -168,6 +168,13 @@ button:focus {
   background: #999; 
 }
 
+/* preview styles */
+#main.preview .menu-toggler,
+#main.preview .header__buttons,
+#main.preview .header__video {
+  display: none;
+}
+
 /* wrapper styles */
 #main .wrapper {
   background-color: #f7f7f9;
@@ -1114,7 +1121,6 @@ button:focus {
 #main .content__nav.saved .content__nav-comment,
 #main .content__nav.saved .content__nav-buttons {
   opacity: 0;
-  /*visibility: hidden;*/
 }
 
 #main .content__nav.saved::before {
@@ -2252,17 +2258,6 @@ button:focus {
   padding: 0;
   height: 100%;
   width: 100%;
-}
-
-/* preview styles */
-#main.preview .menu,
-#main.preview .sidebar,
-#main.preview .header {
-  display: none;
-}
-
-#main.preview .content {
-  max-height: calc(100% - 6rem);
 }
 
 /* Large desktops and laptops */
