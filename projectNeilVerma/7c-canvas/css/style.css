@@ -486,7 +486,7 @@ button:focus {
 }
 
 #main .header__logo img {
-  height: 100%;
+  height: 6rem;
 }
 
 #main .header__logo input {
@@ -2138,6 +2138,7 @@ button:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  height: 100%;
 }
 
 #main .wrapper.column .header__logo {
@@ -2161,6 +2162,7 @@ button:focus {
   -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
+  max-height: none;
 }
 
 #main .wrapper.column .col {
@@ -2250,6 +2252,17 @@ button:focus {
   padding: 0;
   height: 100%;
   width: 100%;
+}
+
+/* preview styles */
+#main.preview .menu,
+#main.preview .sidebar,
+#main.preview .header {
+  display: none;
+}
+
+#main.preview .content {
+  max-height: calc(100% - 6rem);
 }
 
 /* Large desktops and laptops */
