@@ -180,6 +180,14 @@ button:focus {
   pointer-events: none;
 }
 
+/* collaborate styles */
+#main.collaborate .menu-toggler,
+#main.collaborate .header__buttons,
+#main.collaborate .header__video,
+#main.collaborate .content__nav-buttons {
+  display: none;
+}
+
 /* wrapper styles */
 #main .wrapper {
   background-color: #f7f7f9;
@@ -1929,9 +1937,21 @@ button:focus {
   margin-bottom: 2rem;
 }
 
-#main .share__link a {
+#main .share__link input[type="text"] {
+  border: none;
   color: #b4b9c1;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+#main .share__link input[type="email"] {
+  color: #333;
+  font-size: 1.5rem;
+  padding: .5rem 1rem;
+}
+
+#main .share__link input[type="text"]:focus {
+  outline: none;
 }
 
 #main .share__copy {
@@ -1941,8 +1961,82 @@ button:focus {
   cursor: pointer;
   font-family: 'Decalotype-Bold';
   font-size: 1.6rem;
-  padding: .5rem 1rem;
+  overflow: hidden;
+  padding: .5rem 3rem;
+  position: relative;
   text-transform: uppercase;
+}
+
+#main .share__copy.sent::before,
+#main .share__copy.nsent::before,
+#main .share__copy.copied::before,
+#main .share__copy.ncopied::before {
+  opacity: 1;
+  z-index: 3;
+}
+
+#main .share__copy.sent::before {
+  content: "sent!";
+}
+
+#main .share__copy.nsent::before {
+  content: "not sent!";
+}
+
+#main .share__copy.copied::before {
+  content: "copied!";
+}
+
+#main .share__copy.ncopied::before {
+  content: "not copied!";
+}
+
+#main .share__copy::before {
+  content: "";
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  transition: all .5s .5s linear;
+  z-index: -9;
+}
+
+#main .share__copy.copied::after {
+  content: "";
+  background-color: #008000;
+  transition: all .5s linear;
+  transform: skew(-45deg) scaleX(1.3) translateX(0%);
+  z-index: 2;
+}
+
+#main .share__copy.ncopied::after {
+  content: "";
+  background-color: #ec6966;
+  transition: all .5s linear;
+  transform: skew(-45deg) scaleX(1.3) translateX(0%);
+  z-index: 2;
+}
+
+#main .share__copy::after {
+  content: "";
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all 1s linear;
+  transform: skew(-45deg) scaleX(1.3) translateX(-100%);
+  z-index: -9;
 }
 
 /* account styles */
