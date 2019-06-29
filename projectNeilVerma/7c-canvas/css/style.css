@@ -175,6 +175,11 @@ button:focus {
   display: none;
 }
 
+#main.preview input,
+#main.preview textarea {
+  pointer-events: none;
+}
+
 /* wrapper styles */
 #main .wrapper {
   background-color: #f7f7f9;
@@ -1119,13 +1124,23 @@ button:focus {
 }
 
 #main .content__nav.saved .content__nav-comment,
-#main .content__nav.saved .content__nav-buttons {
+#main .content__nav.saved .content__nav-buttons,
+#main .content__nav.nsaved .content__nav-buttons,
+#main .content__nav.nsaved .content__nav-buttons {
   opacity: 0;
 }
 
 #main .content__nav.saved::before {
   content: "\2714";
   opacity: 1;
+  z-index: 3;
+}
+
+#main .content__nav.nsaved::before {
+  content: "not saved!";
+  font-size: 2rem;
+  opacity: 1;
+  text-transform: uppercase;
   z-index: 3;
 }
 
@@ -1149,7 +1164,15 @@ button:focus {
 
 #main .content__nav.saved::after {
   content: "";
-  background-color: green;
+  background-color: #008000;
+  transition: all .5s linear;
+  transform: skew(-45deg) scaleX(1.2) translateX(0%);
+  z-index: 2;
+}
+
+#main .content__nav.nsaved::after {
+  content: "";
+  background-color: #ec6966;
   transition: all .5s linear;
   transform: skew(-45deg) scaleX(1.2) translateX(0%);
   z-index: 2;
@@ -1522,9 +1545,18 @@ button:focus {
   width: 7rem;
 }
 
-#main .content__subgroup-right input {
+#main .content__subgroup-right input[type='file'] {
+  display: none;
+}
+
+#main .content__subgroup-file {
   background: transparent;
-  border: 1px solid #333;
+  cursor: pointer;
+  height: 7rem;
+  width: 7rem;
+}
+
+#main .content__subgroup-file img {
   height: 7rem;
   width: 7rem;
 }
@@ -1543,6 +1575,11 @@ button:focus {
   margin-bottom: 4rem;
 }
 
+#main .content__subgroup-colors .colors-none {
+  display: none;
+}
+
+#main .content__subgroup-colors button,
 #main .content__subgroup-colors input {
   border: none;
   display: block;
@@ -1552,6 +1589,7 @@ button:focus {
   width: 3rem;
 }
 
+#main .content__subgroup-colors button,
 #main .content__subgroup-colors input:not(:last-child) {
   margin-right: 1rem;
 }

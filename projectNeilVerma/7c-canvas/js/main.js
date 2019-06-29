@@ -56,10 +56,10 @@ $(document).ready(function() {
 			.children('.content__nav-buttons')
 			.children('.save')
 			.on('click', function() {
-				$(this).parent().parent().addClass('saved');
+				$(this).parent().parent().addClass('nsaved');
 				$this = $(this)
 				setTimeout(function() {
-					$this.parent().parent().removeClass('saved');
+					$this.parent().parent().removeClass('nsaved');
 				}, 1500)
 			})
 
