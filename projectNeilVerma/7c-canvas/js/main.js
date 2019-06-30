@@ -98,7 +98,7 @@ $(document).ready(function() {
 		})
 
 		$('.content__comment-form').each(function() {
-			$(this).children('input').on('click', function() {
+			$(this).children('input[type="submit"]').on('click', function() {
 				$(this).parent().parent().removeClass('show');
 			})
 		})
@@ -202,10 +202,10 @@ $(document).ready(function() {
 
 		$('.share__copy').each(function() {
 			$(this).on('click', function() {
-				$(this).addClass('copied');
+				$(this).addClass('sent');
 				$this = $(this)
 				setTimeout(function() {
-					$this.removeClass('copied');
+					$this.removeClass('sent');
 				}, 1500)
 			})
 		})		
